@@ -40,6 +40,7 @@ from boote import BOOTE  # noqa: E402
 from piraten import MAHLSTROM, PIRATEN  # noqa: E402
 from kreaturen import KREATUREN  # noqa: E402
 from antike import ANTIKE  # noqa: E402
+from orklager import ORKLAGER  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -70,13 +71,14 @@ GRUPPEN = [
     ("piraten", "Piraten", MAHLSTROM, [(3, "gigantisch", "gigantisch")], [7]),
     ("kreaturen", "Kreaturen", KREATUREN, G4, [7, 21]),
     ("antike", "Antike Monumente", ANTIKE, G4, [7, 21]),
+    ("orklager", "Orklager", ORKLAGER, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
