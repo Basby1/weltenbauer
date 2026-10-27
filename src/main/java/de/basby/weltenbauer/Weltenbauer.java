@@ -31,6 +31,8 @@ public class Weltenbauer {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
     public static final RegistryObject<Item> STAB = ITEMS.register("terraforming_stab",
             () -> new TerraformingStab(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BAUWERK_STAB = ITEMS.register("bauwerk_stab",
+            () -> new de.basby.weltenbauer.vorlagen.BauwerkStab(new Item.Properties().stacksTo(1)));
 
     public Weltenbauer() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -45,6 +47,7 @@ public class Weltenbauer {
     private static void kreativTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(STAB);
+            event.accept(BAUWERK_STAB);
         }
     }
 

@@ -35,6 +35,11 @@ Befehl nur im Bereich, den du mit dem Terraforming-Stab markiert hast.
 
 ## Vorlagen (ab Version 0.2)
 
+**Vorlagen-Menü:** Taste **B** (änderbar unter Steuerung → Weltenbauer) oder `/wbmenue`. Reiter je Kategorie,
+Karten mit Vorschaubild, Suchfeld. Klick = auf den **Bauwerk-Stab** legen, Shift-Klick = sofort setzen,
+Strg-Klick = Umriss zeigen. Mit dem Bauwerk-Stab in der Hand siehst du live einen Umriss; Rechtsklick setzt,
+Schleichen + Rechtsklick dreht (0°/90°/180°/270°/zufällig).
+
 Über 200 eingebaute Vorlagen, alle mit Rückgängig-Funktion:
 
 | Kategorie | Inhalt |

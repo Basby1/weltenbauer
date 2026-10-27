@@ -92,10 +92,19 @@ public final class Vorlagen {
     }
 
     /** Eigene Vorlagen: weltenbauer/vorlagen/*.nbt und schematics/*.nbt im Spielordner. */
-    public static List<Eintrag> eigene() {
+    private static List<Eintrag> eigeneCache;
+    private static long eigeneZeit;
+
+    public static synchronized List<Eintrag> eigene() {
+        long jetzt = System.currentTimeMillis();
+        if (eigeneCache != null && jetzt - eigeneZeit < 5000) {
+            return eigeneCache;
+        }
         List<Eintrag> liste = new ArrayList<>();
         sammeln(eigenerOrdner(), "eigene", "Eigene Vorlagen", liste);
         sammeln(createOrdner(), "create", "Create-Schematics", liste);
+        eigeneCache = liste;
+        eigeneZeit = jetzt;
         return liste;
     }
 
@@ -156,6 +165,38 @@ public final class Vorlagen {
             }
         }
         return gruppe.isEmpty() ? null : gruppe.get(ZUFALL.nextInt(gruppe.size()));
+    }
+
+    /** Wie finden(), aber bei Gruppen immer die erste Variante (für die Vorschau). */
+    public static Eintrag erster(String name) {
+        Eintrag zufall = null;
+        for (Eintrag e : alle()) {
+            if (e.id().equals(name)) {
+                return e;
+            }
+            if (zufall == null && e.gruppe().equals(name)) {
+                zufall = e;
+            }
+        }
+        return zufall;
+    }
+
+    private static final Map<String, BlockPos[]> MASSE = new java.util.HashMap<>();
+
+    /** Größe und Anker einer Vorlage (eingebaute aus der Liste, eigene einmal aus der Datei gelesen). */
+    public static BlockPos[] masse(Eintrag e) {
+        if (e.eingebaut()) {
+            return new BlockPos[]{new BlockPos(e.masse()[0], e.masse()[1], e.masse()[2]),
+                    new BlockPos(e.anker()[0], e.anker()[1], e.anker()[2])};
+        }
+        return MASSE.computeIfAbsent(e.quelle(), q -> {
+            try {
+                Vorlage v = laden(e, false);
+                return new BlockPos[]{v.groesse(), v.anker()};
+            } catch (IOException | RuntimeException fehler) {
+                return null;
+            }
+        });
     }
 
     /** Alle IDs und Gruppennamen (für die Tab-Vervollständigung). */

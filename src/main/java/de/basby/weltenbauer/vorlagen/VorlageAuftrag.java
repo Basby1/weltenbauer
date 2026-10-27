@@ -47,6 +47,24 @@ public class VorlageAuftrag extends Auftrag {
         return ziel.offset(p);
     }
 
+    /** Umgebender Kasten (min, max) der gedrehten Vorlage in der Welt. */
+    public static BlockPos[] kasten(BlockPos groesse, BlockPos anker, BlockPos ziel, Mirror spiegel, Rotation drehung) {
+        int minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE, minZ = Integer.MAX_VALUE;
+        int maxX = Integer.MIN_VALUE, maxY = Integer.MIN_VALUE, maxZ = Integer.MIN_VALUE;
+        for (int i = 0; i < 8; i++) {
+            BlockPos ecke = new BlockPos((i & 1) == 0 ? 0 : groesse.getX() - 1, (i & 2) == 0 ? 0 : groesse.getY() - 1,
+                    (i & 4) == 0 ? 0 : groesse.getZ() - 1);
+            BlockPos w = weltPosition(ecke, anker, ziel, spiegel, drehung);
+            minX = Math.min(minX, w.getX());
+            minY = Math.min(minY, w.getY());
+            minZ = Math.min(minZ, w.getZ());
+            maxX = Math.max(maxX, w.getX());
+            maxY = Math.max(maxY, w.getY());
+            maxZ = Math.max(maxZ, w.getZ());
+        }
+        return new BlockPos[]{new BlockPos(minX, minY, minZ), new BlockPos(maxX, maxY, maxZ)};
+    }
+
     public static VorlageAuftrag erstellen(ServerLevel level, UUID besitzer, Vorlagen.Vorlage v, BlockPos ziel,
                                            Rotation drehung, Mirror spiegel) {
         int n = v.positionen().size();

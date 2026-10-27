@@ -65,7 +65,10 @@ public final class VorlagenBefehle {
                 .then(Commands.literal("create")
                         .then(Commands.argument("name", StringArgumentType.word()).suggests(NAMEN)
                                 .executes(VorlagenBefehle::fuerCreate)))
-                .then(Commands.literal("ordner").executes(VorlagenBefehle::ordner));
+                .then(Commands.literal("ordner").executes(VorlagenBefehle::ordner))
+                .then(Commands.literal("waehlen")
+                        .then(Commands.argument("name", StringArgumentType.word()).suggests(NAMEN)
+                                .executes(VorlagenBefehle::waehlen)));
     }
 
     private static ArgumentBuilder<CommandSourceStack, ?> mitDrehung(ArgumentBuilder<CommandSourceStack, ?> knoten,
@@ -131,12 +134,12 @@ public final class VorlagenBefehle {
             t.append(Component.literal("\n" + g.getKey() + ": ").withStyle(ChatFormatting.YELLOW));
             for (Map.Entry<String, Vorlagen.Eintrag> groesse : g.getValue().entrySet()) {
                 Vorlagen.Eintrag e = groesse.getValue();
-                String hover = e.beschreibung() + "\nKlick: Befehl in den Chat legen (Enter = setzen)"
+                String hover = e.beschreibung() + "\nKlick: auf den Bauwerk-Stab legen\n(Rechtsklick mit dem Stab = setzen)"
                         + (e.hinweis() != null ? "\nTipp: " + e.hinweis() : "");
                 t.append(Component.literal("[" + groesse.getKey() + "]").withStyle(s -> s
                         .withColor(ChatFormatting.AQUA)
-                        .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND,
-                                "/wb vorlage setzen " + e.gruppe() + " "))
+                        .withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND,
+                                "/wb vorlage waehlen " + e.gruppe()))
                         .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.literal(hover)))));
                 t.append(Component.literal(" "));
             }
@@ -150,7 +153,7 @@ public final class VorlagenBefehle {
 
     // ------------------------------------------------------------------ Setzen & Zeigen
 
-    private static BlockPos ziel(ServerPlayer spieler) {
+    public static BlockPos ziel(ServerPlayer spieler) {
         HitResult treffer = spieler.pick(160.0, 1.0f, true);
         if (treffer instanceof BlockHitResult b && treffer.getType() == HitResult.Type.BLOCK) {
             return b.getBlockPos();
@@ -208,27 +211,26 @@ public final class VorlagenBefehle {
             return 0;
         }
         BlockPos ziel = ziel(spieler);
-        BlockPos g = v.groesse();
-        int minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE, minZ = Integer.MAX_VALUE;
-        int maxX = Integer.MIN_VALUE, maxY = Integer.MIN_VALUE, maxZ = Integer.MIN_VALUE;
-        for (int i = 0; i < 8; i++) {
-            BlockPos ecke = new BlockPos((i & 1) == 0 ? 0 : g.getX() - 1, (i & 2) == 0 ? 0 : g.getY() - 1,
-                    (i & 4) == 0 ? 0 : g.getZ() - 1);
-            BlockPos w = VorlageAuftrag.weltPosition(ecke, v.anker(), ziel, spiegel, drehung);
-            minX = Math.min(minX, w.getX());
-            minY = Math.min(minY, w.getY());
-            minZ = Math.min(minZ, w.getZ());
-            maxX = Math.max(maxX, w.getX());
-            maxY = Math.max(maxY, w.getY());
-            maxZ = Math.max(maxZ, w.getZ());
-        }
-        Umriss.zeigen(spieler, new BlockPos(minX, minY, minZ), new BlockPos(maxX, maxY, maxZ), ziel, 15);
+        BlockPos[] k = VorlageAuftrag.kasten(v.groesse(), v.anker(), ziel, spiegel, drehung);
+        Umriss.zeigen(spieler, k[0], k[1], ziel, 15);
         String name = StringArgumentType.getString(c, "name");
         MutableComponent t = Component.literal(v.eintrag().beschreibung() + " – Umriss für 15 Sekunden. ")
                 .withStyle(ChatFormatting.GOLD)
                 .append(Auftragsverwaltung.knopf("[Hier setzen]", "/wb vorlage setzen " + name,
                         "Jetzt an diese Stelle setzen (rückgängig machbar)", ChatFormatting.GREEN));
         c.getSource().sendSuccess(() -> t, false);
+        return 1;
+    }
+
+    private static int waehlen(CommandContext<CommandSourceStack> c) throws CommandSyntaxException {
+        ServerPlayer spieler = c.getSource().getPlayerOrException();
+        String name = StringArgumentType.getString(c, "name");
+        Vorlagen.Eintrag e = Vorlagen.erster(name);
+        if (e == null) {
+            c.getSource().sendFailure(Component.literal("Unbekannte Vorlage „" + name + "“."));
+            return 0;
+        }
+        BauwerkStab.waehlen(spieler, name, e);
         return 1;
     }
 

@@ -30,6 +30,7 @@ from schwebend import SCHWEBEND  # noqa: E402
 from riesenbogen import FANTASIEHAEUSER, RIESENBOGEN  # noqa: E402
 
 PROJEKT = HIER.parent.parent
+VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
 ZIEL = PROJEKT / "src/main/resources/data/weltenbauer"
 BILDER = HIER / "bilder"
 KRATER = Path("/home/claude/ruinenkrater/ausgabe")
@@ -56,11 +57,26 @@ KRATER_DATEIEN = [
 ]
 
 
+def menue_bild(welt, name, meer=False):
+    """128x128-Vorschau mit transparentem Hintergrund für das Menü im Spiel."""
+    from PIL import Image
+    from vorschau import HG, bild
+    img = bild(welt, 360, boden=1, meer=meer).convert("RGBA")
+    daten = img.getdata()
+    img.putdata([(r, g, b, 0) if (r, g, b) == HG else (r, g, b, a) for r, g, b, a in daten])
+    img.thumbnail((124, 124), Image.LANCZOS)
+    karte = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+    karte.paste(img, ((128 - img.width) // 2, (128 - img.height) // 2), img)
+    VORSCHAU.mkdir(parents=True, exist_ok=True)
+    karte.save(VORSCHAU / f"{name}.png", optimize=True)
+
+
 def main():
     bilder = "--ohne-bilder" not in sys.argv
     struktur = ZIEL / "structures"
-    if struktur.exists():
-        shutil.rmtree(struktur)
+    for alt in (struktur, VORSCHAU):
+        if alt.exists():
+            shutil.rmtree(alt)
     eintraege = []
     vorschau = {}  # Kategorie -> [(Beschriftung, Welt)]
     t0 = time.time()
@@ -83,6 +99,7 @@ def main():
                         "anker": info["anker"], "masse": info["groesse"], "bloecke": info["bloecke"],
                     })
                     if v == 1:
+                        menue_bild(welt, gruppe, meer=kat in MEER)
                         vorschau.setdefault((kat, kat_name, anzeige), []).append((titel, welt, info["groesse"]))
                     if kat in MEER:
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
@@ -101,6 +118,7 @@ def main():
             "anker": list(anker), "masse": list(w.groesse), "bloecke": len(w.bloecke),
         })
         vorschau.setdefault(("krater", "Ruinenkrater", "alle"), []).append((f"Ruinenkrater {kuerzel}", w, w.groesse))
+        menue_bild(w, name)
 
     ZIEL.mkdir(parents=True, exist_ok=True)
     (ZIEL / "vorlagen.json").write_text(json.dumps({"version": 1, "vorlagen": eintraege}, ensure_ascii=False, indent=1),

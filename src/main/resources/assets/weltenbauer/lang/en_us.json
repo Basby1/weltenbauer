@@ -1,3 +1,6 @@
 {
-  "item.weltenbauer.terraforming_stab": "Terraforming Wand"
+  "item.weltenbauer.terraforming_stab": "Terraforming Wand",
+  "item.weltenbauer.bauwerk_stab": "Structure Wand",
+  "key.weltenbauer.menue": "Open template menu",
+  "key.categories.weltenbauer": "Weltenbauer"
 }

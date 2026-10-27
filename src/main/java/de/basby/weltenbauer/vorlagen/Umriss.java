@@ -32,12 +32,17 @@ public final class Umriss {
 
     public static void tick() {
         MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
-        if (server == null || AKTIV.isEmpty()) {
+        if (server == null) {
             return;
         }
         int jetzt = server.getTickCount();
         if (jetzt % 5 != 0) {
             return;
+        }
+        for (ServerPlayer sp : server.getPlayerList().getPlayers()) {
+            if (!AKTIV.containsKey(sp.getUUID())) {
+                BauwerkStab.vorschau(sp);
+            }
         }
         Iterator<Map.Entry<UUID, Kasten>> it = AKTIV.entrySet().iterator();
         while (it.hasNext()) {
@@ -50,6 +55,11 @@ public final class Umriss {
             }
             zeichnen(sp, k);
         }
+    }
+
+    /** Zeichnet einen Umriss einmalig (für die Live-Vorschau des Bauwerk-Stabs). */
+    public static void einmal(ServerPlayer sp, BlockPos min, BlockPos max, BlockPos anker) {
+        zeichnen(sp, new Kasten(sp.serverLevel(), min, max, anker, 0));
     }
 
     private static void zeichnen(ServerPlayer sp, Kasten k) {
