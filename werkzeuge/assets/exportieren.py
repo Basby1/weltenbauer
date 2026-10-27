@@ -39,6 +39,7 @@ from sagenlande import SAGENLANDE  # noqa: E402
 from boote import BOOTE  # noqa: E402
 from piraten import MAHLSTROM, PIRATEN  # noqa: E402
 from kreaturen import KREATUREN  # noqa: E402
+from antike import ANTIKE  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -68,13 +69,14 @@ GRUPPEN = [
     ("piraten", "Piraten", PIRATEN, G4, [7, 21]),
     ("piraten", "Piraten", MAHLSTROM, [(3, "gigantisch", "gigantisch")], [7]),
     ("kreaturen", "Kreaturen", KREATUREN, G4, [7, 21]),
+    ("antike", "Antike Monumente", ANTIKE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
@@ -140,7 +142,8 @@ def pakete_bauen(paket_listen):
 
 def main():
     bilder = "--ohne-bilder" not in sys.argv
-    nur_pakete = "--nur-pakete" in sys.argv
+    nur_pakete = "--nur-pakete" in sys.argv or "--paket" in sys.argv
+    nur_ids = set(sys.argv[sys.argv.index("--paket") + 1].split(",")) if "--paket" in sys.argv else None
     struktur = ZIEL / "structures"
     for alt in ((PAKET_TMP,) if nur_pakete else (struktur, VORSCHAU, PAKET_TMP)):
         if alt.exists():
@@ -153,6 +156,8 @@ def main():
     for kat, kat_name, tabelle, groessen, seeds in GRUPPEN:
         pk = PAKET_KAT.get(kat)
         if nur_pakete and not pk:
+            continue
+        if nur_ids is not None and pk[0] not in nur_ids:
             continue
         for art, (titel, funktion) in tabelle.items():
             for g, kuerzel, anzeige in groessen:

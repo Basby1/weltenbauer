@@ -1,6 +1,12 @@
 {
  "pakete": [
   {
+   "datei": "antike.zip",
+   "name": "Antike Monumente",
+   "version": "d181cd2d4bef",
+   "groesse": 3150173
+  },
+  {
    "datei": "boote.zip",
    "name": "Boote & Schiffe",
    "version": "35d3000c3890",
