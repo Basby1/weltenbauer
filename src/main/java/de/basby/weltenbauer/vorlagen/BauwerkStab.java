@@ -58,44 +58,9 @@ public class BauwerkStab extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player spieler, InteractionHand hand) {
-        ItemStack stack = spieler.getItemInHand(hand);
-        if (level.isClientSide || !(spieler instanceof ServerPlayer sp)) {
-            return InteractionResultHolder.success(stack);
-        }
-        if (sp.isShiftKeyDown()) {
-            int d = (drehung(stack) + 1) % 5;
-            stack.getOrCreateTag().putInt(DREHUNG, d);
-            sp.displayClientMessage(Component.literal("Drehung: " + DREH_TEXT[d]).withStyle(ChatFormatting.GOLD), true);
-            return InteractionResultHolder.consume(stack);
-        }
-        String name = vorlage(stack);
-        if (name == null) {
-            sp.displayClientMessage(Component.literal("Noch keine Vorlage gewählt – Menü mit Taste B öffnen.")
-                    .withStyle(ChatFormatting.YELLOW), true);
-            return InteractionResultHolder.consume(stack);
-        }
-        if (Auftragsverwaltung.laeuft()) {
-            sp.displayClientMessage(Component.literal("Es wird noch gebaut: " + Auftragsverwaltung.aktuell().titel())
-                    .withStyle(ChatFormatting.YELLOW), true);
-            return InteractionResultHolder.consume(stack);
-        }
-        Vorlagen.Eintrag e = Vorlagen.finden(name);
-        if (e == null) {
-            sp.displayClientMessage(Component.literal("Vorlage „" + name + "“ gibt es nicht mehr.")
-                    .withStyle(ChatFormatting.RED), true);
-            return InteractionResultHolder.consume(stack);
-        }
-        try {
-            Vorlagen.Vorlage v = Vorlagen.laden(e, false);
-            BlockPos ziel = VorlagenBefehle.ziel(sp);
-            Auftragsverwaltung.starte(VorlageAuftrag.erstellen(sp.serverLevel(), sp.getUUID(), v, ziel,
-                    rotation(drehung(stack)), Mirror.NONE));
-        } catch (IOException | RuntimeException fehler) {
-            sp.displayClientMessage(Component.literal("Vorlage konnte nicht gelesen werden: " + fehler.getMessage())
-                    .withStyle(ChatFormatting.RED), false);
-        }
-        sp.getCooldowns().addCooldown(this, 10);
-        return InteractionResultHolder.consume(stack);
+        // Absetzen, Ausrichten und Bestätigen passieren auf dem Client (Geisterbild + Werkzeugleiste);
+        // gebaut wird über /wb vorlage drucken.
+        return InteractionResultHolder.consume(spieler.getItemInHand(hand));
     }
 
     /** Legt eine Vorlage auf den Stab in der Hand – oder gibt einen neuen Stab. */
@@ -116,7 +81,7 @@ public class BauwerkStab extends Item {
             stack.getOrCreateTag().putString(VORLAGE, name);
         }
         sp.displayClientMessage(Component.literal("Bauwerk-Stab: " + e.titel() + " (" + e.groesse() + ") – "
-                + "Rechtsklick setzt, Schleichen + Rechtsklick dreht.").withStyle(ChatFormatting.GOLD), true);
+                + "Rechtsklick: absetzen und ausrichten.").withStyle(ChatFormatting.GOLD), true);
     }
 
     /** Live-Umriss, solange der Spieler den Stab mit einer Vorlage in der Hand hält. */
@@ -146,11 +111,10 @@ public class BauwerkStab extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> zeilen, TooltipFlag flag) {
         String name = vorlage(stack);
-        zeilen.add(Component.literal("Vorlage: " + (name == null ? "– (Taste B)" : name)).withStyle(ChatFormatting.AQUA));
-        zeilen.add(Component.literal("Drehung: " + DREH_TEXT[drehung(stack)]).withStyle(ChatFormatting.GRAY));
-        zeilen.add(Component.literal("Rechtsklick: setzen (rückgängig: /wb rueckgaengig)").withStyle(ChatFormatting.GRAY));
-        zeilen.add(Component.literal("Schleichen + Rechtsklick: drehen").withStyle(ChatFormatting.GRAY));
-        zeilen.add(Component.literal("Taste B: Vorlagen-Menü").withStyle(ChatFormatting.DARK_AQUA));
+        zeilen.add(Component.literal("Vorlage: " + (name == null ? "– (Rechtsklick öffnet das Menü)" : name))
+                .withStyle(ChatFormatting.AQUA));
+        zeilen.add(Component.literal("Rechtsklick: absetzen, nochmal: bauen / Blaupause").withStyle(ChatFormatting.GRAY));
+        zeilen.add(Component.literal("Strg+Mausrad: Werkzeug · Mausrad: verstellen").withStyle(ChatFormatting.GRAY));
     }
 
     @Override

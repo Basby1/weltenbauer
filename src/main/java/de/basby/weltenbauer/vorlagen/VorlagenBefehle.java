@@ -1,5 +1,6 @@
 package de.basby.weltenbauer.vorlagen;
 
+import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
@@ -66,6 +67,14 @@ public final class VorlagenBefehle {
                         .then(Commands.argument("name", StringArgumentType.word()).suggests(NAMEN)
                                 .executes(VorlagenBefehle::fuerCreate)))
                 .then(Commands.literal("ordner").executes(VorlagenBefehle::ordner))
+                .then(Commands.literal("drucken")
+                        .then(Commands.argument("name", StringArgumentType.word()).suggests(NAMEN)
+                                .then(Commands.argument("x", IntegerArgumentType.integer())
+                                        .then(Commands.argument("y", IntegerArgumentType.integer())
+                                                .then(Commands.argument("z", IntegerArgumentType.integer())
+                                                        .then(Commands.argument("drehung", IntegerArgumentType.integer(0, 3))
+                                                                .then(Commands.argument("spiegel", IntegerArgumentType.integer(0, 2))
+                                                                        .executes(VorlagenBefehle::drucken))))))))
                 .then(Commands.literal("waehlen")
                         .then(Commands.argument("name", StringArgumentType.word()).suggests(NAMEN)
                                 .executes(VorlagenBefehle::waehlen)));
@@ -219,6 +228,27 @@ public final class VorlagenBefehle {
                 .append(Auftragsverwaltung.knopf("[Hier setzen]", "/wb vorlage setzen " + name,
                         "Jetzt an diese Stelle setzen (rückgängig machbar)", ChatFormatting.GREEN));
         c.getSource().sendSuccess(() -> t, false);
+        return 1;
+    }
+
+    /** Exakt platzieren (vom Bauwerk-Stab nach dem Ausrichten gesendet). */
+    private static int drucken(CommandContext<CommandSourceStack> c) throws CommandSyntaxException {
+        CommandSourceStack quelle = c.getSource();
+        if (Auftragsverwaltung.laeuft()) {
+            quelle.sendFailure(Component.literal("Es wird noch gebaut: " + Auftragsverwaltung.aktuell().titel()));
+            return 0;
+        }
+        ServerPlayer spieler = quelle.getPlayerOrException();
+        Vorlagen.Vorlage v = laden(c);
+        if (v == null) {
+            return 0;
+        }
+        BlockPos ziel = new BlockPos(IntegerArgumentType.getInteger(c, "x"), IntegerArgumentType.getInteger(c, "y"),
+                IntegerArgumentType.getInteger(c, "z"));
+        Rotation drehung = Rotation.values()[IntegerArgumentType.getInteger(c, "drehung")];
+        Mirror spiegel = Mirror.values()[IntegerArgumentType.getInteger(c, "spiegel")];
+        Auftragsverwaltung.starte(VorlageAuftrag.erstellen(spieler.serverLevel(), spieler.getUUID(), v, ziel, drehung,
+                spiegel));
         return 1;
     }
 

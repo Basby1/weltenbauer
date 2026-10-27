@@ -44,13 +44,51 @@ public class VorlagenMenue extends Screen {
     private record Reiter(String id, String name, int x, int y, int b) {
     }
 
+    /** Ein Eintrag im Reiter „Befehle“: Überschrift (befehl == null) oder Befehl mit Erklärung. */
+    private record Befehl(String befehl, String erklaerung, String vorbelegung) {
+    }
+
+    private static final String BEFEHLE = "befehle";
+    private static final int ZEILE = 13;
+    private static final List<Befehl> BEFEHLSLISTE = List.of(
+            new Befehl(null, "Aufräumen", null),
+            new Befehl("/wb schnee entfernen <Radius>", "Schneeschichten entfernen (+ „alles“: auch Schneeblöcke)",
+                    "/wb schnee entfernen 50"),
+            new Befehl("/wb eis auftauen <Radius>", "zugefrorenes Wasser wird wieder Wasser", "/wb eis auftauen 50"),
+            new Befehl("/wb laub aufraeumen <Radius>", "schwebende Blätter ohne Stamm entfernen", "/wb laub aufraeumen 50"),
+            new Befehl("/wb entfernen <Block> <Radius>", "eine Blocksorte entfernen", "/wb entfernen "),
+            new Befehl("/wb ersetzen <Block> <Block> <Radius>", "eine Blocksorte austauschen", "/wb ersetzen "),
+            new Befehl(null, "Bereich statt Radius", null),
+            new Befehl("/wb stab", "Terraforming-Stab holen (Rechtsklick Ecke 1, Schleichen Ecke 2)", "/wb stab"),
+            new Befehl("… auswahl", "statt <Radius> überall „auswahl“ schreiben, z. B. /wb schnee entfernen auswahl",
+                    "/wb schnee entfernen auswahl"),
+            new Befehl("/wb auswahl [leeren]", "markierten Bereich anzeigen / löschen", "/wb auswahl"),
+            new Befehl(null, "Rückgängig & Steuerung", null),
+            new Befehl("/wb rueckgaengig", "letzte Änderung zurücknehmen (bis zu 10 Schritte)", "/wb rueckgaengig"),
+            new Befehl("/wb wiederholen", "zurückgenommene Änderung erneut ausführen", "/wb wiederholen"),
+            new Befehl("/wb abbrechen", "laufende Aktion stoppen", "/wb abbrechen"),
+            new Befehl("/wb status", "zeigt, was gerade läuft", "/wb status"),
+            new Befehl(null, "Vorlagen", null),
+            new Befehl("/wb vorlage setzen <Name> [Drehung] [spiegeln]", "Vorlage dorthin bauen, wohin du schaust",
+                    "/wb vorlage setzen "),
+            new Befehl("/wb vorlage create <Name>", "als Schematic für Create / Litematica speichern",
+                    "/wb vorlage create "),
+            new Befehl("/wb vorlage ordner", "Ordner für eigene .nbt-Vorlagen anzeigen", "/wb vorlage ordner"),
+            new Befehl(null, "Blaupausen", null),
+            new Befehl("/wbblaupause drucken", "nächste Blaupause fertig bauen lassen", "/wbblaupause drucken"),
+            new Befehl("/wbblaupause schicht <Nr>", "nur eine Schicht anzeigen (0 = alle) – oder Strg+Mausrad",
+                    "/wbblaupause schicht "),
+            new Befehl("/wbblaupause entfernen", "nächste Blaupause entfernen", "/wbblaupause entfernen"),
+            new Befehl("/wbblaupause alle_entfernen", "alle Blaupausen dieser Welt entfernen",
+                    "/wbblaupause alle_entfernen"));
+
     private final Map<String, String> kategorien = new LinkedHashMap<>();
     private final List<Reiter> reiter = new ArrayList<>();
     private final List<Karte> karten = new ArrayList<>();
     private String aktiv;
     private EditBox suche;
     private double scroll;
-    private int px0, py0, px1, py1, gx0, gy0, gx1, gy1, spalten;
+    private int px0, py0, px1, py1, gx0, gy0, gx1, gy1, spalten, modusX;
 
     public VorlagenMenue() {
         super(Component.literal("Weltenbauer – Vorlagen"));
@@ -60,6 +98,7 @@ public class VorlagenMenue extends Screen {
     protected void init() {
         kategorien.clear();
         kategorien.putAll(Vorlagen.kategorien());
+        kategorien.put(BEFEHLE, "Befehle");
         if (aktiv == null) {
             aktiv = letzteKategorie != null && kategorien.containsKey(letzteKategorie) ? letzteKategorie
                     : kategorien.keySet().stream().findFirst().orElse("");
@@ -70,6 +109,7 @@ public class VorlagenMenue extends Screen {
         py1 = height - 8;
         String alterText = suche != null ? suche.getValue() : "";
         suche = new EditBox(font, px1 - 150, py0 + 4, 142, 14, Component.literal("Suche"));
+        modusX = px1 - 150 - 8 - font.width("Drucken") - font.width("Blaupause") - 30;
         suche.setHint(Component.literal("Suchen …"));
         suche.setValue(alterText);
         suche.setResponder(t -> {
@@ -123,7 +163,14 @@ public class VorlagenMenue extends Screen {
         return BILD_DA.computeIfAbsent(rl, r -> Minecraft.getInstance().getResourceManager().getResource(r).isPresent());
     }
 
+    private boolean befehlsReiter() {
+        return BEFEHLE.equals(aktiv) && suche.getValue().isBlank();
+    }
+
     private int maxScroll() {
+        if (befehlsReiter()) {
+            return Math.max(0, BEFEHLSLISTE.size() * ZEILE + 10 - (gy1 - gy0));
+        }
         int zeilen = (karten.size() + spalten - 1) / spalten;
         return Math.max(0, zeilen * (KARTE_H + LUECKE) - (gy1 - gy0));
     }
@@ -138,6 +185,16 @@ public class VorlagenMenue extends Screen {
         g.drawString(font, "Weltenbauer", px0 + 8, py0 + 7, GOLD, true);
         g.drawString(font, "· Vorlagen", px0 + 8 + font.width("Weltenbauer "), py0 + 7, TEXT, false);
 
+        // Modus: Drucken | Blaupause
+        int bx0 = modusX, bw1 = font.width("Drucken") + 12, bw2 = font.width("Blaupause") + 12;
+        boolean drucken = Platzierung.modus == Platzierung.Modus.DRUCKEN;
+        g.drawString(font, "Modus:", bx0 - font.width("Modus: ") - 2, py0 + 7, GRAU, false);
+        g.fill(bx0, py0 + 4, bx0 + bw1, py0 + 18, drucken ? 0xFF2E6B3A : REITER);
+        g.drawString(font, "Drucken", bx0 + 6, py0 + 7, drucken ? 0xFFFFFFFF : GRAU, false);
+        g.fill(bx0 + bw1 + 2, py0 + 4, bx0 + bw1 + 2 + bw2, py0 + 18, !drucken ? 0xFF2C5A8A : REITER);
+        g.drawString(font, "Blaupause", bx0 + bw1 + 8, py0 + 7, !drucken ? 0xFFFFFFFF : GRAU, false);
+        boolean ueberModus = my >= py0 + 4 && my < py0 + 18 && mx >= bx0 && mx < bx0 + bw1 + 2 + bw2;
+
         boolean suchModus = !suche.getValue().isBlank();
         for (Reiter r : reiter) {
             boolean an = !suchModus && r.id().equals(aktiv);
@@ -149,11 +206,31 @@ public class VorlagenMenue extends Screen {
             g.drawString(font, r.name(), r.x() + 7, r.y() + 4, an ? GOLD : TEXT, false);
         }
 
-        // Karten
         scroll = Mth.clamp(scroll, 0, maxScroll());
-        g.enableScissor(gx0, gy0, gx1, gy1);
         Karte unterMaus = null;
-        for (int i = 0; i < karten.size(); i++) {
+        if (befehlsReiter()) {
+            g.enableScissor(gx0, gy0, gx1, gy1);
+            int y = gy0 + 4 - (int) scroll;
+            for (Befehl b : BEFEHLSLISTE) {
+                if (b.befehl() == null) {
+                    g.drawString(font, b.erklaerung(), gx0 + 4, y + 2, GOLD, false);
+                    g.fill(gx0 + 4, y + 11, gx1 - 8, y + 12, RAHMEN);
+                } else {
+                    boolean hover = my >= y && my < y + ZEILE && mx >= gx0 && mx < gx1 && my >= gy0 && my < gy1;
+                    if (hover) {
+                        g.fill(gx0 + 2, y, gx1 - 6, y + ZEILE, KARTE_HOVER);
+                    }
+                    g.drawString(font, b.befehl(), gx0 + 10, y + 3, hover ? GOLD : TEXT, false);
+                    g.drawString(font, b.erklaerung(), gx0 + 10 + Math.max(200, font.width(b.befehl()) + 12), y + 3,
+                            GRAU, false);
+                }
+                y += ZEILE;
+            }
+            g.disableScissor();
+        }
+        // Karten
+        g.enableScissor(gx0, gy0, gx1, gy1);
+        for (int i = 0; i < (befehlsReiter() ? 0 : karten.size()); i++) {
             int x = gx0 + (i % spalten) * (KARTE_B + LUECKE);
             int y = gy0 + (i / spalten) * (KARTE_H + LUECKE) - (int) scroll;
             if (y + KARTE_H < gy0 || y > gy1) {
@@ -191,16 +268,21 @@ public class VorlagenMenue extends Screen {
             g.fill(px1 - 7, gy, px1 - 4, gy + griff, GOLD);
         }
 
-        if (karten.isEmpty()) {
+        if (karten.isEmpty() && !befehlsReiter()) {
             g.drawCenteredString(font, suchModus ? "Nichts gefunden." : "Keine Vorlagen in dieser Kategorie.",
                     (gx0 + gx1) / 2, gy0 + 30, GRAU);
         }
-        g.drawString(font, "Klick: auf den Bauwerk-Stab   Shift-Klick: sofort setzen   Strg-Klick: Umriss zeigen",
+        g.drawString(font, befehlsReiter() ? "Klick: Befehl in den Chat übernehmen"
+                        : "Klick: auf den Bauwerk-Stab legen   ·   Shift-Klick: sofort dorthin bauen, wohin du schaust",
                 px0 + 8, py1 - 13, GRAU, false);
 
         super.render(g, mx, my, partial);
 
-        if (unterMaus != null) {
+        if (ueberModus) {
+            g.renderComponentTooltip(font, List.of(
+                    Component.literal("Drucken: Vorlage wird beim Bestätigen gebaut"),
+                    Component.literal("Blaupause: Geisterbild bleibt stehen zum Nachbauen")), mx, my);
+        } else if (unterMaus != null) {
             Vorlagen.Eintrag e = unterMaus.eintrag();
             List<Component> zeilen = new ArrayList<>();
             zeilen.add(Component.literal(e.titel()).withStyle(s -> s.withColor(GOLD & 0xFFFFFF)));
@@ -225,6 +307,17 @@ public class VorlagenMenue extends Screen {
         if (super.mouseClicked(mx, my, taste)) {
             return true;
         }
+        int bw1 = font.width("Drucken") + 12, bw2 = font.width("Blaupause") + 12;
+        if (my >= py0 + 4 && my < py0 + 18) {
+            if (mx >= modusX && mx < modusX + bw1) {
+                Platzierung.modus = Platzierung.Modus.DRUCKEN;
+                return true;
+            }
+            if (mx >= modusX + bw1 + 2 && mx < modusX + bw1 + 2 + bw2) {
+                Platzierung.modus = Platzierung.Modus.BLAUPAUSE;
+                return true;
+            }
+        }
         for (Reiter r : reiter) {
             if (mx >= r.x() && mx < r.x() + r.b() && my >= r.y() && my < r.y() + 15) {
                 aktiv = r.id();
@@ -238,6 +331,17 @@ public class VorlagenMenue extends Screen {
         if (my < gy0 || my >= gy1) {
             return false;
         }
+        if (befehlsReiter()) {
+            int y = gy0 + 4 - (int) scroll;
+            for (Befehl b : BEFEHLSLISTE) {
+                if (b.befehl() != null && my >= y && my < y + ZEILE) {
+                    Minecraft.getInstance().setScreen(new net.minecraft.client.gui.screens.ChatScreen(b.vorbelegung()));
+                    return true;
+                }
+                y += ZEILE;
+            }
+            return false;
+        }
         for (int i = 0; i < karten.size(); i++) {
             int x = gx0 + (i % spalten) * (KARTE_B + LUECKE);
             int y = gy0 + (i / spalten) * (KARTE_H + LUECKE) - (int) scroll;
@@ -246,8 +350,6 @@ public class VorlagenMenue extends Screen {
                 String befehl;
                 if (hasShiftDown()) {
                     befehl = "wb vorlage setzen " + gruppe;
-                } else if (hasControlDown()) {
-                    befehl = "wb vorlage zeigen " + gruppe;
                 } else {
                     befehl = "wb vorlage waehlen " + gruppe;
                 }

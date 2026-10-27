@@ -26,7 +26,19 @@ jobs:
           gradle-version: '8.8'
 
       - name: Mod bauen
-        run: gradle build --stacktrace
+        shell: bash
+        run: |
+          set -o pipefail
+          gradle build --stacktrace 2>&1 | tee build.log
+
+      - name: Build-Log veröffentlichen (nur bei Fehler)
+        if: failure()
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-log
+          name: Build-Log (letzter Fehler)
+          prerelease: true
+          files: build.log
 
       - name: Fertige Mod-Datei bereitstellen
         uses: actions/upload-artifact@v4

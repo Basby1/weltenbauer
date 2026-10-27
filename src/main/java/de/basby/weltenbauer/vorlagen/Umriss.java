@@ -39,11 +39,6 @@ public final class Umriss {
         if (jetzt % 5 != 0) {
             return;
         }
-        for (ServerPlayer sp : server.getPlayerList().getPlayers()) {
-            if (!AKTIV.containsKey(sp.getUUID())) {
-                BauwerkStab.vorschau(sp);
-            }
-        }
         Iterator<Map.Entry<UUID, Kasten>> it = AKTIV.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<UUID, Kasten> e = it.next();
