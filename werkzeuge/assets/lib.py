@@ -580,3 +580,5 @@ FARBEN.update({
     "chest": (164, 116, 46), "iron_trapdoor": (200, 200, 200), "pink_terracotta": (161, 78, 78),
     "warped_wart_block": (22, 119, 121), "gravel": (131, 127, 126), "honeycomb_block": (229, 148, 29),
 })
+
+FARBEN.update({"snow": (249, 254, 254), "redstone_block": (175, 24, 5), "stripped_bamboo_block": (190, 170, 80)})
