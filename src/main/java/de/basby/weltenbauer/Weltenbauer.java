@@ -2,6 +2,7 @@ package de.basby.weltenbauer;
 
 import de.basby.weltenbauer.arbeit.Auftragsverwaltung;
 import de.basby.weltenbauer.befehle.WbBefehle;
+import de.basby.weltenbauer.vorlagen.Umriss;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +22,7 @@ import net.minecraftforge.registries.RegistryObject;
  *
  * Version 0.1: Aufräum-Befehle (/wb …) mit Rückgängig-Funktion und der Terraforming-Stab
  * zum Markieren von Bereichen.
+ * Version 0.2: Vorlagen-Katalog (/wb vorlage) mit über 170 eingebauten Vorlagen.
  */
 @Mod(Weltenbauer.MOD_ID)
 public class Weltenbauer {
@@ -53,6 +55,7 @@ public class Weltenbauer {
     private static void serverTick(TickEvent.ServerTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
             Auftragsverwaltung.tick();
+            Umriss.tick();
         }
     }
 

@@ -1,0 +1,3688 @@
+{
+ "version": 1,
+ "vorlagen": [
+  {
+   "id": "eiche_klein_1",
+   "gruppe": "eiche_klein",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/eiche_klein_1.nbt",
+   "anker": [
+    7,
+    0,
+    8
+   ],
+   "masse": [
+    18,
+    14,
+    16
+   ],
+   "bloecke": 566
+  },
+  {
+   "id": "eiche_klein_2",
+   "gruppe": "eiche_klein",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/eiche_klein_2.nbt",
+   "anker": [
+    7,
+    0,
+    7
+   ],
+   "masse": [
+    15,
+    15,
+    15
+   ],
+   "bloecke": 497
+  },
+  {
+   "id": "eiche_mittel_1",
+   "gruppe": "eiche_mittel",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/eiche_mittel_1.nbt",
+   "anker": [
+    15,
+    2,
+    14
+   ],
+   "masse": [
+    29,
+    28,
+    32
+   ],
+   "bloecke": 3507
+  },
+  {
+   "id": "eiche_mittel_2",
+   "gruppe": "eiche_mittel",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/eiche_mittel_2.nbt",
+   "anker": [
+    11,
+    2,
+    15
+   ],
+   "masse": [
+    26,
+    28,
+    28
+   ],
+   "bloecke": 3059
+  },
+  {
+   "id": "eiche_gross_1",
+   "gruppe": "eiche_gross",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/eiche_gross_1.nbt",
+   "anker": [
+    25,
+    3,
+    10
+   ],
+   "masse": [
+    45,
+    47,
+    30
+   ],
+   "bloecke": 7143
+  },
+  {
+   "id": "eiche_gross_2",
+   "gruppe": "eiche_gross",
+   "titel": "Eiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/eiche_gross_2.nbt",
+   "anker": [
+    21,
+    3,
+    21
+   ],
+   "masse": [
+    45,
+    43,
+    43
+   ],
+   "bloecke": 7724
+  },
+  {
+   "id": "birke_klein_1",
+   "gruppe": "birke_klein",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/birke_klein_1.nbt",
+   "anker": [
+    2,
+    0,
+    3
+   ],
+   "masse": [
+    6,
+    14,
+    6
+   ],
+   "bloecke": 116
+  },
+  {
+   "id": "birke_klein_2",
+   "gruppe": "birke_klein",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/birke_klein_2.nbt",
+   "anker": [
+    3,
+    0,
+    2
+   ],
+   "masse": [
+    6,
+    14,
+    6
+   ],
+   "bloecke": 97
+  },
+  {
+   "id": "birke_mittel_1",
+   "gruppe": "birke_mittel",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/birke_mittel_1.nbt",
+   "anker": [
+    5,
+    0,
+    5
+   ],
+   "masse": [
+    10,
+    21,
+    11
+   ],
+   "bloecke": 306
+  },
+  {
+   "id": "birke_mittel_2",
+   "gruppe": "birke_mittel",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/birke_mittel_2.nbt",
+   "anker": [
+    4,
+    0,
+    4
+   ],
+   "masse": [
+    10,
+    21,
+    9
+   ],
+   "bloecke": 277
+  },
+  {
+   "id": "birke_gross_1",
+   "gruppe": "birke_gross",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/birke_gross_1.nbt",
+   "anker": [
+    5,
+    1,
+    5
+   ],
+   "masse": [
+    11,
+    29,
+    11
+   ],
+   "bloecke": 543
+  },
+  {
+   "id": "birke_gross_2",
+   "gruppe": "birke_gross",
+   "titel": "Birke",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/birke_gross_2.nbt",
+   "anker": [
+    6,
+    1,
+    5
+   ],
+   "masse": [
+    10,
+    29,
+    12
+   ],
+   "bloecke": 522
+  },
+  {
+   "id": "fichte_klein_1",
+   "gruppe": "fichte_klein",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/fichte_klein_1.nbt",
+   "anker": [
+    4,
+    0,
+    4
+   ],
+   "masse": [
+    9,
+    19,
+    9
+   ],
+   "bloecke": 288
+  },
+  {
+   "id": "fichte_klein_2",
+   "gruppe": "fichte_klein",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/fichte_klein_2.nbt",
+   "anker": [
+    4,
+    0,
+    4
+   ],
+   "masse": [
+    9,
+    19,
+    9
+   ],
+   "bloecke": 317
+  },
+  {
+   "id": "fichte_mittel_1",
+   "gruppe": "fichte_mittel",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/fichte_mittel_1.nbt",
+   "anker": [
+    7,
+    2,
+    6
+   ],
+   "masse": [
+    14,
+    31,
+    13
+   ],
+   "bloecke": 696
+  },
+  {
+   "id": "fichte_mittel_2",
+   "gruppe": "fichte_mittel",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/fichte_mittel_2.nbt",
+   "anker": [
+    6,
+    2,
+    6
+   ],
+   "masse": [
+    12,
+    31,
+    12
+   ],
+   "bloecke": 638
+  },
+  {
+   "id": "fichte_gross_1",
+   "gruppe": "fichte_gross",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/fichte_gross_1.nbt",
+   "anker": [
+    8,
+    4,
+    8
+   ],
+   "masse": [
+    17,
+    45,
+    17
+   ],
+   "bloecke": 2054
+  },
+  {
+   "id": "fichte_gross_2",
+   "gruppe": "fichte_gross",
+   "titel": "Riesenfichte",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/fichte_gross_2.nbt",
+   "anker": [
+    9,
+    4,
+    8
+   ],
+   "masse": [
+    17,
+    45,
+    17
+   ],
+   "bloecke": 1754
+  },
+  {
+   "id": "kirschbaum_klein_1",
+   "gruppe": "kirschbaum_klein",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/kirschbaum_klein_1.nbt",
+   "anker": [
+    3,
+    0,
+    6
+   ],
+   "masse": [
+    12,
+    14,
+    11
+   ],
+   "bloecke": 335
+  },
+  {
+   "id": "kirschbaum_klein_2",
+   "gruppe": "kirschbaum_klein",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/kirschbaum_klein_2.nbt",
+   "anker": [
+    8,
+    0,
+    4
+   ],
+   "masse": [
+    14,
+    13,
+    12
+   ],
+   "bloecke": 351
+  },
+  {
+   "id": "kirschbaum_mittel_1",
+   "gruppe": "kirschbaum_mittel",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/kirschbaum_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    12
+   ],
+   "masse": [
+    16,
+    20,
+    19
+   ],
+   "bloecke": 995
+  },
+  {
+   "id": "kirschbaum_mittel_2",
+   "gruppe": "kirschbaum_mittel",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/kirschbaum_mittel_2.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    20,
+    18
+   ],
+   "bloecke": 802
+  },
+  {
+   "id": "kirschbaum_gross_1",
+   "gruppe": "kirschbaum_gross",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/kirschbaum_gross_1.nbt",
+   "anker": [
+    14,
+    2,
+    10
+   ],
+   "masse": [
+    31,
+    30,
+    28
+   ],
+   "bloecke": 2949
+  },
+  {
+   "id": "kirschbaum_gross_2",
+   "gruppe": "kirschbaum_gross",
+   "titel": "Kirschbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/kirschbaum_gross_2.nbt",
+   "anker": [
+    14,
+    1,
+    13
+   ],
+   "masse": [
+    23,
+    35,
+    27
+   ],
+   "bloecke": 2813
+  },
+  {
+   "id": "trauerweide_klein_1",
+   "gruppe": "trauerweide_klein",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/trauerweide_klein_1.nbt",
+   "anker": [
+    8,
+    0,
+    9
+   ],
+   "masse": [
+    15,
+    14,
+    14
+   ],
+   "bloecke": 473
+  },
+  {
+   "id": "trauerweide_klein_2",
+   "gruppe": "trauerweide_klein",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/trauerweide_klein_2.nbt",
+   "anker": [
+    8,
+    0,
+    7
+   ],
+   "masse": [
+    16,
+    15,
+    16
+   ],
+   "bloecke": 524
+  },
+  {
+   "id": "trauerweide_mittel_1",
+   "gruppe": "trauerweide_mittel",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/trauerweide_mittel_1.nbt",
+   "anker": [
+    14,
+    1,
+    13
+   ],
+   "masse": [
+    23,
+    21,
+    24
+   ],
+   "bloecke": 1204
+  },
+  {
+   "id": "trauerweide_mittel_2",
+   "gruppe": "trauerweide_mittel",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/trauerweide_mittel_2.nbt",
+   "anker": [
+    10,
+    2,
+    13
+   ],
+   "masse": [
+    26,
+    23,
+    27
+   ],
+   "bloecke": 1377
+  },
+  {
+   "id": "trauerweide_gross_1",
+   "gruppe": "trauerweide_gross",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/trauerweide_gross_1.nbt",
+   "anker": [
+    20,
+    3,
+    14
+   ],
+   "masse": [
+    42,
+    35,
+    34
+   ],
+   "bloecke": 5296
+  },
+  {
+   "id": "trauerweide_gross_2",
+   "gruppe": "trauerweide_gross",
+   "titel": "Trauerweide",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/trauerweide_gross_2.nbt",
+   "anker": [
+    21,
+    3,
+    19
+   ],
+   "masse": [
+    41,
+    36,
+    38
+   ],
+   "bloecke": 5703
+  },
+  {
+   "id": "akazie_klein_1",
+   "gruppe": "akazie_klein",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/akazie_klein_1.nbt",
+   "anker": [
+    4,
+    0,
+    6
+   ],
+   "masse": [
+    10,
+    10,
+    10
+   ],
+   "bloecke": 97
+  },
+  {
+   "id": "akazie_klein_2",
+   "gruppe": "akazie_klein",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/akazie_klein_2.nbt",
+   "anker": [
+    4,
+    0,
+    6
+   ],
+   "masse": [
+    7,
+    10,
+    11
+   ],
+   "bloecke": 80
+  },
+  {
+   "id": "akazie_mittel_1",
+   "gruppe": "akazie_mittel",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/akazie_mittel_1.nbt",
+   "anker": [
+    7,
+    1,
+    9
+   ],
+   "masse": [
+    14,
+    16,
+    15
+   ],
+   "bloecke": 228
+  },
+  {
+   "id": "akazie_mittel_2",
+   "gruppe": "akazie_mittel",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/akazie_mittel_2.nbt",
+   "anker": [
+    9,
+    1,
+    9
+   ],
+   "masse": [
+    14,
+    16,
+    17
+   ],
+   "bloecke": 229
+  },
+  {
+   "id": "akazie_gross_1",
+   "gruppe": "akazie_gross",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/akazie_gross_1.nbt",
+   "anker": [
+    11,
+    1,
+    6
+   ],
+   "masse": [
+    22,
+    20,
+    16
+   ],
+   "bloecke": 525
+  },
+  {
+   "id": "akazie_gross_2",
+   "gruppe": "akazie_gross",
+   "titel": "Akazie",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/akazie_gross_2.nbt",
+   "anker": [
+    14,
+    1,
+    6
+   ],
+   "masse": [
+    19,
+    23,
+    20
+   ],
+   "bloecke": 575
+  },
+  {
+   "id": "mammutbaum_klein_1",
+   "gruppe": "mammutbaum_klein",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/mammutbaum_klein_1.nbt",
+   "anker": [
+    6,
+    1,
+    6
+   ],
+   "masse": [
+    14,
+    29,
+    14
+   ],
+   "bloecke": 869
+  },
+  {
+   "id": "mammutbaum_klein_2",
+   "gruppe": "mammutbaum_klein",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/mammutbaum_klein_2.nbt",
+   "anker": [
+    7,
+    1,
+    7
+   ],
+   "masse": [
+    15,
+    28,
+    15
+   ],
+   "bloecke": 823
+  },
+  {
+   "id": "mammutbaum_mittel_1",
+   "gruppe": "mammutbaum_mittel",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/mammutbaum_mittel_1.nbt",
+   "anker": [
+    9,
+    2,
+    8
+   ],
+   "masse": [
+    18,
+    39,
+    17
+   ],
+   "bloecke": 1537
+  },
+  {
+   "id": "mammutbaum_mittel_2",
+   "gruppe": "mammutbaum_mittel",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/mammutbaum_mittel_2.nbt",
+   "anker": [
+    9,
+    2,
+    7
+   ],
+   "masse": [
+    18,
+    40,
+    16
+   ],
+   "bloecke": 1490
+  },
+  {
+   "id": "mammutbaum_gross_1",
+   "gruppe": "mammutbaum_gross",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/mammutbaum_gross_1.nbt",
+   "anker": [
+    10,
+    3,
+    9
+   ],
+   "masse": [
+    20,
+    52,
+    20
+   ],
+   "bloecke": 2572
+  },
+  {
+   "id": "mammutbaum_gross_2",
+   "gruppe": "mammutbaum_gross",
+   "titel": "Mammutbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/mammutbaum_gross_2.nbt",
+   "anker": [
+    10,
+    3,
+    10
+   ],
+   "masse": [
+    21,
+    52,
+    21
+   ],
+   "bloecke": 2806
+  },
+  {
+   "id": "dschungelriese_klein_1",
+   "gruppe": "dschungelriese_klein",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/dschungelriese_klein_1.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    24,
+    17
+   ],
+   "bloecke": 586
+  },
+  {
+   "id": "dschungelriese_klein_2",
+   "gruppe": "dschungelriese_klein",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/dschungelriese_klein_2.nbt",
+   "anker": [
+    7,
+    1,
+    6
+   ],
+   "masse": [
+    13,
+    23,
+    17
+   ],
+   "bloecke": 508
+  },
+  {
+   "id": "dschungelriese_mittel_1",
+   "gruppe": "dschungelriese_mittel",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/dschungelriese_mittel_1.nbt",
+   "anker": [
+    14,
+    1,
+    12
+   ],
+   "masse": [
+    26,
+    34,
+    24
+   ],
+   "bloecke": 1383
+  },
+  {
+   "id": "dschungelriese_mittel_2",
+   "gruppe": "dschungelriese_mittel",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/dschungelriese_mittel_2.nbt",
+   "anker": [
+    11,
+    1,
+    9
+   ],
+   "masse": [
+    20,
+    34,
+    22
+   ],
+   "bloecke": 1315
+  },
+  {
+   "id": "dschungelriese_gross_1",
+   "gruppe": "dschungelriese_gross",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/dschungelriese_gross_1.nbt",
+   "anker": [
+    13,
+    2,
+    9
+   ],
+   "masse": [
+    26,
+    49,
+    24
+   ],
+   "bloecke": 2638
+  },
+  {
+   "id": "dschungelriese_gross_2",
+   "gruppe": "dschungelriese_gross",
+   "titel": "Dschungelriese",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/dschungelriese_gross_2.nbt",
+   "anker": [
+    15,
+    2,
+    17
+   ],
+   "masse": [
+    28,
+    48,
+    38
+   ],
+   "bloecke": 3170
+  },
+  {
+   "id": "mangrove_klein_1",
+   "gruppe": "mangrove_klein",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/mangrove_klein_1.nbt",
+   "anker": [
+    4,
+    1,
+    5
+   ],
+   "masse": [
+    11,
+    16,
+    9
+   ],
+   "bloecke": 214
+  },
+  {
+   "id": "mangrove_klein_2",
+   "gruppe": "mangrove_klein",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/mangrove_klein_2.nbt",
+   "anker": [
+    5,
+    1,
+    6
+   ],
+   "masse": [
+    10,
+    15,
+    12
+   ],
+   "bloecke": 246
+  },
+  {
+   "id": "mangrove_mittel_1",
+   "gruppe": "mangrove_mittel",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/mangrove_mittel_1.nbt",
+   "anker": [
+    7,
+    1,
+    6
+   ],
+   "masse": [
+    15,
+    23,
+    11
+   ],
+   "bloecke": 492
+  },
+  {
+   "id": "mangrove_mittel_2",
+   "gruppe": "mangrove_mittel",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/mangrove_mittel_2.nbt",
+   "anker": [
+    7,
+    1,
+    8
+   ],
+   "masse": [
+    12,
+    24,
+    15
+   ],
+   "bloecke": 532
+  },
+  {
+   "id": "mangrove_gross_1",
+   "gruppe": "mangrove_gross",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/mangrove_gross_1.nbt",
+   "anker": [
+    7,
+    1,
+    6
+   ],
+   "masse": [
+    18,
+    31,
+    18
+   ],
+   "bloecke": 929
+  },
+  {
+   "id": "mangrove_gross_2",
+   "gruppe": "mangrove_gross",
+   "titel": "Mangrove",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/mangrove_gross_2.nbt",
+   "anker": [
+    7,
+    1,
+    9
+   ],
+   "masse": [
+    17,
+    34,
+    17
+   ],
+   "bloecke": 1048
+  },
+  {
+   "id": "schwarzeiche_klein_1",
+   "gruppe": "schwarzeiche_klein",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/schwarzeiche_klein_1.nbt",
+   "anker": [
+    6,
+    1,
+    10
+   ],
+   "masse": [
+    16,
+    15,
+    17
+   ],
+   "bloecke": 741
+  },
+  {
+   "id": "schwarzeiche_klein_2",
+   "gruppe": "schwarzeiche_klein",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/schwarzeiche_klein_2.nbt",
+   "anker": [
+    9,
+    1,
+    6
+   ],
+   "masse": [
+    17,
+    16,
+    15
+   ],
+   "bloecke": 664
+  },
+  {
+   "id": "schwarzeiche_mittel_1",
+   "gruppe": "schwarzeiche_mittel",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/schwarzeiche_mittel_1.nbt",
+   "anker": [
+    10,
+    3,
+    12
+   ],
+   "masse": [
+    19,
+    22,
+    22
+   ],
+   "bloecke": 1404
+  },
+  {
+   "id": "schwarzeiche_mittel_2",
+   "gruppe": "schwarzeiche_mittel",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/schwarzeiche_mittel_2.nbt",
+   "anker": [
+    11,
+    3,
+    11
+   ],
+   "masse": [
+    23,
+    23,
+    22
+   ],
+   "bloecke": 1735
+  },
+  {
+   "id": "schwarzeiche_gross_1",
+   "gruppe": "schwarzeiche_gross",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/schwarzeiche_gross_1.nbt",
+   "anker": [
+    15,
+    4,
+    11
+   ],
+   "masse": [
+    31,
+    36,
+    32
+   ],
+   "bloecke": 5810
+  },
+  {
+   "id": "schwarzeiche_gross_2",
+   "gruppe": "schwarzeiche_gross",
+   "titel": "Uralte Schwarzeiche",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/schwarzeiche_gross_2.nbt",
+   "anker": [
+    23,
+    4,
+    20
+   ],
+   "masse": [
+    36,
+    36,
+    36
+   ],
+   "bloecke": 6499
+  },
+  {
+   "id": "toter_baum_klein_1",
+   "gruppe": "toter_baum_klein",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/toter_baum_klein_1.nbt",
+   "anker": [
+    3,
+    0,
+    5
+   ],
+   "masse": [
+    9,
+    11,
+    7
+   ],
+   "bloecke": 51
+  },
+  {
+   "id": "toter_baum_klein_2",
+   "gruppe": "toter_baum_klein",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/toter_baum_klein_2.nbt",
+   "anker": [
+    5,
+    0,
+    6
+   ],
+   "masse": [
+    8,
+    12,
+    10
+   ],
+   "bloecke": 54
+  },
+  {
+   "id": "toter_baum_mittel_1",
+   "gruppe": "toter_baum_mittel",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/toter_baum_mittel_1.nbt",
+   "anker": [
+    5,
+    2,
+    6
+   ],
+   "masse": [
+    13,
+    15,
+    11
+   ],
+   "bloecke": 150
+  },
+  {
+   "id": "toter_baum_mittel_2",
+   "gruppe": "toter_baum_mittel",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/toter_baum_mittel_2.nbt",
+   "anker": [
+    4,
+    2,
+    4
+   ],
+   "masse": [
+    11,
+    17,
+    12
+   ],
+   "bloecke": 182
+  },
+  {
+   "id": "toter_baum_gross_1",
+   "gruppe": "toter_baum_gross",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/toter_baum_gross_1.nbt",
+   "anker": [
+    6,
+    3,
+    8
+   ],
+   "masse": [
+    17,
+    27,
+    17
+   ],
+   "bloecke": 327
+  },
+  {
+   "id": "toter_baum_gross_2",
+   "gruppe": "toter_baum_gross",
+   "titel": "Toter Baum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/toter_baum_gross_2.nbt",
+   "anker": [
+    10,
+    5,
+    11
+   ],
+   "masse": [
+    17,
+    26,
+    22
+   ],
+   "bloecke": 314
+  },
+  {
+   "id": "azaleenbaum_klein_1",
+   "gruppe": "azaleenbaum_klein",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/baeume/azaleenbaum_klein_1.nbt",
+   "anker": [
+    3,
+    0,
+    5
+   ],
+   "masse": [
+    8,
+    8,
+    7
+   ],
+   "bloecke": 71
+  },
+  {
+   "id": "azaleenbaum_klein_2",
+   "gruppe": "azaleenbaum_klein",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/baeume/azaleenbaum_klein_2.nbt",
+   "anker": [
+    5,
+    0,
+    3
+   ],
+   "masse": [
+    7,
+    7,
+    7
+   ],
+   "bloecke": 79
+  },
+  {
+   "id": "azaleenbaum_mittel_1",
+   "gruppe": "azaleenbaum_mittel",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/baeume/azaleenbaum_mittel_1.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    13,
+    12
+   ],
+   "bloecke": 297
+  },
+  {
+   "id": "azaleenbaum_mittel_2",
+   "gruppe": "azaleenbaum_mittel",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/baeume/azaleenbaum_mittel_2.nbt",
+   "anker": [
+    6,
+    0,
+    9
+   ],
+   "masse": [
+    13,
+    11,
+    15
+   ],
+   "bloecke": 284
+  },
+  {
+   "id": "azaleenbaum_gross_1",
+   "gruppe": "azaleenbaum_gross",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/baeume/azaleenbaum_gross_1.nbt",
+   "anker": [
+    9,
+    0,
+    6
+   ],
+   "masse": [
+    17,
+    16,
+    16
+   ],
+   "bloecke": 577
+  },
+  {
+   "id": "azaleenbaum_gross_2",
+   "gruppe": "azaleenbaum_gross",
+   "titel": "Azaleenbaum",
+   "kategorie": "baeume",
+   "kategorie_name": "Bäume",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/baeume/azaleenbaum_gross_2.nbt",
+   "anker": [
+    11,
+    0,
+    8
+   ],
+   "masse": [
+    13,
+    17,
+    18
+   ],
+   "bloecke": 619
+  },
+  {
+   "id": "weltenbaum_mittel_1",
+   "gruppe": "weltenbaum_mittel",
+   "titel": "Weltenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/weltenbaum_mittel_1.nbt",
+   "anker": [
+    18,
+    2,
+    17
+   ],
+   "masse": [
+    36,
+    46,
+    37
+   ],
+   "bloecke": 5727
+  },
+  {
+   "id": "weltenbaum_mittel_2",
+   "gruppe": "weltenbaum_mittel",
+   "titel": "Weltenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/weltenbaum_mittel_2.nbt",
+   "anker": [
+    15,
+    2,
+    17
+   ],
+   "masse": [
+    35,
+    46,
+    34
+   ],
+   "bloecke": 5902
+  },
+  {
+   "id": "weltenbaum_riesig_1",
+   "gruppe": "weltenbaum_riesig",
+   "titel": "Weltenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/weltenbaum_riesig_1.nbt",
+   "anker": [
+    31,
+    5,
+    28
+   ],
+   "masse": [
+    56,
+    91,
+    57
+   ],
+   "bloecke": 29009
+  },
+  {
+   "id": "weltenbaum_riesig_2",
+   "gruppe": "weltenbaum_riesig",
+   "titel": "Weltenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/weltenbaum_riesig_2.nbt",
+   "anker": [
+    31,
+    4,
+    28
+   ],
+   "masse": [
+    66,
+    87,
+    62
+   ],
+   "bloecke": 31526
+  },
+  {
+   "id": "sakura_riese_mittel_1",
+   "gruppe": "sakura_riese_mittel",
+   "titel": "Sakura-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/sakura_riese_mittel_1.nbt",
+   "anker": [
+    18,
+    2,
+    20
+   ],
+   "masse": [
+    34,
+    31,
+    41
+   ],
+   "bloecke": 3866
+  },
+  {
+   "id": "sakura_riese_mittel_2",
+   "gruppe": "sakura_riese_mittel",
+   "titel": "Sakura-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/sakura_riese_mittel_2.nbt",
+   "anker": [
+    21,
+    2,
+    23
+   ],
+   "masse": [
+    41,
+    34,
+    47
+   ],
+   "bloecke": 4672
+  },
+  {
+   "id": "sakura_riese_riesig_1",
+   "gruppe": "sakura_riese_riesig",
+   "titel": "Sakura-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/sakura_riese_riesig_1.nbt",
+   "anker": [
+    30,
+    2,
+    29
+   ],
+   "masse": [
+    59,
+    56,
+    53
+   ],
+   "bloecke": 15508
+  },
+  {
+   "id": "sakura_riese_riesig_2",
+   "gruppe": "sakura_riese_riesig",
+   "titel": "Sakura-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/sakura_riese_riesig_2.nbt",
+   "anker": [
+    27,
+    3,
+    23
+   ],
+   "masse": [
+    55,
+    59,
+    47
+   ],
+   "bloecke": 13412
+  },
+  {
+   "id": "drachenbaum_mittel_1",
+   "gruppe": "drachenbaum_mittel",
+   "titel": "Drachenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/drachenbaum_mittel_1.nbt",
+   "anker": [
+    9,
+    1,
+    8
+   ],
+   "masse": [
+    19,
+    19,
+    16
+   ],
+   "bloecke": 584
+  },
+  {
+   "id": "drachenbaum_mittel_2",
+   "gruppe": "drachenbaum_mittel",
+   "titel": "Drachenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/drachenbaum_mittel_2.nbt",
+   "anker": [
+    6,
+    1,
+    8
+   ],
+   "masse": [
+    16,
+    18,
+    19
+   ],
+   "bloecke": 605
+  },
+  {
+   "id": "drachenbaum_riesig_1",
+   "gruppe": "drachenbaum_riesig",
+   "titel": "Drachenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/drachenbaum_riesig_1.nbt",
+   "anker": [
+    12,
+    1,
+    14
+   ],
+   "masse": [
+    27,
+    32,
+    25
+   ],
+   "bloecke": 2184
+  },
+  {
+   "id": "drachenbaum_riesig_2",
+   "gruppe": "drachenbaum_riesig",
+   "titel": "Drachenbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/drachenbaum_riesig_2.nbt",
+   "anker": [
+    12,
+    1,
+    14
+   ],
+   "masse": [
+    27,
+    32,
+    25
+   ],
+   "bloecke": 2037
+  },
+  {
+   "id": "baobab_mittel_1",
+   "gruppe": "baobab_mittel",
+   "titel": "Baobab",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/baobab_mittel_1.nbt",
+   "anker": [
+    8,
+    0,
+    6
+   ],
+   "masse": [
+    17,
+    18,
+    14
+   ],
+   "bloecke": 697
+  },
+  {
+   "id": "baobab_mittel_2",
+   "gruppe": "baobab_mittel",
+   "titel": "Baobab",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/baobab_mittel_2.nbt",
+   "anker": [
+    9,
+    0,
+    8
+   ],
+   "masse": [
+    15,
+    18,
+    18
+   ],
+   "bloecke": 666
+  },
+  {
+   "id": "baobab_riesig_1",
+   "gruppe": "baobab_riesig",
+   "titel": "Baobab",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/baobab_riesig_1.nbt",
+   "anker": [
+    10,
+    0,
+    11
+   ],
+   "masse": [
+    21,
+    25,
+    23
+   ],
+   "bloecke": 2115
+  },
+  {
+   "id": "baobab_riesig_2",
+   "gruppe": "baobab_riesig",
+   "titel": "Baobab",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/baobab_riesig_2.nbt",
+   "anker": [
+    10,
+    0,
+    9
+   ],
+   "masse": [
+    21,
+    29,
+    23
+   ],
+   "bloecke": 2144
+  },
+  {
+   "id": "gespensterbaum_mittel_1",
+   "gruppe": "gespensterbaum_mittel",
+   "titel": "Gespensterbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/gespensterbaum_mittel_1.nbt",
+   "anker": [
+    16,
+    2,
+    12
+   ],
+   "masse": [
+    29,
+    26,
+    30
+   ],
+   "bloecke": 551
+  },
+  {
+   "id": "gespensterbaum_mittel_2",
+   "gruppe": "gespensterbaum_mittel",
+   "titel": "Gespensterbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/gespensterbaum_mittel_2.nbt",
+   "anker": [
+    15,
+    2,
+    12
+   ],
+   "masse": [
+    31,
+    29,
+    28
+   ],
+   "bloecke": 569
+  },
+  {
+   "id": "gespensterbaum_riesig_1",
+   "gruppe": "gespensterbaum_riesig",
+   "titel": "Gespensterbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/gespensterbaum_riesig_1.nbt",
+   "anker": [
+    23,
+    2,
+    24
+   ],
+   "masse": [
+    45,
+    44,
+    46
+   ],
+   "bloecke": 2139
+  },
+  {
+   "id": "gespensterbaum_riesig_2",
+   "gruppe": "gespensterbaum_riesig",
+   "titel": "Gespensterbaum",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/gespensterbaum_riesig_2.nbt",
+   "anker": [
+    20,
+    2,
+    25
+   ],
+   "masse": [
+    42,
+    41,
+    50
+   ],
+   "bloecke": 2130
+  },
+  {
+   "id": "riesenpilz_rot_mittel_1",
+   "gruppe": "riesenpilz_rot_mittel",
+   "titel": "Riesenpilz rot",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/riesenpilz_rot_mittel_1.nbt",
+   "anker": [
+    9,
+    1,
+    13
+   ],
+   "masse": [
+    19,
+    20,
+    23
+   ],
+   "bloecke": 612
+  },
+  {
+   "id": "riesenpilz_rot_mittel_2",
+   "gruppe": "riesenpilz_rot_mittel",
+   "titel": "Riesenpilz rot",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/riesenpilz_rot_mittel_2.nbt",
+   "anker": [
+    9,
+    1,
+    9
+   ],
+   "masse": [
+    19,
+    20,
+    22
+   ],
+   "bloecke": 612
+  },
+  {
+   "id": "riesenpilz_rot_riesig_1",
+   "gruppe": "riesenpilz_rot_riesig",
+   "titel": "Riesenpilz rot",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/riesenpilz_rot_riesig_1.nbt",
+   "anker": [
+    16,
+    2,
+    16
+   ],
+   "masse": [
+    39,
+    37,
+    33
+   ],
+   "bloecke": 2259
+  },
+  {
+   "id": "riesenpilz_rot_riesig_2",
+   "gruppe": "riesenpilz_rot_riesig",
+   "titel": "Riesenpilz rot",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/riesenpilz_rot_riesig_2.nbt",
+   "anker": [
+    16,
+    2,
+    16
+   ],
+   "masse": [
+    35,
+    37,
+    35
+   ],
+   "bloecke": 2272
+  },
+  {
+   "id": "riesenpilz_braun_mittel_1",
+   "gruppe": "riesenpilz_braun_mittel",
+   "titel": "Riesenpilz braun",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/riesenpilz_braun_mittel_1.nbt",
+   "anker": [
+    9,
+    1,
+    12
+   ],
+   "masse": [
+    19,
+    17,
+    22
+   ],
+   "bloecke": 538
+  },
+  {
+   "id": "riesenpilz_braun_mittel_2",
+   "gruppe": "riesenpilz_braun_mittel",
+   "titel": "Riesenpilz braun",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/riesenpilz_braun_mittel_2.nbt",
+   "anker": [
+    12,
+    1,
+    9
+   ],
+   "masse": [
+    25,
+    17,
+    19
+   ],
+   "bloecke": 557
+  },
+  {
+   "id": "riesenpilz_braun_riesig_1",
+   "gruppe": "riesenpilz_braun_riesig",
+   "titel": "Riesenpilz braun",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/riesenpilz_braun_riesig_1.nbt",
+   "anker": [
+    16,
+    2,
+    19
+   ],
+   "masse": [
+    33,
+    30,
+    36
+   ],
+   "bloecke": 1924
+  },
+  {
+   "id": "riesenpilz_braun_riesig_2",
+   "gruppe": "riesenpilz_braun_riesig",
+   "titel": "Riesenpilz braun",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/riesenpilz_braun_riesig_2.nbt",
+   "anker": [
+    21,
+    2,
+    18
+   ],
+   "masse": [
+    38,
+    30,
+    35
+   ],
+   "bloecke": 1926
+  },
+  {
+   "id": "karmesin_riese_mittel_1",
+   "gruppe": "karmesin_riese_mittel",
+   "titel": "Karmesin-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/karmesin_riese_mittel_1.nbt",
+   "anker": [
+    11,
+    2,
+    11
+   ],
+   "masse": [
+    21,
+    23,
+    23
+   ],
+   "bloecke": 866
+  },
+  {
+   "id": "karmesin_riese_mittel_2",
+   "gruppe": "karmesin_riese_mittel",
+   "titel": "Karmesin-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/karmesin_riese_mittel_2.nbt",
+   "anker": [
+    9,
+    2,
+    9
+   ],
+   "masse": [
+    21,
+    22,
+    20
+   ],
+   "bloecke": 823
+  },
+  {
+   "id": "karmesin_riese_riesig_1",
+   "gruppe": "karmesin_riese_riesig",
+   "titel": "Karmesin-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/karmesin_riese_riesig_1.nbt",
+   "anker": [
+    19,
+    3,
+    15
+   ],
+   "masse": [
+    37,
+    38,
+    34
+   ],
+   "bloecke": 2865
+  },
+  {
+   "id": "karmesin_riese_riesig_2",
+   "gruppe": "karmesin_riese_riesig",
+   "titel": "Karmesin-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/karmesin_riese_riesig_2.nbt",
+   "anker": [
+    17,
+    2,
+    14
+   ],
+   "masse": [
+    33,
+    37,
+    30
+   ],
+   "bloecke": 2988
+  },
+  {
+   "id": "wirr_riese_mittel_1",
+   "gruppe": "wirr_riese_mittel",
+   "titel": "Wirr-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/wirr_riese_mittel_1.nbt",
+   "anker": [
+    11,
+    2,
+    11
+   ],
+   "masse": [
+    21,
+    27,
+    23
+   ],
+   "bloecke": 758
+  },
+  {
+   "id": "wirr_riese_mittel_2",
+   "gruppe": "wirr_riese_mittel",
+   "titel": "Wirr-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/wirr_riese_mittel_2.nbt",
+   "anker": [
+    9,
+    2,
+    9
+   ],
+   "masse": [
+    21,
+    27,
+    20
+   ],
+   "bloecke": 746
+  },
+  {
+   "id": "wirr_riese_riesig_1",
+   "gruppe": "wirr_riese_riesig",
+   "titel": "Wirr-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/wirr_riese_riesig_1.nbt",
+   "anker": [
+    19,
+    3,
+    15
+   ],
+   "masse": [
+    37,
+    43,
+    34
+   ],
+   "bloecke": 2214
+  },
+  {
+   "id": "wirr_riese_riesig_2",
+   "gruppe": "wirr_riese_riesig",
+   "titel": "Wirr-Riese",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/wirr_riese_riesig_2.nbt",
+   "anker": [
+    17,
+    2,
+    14
+   ],
+   "masse": [
+    33,
+    42,
+    30
+   ],
+   "bloecke": 2329
+  },
+  {
+   "id": "schwebende_insel_mittel_1",
+   "gruppe": "schwebende_insel_mittel",
+   "titel": "Schwebende Insel",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/schwebende_insel_mittel_1.nbt",
+   "anker": [
+    9,
+    -8,
+    9
+   ],
+   "masse": [
+    19,
+    25,
+    18
+   ],
+   "bloecke": 2254
+  },
+  {
+   "id": "schwebende_insel_mittel_2",
+   "gruppe": "schwebende_insel_mittel",
+   "titel": "Schwebende Insel",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/schwebende_insel_mittel_2.nbt",
+   "anker": [
+    9,
+    -8,
+    9
+   ],
+   "masse": [
+    19,
+    24,
+    20
+   ],
+   "bloecke": 2070
+  },
+  {
+   "id": "schwebende_insel_riesig_1",
+   "gruppe": "schwebende_insel_riesig",
+   "titel": "Schwebende Insel",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/schwebende_insel_riesig_1.nbt",
+   "anker": [
+    16,
+    -9,
+    16
+   ],
+   "masse": [
+    32,
+    45,
+    32
+   ],
+   "bloecke": 9145
+  },
+  {
+   "id": "schwebende_insel_riesig_2",
+   "gruppe": "schwebende_insel_riesig",
+   "titel": "Schwebende Insel",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/schwebende_insel_riesig_2.nbt",
+   "anker": [
+    16,
+    -11,
+    17
+   ],
+   "masse": [
+    33,
+    51,
+    33
+   ],
+   "bloecke": 11353
+  },
+  {
+   "id": "wurzelfelsen_mittel_1",
+   "gruppe": "wurzelfelsen_mittel",
+   "titel": "Wurzelfelsen",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/spektakulaer/wurzelfelsen_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    7
+   ],
+   "masse": [
+    18,
+    25,
+    14
+   ],
+   "bloecke": 1163
+  },
+  {
+   "id": "wurzelfelsen_mittel_2",
+   "gruppe": "wurzelfelsen_mittel",
+   "titel": "Wurzelfelsen",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/spektakulaer/wurzelfelsen_mittel_2.nbt",
+   "anker": [
+    9,
+    1,
+    7
+   ],
+   "masse": [
+    17,
+    23,
+    18
+   ],
+   "bloecke": 1154
+  },
+  {
+   "id": "wurzelfelsen_riesig_1",
+   "gruppe": "wurzelfelsen_riesig",
+   "titel": "Wurzelfelsen",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/spektakulaer/wurzelfelsen_riesig_1.nbt",
+   "anker": [
+    11,
+    1,
+    11
+   ],
+   "masse": [
+    26,
+    33,
+    26
+   ],
+   "bloecke": 4840
+  },
+  {
+   "id": "wurzelfelsen_riesig_2",
+   "gruppe": "wurzelfelsen_riesig",
+   "titel": "Wurzelfelsen",
+   "kategorie": "spektakulaer",
+   "kategorie_name": "Spektakuläre Bäume",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/spektakulaer/wurzelfelsen_riesig_2.nbt",
+   "anker": [
+    11,
+    1,
+    11
+   ],
+   "masse": [
+    24,
+    33,
+    23
+   ],
+   "bloecke": 4585
+  },
+  {
+   "id": "torbogen_mittel",
+   "gruppe": "torbogen_mittel",
+   "titel": "Torbogen",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/torbogen_mittel.nbt",
+   "anker": [
+    7,
+    -1,
+    2
+   ],
+   "masse": [
+    17,
+    11,
+    10
+   ],
+   "bloecke": 264
+  },
+  {
+   "id": "torbogen_gross",
+   "gruppe": "torbogen_gross",
+   "titel": "Torbogen",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/torbogen_gross.nbt",
+   "anker": [
+    14,
+    0,
+    7
+   ],
+   "masse": [
+    30,
+    19,
+    16
+   ],
+   "bloecke": 780
+  },
+  {
+   "id": "turm_mittel",
+   "gruppe": "turm_mittel",
+   "titel": "Turmruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/turm_mittel.nbt",
+   "anker": [
+    5,
+    0,
+    10
+   ],
+   "masse": [
+    13,
+    19,
+    16
+   ],
+   "bloecke": 896
+  },
+  {
+   "id": "turm_gross",
+   "gruppe": "turm_gross",
+   "titel": "Turmruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/turm_gross.nbt",
+   "anker": [
+    9,
+    0,
+    7
+   ],
+   "masse": [
+    17,
+    29,
+    22
+   ],
+   "bloecke": 2054
+  },
+  {
+   "id": "saeulengang_mittel",
+   "gruppe": "saeulengang_mittel",
+   "titel": "Säulengang",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/saeulengang_mittel.nbt",
+   "anker": [
+    2,
+    0,
+    8
+   ],
+   "masse": [
+    21,
+    10,
+    15
+   ],
+   "bloecke": 450
+  },
+  {
+   "id": "saeulengang_gross",
+   "gruppe": "saeulengang_gross",
+   "titel": "Säulengang",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/saeulengang_gross.nbt",
+   "anker": [
+    2,
+    0,
+    6
+   ],
+   "masse": [
+    33,
+    13,
+    12
+   ],
+   "bloecke": 1625
+  },
+  {
+   "id": "tempel_mittel",
+   "gruppe": "tempel_mittel",
+   "titel": "Tempelruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/tempel_mittel.nbt",
+   "anker": [
+    11,
+    0,
+    9
+   ],
+   "masse": [
+    24,
+    18,
+    18
+   ],
+   "bloecke": 2263
+  },
+  {
+   "id": "tempel_gross",
+   "gruppe": "tempel_gross",
+   "titel": "Tempelruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/tempel_gross.nbt",
+   "anker": [
+    15,
+    0,
+    11
+   ],
+   "masse": [
+    32,
+    22,
+    22
+   ],
+   "bloecke": 4284
+  },
+  {
+   "id": "bruecke_mittel",
+   "gruppe": "bruecke_mittel",
+   "titel": "Brückenruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/bruecke_mittel.nbt",
+   "anker": [
+    12,
+    3,
+    4
+   ],
+   "masse": [
+    25,
+    15,
+    8
+   ],
+   "bloecke": 871
+  },
+  {
+   "id": "bruecke_gross",
+   "gruppe": "bruecke_gross",
+   "titel": "Brückenruine",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/bruecke_gross.nbt",
+   "anker": [
+    20,
+    3,
+    4
+   ],
+   "masse": [
+    41,
+    19,
+    8
+   ],
+   "bloecke": 1486
+  },
+  {
+   "id": "brunnen_mittel",
+   "gruppe": "brunnen_mittel",
+   "titel": "Brunnen",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/brunnen_mittel.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    7,
+    13
+   ],
+   "bloecke": 269
+  },
+  {
+   "id": "brunnen_gross",
+   "gruppe": "brunnen_gross",
+   "titel": "Brunnen",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/brunnen_gross.nbt",
+   "anker": [
+    8,
+    0,
+    8
+   ],
+   "masse": [
+    17,
+    10,
+    17
+   ],
+   "bloecke": 445
+  },
+  {
+   "id": "felsbogen_mittel",
+   "gruppe": "felsbogen_mittel",
+   "titel": "Felsbogen",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/natur/felsbogen_mittel.nbt",
+   "anker": [
+    15,
+    2,
+    5
+   ],
+   "masse": [
+    32,
+    19,
+    11
+   ],
+   "bloecke": 2557
+  },
+  {
+   "id": "felsbogen_gross",
+   "gruppe": "felsbogen_gross",
+   "titel": "Felsbogen",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/natur/felsbogen_gross.nbt",
+   "anker": [
+    26,
+    2,
+    8
+   ],
+   "masse": [
+    53,
+    29,
+    17
+   ],
+   "bloecke": 8806
+  },
+  {
+   "id": "felsbogen_wueste_mittel",
+   "gruppe": "felsbogen_wueste_mittel",
+   "titel": "Wüsten-Felsbogen",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/natur/felsbogen_wueste_mittel.nbt",
+   "anker": [
+    16,
+    2,
+    6
+   ],
+   "masse": [
+    33,
+    20,
+    13
+   ],
+   "bloecke": 2600
+  },
+  {
+   "id": "felsbogen_wueste_gross",
+   "gruppe": "felsbogen_wueste_gross",
+   "titel": "Wüsten-Felsbogen",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/natur/felsbogen_wueste_gross.nbt",
+   "anker": [
+    26,
+    2,
+    8
+   ],
+   "masse": [
+    53,
+    29,
+    17
+   ],
+   "bloecke": 8827
+  },
+  {
+   "id": "felsnadeln_mittel",
+   "gruppe": "felsnadeln_mittel",
+   "titel": "Felsnadeln",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/natur/felsnadeln_mittel.nbt",
+   "anker": [
+    6,
+    2,
+    10
+   ],
+   "masse": [
+    16,
+    23,
+    16
+   ],
+   "bloecke": 1587
+  },
+  {
+   "id": "felsnadeln_gross",
+   "gruppe": "felsnadeln_gross",
+   "titel": "Felsnadeln",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/natur/felsnadeln_gross.nbt",
+   "anker": [
+    16,
+    2,
+    14
+   ],
+   "masse": [
+    36,
+    36,
+    32
+   ],
+   "bloecke": 8592
+  },
+  {
+   "id": "findlinge_mittel",
+   "gruppe": "findlinge_mittel",
+   "titel": "Findlinge",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/natur/findlinge_mittel.nbt",
+   "anker": [
+    12,
+    1,
+    12
+   ],
+   "masse": [
+    21,
+    6,
+    25
+   ],
+   "bloecke": 326
+  },
+  {
+   "id": "findlinge_gross",
+   "gruppe": "findlinge_gross",
+   "titel": "Findlinge",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/natur/findlinge_gross.nbt",
+   "anker": [
+    11,
+    1,
+    14
+   ],
+   "masse": [
+    24,
+    9,
+    27
+   ],
+   "bloecke": 1087
+  },
+  {
+   "id": "wasserfall_mittel",
+   "gruppe": "wasserfall_mittel",
+   "titel": "Wasserfall-Klippe",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/natur/wasserfall_mittel.nbt",
+   "anker": [
+    8,
+    1,
+    11
+   ],
+   "masse": [
+    18,
+    17,
+    19
+   ],
+   "bloecke": 2474
+  },
+  {
+   "id": "wasserfall_gross",
+   "gruppe": "wasserfall_gross",
+   "titel": "Wasserfall-Klippe",
+   "kategorie": "natur",
+   "kategorie_name": "Felsen & Natur",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/natur/wasserfall_gross.nbt",
+   "anker": [
+    14,
+    1,
+    17
+   ],
+   "masse": [
+    29,
+    46,
+    25
+   ],
+   "bloecke": 10962
+  },
+  {
+   "id": "felssichel_mittel",
+   "gruppe": "felssichel_mittel",
+   "titel": "Schwebende Felssichel",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/schwebend/felssichel_mittel.nbt",
+   "anker": [
+    16,
+    -8,
+    17
+   ],
+   "masse": [
+    21,
+    14,
+    40
+   ],
+   "bloecke": 2086
+  },
+  {
+   "id": "felssichel_riesig",
+   "gruppe": "felssichel_riesig",
+   "titel": "Schwebende Felssichel",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/schwebend/felssichel_riesig.nbt",
+   "anker": [
+    20,
+    -13,
+    31
+   ],
+   "masse": [
+    26,
+    24,
+    65
+   ],
+   "bloecke": 5456
+  },
+  {
+   "id": "felsbrocken_mittel",
+   "gruppe": "felsbrocken_mittel",
+   "titel": "Zerbrochene Schwebebrocken",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/schwebend/felsbrocken_mittel.nbt",
+   "anker": [
+    7,
+    -15,
+    6
+   ],
+   "masse": [
+    22,
+    22,
+    20
+   ],
+   "bloecke": 490
+  },
+  {
+   "id": "felsbrocken_riesig",
+   "gruppe": "felsbrocken_riesig",
+   "titel": "Zerbrochene Schwebebrocken",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/schwebend/felsbrocken_riesig.nbt",
+   "anker": [
+    13,
+    -24,
+    20
+   ],
+   "masse": [
+    36,
+    34,
+    40
+   ],
+   "bloecke": 2896
+  },
+  {
+   "id": "regenbogenring_mittel",
+   "gruppe": "regenbogenring_mittel",
+   "titel": "Regenbogen-Ring",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/schwebend/regenbogenring_mittel.nbt",
+   "anker": [
+    16,
+    -9,
+    15
+   ],
+   "masse": [
+    31,
+    17,
+    29
+   ],
+   "bloecke": 1120
+  },
+  {
+   "id": "regenbogenring_riesig",
+   "gruppe": "regenbogenring_riesig",
+   "titel": "Regenbogen-Ring",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/schwebend/regenbogenring_riesig.nbt",
+   "anker": [
+    29,
+    -14,
+    25
+   ],
+   "masse": [
+    58,
+    29,
+    50
+   ],
+   "bloecke": 4725
+  },
+  {
+   "id": "archipel_mittel",
+   "gruppe": "archipel_mittel",
+   "titel": "Schwebendes Archipel",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/schwebend/archipel_mittel.nbt",
+   "anker": [
+    15,
+    -1,
+    13
+   ],
+   "masse": [
+    39,
+    43,
+    29
+   ],
+   "bloecke": 3462
+  },
+  {
+   "id": "archipel_riesig",
+   "gruppe": "archipel_riesig",
+   "titel": "Schwebendes Archipel",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/schwebend/archipel_riesig.nbt",
+   "anker": [
+    25,
+    -7,
+    17
+   ],
+   "masse": [
+    61,
+    56,
+    42
+   ],
+   "bloecke": 12113
+  },
+  {
+   "id": "himmelsturm_mittel",
+   "gruppe": "himmelsturm_mittel",
+   "titel": "Himmelsturm mit Ring",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/schwebend/himmelsturm_mittel.nbt",
+   "anker": [
+    18,
+    0,
+    17
+   ],
+   "masse": [
+    35,
+    56,
+    39
+   ],
+   "bloecke": 5188
+  },
+  {
+   "id": "himmelsturm_riesig",
+   "gruppe": "himmelsturm_riesig",
+   "titel": "Himmelsturm mit Ring",
+   "kategorie": "schwebend",
+   "kategorie_name": "Schwebende Strukturen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/schwebend/himmelsturm_riesig.nbt",
+   "anker": [
+    30,
+    0,
+    29
+   ],
+   "masse": [
+    60,
+    92,
+    63
+   ],
+   "bloecke": 15909
+  },
+  {
+   "id": "fachwerkhaus_mittel_1",
+   "gruppe": "fachwerkhaus_mittel",
+   "titel": "Fachwerkhaus",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gebaeude/fachwerkhaus_mittel_1.nbt",
+   "anker": [
+    5,
+    2,
+    4
+   ],
+   "masse": [
+    11,
+    14,
+    12
+   ],
+   "bloecke": 580
+  },
+  {
+   "id": "fachwerkhaus_mittel_2",
+   "gruppe": "fachwerkhaus_mittel",
+   "titel": "Fachwerkhaus",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gebaeude/fachwerkhaus_mittel_2.nbt",
+   "anker": [
+    5,
+    2,
+    4
+   ],
+   "masse": [
+    11,
+    14,
+    12
+   ],
+   "bloecke": 579
+  },
+  {
+   "id": "fachwerkhaus_gross_1",
+   "gruppe": "fachwerkhaus_gross",
+   "titel": "Fachwerkhaus",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/gebaeude/fachwerkhaus_gross_1.nbt",
+   "anker": [
+    5,
+    2,
+    4
+   ],
+   "masse": [
+    11,
+    19,
+    12
+   ],
+   "bloecke": 1133
+  },
+  {
+   "id": "fachwerkhaus_gross_2",
+   "gruppe": "fachwerkhaus_gross",
+   "titel": "Fachwerkhaus",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/gebaeude/fachwerkhaus_gross_2.nbt",
+   "anker": [
+    5,
+    2,
+    4
+   ],
+   "masse": [
+    11,
+    19,
+    12
+   ],
+   "bloecke": 1133
+  },
+  {
+   "id": "leuchtturm_mittel_1",
+   "gruppe": "leuchtturm_mittel",
+   "titel": "Leuchtturm",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gebaeude/leuchtturm_mittel_1.nbt",
+   "anker": [
+    3,
+    4,
+    3
+   ],
+   "masse": [
+    7,
+    29,
+    7
+   ],
+   "bloecke": 696
+  },
+  {
+   "id": "leuchtturm_mittel_2",
+   "gruppe": "leuchtturm_mittel",
+   "titel": "Leuchtturm",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gebaeude/leuchtturm_mittel_2.nbt",
+   "anker": [
+    3,
+    4,
+    3
+   ],
+   "masse": [
+    7,
+    29,
+    7
+   ],
+   "bloecke": 696
+  },
+  {
+   "id": "leuchtturm_gross_1",
+   "gruppe": "leuchtturm_gross",
+   "titel": "Leuchtturm",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/gebaeude/leuchtturm_gross_1.nbt",
+   "anker": [
+    4,
+    4,
+    4
+   ],
+   "masse": [
+    9,
+    37,
+    9
+   ],
+   "bloecke": 1396
+  },
+  {
+   "id": "leuchtturm_gross_2",
+   "gruppe": "leuchtturm_gross",
+   "titel": "Leuchtturm",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/gebaeude/leuchtturm_gross_2.nbt",
+   "anker": [
+    4,
+    4,
+    4
+   ],
+   "masse": [
+    9,
+    37,
+    9
+   ],
+   "bloecke": 1396
+  },
+  {
+   "id": "bootssteg_mittel_1",
+   "gruppe": "bootssteg_mittel",
+   "titel": "Bootssteg",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gebaeude/bootssteg_mittel_1.nbt",
+   "anker": [
+    2,
+    5,
+    0
+   ],
+   "masse": [
+    5,
+    9,
+    9
+   ],
+   "bloecke": 91
+  },
+  {
+   "id": "bootssteg_mittel_2",
+   "gruppe": "bootssteg_mittel",
+   "titel": "Bootssteg",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gebaeude/bootssteg_mittel_2.nbt",
+   "anker": [
+    2,
+    5,
+    0
+   ],
+   "masse": [
+    5,
+    9,
+    9
+   ],
+   "bloecke": 91
+  },
+  {
+   "id": "bootssteg_gross_1",
+   "gruppe": "bootssteg_gross",
+   "titel": "Bootssteg",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/gebaeude/bootssteg_gross_1.nbt",
+   "anker": [
+    2,
+    5,
+    0
+   ],
+   "masse": [
+    11,
+    12,
+    15
+   ],
+   "bloecke": 223
+  },
+  {
+   "id": "bootssteg_gross_2",
+   "gruppe": "bootssteg_gross",
+   "titel": "Bootssteg",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/gebaeude/bootssteg_gross_2.nbt",
+   "anker": [
+    2,
+    5,
+    0
+   ],
+   "masse": [
+    11,
+    12,
+    15
+   ],
+   "bloecke": 223
+  },
+  {
+   "id": "palmengruppe_mittel_1",
+   "gruppe": "palmengruppe_mittel",
+   "titel": "Palmengruppe",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gebaeude/palmengruppe_mittel_1.nbt",
+   "anker": [
+    10,
+    0,
+    10
+   ],
+   "masse": [
+    18,
+    14,
+    17
+   ],
+   "bloecke": 256
+  },
+  {
+   "id": "palmengruppe_mittel_2",
+   "gruppe": "palmengruppe_mittel",
+   "titel": "Palmengruppe",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gebaeude/palmengruppe_mittel_2.nbt",
+   "anker": [
+    8,
+    0,
+    12
+   ],
+   "masse": [
+    15,
+    13,
+    22
+   ],
+   "bloecke": 256
+  },
+  {
+   "id": "palmengruppe_gross_1",
+   "gruppe": "palmengruppe_gross",
+   "titel": "Palmengruppe",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/gebaeude/palmengruppe_gross_1.nbt",
+   "anker": [
+    13,
+    0,
+    9
+   ],
+   "masse": [
+    23,
+    14,
+    21
+   ],
+   "bloecke": 363
+  },
+  {
+   "id": "palmengruppe_gross_2",
+   "gruppe": "palmengruppe_gross",
+   "titel": "Palmengruppe",
+   "kategorie": "gebaeude",
+   "kategorie_name": "Gebäude",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/gebaeude/palmengruppe_gross_2.nbt",
+   "anker": [
+    11,
+    0,
+    9
+   ],
+   "masse": [
+    20,
+    13,
+    22
+   ],
+   "bloecke": 361
+  },
+  {
+   "id": "schildkroeten_insel_mittel_1",
+   "gruppe": "schildkroeten_insel_mittel",
+   "titel": "Schildkröten-Insel (Natur)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/inseln/schildkroeten_insel_mittel_1.nbt",
+   "anker": [
+    24,
+    5,
+    31
+   ],
+   "masse": [
+    57,
+    38,
+    62
+   ],
+   "bloecke": 15024,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_insel_mittel_2",
+   "gruppe": "schildkroeten_insel_mittel",
+   "titel": "Schildkröten-Insel (Natur)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/inseln/schildkroeten_insel_mittel_2.nbt",
+   "anker": [
+    24,
+    5,
+    31
+   ],
+   "masse": [
+    57,
+    34,
+    62
+   ],
+   "bloecke": 15155,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_insel_riesig_1",
+   "gruppe": "schildkroeten_insel_riesig",
+   "titel": "Schildkröten-Insel (Natur)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/inseln/schildkroeten_insel_riesig_1.nbt",
+   "anker": [
+    36,
+    7,
+    45
+   ],
+   "masse": [
+    86,
+    48,
+    90
+   ],
+   "bloecke": 47213,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_insel_riesig_2",
+   "gruppe": "schildkroeten_insel_riesig",
+   "titel": "Schildkröten-Insel (Natur)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/inseln/schildkroeten_insel_riesig_2.nbt",
+   "anker": [
+    36,
+    7,
+    45
+   ],
+   "masse": [
+    86,
+    49,
+    90
+   ],
+   "bloecke": 47523,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_dorf_mittel_1",
+   "gruppe": "schildkroeten_dorf_mittel",
+   "titel": "Schildkröten-Insel (Dorf)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/inseln/schildkroeten_dorf_mittel_1.nbt",
+   "anker": [
+    24,
+    6,
+    31
+   ],
+   "masse": [
+    57,
+    52,
+    62
+   ],
+   "bloecke": 16908,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_dorf_mittel_2",
+   "gruppe": "schildkroeten_dorf_mittel",
+   "titel": "Schildkröten-Insel (Dorf)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/inseln/schildkroeten_dorf_mittel_2.nbt",
+   "anker": [
+    26,
+    6,
+    31
+   ],
+   "masse": [
+    59,
+    52,
+    62
+   ],
+   "bloecke": 16645,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_dorf_riesig_1",
+   "gruppe": "schildkroeten_dorf_riesig",
+   "titel": "Schildkröten-Insel (Dorf)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/inseln/schildkroeten_dorf_riesig_1.nbt",
+   "anker": [
+    36,
+    7,
+    45
+   ],
+   "masse": [
+    86,
+    66,
+    90
+   ],
+   "bloecke": 49850,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "schildkroeten_dorf_riesig_2",
+   "gruppe": "schildkroeten_dorf_riesig",
+   "titel": "Schildkröten-Insel (Dorf)",
+   "kategorie": "inseln",
+   "kategorie_name": "Schildkröten-Inseln",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/inseln/schildkroeten_dorf_riesig_2.nbt",
+   "anker": [
+    36,
+    7,
+    45
+   ],
+   "masse": [
+    86,
+    70,
+    90
+   ],
+   "bloecke": 50214,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "ruinenkrater_klein",
+   "gruppe": "ruinenkrater_klein",
+   "titel": "Ruinenkrater",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/ruinen/ruinenkrater_klein.nbt",
+   "anker": [
+    25,
+    25,
+    25
+   ],
+   "masse": [
+    51,
+    33,
+    51
+   ],
+   "bloecke": 17858
+  },
+  {
+   "id": "ruinenkrater_mittel",
+   "gruppe": "ruinenkrater_mittel",
+   "titel": "Ruinenkrater",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/ruinen/ruinenkrater_mittel.nbt",
+   "anker": [
+    37,
+    35,
+    37
+   ],
+   "masse": [
+    75,
+    43,
+    75
+   ],
+   "bloecke": 38997
+  },
+  {
+   "id": "ruinenkrater_gross",
+   "gruppe": "ruinenkrater_gross",
+   "titel": "Ruinenkrater",
+   "kategorie": "ruinen",
+   "kategorie_name": "Ruinen",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/ruinen/ruinenkrater_gross.nbt",
+   "anker": [
+    51,
+    45,
+    51
+   ],
+   "masse": [
+    103,
+    53,
+    103
+   ],
+   "bloecke": 73090
+  }
+ ]
+}

@@ -62,6 +62,14 @@ public abstract class Auftrag {
     /** Bearbeitet einen geladenen Chunk. Läuft auf dem Server-Thread. */
     protected abstract void bearbeite(LevelChunk chunk);
 
+    /**
+     * Dürfen fehlende (nie erzeugte) Chunks erzeugt werden? Standard: nein – Aufräum-Befehle sollen
+     * keine neue Welt erzeugen. Beim Setzen einer Vorlage ist es aber nötig.
+     */
+    protected boolean erzeugeFehlende() {
+        return false;
+    }
+
     /** Arbeitet, bis die Frist (System.nanoTime) erreicht ist oder auf Ladevorgänge gewartet werden muss. */
     public void arbeite(long frist) {
         while (!abgebrochen && System.nanoTime() < frist) {
@@ -168,6 +176,12 @@ public abstract class Auftrag {
             }
             switch (zustand) {
                 case NEU -> {
+                    if (erzeugeFehlende()) {
+                        level.getChunkSource().addRegionTicket(TICKET, pos, 0, pos);
+                        ladeStart = level.getServer().getTickCount();
+                        zustand = Zustand.LADEN;
+                        return false;
+                    }
                     existenz = level.getChunkSource().chunkMap.read(pos);
                     zustand = Zustand.PRUEFEN;
                     return false;
@@ -195,7 +209,7 @@ public abstract class Auftrag {
                 }
                 case LADEN -> {
                     int gewartet = level.getServer().getTickCount() - ladeStart;
-                    if (gewartet > 600) {
+                    if (gewartet > (erzeugeFehlende() ? 2400 : 600)) {
                         chunksUebersprungen++;
                         return true;
                     }

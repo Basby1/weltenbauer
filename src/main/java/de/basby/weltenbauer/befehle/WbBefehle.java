@@ -16,6 +16,7 @@ import de.basby.weltenbauer.arbeit.Bereich;
 import de.basby.weltenbauer.arbeit.Protokoll;
 import de.basby.weltenbauer.arbeit.Verlauf;
 import de.basby.weltenbauer.arbeit.WiederherstellAuftrag;
+import de.basby.weltenbauer.vorlagen.VorlagenBefehle;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandBuildContext;
 import net.minecraft.commands.CommandSourceStack;
@@ -98,6 +99,9 @@ public final class WbBefehle {
                                                     + zu.getState().getBlock().getName().getString() + ")", b,
                                             Aktionen.ersetzen(von, zu.getState(), zu.getDefinedProperties()));
                                 }))))
+
+                // Vorlagen (Bäume, Ruinen, Felsen, Schildkröten-Insel …)
+                .then(VorlagenBefehle.knoten())
 
                 // Verlauf
                 .then(Commands.literal("rueckgaengig").executes(WbBefehle::rueckgaengig))
@@ -304,6 +308,10 @@ public final class WbBefehle {
         zeile(t, "/wb laub aufraeumen <Radius>", "schwebende Blätter ohne Stamm entfernen");
         zeile(t, "/wb entfernen <Block> <Radius>", "eine Blocksorte entfernen");
         zeile(t, "/wb ersetzen <Block> <Block> <Radius>", "eine Blocksorte austauschen");
+        zeile(t, "/wb vorlage", "Vorlagen-Katalog: Bäume, Ruinen, Felsen, Inseln …");
+        zeile(t, "/wb vorlage setzen <Name> [Drehung] [spiegeln]", "Vorlage dorthin setzen, wohin du schaust");
+        zeile(t, "/wb vorlage zeigen <Name>", "Umriss anzeigen, bevor du setzt");
+        zeile(t, "/wb vorlage create <Name>", "als Schematic für Create/Litematica speichern");
         zeile(t, "/wb rueckgaengig · /wb wiederholen", "letzte Änderung zurück / erneut");
         zeile(t, "/wb abbrechen · /wb status", "laufende Aktion stoppen / Stand anzeigen");
         zeile(t, "/wb stab · /wb auswahl", "Stab holen / markierten Bereich anzeigen");
