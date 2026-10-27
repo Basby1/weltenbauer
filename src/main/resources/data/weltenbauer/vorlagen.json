@@ -8158,6 +8158,2106 @@
    "bloecke": 1059
   },
   {
+   "id": "steinbruecke_stein_klein",
+   "gruppe": "steinbruecke_stein_klein",
+   "titel": "Bogenbrücke (stein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_stein_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    13,
+    9,
+    8
+   ],
+   "bloecke": 204
+  },
+  {
+   "id": "steinbruecke_stein_mittel",
+   "gruppe": "steinbruecke_stein_mittel",
+   "titel": "Bogenbrücke (stein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_stein_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    24,
+    13,
+    10
+   ],
+   "bloecke": 635
+  },
+  {
+   "id": "steinbruecke_stein_riesig",
+   "gruppe": "steinbruecke_stein_riesig",
+   "titel": "Bogenbrücke (stein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_stein_riesig.nbt",
+   "anker": [
+    1,
+    -1,
+    6
+   ],
+   "masse": [
+    38,
+    19,
+    12
+   ],
+   "bloecke": 1647
+  },
+  {
+   "id": "steinbruecke_stein_gigantisch",
+   "gruppe": "steinbruecke_stein_gigantisch",
+   "titel": "Bogenbrücke (stein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_stein_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    7
+   ],
+   "masse": [
+    61,
+    29,
+    14
+   ],
+   "bloecke": 4666
+  },
+  {
+   "id": "steinbruecke_tiefenschiefer_klein",
+   "gruppe": "steinbruecke_tiefenschiefer_klein",
+   "titel": "Bogenbrücke (tiefenschiefer)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_tiefenschiefer_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    13,
+    9,
+    8
+   ],
+   "bloecke": 204
+  },
+  {
+   "id": "steinbruecke_tiefenschiefer_mittel",
+   "gruppe": "steinbruecke_tiefenschiefer_mittel",
+   "titel": "Bogenbrücke (tiefenschiefer)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_tiefenschiefer_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    24,
+    13,
+    10
+   ],
+   "bloecke": 635
+  },
+  {
+   "id": "steinbruecke_tiefenschiefer_riesig",
+   "gruppe": "steinbruecke_tiefenschiefer_riesig",
+   "titel": "Bogenbrücke (tiefenschiefer)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_tiefenschiefer_riesig.nbt",
+   "anker": [
+    1,
+    -1,
+    6
+   ],
+   "masse": [
+    38,
+    19,
+    12
+   ],
+   "bloecke": 1647
+  },
+  {
+   "id": "steinbruecke_tiefenschiefer_gigantisch",
+   "gruppe": "steinbruecke_tiefenschiefer_gigantisch",
+   "titel": "Bogenbrücke (tiefenschiefer)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_tiefenschiefer_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    7
+   ],
+   "masse": [
+    61,
+    29,
+    14
+   ],
+   "bloecke": 4666
+  },
+  {
+   "id": "steinbruecke_sandstein_klein",
+   "gruppe": "steinbruecke_sandstein_klein",
+   "titel": "Bogenbrücke (sandstein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_sandstein_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    13,
+    9,
+    8
+   ],
+   "bloecke": 204
+  },
+  {
+   "id": "steinbruecke_sandstein_mittel",
+   "gruppe": "steinbruecke_sandstein_mittel",
+   "titel": "Bogenbrücke (sandstein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_sandstein_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    24,
+    13,
+    10
+   ],
+   "bloecke": 635
+  },
+  {
+   "id": "steinbruecke_sandstein_riesig",
+   "gruppe": "steinbruecke_sandstein_riesig",
+   "titel": "Bogenbrücke (sandstein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_sandstein_riesig.nbt",
+   "anker": [
+    1,
+    -1,
+    6
+   ],
+   "masse": [
+    38,
+    19,
+    12
+   ],
+   "bloecke": 1647
+  },
+  {
+   "id": "steinbruecke_sandstein_gigantisch",
+   "gruppe": "steinbruecke_sandstein_gigantisch",
+   "titel": "Bogenbrücke (sandstein)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_sandstein_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    7
+   ],
+   "masse": [
+    61,
+    29,
+    14
+   ],
+   "bloecke": 4666
+  },
+  {
+   "id": "steinbruecke_ziegel_klein",
+   "gruppe": "steinbruecke_ziegel_klein",
+   "titel": "Bogenbrücke (ziegel)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_ziegel_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    13,
+    9,
+    8
+   ],
+   "bloecke": 204
+  },
+  {
+   "id": "steinbruecke_ziegel_mittel",
+   "gruppe": "steinbruecke_ziegel_mittel",
+   "titel": "Bogenbrücke (ziegel)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_ziegel_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    24,
+    13,
+    10
+   ],
+   "bloecke": 635
+  },
+  {
+   "id": "steinbruecke_ziegel_riesig",
+   "gruppe": "steinbruecke_ziegel_riesig",
+   "titel": "Bogenbrücke (ziegel)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_ziegel_riesig.nbt",
+   "anker": [
+    1,
+    -1,
+    6
+   ],
+   "masse": [
+    38,
+    19,
+    12
+   ],
+   "bloecke": 1647
+  },
+  {
+   "id": "steinbruecke_ziegel_gigantisch",
+   "gruppe": "steinbruecke_ziegel_gigantisch",
+   "titel": "Bogenbrücke (ziegel)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/steinbruecke_ziegel_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    7
+   ],
+   "masse": [
+    61,
+    29,
+    14
+   ],
+   "bloecke": 4666
+  },
+  {
+   "id": "holzbruecke_spruce_klein",
+   "gruppe": "holzbruecke_spruce_klein",
+   "titel": "Holzbrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_spruce_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    13,
+    8,
+    6
+   ],
+   "bloecke": 138
+  },
+  {
+   "id": "holzbruecke_spruce_mittel",
+   "gruppe": "holzbruecke_spruce_mittel",
+   "titel": "Holzbrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_spruce_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    23,
+    11,
+    6
+   ],
+   "bloecke": 264
+  },
+  {
+   "id": "holzbruecke_spruce_riesig",
+   "gruppe": "holzbruecke_spruce_riesig",
+   "titel": "Holzbrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_spruce_riesig.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    37,
+    15,
+    8
+   ],
+   "bloecke": 596
+  },
+  {
+   "id": "holzbruecke_spruce_gigantisch",
+   "gruppe": "holzbruecke_spruce_gigantisch",
+   "titel": "Holzbrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_spruce_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    61,
+    21,
+    10
+   ],
+   "bloecke": 1298
+  },
+  {
+   "id": "haengebruecke_spruce_klein",
+   "gruppe": "haengebruecke_spruce_klein",
+   "titel": "Hängebrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_spruce_klein.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    13,
+    12,
+    5
+   ],
+   "bloecke": 94
+  },
+  {
+   "id": "haengebruecke_spruce_mittel",
+   "gruppe": "haengebruecke_spruce_mittel",
+   "titel": "Hängebrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_spruce_mittel.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    23,
+    14,
+    5
+   ],
+   "bloecke": 165
+  },
+  {
+   "id": "haengebruecke_spruce_riesig",
+   "gruppe": "haengebruecke_spruce_riesig",
+   "titel": "Hängebrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_spruce_riesig.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    37,
+    16,
+    7
+   ],
+   "bloecke": 338
+  },
+  {
+   "id": "haengebruecke_spruce_gigantisch",
+   "gruppe": "haengebruecke_spruce_gigantisch",
+   "titel": "Hängebrücke (spruce)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_spruce_gigantisch.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    61,
+    20,
+    7
+   ],
+   "bloecke": 597
+  },
+  {
+   "id": "holzbruecke_dark_oak_klein",
+   "gruppe": "holzbruecke_dark_oak_klein",
+   "titel": "Holzbrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_dark_oak_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    13,
+    8,
+    6
+   ],
+   "bloecke": 138
+  },
+  {
+   "id": "holzbruecke_dark_oak_mittel",
+   "gruppe": "holzbruecke_dark_oak_mittel",
+   "titel": "Holzbrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_dark_oak_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    23,
+    11,
+    6
+   ],
+   "bloecke": 264
+  },
+  {
+   "id": "holzbruecke_dark_oak_riesig",
+   "gruppe": "holzbruecke_dark_oak_riesig",
+   "titel": "Holzbrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_dark_oak_riesig.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    37,
+    15,
+    8
+   ],
+   "bloecke": 596
+  },
+  {
+   "id": "holzbruecke_dark_oak_gigantisch",
+   "gruppe": "holzbruecke_dark_oak_gigantisch",
+   "titel": "Holzbrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_dark_oak_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    61,
+    21,
+    10
+   ],
+   "bloecke": 1298
+  },
+  {
+   "id": "haengebruecke_dark_oak_klein",
+   "gruppe": "haengebruecke_dark_oak_klein",
+   "titel": "Hängebrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_dark_oak_klein.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    13,
+    12,
+    5
+   ],
+   "bloecke": 94
+  },
+  {
+   "id": "haengebruecke_dark_oak_mittel",
+   "gruppe": "haengebruecke_dark_oak_mittel",
+   "titel": "Hängebrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_dark_oak_mittel.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    23,
+    14,
+    5
+   ],
+   "bloecke": 165
+  },
+  {
+   "id": "haengebruecke_dark_oak_riesig",
+   "gruppe": "haengebruecke_dark_oak_riesig",
+   "titel": "Hängebrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_dark_oak_riesig.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    37,
+    16,
+    7
+   ],
+   "bloecke": 338
+  },
+  {
+   "id": "haengebruecke_dark_oak_gigantisch",
+   "gruppe": "haengebruecke_dark_oak_gigantisch",
+   "titel": "Hängebrücke (dark_oak)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_dark_oak_gigantisch.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    61,
+    20,
+    7
+   ],
+   "bloecke": 597
+  },
+  {
+   "id": "holzbruecke_cherry_klein",
+   "gruppe": "holzbruecke_cherry_klein",
+   "titel": "Holzbrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_cherry_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    13,
+    8,
+    6
+   ],
+   "bloecke": 138
+  },
+  {
+   "id": "holzbruecke_cherry_mittel",
+   "gruppe": "holzbruecke_cherry_mittel",
+   "titel": "Holzbrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_cherry_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    23,
+    11,
+    6
+   ],
+   "bloecke": 264
+  },
+  {
+   "id": "holzbruecke_cherry_riesig",
+   "gruppe": "holzbruecke_cherry_riesig",
+   "titel": "Holzbrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_cherry_riesig.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    37,
+    15,
+    8
+   ],
+   "bloecke": 596
+  },
+  {
+   "id": "holzbruecke_cherry_gigantisch",
+   "gruppe": "holzbruecke_cherry_gigantisch",
+   "titel": "Holzbrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_cherry_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    61,
+    21,
+    10
+   ],
+   "bloecke": 1298
+  },
+  {
+   "id": "haengebruecke_cherry_klein",
+   "gruppe": "haengebruecke_cherry_klein",
+   "titel": "Hängebrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_cherry_klein.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    13,
+    12,
+    5
+   ],
+   "bloecke": 94
+  },
+  {
+   "id": "haengebruecke_cherry_mittel",
+   "gruppe": "haengebruecke_cherry_mittel",
+   "titel": "Hängebrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_cherry_mittel.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    23,
+    14,
+    5
+   ],
+   "bloecke": 165
+  },
+  {
+   "id": "haengebruecke_cherry_riesig",
+   "gruppe": "haengebruecke_cherry_riesig",
+   "titel": "Hängebrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_cherry_riesig.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    37,
+    16,
+    7
+   ],
+   "bloecke": 338
+  },
+  {
+   "id": "haengebruecke_cherry_gigantisch",
+   "gruppe": "haengebruecke_cherry_gigantisch",
+   "titel": "Hängebrücke (cherry)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_cherry_gigantisch.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    61,
+    20,
+    7
+   ],
+   "bloecke": 597
+  },
+  {
+   "id": "holzbruecke_mangrove_klein",
+   "gruppe": "holzbruecke_mangrove_klein",
+   "titel": "Holzbrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_mangrove_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    13,
+    8,
+    6
+   ],
+   "bloecke": 138
+  },
+  {
+   "id": "holzbruecke_mangrove_mittel",
+   "gruppe": "holzbruecke_mangrove_mittel",
+   "titel": "Holzbrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_mangrove_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    23,
+    11,
+    6
+   ],
+   "bloecke": 264
+  },
+  {
+   "id": "holzbruecke_mangrove_riesig",
+   "gruppe": "holzbruecke_mangrove_riesig",
+   "titel": "Holzbrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_mangrove_riesig.nbt",
+   "anker": [
+    0,
+    -1,
+    4
+   ],
+   "masse": [
+    37,
+    15,
+    8
+   ],
+   "bloecke": 596
+  },
+  {
+   "id": "holzbruecke_mangrove_gigantisch",
+   "gruppe": "holzbruecke_mangrove_gigantisch",
+   "titel": "Holzbrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/holzbruecke_mangrove_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    5
+   ],
+   "masse": [
+    61,
+    21,
+    10
+   ],
+   "bloecke": 1298
+  },
+  {
+   "id": "haengebruecke_mangrove_klein",
+   "gruppe": "haengebruecke_mangrove_klein",
+   "titel": "Hängebrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_mangrove_klein.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    13,
+    12,
+    5
+   ],
+   "bloecke": 94
+  },
+  {
+   "id": "haengebruecke_mangrove_mittel",
+   "gruppe": "haengebruecke_mangrove_mittel",
+   "titel": "Hängebrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_mangrove_mittel.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    23,
+    14,
+    5
+   ],
+   "bloecke": 165
+  },
+  {
+   "id": "haengebruecke_mangrove_riesig",
+   "gruppe": "haengebruecke_mangrove_riesig",
+   "titel": "Hängebrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_mangrove_riesig.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    37,
+    16,
+    7
+   ],
+   "bloecke": 338
+  },
+  {
+   "id": "haengebruecke_mangrove_gigantisch",
+   "gruppe": "haengebruecke_mangrove_gigantisch",
+   "titel": "Hängebrücke (mangrove)",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/haengebruecke_mangrove_gigantisch.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    61,
+    20,
+    7
+   ],
+   "bloecke": 597
+  },
+  {
+   "id": "ruinenbruecke_klein",
+   "gruppe": "ruinenbruecke_klein",
+   "titel": "Eingestürzte Brücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/ruinenbruecke_klein.nbt",
+   "anker": [
+    1,
+    -1,
+    4
+   ],
+   "masse": [
+    15,
+    9,
+    8
+   ],
+   "bloecke": 218
+  },
+  {
+   "id": "ruinenbruecke_mittel",
+   "gruppe": "ruinenbruecke_mittel",
+   "titel": "Eingestürzte Brücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/ruinenbruecke_mittel.nbt",
+   "anker": [
+    1,
+    -1,
+    5
+   ],
+   "masse": [
+    25,
+    13,
+    10
+   ],
+   "bloecke": 621
+  },
+  {
+   "id": "ruinenbruecke_riesig",
+   "gruppe": "ruinenbruecke_riesig",
+   "titel": "Eingestürzte Brücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/ruinenbruecke_riesig.nbt",
+   "anker": [
+    1,
+    -1,
+    6
+   ],
+   "masse": [
+    39,
+    19,
+    12
+   ],
+   "bloecke": 1246
+  },
+  {
+   "id": "ruinenbruecke_gigantisch",
+   "gruppe": "ruinenbruecke_gigantisch",
+   "titel": "Eingestürzte Brücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/ruinenbruecke_gigantisch.nbt",
+   "anker": [
+    1,
+    -1,
+    7
+   ],
+   "masse": [
+    63,
+    29,
+    14
+   ],
+   "bloecke": 3920
+  },
+  {
+   "id": "kristallbruecke_klein",
+   "gruppe": "kristallbruecke_klein",
+   "titel": "Kristallbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/kristallbruecke_klein.nbt",
+   "anker": [
+    0,
+    -8,
+    2
+   ],
+   "masse": [
+    13,
+    7,
+    5
+   ],
+   "bloecke": 54
+  },
+  {
+   "id": "kristallbruecke_mittel",
+   "gruppe": "kristallbruecke_mittel",
+   "titel": "Kristallbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/kristallbruecke_mittel.nbt",
+   "anker": [
+    0,
+    -8,
+    3
+   ],
+   "masse": [
+    23,
+    7,
+    7
+   ],
+   "bloecke": 140
+  },
+  {
+   "id": "kristallbruecke_riesig",
+   "gruppe": "kristallbruecke_riesig",
+   "titel": "Kristallbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/kristallbruecke_riesig.nbt",
+   "anker": [
+    0,
+    -8,
+    4
+   ],
+   "masse": [
+    37,
+    7,
+    9
+   ],
+   "bloecke": 299
+  },
+  {
+   "id": "kristallbruecke_gigantisch",
+   "gruppe": "kristallbruecke_gigantisch",
+   "titel": "Kristallbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/kristallbruecke_gigantisch.nbt",
+   "anker": [
+    0,
+    -8,
+    5
+   ],
+   "masse": [
+    61,
+    7,
+    11
+   ],
+   "bloecke": 614
+  },
+  {
+   "id": "wurzelbruecke_klein",
+   "gruppe": "wurzelbruecke_klein",
+   "titel": "Wurzelbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/bruecken/wurzelbruecke_klein.nbt",
+   "anker": [
+    0,
+    -1,
+    2
+   ],
+   "masse": [
+    13,
+    7,
+    5
+   ],
+   "bloecke": 105
+  },
+  {
+   "id": "wurzelbruecke_mittel",
+   "gruppe": "wurzelbruecke_mittel",
+   "titel": "Wurzelbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bruecken/wurzelbruecke_mittel.nbt",
+   "anker": [
+    0,
+    -1,
+    2
+   ],
+   "masse": [
+    23,
+    9,
+    5
+   ],
+   "bloecke": 210
+  },
+  {
+   "id": "wurzelbruecke_riesig",
+   "gruppe": "wurzelbruecke_riesig",
+   "titel": "Wurzelbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bruecken/wurzelbruecke_riesig.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    37,
+    9,
+    7
+   ],
+   "bloecke": 436
+  },
+  {
+   "id": "wurzelbruecke_gigantisch",
+   "gruppe": "wurzelbruecke_gigantisch",
+   "titel": "Wurzelbrücke",
+   "kategorie": "bruecken",
+   "kategorie_name": "Brücken",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/bruecken/wurzelbruecke_gigantisch.nbt",
+   "anker": [
+    0,
+    -1,
+    3
+   ],
+   "masse": [
+    61,
+    10,
+    7
+   ],
+   "bloecke": 790
+  },
+  {
+   "id": "haengender_garten_stein_klein_1",
+   "gruppe": "haengender_garten_stein_klein",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_stein_klein_1.nbt",
+   "anker": [
+    7,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    24,
+    15
+   ],
+   "bloecke": 1550
+  },
+  {
+   "id": "haengender_garten_stein_klein_2",
+   "gruppe": "haengender_garten_stein_klein",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_stein_klein_2.nbt",
+   "anker": [
+    8,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    23,
+    15
+   ],
+   "bloecke": 1545
+  },
+  {
+   "id": "haengender_garten_stein_mittel_1",
+   "gruppe": "haengender_garten_stein_mittel",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_stein_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    12
+   ],
+   "masse": [
+    21,
+    36,
+    23
+   ],
+   "bloecke": 4901
+  },
+  {
+   "id": "haengender_garten_stein_mittel_2",
+   "gruppe": "haengender_garten_stein_mittel",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_stein_mittel_2.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    36,
+    21
+   ],
+   "bloecke": 4701
+  },
+  {
+   "id": "haengender_garten_stein_riesig_1",
+   "gruppe": "haengender_garten_stein_riesig",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_stein_riesig_1.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    32,
+    59,
+    33
+   ],
+   "bloecke": 15633
+  },
+  {
+   "id": "haengender_garten_stein_riesig_2",
+   "gruppe": "haengender_garten_stein_riesig",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_stein_riesig_2.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    31,
+    65,
+    31
+   ],
+   "bloecke": 15512
+  },
+  {
+   "id": "haengender_garten_stein_gigantisch_1",
+   "gruppe": "haengender_garten_stein_gigantisch",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_stein_gigantisch_1.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    85,
+    47
+   ],
+   "bloecke": 51285
+  },
+  {
+   "id": "haengender_garten_stein_gigantisch_2",
+   "gruppe": "haengender_garten_stein_gigantisch",
+   "titel": "Hängender Garten (stein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_stein_gigantisch_2.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    84,
+    47
+   ],
+   "bloecke": 50971
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_klein_1",
+   "gruppe": "haengender_garten_tiefenschiefer_klein",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_klein_1.nbt",
+   "anker": [
+    7,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    24,
+    15
+   ],
+   "bloecke": 1550
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_klein_2",
+   "gruppe": "haengender_garten_tiefenschiefer_klein",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_klein_2.nbt",
+   "anker": [
+    8,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    23,
+    15
+   ],
+   "bloecke": 1545
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_mittel_1",
+   "gruppe": "haengender_garten_tiefenschiefer_mittel",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    12
+   ],
+   "masse": [
+    21,
+    36,
+    23
+   ],
+   "bloecke": 4901
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_mittel_2",
+   "gruppe": "haengender_garten_tiefenschiefer_mittel",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_mittel_2.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    36,
+    21
+   ],
+   "bloecke": 4701
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_riesig_1",
+   "gruppe": "haengender_garten_tiefenschiefer_riesig",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_riesig_1.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    32,
+    59,
+    33
+   ],
+   "bloecke": 15633
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_riesig_2",
+   "gruppe": "haengender_garten_tiefenschiefer_riesig",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_riesig_2.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    31,
+    65,
+    31
+   ],
+   "bloecke": 15512
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_gigantisch_1",
+   "gruppe": "haengender_garten_tiefenschiefer_gigantisch",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_gigantisch_1.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    85,
+    47
+   ],
+   "bloecke": 51285
+  },
+  {
+   "id": "haengender_garten_tiefenschiefer_gigantisch_2",
+   "gruppe": "haengender_garten_tiefenschiefer_gigantisch",
+   "titel": "Hängender Garten (tiefenschiefer)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_tiefenschiefer_gigantisch_2.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    84,
+    47
+   ],
+   "bloecke": 50971
+  },
+  {
+   "id": "haengender_garten_sandstein_klein_1",
+   "gruppe": "haengender_garten_sandstein_klein",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_sandstein_klein_1.nbt",
+   "anker": [
+    7,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    24,
+    15
+   ],
+   "bloecke": 1550
+  },
+  {
+   "id": "haengender_garten_sandstein_klein_2",
+   "gruppe": "haengender_garten_sandstein_klein",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_sandstein_klein_2.nbt",
+   "anker": [
+    8,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    23,
+    15
+   ],
+   "bloecke": 1545
+  },
+  {
+   "id": "haengender_garten_sandstein_mittel_1",
+   "gruppe": "haengender_garten_sandstein_mittel",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_sandstein_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    12
+   ],
+   "masse": [
+    21,
+    36,
+    23
+   ],
+   "bloecke": 4901
+  },
+  {
+   "id": "haengender_garten_sandstein_mittel_2",
+   "gruppe": "haengender_garten_sandstein_mittel",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_sandstein_mittel_2.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    36,
+    21
+   ],
+   "bloecke": 4701
+  },
+  {
+   "id": "haengender_garten_sandstein_riesig_1",
+   "gruppe": "haengender_garten_sandstein_riesig",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_sandstein_riesig_1.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    32,
+    59,
+    33
+   ],
+   "bloecke": 15633
+  },
+  {
+   "id": "haengender_garten_sandstein_riesig_2",
+   "gruppe": "haengender_garten_sandstein_riesig",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_sandstein_riesig_2.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    31,
+    65,
+    31
+   ],
+   "bloecke": 15512
+  },
+  {
+   "id": "haengender_garten_sandstein_gigantisch_1",
+   "gruppe": "haengender_garten_sandstein_gigantisch",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_sandstein_gigantisch_1.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    85,
+    47
+   ],
+   "bloecke": 51285
+  },
+  {
+   "id": "haengender_garten_sandstein_gigantisch_2",
+   "gruppe": "haengender_garten_sandstein_gigantisch",
+   "titel": "Hängender Garten (sandstein)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_sandstein_gigantisch_2.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    84,
+    47
+   ],
+   "bloecke": 50971
+  },
+  {
+   "id": "haengender_garten_ziegel_klein_1",
+   "gruppe": "haengender_garten_ziegel_klein",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_ziegel_klein_1.nbt",
+   "anker": [
+    7,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    24,
+    15
+   ],
+   "bloecke": 1550
+  },
+  {
+   "id": "haengender_garten_ziegel_klein_2",
+   "gruppe": "haengender_garten_ziegel_klein",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_ziegel_klein_2.nbt",
+   "anker": [
+    8,
+    1,
+    7
+   ],
+   "masse": [
+    16,
+    23,
+    15
+   ],
+   "bloecke": 1545
+  },
+  {
+   "id": "haengender_garten_ziegel_mittel_1",
+   "gruppe": "haengender_garten_ziegel_mittel",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_ziegel_mittel_1.nbt",
+   "anker": [
+    10,
+    1,
+    12
+   ],
+   "masse": [
+    21,
+    36,
+    23
+   ],
+   "bloecke": 4901
+  },
+  {
+   "id": "haengender_garten_ziegel_mittel_2",
+   "gruppe": "haengender_garten_ziegel_mittel",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_ziegel_mittel_2.nbt",
+   "anker": [
+    10,
+    1,
+    10
+   ],
+   "masse": [
+    21,
+    36,
+    21
+   ],
+   "bloecke": 4701
+  },
+  {
+   "id": "haengender_garten_ziegel_riesig_1",
+   "gruppe": "haengender_garten_ziegel_riesig",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_ziegel_riesig_1.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    32,
+    59,
+    33
+   ],
+   "bloecke": 15633
+  },
+  {
+   "id": "haengender_garten_ziegel_riesig_2",
+   "gruppe": "haengender_garten_ziegel_riesig",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_ziegel_riesig_2.nbt",
+   "anker": [
+    15,
+    1,
+    15
+   ],
+   "masse": [
+    31,
+    65,
+    31
+   ],
+   "bloecke": 15512
+  },
+  {
+   "id": "haengender_garten_ziegel_gigantisch_1",
+   "gruppe": "haengender_garten_ziegel_gigantisch",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/gaerten/haengender_garten_ziegel_gigantisch_1.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    85,
+    47
+   ],
+   "bloecke": 51285
+  },
+  {
+   "id": "haengender_garten_ziegel_gigantisch_2",
+   "gruppe": "haengender_garten_ziegel_gigantisch",
+   "titel": "Hängender Garten (ziegel)",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/gaerten/haengender_garten_ziegel_gigantisch_2.nbt",
+   "anker": [
+    23,
+    1,
+    23
+   ],
+   "masse": [
+    47,
+    84,
+    47
+   ],
+   "bloecke": 50971
+  },
+  {
+   "id": "blumenampel_klein_1",
+   "gruppe": "blumenampel_klein",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/gaerten/blumenampel_klein_1.nbt",
+   "anker": [
+    2,
+    -10,
+    2
+   ],
+   "masse": [
+    5,
+    11,
+    5
+   ],
+   "bloecke": 51
+  },
+  {
+   "id": "blumenampel_klein_2",
+   "gruppe": "blumenampel_klein",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/gaerten/blumenampel_klein_2.nbt",
+   "anker": [
+    2,
+    -9,
+    2
+   ],
+   "masse": [
+    5,
+    12,
+    5
+   ],
+   "bloecke": 66
+  },
+  {
+   "id": "blumenampel_mittel_1",
+   "gruppe": "blumenampel_mittel",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/gaerten/blumenampel_mittel_1.nbt",
+   "anker": [
+    7,
+    -6,
+    2
+   ],
+   "masse": [
+    15,
+    15,
+    5
+   ],
+   "bloecke": 210
+  },
+  {
+   "id": "blumenampel_mittel_2",
+   "gruppe": "blumenampel_mittel",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/gaerten/blumenampel_mittel_2.nbt",
+   "anker": [
+    7,
+    -8,
+    2
+   ],
+   "masse": [
+    14,
+    13,
+    5
+   ],
+   "bloecke": 183
+  },
+  {
+   "id": "blumenampel_riesig_1",
+   "gruppe": "blumenampel_riesig",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/gaerten/blumenampel_riesig_1.nbt",
+   "anker": [
+    15,
+    -2,
+    3
+   ],
+   "masse": [
+    31,
+    19,
+    7
+   ],
+   "bloecke": 635
+  },
+  {
+   "id": "blumenampel_riesig_2",
+   "gruppe": "blumenampel_riesig",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/gaerten/blumenampel_riesig_2.nbt",
+   "anker": [
+    15,
+    -5,
+    3
+   ],
+   "masse": [
+    31,
+    16,
+    7
+   ],
+   "bloecke": 662
+  },
+  {
+   "id": "blumenampel_gigantisch_1",
+   "gruppe": "blumenampel_gigantisch",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/gaerten/blumenampel_gigantisch_1.nbt",
+   "anker": [
+    31,
+    0,
+    3
+   ],
+   "masse": [
+    56,
+    21,
+    7
+   ],
+   "bloecke": 1076
+  },
+  {
+   "id": "blumenampel_gigantisch_2",
+   "gruppe": "blumenampel_gigantisch",
+   "titel": "Hängende Blumenampeln",
+   "kategorie": "gaerten",
+   "kategorie_name": "Hängende Gärten",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/gaerten/blumenampel_gigantisch_2.nbt",
+   "anker": [
+    31,
+    -2,
+    3
+   ],
+   "masse": [
+    56,
+    19,
+    7
+   ],
+   "bloecke": 1112
+  },
+  {
    "id": "kupferdachhaus_mittel_1",
    "gruppe": "kupferdachhaus_mittel",
    "titel": "Kupferdach-Haus",

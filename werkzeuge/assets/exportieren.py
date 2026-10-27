@@ -30,6 +30,7 @@ from schwebend import SCHWEBEND  # noqa: E402
 from riesenbogen import FANTASIEHAEUSER, RIESENBOGEN  # noqa: E402
 from himmelsstadt import GROESSEN as G4, HIMMELSSTADT, SCHWEBEBERGE  # noqa: E402
 from leuchtwald import LEUCHTWALD  # noqa: E402
+from bruecken import BRUECKEN, GAERTEN  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -50,6 +51,8 @@ GRUPPEN = [
     ("himmelsstadt", "Himmelsstadt", HIMMELSSTADT, G4, [7, 21]),
     ("schwebeberge", "Schwebeberge", SCHWEBEBERGE, G4, [7, 21]),
     ("leuchtwald", "Leuchtwald", LEUCHTWALD, G4, [7, 21]),
+    ("bruecken", "Brücken", BRUECKEN, G4, [7]),
+    ("gaerten", "Hängende Gärten", GAERTEN, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
