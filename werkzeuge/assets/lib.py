@@ -575,3 +575,8 @@ FARBEN.update({
     "soul_sand": (81, 62, 50), "soul_soil": (75, 57, 46), "packed_ice": (141, 180, 250), "granite": (149, 103, 85),
     "carved_pumpkin": (198, 118, 24), "pumpkin": (198, 118, 24), "potatoes": (100, 160, 50), "mud": (60, 57, 60),
 })
+
+FARBEN.update({
+    "chest": (164, 116, 46), "iron_trapdoor": (200, 200, 200), "pink_terracotta": (161, 78, 78),
+    "warped_wart_block": (22, 119, 121), "gravel": (131, 127, 126), "honeycomb_block": (229, 148, 29),
+})
