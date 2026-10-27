@@ -33,6 +33,35 @@ Befehl nur im Bereich, den du mit dem Terraforming-Stab markiert hast.
 
 **Terraforming-Stab:** Rechtsklick auf einen Block = Ecke 1, Schleichen + Rechtsklick = Ecke 2.
 
+## Vorlagen (ab Version 0.2)
+
+Über 170 eingebaute Vorlagen, alle mit Rückgängig-Funktion:
+
+| Kategorie | Inhalt |
+|---|---|
+| Bäume | Eiche, Birke, Riesenfichte, Kirschbaum, Trauerweide, Akazie, Mammutbaum, Dschungelriese, Mangrove, Uralte Schwarzeiche, Toter Baum, Azaleenbaum – je klein/mittel/groß, 2 Varianten |
+| Spektakuläre Bäume | Weltenbaum, Sakura-Riese, Drachenbaum, Baobab, Gespensterbaum, Riesenpilze, Karmesin-/Wirr-Riese, Schwebende Insel, Wurzelfelsen – je mittel/riesig, 2 Varianten |
+| Ruinen | Torbogen, Turmruine, Säulengang, Tempelruine, Brückenruine, Brunnen, Ruinenkrater |
+| Felsen & Natur | Felsbogen, Wüsten-Felsbogen, Felsnadeln, Findlinge, Wasserfall-Klippe |
+| Schwebende Strukturen | Felssichel mit Ranken, zerbrochene Schwebebrocken, Regenbogen-Ring, Archipel, Himmelsturm mit Ring |
+| Gebäude | Fachwerkhaus, Leuchtturm, Bootssteg, Palmengruppe |
+| Schildkröten-Inseln | Riesige Meeresschildkröte mit Insel – „Natur“ oder „Dorf“, mittel/riesig (auf die Wasseroberfläche setzen) |
+
+```
+/wb vorlage                          Katalog mit anklickbaren Kategorien
+/wb vorlage setzen <Name> [0|90|180|270|zufall] [spiegeln]
+/wb vorlage zeigen <Name>            Umriss 15 Sekunden lang anzeigen
+/wb vorlage create <Name>            als .nbt in den Ordner schematics (Create-Schematictisch / Litematica)
+/wb vorlage ordner                   zeigt die Ordner für eigene Vorlagen
+```
+
+Gesetzt wird dort, wohin du schaust (bis 160 Blöcke weit, auch auf Wasser). Gibst du einen Namen ohne
+Nummer an (z. B. `eiche_gross`), wird eine zufällige Variante genommen. Eigene `.nbt`-Dateien aus
+`weltenbauer/vorlagen` und `schematics` erscheinen automatisch im Katalog.
+
+Die Vorlagen sind auch normale Minecraft-Strukturen: `/place template weltenbauer:baeume/eiche_gross_1`.
+Vorschaubilder liegen in `werkzeuge/assets/bilder`, die Generatoren (Python) in `werkzeuge/assets`.
+
 ## Sicherheit
 
 - **Blöcke mit Inhalt** (Truhen, Öfen, Create-Maschinen …) werden nie angefasst.
