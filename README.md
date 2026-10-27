@@ -65,7 +65,8 @@ Vorschaubilder liegen in `werkzeuge/assets/bilder`, die Generatoren (Python) in 
 ## Sicherheit
 
 - **Blöcke mit Inhalt** (Truhen, Öfen, Create-Maschinen …) werden nie angefasst.
-- **Nie besuchte Gebiete werden nicht erzeugt.** Bearbeitet werden nur Chunks, die es schon gibt.
+- **Nie besuchte Gebiete werden nicht erzeugt.** Bearbeitet werden nur Chunks, die es schon gibt
+  (Ausnahme: beim Setzen einer Vorlage wird ein fehlender Chunk unter der Vorlage erzeugt).
 - Große Bereiche werden **Chunk für Chunk** abgearbeitet (höchstens 15 ms pro Tick), damit das Spiel nicht einfriert.
   Ab ca. 400 Chunks fragt Weltenbauer vorher nach.
 - Der Rückgängig-Verlauf liegt im Weltordner unter `weltenbauer/verlauf` und bleibt auch nach einem Neustart erhalten.
