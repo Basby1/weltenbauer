@@ -5,7 +5,10 @@ Ausgabe:
   src/main/resources/data/weltenbauer/vorlagen.json                    (Liste für /wb vorlage)
   werkzeuge/assets/bilder/*.png                                        (Übersichtsbilder)
 
-Aufruf:  python3 exportieren.py [--ohne-bilder]
+Aufruf:  python3 exportieren.py [--ohne-bilder] [--nur-pakete]
+
+Kategorien in PAKET_KAT landen nicht im Mod-Jar, sondern als Zip-Paket in pakete/ (plus pakete.json).
+Die Mod lädt sie im Menü über „Neue Vorlagen laden“ nach – ohne Neuinstallation.
 """
 
 from __future__ import annotations
@@ -61,6 +64,11 @@ GRUPPEN = [
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
+# Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
+PAKET_KAT = {}
+PAKETE = PROJEKT / "pakete"
+PAKET_TMP = HIER / "_paket_tmp"
+
 KRATER_DATEIEN = [
     ("ruinenkrater_klein", "klein", (25, 25, 25)),
     ("ruinenkrater_mittel", "mittel", (37, 35, 37)),
@@ -68,7 +76,7 @@ KRATER_DATEIEN = [
 ]
 
 
-def menue_bild(welt, name, meer=False):
+def menue_bild(welt, name, meer=False, ziel=None):
     """128x128-Vorschau mit transparentem Hintergrund für das Menü im Spiel."""
     from PIL import Image
     from vorschau import HG, bild
@@ -78,28 +86,72 @@ def menue_bild(welt, name, meer=False):
     img.thumbnail((124, 124), Image.LANCZOS)
     karte = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
     karte.paste(img, ((128 - img.width) // 2, (128 - img.height) // 2), img)
-    VORSCHAU.mkdir(parents=True, exist_ok=True)
-    karte.save(VORSCHAU / f"{name}.png", optimize=True)
+    ziel = ziel or VORSCHAU
+    ziel.mkdir(parents=True, exist_ok=True)
+    karte.save(ziel / f"{name}.png", optimize=True)
+
+
+def pakete_bauen(paket_listen):
+    """Schreibt pro Paket eine Zip (bitgleich reproduzierbar) und den Index pakete.json."""
+    import gzip
+    import hashlib
+    import io
+    import zipfile
+    PAKETE.mkdir(exist_ok=True)
+    for pid, (pname, eintraege) in paket_listen.items():
+        wurzel = PAKET_TMP / pid
+        puffer = io.BytesIO()
+        with zipfile.ZipFile(puffer, "w", zipfile.ZIP_DEFLATED) as z:
+            def dazu(name, daten):
+                info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                z.writestr(info, daten)
+            dazu("paket.json", json.dumps({"name": pname, "vorlagen": eintraege}, ensure_ascii=False,
+                                          indent=1).encode("utf-8"))
+            for datei in sorted(p for p in wurzel.rglob("*") if p.is_file()):
+                daten = datei.read_bytes()
+                if datei.suffix == ".nbt":     # gzip ohne Zeitstempel -> gleiche Bytes bei gleichem Inhalt
+                    roh = gzip.decompress(daten)
+                    b = io.BytesIO()
+                    with gzip.GzipFile(fileobj=b, mode="wb", compresslevel=9, mtime=0) as gz:
+                        gz.write(roh)
+                    daten = b.getvalue()
+                dazu(datei.relative_to(wurzel).as_posix(), daten)
+        (PAKETE / f"{pid}.zip").write_bytes(puffer.getvalue())
+        print(f"Paket {pid}.zip: {len(eintraege)} Vorlagen, {len(puffer.getvalue()) / 1e6:.1f} MB")
+    index = []
+    for zp in sorted(PAKETE.glob("*.zip")):
+        daten = zp.read_bytes()
+        with zipfile.ZipFile(zp) as z:
+            name = json.loads(z.read("paket.json"))["name"]
+        index.append({"datei": zp.name, "name": name, "version": hashlib.sha1(daten).hexdigest()[:12],
+                      "groesse": len(daten)})
+    (PAKETE / "pakete.json").write_text(json.dumps({"pakete": index}, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def main():
     bilder = "--ohne-bilder" not in sys.argv
+    nur_pakete = "--nur-pakete" in sys.argv
     struktur = ZIEL / "structures"
-    for alt in (struktur, VORSCHAU):
+    for alt in ((PAKET_TMP,) if nur_pakete else (struktur, VORSCHAU, PAKET_TMP)):
         if alt.exists():
             shutil.rmtree(alt)
+    paket_listen = {}
     eintraege = []
     vorschau = {}  # Kategorie -> [(Beschriftung, Welt)]
     t0 = time.time()
 
     for kat, kat_name, tabelle, groessen, seeds in GRUPPEN:
+        pk = PAKET_KAT.get(kat)
+        if nur_pakete and not pk:
+            continue
         for art, (titel, funktion) in tabelle.items():
             for g, kuerzel, anzeige in groessen:
                 for v, seed in enumerate(seeds, start=1):
                     welt = funktion(seed + 100 * g, g)
                     gruppe = f"{art}_{kuerzel}"
                     vid = f"{gruppe}_{v}" if len(seeds) > 1 else gruppe
-                    pfad = struktur / kat / f"{vid}.nbt"
+                    pfad = (PAKET_TMP / pk[0] / "structures" if pk else struktur) / kat / f"{vid}.nbt"
                     info = exportieren(welt, pfad)
                     # Kontrolle: Datei wieder einlesen
                     zurueck = laden(pfad)
@@ -109,12 +161,26 @@ def main():
                         "groesse": anzeige, "variante": v, "datei": f"structures/{kat}/{vid}.nbt",
                         "anker": info["anker"], "masse": info["groesse"], "bloecke": info["bloecke"],
                     })
+                    if kat in MEER or art == "segelschiff":
+                        eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
+                    if pk:
+                        paket_listen.setdefault(pk[0], (pk[1], []))[1].append(eintraege.pop())
+                        if v == 1:
+                            menue_bild(welt, gruppe, meer=kat in MEER, ziel=PAKET_TMP / pk[0] / "bilder")
+                        print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke  [Paket {pk[0]}]",
+                              flush=True)
+                        continue
                     if v == 1:
                         menue_bild(welt, gruppe, meer=kat in MEER)
                         vorschau.setdefault((kat, kat_name, anzeige), []).append((titel, welt, info["groesse"]))
                     if kat in MEER or art == "segelschiff":
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
                     print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke", flush=True)
+
+    if paket_listen:
+        pakete_bauen(paket_listen)
+    if nur_pakete:
+        return
 
     # Ruinenkrater (vorhandene Dateien übernehmen)
     for name, kuerzel, anker in KRATER_DATEIEN:

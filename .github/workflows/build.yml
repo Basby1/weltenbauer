@@ -57,3 +57,18 @@ jobs:
             (Minecraft 1.20.1, Forge) legen. Vorher eine Sicherungskopie der Welt machen.
           files: build/libs/weltenbauer-*.jar
           make_latest: true
+
+      - name: Vorlagen-Pakete bereitstellen (für „Neue Vorlagen laden“ im Spiel)
+        if: github.ref == 'refs/heads/main' && hashFiles('pakete/pakete.json') != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: vorlagen-pakete
+          name: Weltenbauer – Vorlagen-Pakete
+          body: |
+            Diese Pakete lädt die Mod selbst über den Knopf „Neue Vorlagen laden“ im Vorlagen-Menü (Taste B).
+            Von Hand: die .zip-Dateien in den Ordner weltenbauer/pakete im Minecraft-Ordner legen.
+          prerelease: true
+          make_latest: false
+          files: |
+            pakete/*.zip
+            pakete/pakete.json

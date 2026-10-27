@@ -150,7 +150,10 @@ public class VorlagenMenue extends Screen {
             }
             Karte alt = nachGruppe.get(e.gruppe());
             if (alt == null) {
-                ResourceLocation bild = new ResourceLocation("weltenbauer", "textures/gui/vorschau/" + e.gruppe() + ".png");
+                ResourceLocation bild = PaketBilder.bild(e.gruppe());
+                if (bild == null) {
+                    bild = new ResourceLocation("weltenbauer", "textures/gui/vorschau/" + e.gruppe() + ".png");
+                }
                 nachGruppe.put(e.gruppe(), new Karte(e, 1, bild));
             } else {
                 nachGruppe.put(e.gruppe(), new Karte(alt.eintrag(), alt.varianten() + 1, alt.bild()));
@@ -160,7 +163,20 @@ public class VorlagenMenue extends Screen {
     }
 
     private boolean bildVorhanden(ResourceLocation rl) {
+        if (PaketBilder.istPaketBild(rl)) {
+            return true;
+        }
         return BILD_DA.computeIfAbsent(rl, r -> Minecraft.getInstance().getResourceManager().getResource(r).isPresent());
+    }
+
+    private static final String LADEN = "Neue Vorlagen laden";
+
+    private int ladenX0() {
+        return px1 - 10 - (font.width(LADEN) + 12);
+    }
+
+    private boolean ueberLaden(double mx, double my) {
+        return mx >= ladenX0() && mx < px1 - 10 && my >= py1 - 16 && my < py1 - 3;
     }
 
     private boolean befehlsReiter() {
@@ -179,6 +195,10 @@ public class VorlagenMenue extends Screen {
 
     @Override
     public void render(GuiGraphics g, int mx, int my, float partial) {
+        if (PaketLader.neuGeladen()) {
+            PaketBilder.leeren();
+            rebuildWidgets();
+        }
         renderBackground(g);
         g.fill(px0, py0, px1, py1, HINTERGRUND);
         g.renderOutline(px0, py0, px1 - px0, py1 - py0, RAHMEN);
@@ -272,13 +292,22 @@ public class VorlagenMenue extends Screen {
             g.drawCenteredString(font, suchModus ? "Nichts gefunden." : "Keine Vorlagen in dieser Kategorie.",
                     (gx0 + gx1) / 2, gy0 + 30, GRAU);
         }
-        g.drawString(font, befehlsReiter() ? "Klick: Befehl in den Chat übernehmen"
+        String status = PaketLader.status();
+        g.drawString(font, status != null ? status : befehlsReiter() ? "Klick: Befehl in den Chat übernehmen"
                         : "Klick: auf den Bauwerk-Stab legen   ·   Shift-Klick: sofort dorthin bauen, wohin du schaust",
-                px0 + 8, py1 - 13, GRAU, false);
+                px0 + 8, py1 - 13, status != null ? GOLD : GRAU, false);
+        boolean ladenHover = ueberLaden(mx, my);
+        boolean laeuft = PaketLader.laeuft();
+        g.fill(ladenX0(), py1 - 16, px1 - 10, py1 - 3, laeuft ? REITER : ladenHover ? 0xFF3A7A48 : 0xFF2E6B3A);
+        g.drawString(font, laeuft ? "Lädt …" : LADEN, ladenX0() + 6, py1 - 13, 0xFFFFFFFF, false);
 
         super.render(g, mx, my, partial);
 
-        if (ueberModus) {
+        if (ladenHover) {
+            g.renderComponentTooltip(font, List.of(
+                    Component.literal("Lädt neue Vorlagen-Pakete aus dem Internet"),
+                    Component.literal("in den Ordner weltenbauer/pakete – ohne die Mod neu zu installieren.")), mx, my);
+        } else if (ueberModus) {
             g.renderComponentTooltip(font, List.of(
                     Component.literal("Drucken: Vorlage wird beim Bestätigen gebaut"),
                     Component.literal("Blaupause: Geisterbild bleibt stehen zum Nachbauen")), mx, my);
@@ -305,6 +334,10 @@ public class VorlagenMenue extends Screen {
     @Override
     public boolean mouseClicked(double mx, double my, int taste) {
         if (super.mouseClicked(mx, my, taste)) {
+            return true;
+        }
+        if (ueberLaden(mx, my)) {
+            PaketLader.starten();
             return true;
         }
         int bw1 = font.width("Drucken") + 12, bw2 = font.width("Blaupause") + 12;

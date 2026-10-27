@@ -18,6 +18,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -26,12 +27,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 import java.util.stream.Stream;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 /**
  * Kennt alle Vorlagen: die eingebauten (im Mod-Jar unter data/weltenbauer/structures) und
@@ -76,12 +80,7 @@ public final class Vorlagen {
                             .getAsJsonObject();
                     for (JsonElement el : wurzel.getAsJsonArray("vorlagen")) {
                         JsonObject o = el.getAsJsonObject();
-                        eingebaut.add(new Eintrag(o.get("id").getAsString(), o.get("gruppe").getAsString(),
-                                o.get("titel").getAsString(), o.get("kategorie").getAsString(),
-                                o.get("kategorie_name").getAsString(), o.get("groesse").getAsString(), true,
-                                "/data/weltenbauer/" + o.get("datei").getAsString(), ints(o.getAsJsonArray("anker")),
-                                ints(o.getAsJsonArray("masse")), o.get("bloecke").getAsInt(),
-                                o.has("hinweis") ? o.get("hinweis").getAsString() : null));
+                        eingebaut.add(ausJson(o, "/data/weltenbauer/" + o.get("datei").getAsString()));
                     }
                 }
             } catch (Exception fehler) {
@@ -108,8 +107,96 @@ public final class Vorlagen {
         return liste;
     }
 
+    private static Eintrag ausJson(JsonObject o, String quelle) {
+        return new Eintrag(o.get("id").getAsString(), o.get("gruppe").getAsString(),
+                o.get("titel").getAsString(), o.get("kategorie").getAsString(),
+                o.get("kategorie_name").getAsString(), o.get("groesse").getAsString(), true,
+                quelle, ints(o.getAsJsonArray("anker")), ints(o.getAsJsonArray("masse")), o.get("bloecke").getAsInt(),
+                o.has("hinweis") ? o.get("hinweis").getAsString() : null);
+    }
+
+    // ------------------------------------------------------------------ Vorlagen-Pakete (Zip im Ordner weltenbauer/pakete)
+
+    private static List<Eintrag> paketCache;
+    private static long paketZeit;
+    private static final Map<String, String[]> PAKET_BILDER = new HashMap<>();
+
+    public static Path paketOrdner() {
+        return FMLPaths.GAMEDIR.get().resolve("weltenbauer").resolve("pakete");
+    }
+
+    /** Nach einem Download: Pakete beim nächsten Zugriff neu einlesen. */
+    public static synchronized void paketeNeuLesen() {
+        paketCache = null;
+    }
+
+    public static synchronized List<Eintrag> pakete() {
+        long jetzt = System.currentTimeMillis();
+        if (paketCache != null && jetzt - paketZeit < 5000) {
+            return paketCache;
+        }
+        List<Eintrag> liste = new ArrayList<>();
+        Map<String, String[]> bilder = new HashMap<>();
+        Path ordner = paketOrdner();
+        if (Files.isDirectory(ordner)) {
+            List<Path> zips;
+            try (Stream<Path> s = Files.list(ordner)) {
+                zips = s.filter(p -> p.getFileName().toString().toLowerCase(Locale.ROOT).endsWith(".zip")).sorted()
+                        .toList();
+            } catch (IOException fehler) {
+                zips = List.of();
+            }
+            for (Path zip : zips) {
+                try (ZipFile z = new ZipFile(zip.toFile(), StandardCharsets.UTF_8)) {
+                    ZipEntry j = z.getEntry("paket.json");
+                    if (j == null) {
+                        continue;
+                    }
+                    JsonObject wurzel;
+                    try (InputStream in = z.getInputStream(j)) {
+                        wurzel = JsonParser.parseReader(new InputStreamReader(in, StandardCharsets.UTF_8)).getAsJsonObject();
+                    }
+                    for (JsonElement el : wurzel.getAsJsonArray("vorlagen")) {
+                        JsonObject o = el.getAsJsonObject();
+                        Eintrag e = ausJson(o, "zip:" + zip + "!" + o.get("datei").getAsString());
+                        liste.add(e);
+                        String bild = "bilder/" + e.gruppe() + ".png";
+                        if (!bilder.containsKey(e.gruppe()) && z.getEntry(bild) != null) {
+                            bilder.put(e.gruppe(), new String[]{zip.toString(), bild});
+                        }
+                    }
+                } catch (Exception fehler) {
+                    LOG.warn("Weltenbauer: Paket {} konnte nicht gelesen werden", zip, fehler);
+                }
+            }
+        }
+        paketCache = liste;
+        paketZeit = jetzt;
+        PAKET_BILDER.clear();
+        PAKET_BILDER.putAll(bilder);
+        return liste;
+    }
+
+    /** Vorschaubild (PNG) einer Gruppe aus einem Paket oder null. */
+    public static synchronized byte[] paketBild(String gruppe) {
+        pakete();
+        String[] q = PAKET_BILDER.get(gruppe);
+        if (q == null) {
+            return null;
+        }
+        try (ZipFile z = new ZipFile(new java.io.File(q[0]), StandardCharsets.UTF_8)) {
+            ZipEntry e = z.getEntry(q[1]);
+            try (InputStream in = z.getInputStream(e)) {
+                return in.readAllBytes();
+            }
+        } catch (Exception fehler) {
+            return null;
+        }
+    }
+
     public static List<Eintrag> alle() {
         List<Eintrag> liste = new ArrayList<>(eingebaute());
+        liste.addAll(pakete());
         liste.addAll(eigene());
         return liste;
     }
@@ -217,6 +304,18 @@ public final class Vorlagen {
     // ------------------------------------------------------------------ Laden
 
     public static InputStream oeffnen(Eintrag e) throws IOException {
+        if (e.quelle().startsWith("zip:")) {
+            int trenner = e.quelle().lastIndexOf('!');
+            try (ZipFile z = new ZipFile(new java.io.File(e.quelle().substring(4, trenner)), StandardCharsets.UTF_8)) {
+                ZipEntry eintrag = z.getEntry(e.quelle().substring(trenner + 1));
+                if (eintrag == null) {
+                    throw new IOException("Vorlage fehlt im Paket: " + e.quelle());
+                }
+                try (InputStream in = z.getInputStream(eintrag)) {
+                    return new ByteArrayInputStream(in.readAllBytes());
+                }
+            }
+        }
         if (e.eingebaut()) {
             InputStream in = Weltenbauer.class.getResourceAsStream(e.quelle());
             if (in == null) {
