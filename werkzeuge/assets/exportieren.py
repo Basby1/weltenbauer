@@ -28,6 +28,7 @@ from gebaeude import GEBAEUDE  # noqa: E402
 from schildkroete import SCHILDKROETE  # noqa: E402
 from schwebend import SCHWEBEND  # noqa: E402
 from riesenbogen import FANTASIEHAEUSER, RIESENBOGEN  # noqa: E402
+from himmelsstadt import GROESSEN as G4, HIMMELSSTADT, SCHWEBEBERGE  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -45,6 +46,8 @@ GRUPPEN = [
     ("gebaeude", "Gebäude", GEBAEUDE, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
     ("inseln", "Schildkröten-Inseln", SCHILDKROETE, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7, 21]),
     ("bogen", "Riesenbögen", RIESENBOGEN, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7, 21]),
+    ("himmelsstadt", "Himmelsstadt", HIMMELSSTADT, G4, [7, 21]),
+    ("schwebeberge", "Schwebeberge (Pandora)", SCHWEBEBERGE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
