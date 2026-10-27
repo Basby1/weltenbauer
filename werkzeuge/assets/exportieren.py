@@ -27,6 +27,7 @@ from spektakulaer import SPEKTAKULAER  # noqa: E402
 from gebaeude import GEBAEUDE  # noqa: E402
 from schildkroete import SCHILDKROETE  # noqa: E402
 from schwebend import SCHWEBEND  # noqa: E402
+from riesenbogen import FANTASIEHAEUSER, RIESENBOGEN  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 ZIEL = PROJEKT / "src/main/resources/data/weltenbauer"
@@ -42,8 +43,11 @@ GRUPPEN = [
     ("schwebend", "Schwebende Strukturen", SCHWEBEND, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7]),
     ("gebaeude", "Gebäude", GEBAEUDE, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
     ("inseln", "Schildkröten-Inseln", SCHILDKROETE, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7, 21]),
+    ("bogen", "Riesenbögen", RIESENBOGEN, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7, 21]),
+    ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
+GROSSBILD = {"inseln", "bogen"}
 
 KRATER_DATEIEN = [
     ("ruinenkrater_klein", "klein", (25, 25, 25)),
@@ -108,7 +112,7 @@ def main():
         from vorschau import bild, bogen
         BILDER.mkdir(exist_ok=True)
         for (kat, kat_name, anzeige), liste in vorschau.items():
-            gross = kat in MEER
+            gross = kat in GROSSBILD
             zellen = [(f"{t} ({m[1]} hoch)", bild(w, 1100 if gross else 640, boden=2, meer=kat in MEER))
                       for t, w, m in liste]
             spalten = 2 if gross else 4 if len(zellen) > 6 else 3

@@ -3622,6 +3622,594 @@
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
+   "id": "riesenbogen_pur_mittel_1",
+   "gruppe": "riesenbogen_pur_mittel",
+   "titel": "Riesenbogen (pur)",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bogen/riesenbogen_pur_mittel_1.nbt",
+   "anker": [
+    31,
+    0,
+    9
+   ],
+   "masse": [
+    63,
+    42,
+    20
+   ],
+   "bloecke": 7623
+  },
+  {
+   "id": "riesenbogen_pur_mittel_2",
+   "gruppe": "riesenbogen_pur_mittel",
+   "titel": "Riesenbogen (pur)",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/bogen/riesenbogen_pur_mittel_2.nbt",
+   "anker": [
+    31,
+    0,
+    9
+   ],
+   "masse": [
+    62,
+    42,
+    20
+   ],
+   "bloecke": 7799
+  },
+  {
+   "id": "riesenbogen_pur_riesig_1",
+   "gruppe": "riesenbogen_pur_riesig",
+   "titel": "Riesenbogen (pur)",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bogen/riesenbogen_pur_riesig_1.nbt",
+   "anker": [
+    51,
+    0,
+    15
+   ],
+   "masse": [
+    100,
+    65,
+    33
+   ],
+   "bloecke": 20775
+  },
+  {
+   "id": "riesenbogen_pur_riesig_2",
+   "gruppe": "riesenbogen_pur_riesig",
+   "titel": "Riesenbogen (pur)",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/bogen/riesenbogen_pur_riesig_2.nbt",
+   "anker": [
+    50,
+    0,
+    14
+   ],
+   "masse": [
+    100,
+    66,
+    30
+   ],
+   "bloecke": 20652
+  },
+  {
+   "id": "riesenbogen_dorf_mittel_1",
+   "gruppe": "riesenbogen_dorf_mittel",
+   "titel": "Riesenbogen mit Häusern",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/bogen/riesenbogen_dorf_mittel_1.nbt",
+   "anker": [
+    31,
+    0,
+    9
+   ],
+   "masse": [
+    63,
+    68,
+    20
+   ],
+   "bloecke": 10457
+  },
+  {
+   "id": "riesenbogen_dorf_mittel_2",
+   "gruppe": "riesenbogen_dorf_mittel",
+   "titel": "Riesenbogen mit Häusern",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/bogen/riesenbogen_dorf_mittel_2.nbt",
+   "anker": [
+    31,
+    0,
+    9
+   ],
+   "masse": [
+    62,
+    68,
+    20
+   ],
+   "bloecke": 10718
+  },
+  {
+   "id": "riesenbogen_dorf_riesig_1",
+   "gruppe": "riesenbogen_dorf_riesig",
+   "titel": "Riesenbogen mit Häusern",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/bogen/riesenbogen_dorf_riesig_1.nbt",
+   "anker": [
+    51,
+    0,
+    15
+   ],
+   "masse": [
+    100,
+    91,
+    33
+   ],
+   "bloecke": 27270
+  },
+  {
+   "id": "riesenbogen_dorf_riesig_2",
+   "gruppe": "riesenbogen_dorf_riesig",
+   "titel": "Riesenbogen mit Häusern",
+   "kategorie": "bogen",
+   "kategorie_name": "Riesenbögen",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/bogen/riesenbogen_dorf_riesig_2.nbt",
+   "anker": [
+    50,
+    0,
+    14
+   ],
+   "masse": [
+    100,
+    91,
+    31
+   ],
+   "bloecke": 27198
+  },
+  {
+   "id": "kupferdachhaus_mittel_1",
+   "gruppe": "kupferdachhaus_mittel",
+   "titel": "Kupferdach-Haus",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/fantasie/kupferdachhaus_mittel_1.nbt",
+   "anker": [
+    9,
+    2,
+    6
+   ],
+   "masse": [
+    17,
+    29,
+    11
+   ],
+   "bloecke": 1279
+  },
+  {
+   "id": "kupferdachhaus_mittel_2",
+   "gruppe": "kupferdachhaus_mittel",
+   "titel": "Kupferdach-Haus",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/fantasie/kupferdachhaus_mittel_2.nbt",
+   "anker": [
+    9,
+    2,
+    6
+   ],
+   "masse": [
+    17,
+    29,
+    11
+   ],
+   "bloecke": 1279
+  },
+  {
+   "id": "kupferdachhaus_gross_1",
+   "gruppe": "kupferdachhaus_gross",
+   "titel": "Kupferdach-Haus",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/fantasie/kupferdachhaus_gross_1.nbt",
+   "anker": [
+    9,
+    2,
+    6
+   ],
+   "masse": [
+    19,
+    30,
+    12
+   ],
+   "bloecke": 1800
+  },
+  {
+   "id": "kupferdachhaus_gross_2",
+   "gruppe": "kupferdachhaus_gross",
+   "titel": "Kupferdach-Haus",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/fantasie/kupferdachhaus_gross_2.nbt",
+   "anker": [
+    9,
+    2,
+    6
+   ],
+   "masse": [
+    19,
+    30,
+    12
+   ],
+   "bloecke": 1800
+  },
+  {
+   "id": "steinhaus_mittel_1",
+   "gruppe": "steinhaus_mittel",
+   "titel": "Steinhaus mit Spitzen",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/fantasie/steinhaus_mittel_1.nbt",
+   "anker": [
+    9,
+    2,
+    6
+   ],
+   "masse": [
+    17,
+    22,
+    13
+   ],
+   "bloecke": 1191
+  },
+  {
+   "id": "steinhaus_mittel_2",
+   "gruppe": "steinhaus_mittel",
+   "titel": "Steinhaus mit Spitzen",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/fantasie/steinhaus_mittel_2.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    16,
+    22,
+    12
+   ],
+   "bloecke": 1169
+  },
+  {
+   "id": "steinhaus_gross_1",
+   "gruppe": "steinhaus_gross",
+   "titel": "Steinhaus mit Spitzen",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/fantasie/steinhaus_gross_1.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    18,
+    23,
+    12
+   ],
+   "bloecke": 1699
+  },
+  {
+   "id": "steinhaus_gross_2",
+   "gruppe": "steinhaus_gross",
+   "titel": "Steinhaus mit Spitzen",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/fantasie/steinhaus_gross_2.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    18,
+    23,
+    12
+   ],
+   "bloecke": 1688
+  },
+  {
+   "id": "terrakottahaus_mittel_1",
+   "gruppe": "terrakottahaus_mittel",
+   "titel": "Terrakotta-Haus mit Zahnrad",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/fantasie/terrakottahaus_mittel_1.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    15,
+    14,
+    10
+   ],
+   "bloecke": 624
+  },
+  {
+   "id": "terrakottahaus_mittel_2",
+   "gruppe": "terrakottahaus_mittel",
+   "titel": "Terrakotta-Haus mit Zahnrad",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/fantasie/terrakottahaus_mittel_2.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    15,
+    14,
+    10
+   ],
+   "bloecke": 624
+  },
+  {
+   "id": "terrakottahaus_gross_1",
+   "gruppe": "terrakottahaus_gross",
+   "titel": "Terrakotta-Haus mit Zahnrad",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/fantasie/terrakottahaus_gross_1.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    17,
+    16,
+    11
+   ],
+   "bloecke": 953
+  },
+  {
+   "id": "terrakottahaus_gross_2",
+   "gruppe": "terrakottahaus_gross",
+   "titel": "Terrakotta-Haus mit Zahnrad",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/fantasie/terrakottahaus_gross_2.nbt",
+   "anker": [
+    8,
+    2,
+    5
+   ],
+   "masse": [
+    17,
+    16,
+    11
+   ],
+   "bloecke": 953
+  },
+  {
+   "id": "haengehuette_mittel_1",
+   "gruppe": "haengehuette_mittel",
+   "titel": "Hängehütte",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/fantasie/haengehuette_mittel_1.nbt",
+   "anker": [
+    7,
+    7,
+    5
+   ],
+   "masse": [
+    15,
+    34,
+    10
+   ],
+   "bloecke": 888
+  },
+  {
+   "id": "haengehuette_mittel_2",
+   "gruppe": "haengehuette_mittel",
+   "titel": "Hängehütte",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/fantasie/haengehuette_mittel_2.nbt",
+   "anker": [
+    7,
+    7,
+    5
+   ],
+   "masse": [
+    15,
+    34,
+    10
+   ],
+   "bloecke": 891
+  },
+  {
+   "id": "haengehuette_gross_1",
+   "gruppe": "haengehuette_gross",
+   "titel": "Hängehütte",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/fantasie/haengehuette_gross_1.nbt",
+   "anker": [
+    8,
+    1,
+    5
+   ],
+   "masse": [
+    17,
+    34,
+    11
+   ],
+   "bloecke": 1254
+  },
+  {
+   "id": "haengehuette_gross_2",
+   "gruppe": "haengehuette_gross",
+   "titel": "Hängehütte",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/fantasie/haengehuette_gross_2.nbt",
+   "anker": [
+    8,
+    1,
+    5
+   ],
+   "masse": [
+    17,
+    34,
+    11
+   ],
+   "bloecke": 1254
+  },
+  {
+   "id": "kugelgondel_mittel_1",
+   "gruppe": "kugelgondel_mittel",
+   "titel": "Kugel-Gondel",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/fantasie/kugelgondel_mittel_1.nbt",
+   "anker": [
+    5,
+    -9,
+    5
+   ],
+   "masse": [
+    11,
+    18,
+    11
+   ],
+   "bloecke": 299
+  },
+  {
+   "id": "kugelgondel_mittel_2",
+   "gruppe": "kugelgondel_mittel",
+   "titel": "Kugel-Gondel",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/fantasie/kugelgondel_mittel_2.nbt",
+   "anker": [
+    5,
+    -9,
+    5
+   ],
+   "masse": [
+    11,
+    18,
+    11
+   ],
+   "bloecke": 299
+  },
+  {
+   "id": "kugelgondel_gross_1",
+   "gruppe": "kugelgondel_gross",
+   "titel": "Kugel-Gondel",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 1,
+   "datei": "structures/fantasie/kugelgondel_gross_1.nbt",
+   "anker": [
+    7,
+    -5,
+    7
+   ],
+   "masse": [
+    15,
+    22,
+    15
+   ],
+   "bloecke": 847
+  },
+  {
+   "id": "kugelgondel_gross_2",
+   "gruppe": "kugelgondel_gross",
+   "titel": "Kugel-Gondel",
+   "kategorie": "fantasie",
+   "kategorie_name": "Fantasiehäuser",
+   "groesse": "groß",
+   "variante": 2,
+   "datei": "structures/fantasie/kugelgondel_gross_2.nbt",
+   "anker": [
+    7,
+    -5,
+    7
+   ],
+   "masse": [
+    15,
+    22,
+    15
+   ],
+   "bloecke": 847
+  },
+  {
    "id": "ruinenkrater_klein",
    "gruppe": "ruinenkrater_klein",
    "titel": "Ruinenkrater",

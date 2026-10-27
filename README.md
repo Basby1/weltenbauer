@@ -35,7 +35,7 @@ Befehl nur im Bereich, den du mit dem Terraforming-Stab markiert hast.
 
 ## Vorlagen (ab Version 0.2)
 
-Über 170 eingebaute Vorlagen, alle mit Rückgängig-Funktion:
+Über 200 eingebaute Vorlagen, alle mit Rückgängig-Funktion:
 
 | Kategorie | Inhalt |
 |---|---|
@@ -46,6 +46,8 @@ Befehl nur im Bereich, den du mit dem Terraforming-Stab markiert hast.
 | Schwebende Strukturen | Felssichel mit Ranken, zerbrochene Schwebebrocken, Regenbogen-Ring, Archipel, Himmelsturm mit Ring |
 | Gebäude | Fachwerkhaus, Leuchtturm, Bootssteg, Palmengruppe |
 | Schildkröten-Inseln | Riesige Meeresschildkröte mit Insel – „Natur“ oder „Dorf“, mittel/riesig (auf die Wasseroberfläche setzen) |
+| Riesenbögen | Gewaltiger Felsbogen mit terrassierten Füßen und Tropfsteinen – „pur“ oder mit Fantasiehäusern und Hängehäusern an Ketten |
+| Fantasiehäuser | Kupferdach-Haus, Steinhaus mit Spitzen, Terrakotta-Haus mit Zahnrad, Hängehütte, Kugel-Gondel |
 
 ```
 /wb vorlage                          Katalog mit anklickbaren Kategorien
