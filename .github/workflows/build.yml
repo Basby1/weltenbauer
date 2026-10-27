@@ -1,0 +1,47 @@
+name: Mod bauen
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v4
+
+      - name: Java 17 einrichten
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Gradle einrichten
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.8'
+
+      - name: Mod bauen
+        run: gradle build --stacktrace
+
+      - name: Fertige Mod-Datei bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: weltenbauer-mod
+          path: build/libs/weltenbauer-*.jar
+
+      - name: Als Download bereitstellen (Releases)
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: neueste-version
+          name: Weltenbauer – neueste Version
+          body: |
+            Die `.jar`-Datei herunterladen und in den Ordner `mods` deines CurseForge-Profils
+            (Minecraft 1.20.1, Forge) legen. Vorher eine Sicherungskopie der Welt machen.
+          files: build/libs/weltenbauer-*.jar
+          make_latest: true
