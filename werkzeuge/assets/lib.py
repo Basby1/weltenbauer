@@ -582,3 +582,6 @@ FARBEN.update({
 })
 
 FARBEN.update({"snow": (249, 254, 254), "redstone_block": (175, 24, 5), "stripped_bamboo_block": (190, 170, 80)})
+
+FARBEN.update({"small_amethyst_bud": (160, 120, 220), "birch_door": (200, 185, 130), "pink_petals": (240, 160, 200),
+               "warped_nylium": (43, 114, 101), "mushroom_stem": (203, 196, 185), "red_mushroom_block": (200, 46, 45)})
