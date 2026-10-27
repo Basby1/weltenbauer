@@ -547,6 +547,231 @@ HIMMELSSTADT = {
 }
 
 
+
+# ============================================================================ Weitere Inseltypen
+
+def _basis(seed, g, flach=0.6, rf=1.0):
+    w = _welt(seed)
+    sch = Schema(w)
+    rs = Rauschen(w, 4)
+    R = [8, 12, 18, 28][g] * rf
+    T = [10, 14, 20, 30][g] * rf
+    top = int(T * 1.9) + [10, 14, 18, 24][g]
+    oben = insel(w, sch, rs, 0, top, 0, R, T, flach=flach)
+    return w, sch, rs, R, T, top, oben
+
+
+def _fertig(w, sch, ranken=0.08, pflanzen=0.35, buesche=0.04):
+    unterseite(w, sch)
+    ueberwuchern(w, None, ranken=ranken, pflanzen=pflanzen, buesche=buesche)
+    return w
+
+
+def kristallinsel(seed, g=1):
+    """Insel mit leuchtenden Kristallnadeln aus Amethyst und Glas."""
+    w, sch, rs, R, T, top, oben = _basis(seed, g)
+    kristall = Verlauf(w, "Kristall", ["purple_stained_glass", "amethyst_block", "magenta_stained_glass",
+                                        "light_blue_stained_glass"])
+    for _ in range([4, 7, 12, 20][g]):
+        a = w.rng.random() * 2 * math.pi
+        d = R * 0.7 * w.rng.random()
+        cx, cz = math.cos(a) * d, math.sin(a) * d
+        h = [5, 8, 14, 22][g] * (0.5 + 0.8 * w.rng.random())
+        neig = (w.rng.random(2) - 0.5) * 0.5
+        y0 = boden(oben, int(cx), int(cz), top)
+        for k in range(int(h)):
+            r = max(0.5, (1 - k / h) * [1.2, 1.8, 2.6, 3.6][g])
+            px, pz = cx + neig[0] * k, cz + neig[1] * k
+            for x in range(int(px - r) - 1, int(px + r) + 2):
+                for z in range(int(pz - r) - 1, int(pz + r) + 2):
+                    if math.hypot(x - px, z - pz) <= r:
+                        w.setze(x, y0 + 1 + k, z, kristall(3.0 * k / h + w.rng.random() * 0.6, x, k, z))
+        w.setze(int(cx), y0, int(cz), w.b("sea_lantern"))
+    return _fertig(w, sch)
+
+
+def ruineninsel(seed, g=1):
+    """Insel mit überwucherter Tempelruine."""
+    from ruinen import tempel
+    w, sch, rs, R, T, top, oben = _basis(seed, g, flach=0.85)
+    einfuegen(w, tempel(seed, 0 if g < 2 else 1), 0, top, 0)
+    return _fertig(w, sch, ranken=0.2)
+
+
+def bauminsel(seed, g=1):
+    """Insel mit einem einzigen gewaltigen Baum, dessen Wurzeln über den Rand hängen."""
+    from spektakulaer import weltenbaum, sakura_riese
+    w, sch, rs, R, T, top, oben = _basis(seed, g)
+    baum = (weltenbaum if seed % 2 else sakura_riese)(seed, 0 if g < 2 else 1)
+    einfuegen(w, baum, 0, top, 0)
+    holz = {w.b("oak_log", axis=a) for a in "xyz"} | {w.b("oak_wood", axis=a) for a in "xyz"}
+    # Wurzeln, die über den Rand hängen
+    for i in range(6 + g * 3):
+        a = i * 2 * math.pi / (6 + g * 3)
+        for r in range(int(R * 0.6), int(R) + 2):
+            x, z = int(math.cos(a) * r), int(math.sin(a) * r)
+            y = boden(oben, x, z, None)
+            if y is None:
+                for k in range(1, int(T * (0.4 + 0.5 * w.rng.random()))):
+                    if w.frei(x, top - k, z):
+                        w.setze(x, top - k, z, w.b("mangrove_roots", waterlogged=False))
+                break
+            w.setze(x, y + 1, z, w.b("oak_wood", axis="x" if abs(math.cos(a)) > 0.7 else "z"))
+    return _fertig(w, sch, ranken=0.15)
+
+
+def seeinsel(seed, g=1):
+    """Insel mit See in der Mitte, Seerosen und mehreren Wasserfällen ringsum."""
+    w, sch, rs, R, T, top, oben = _basis(seed, g, flach=0.95)
+    wasser = w.b("water", level=0)
+    w.vorschau_extra = getattr(w, "vorschau_extra", {})
+    for (x, z), y in oben.items():
+        d = math.hypot(x, z)
+        if d < R * 0.55:
+            tiefe = int(2 + (1 - d / (R * 0.55)) * [2, 3, 4, 6][g])
+            for k in range(tiefe):
+                w.setze(x, y - k, z, wasser)
+            w.setze(x, y - tiefe, z, w.b("clay"))
+            if w.rng.random() < 0.06:
+                w.setze(x, y + 1, z, w.b("lily_pad"))
+    for i in range([2, 3, 4, 6][g]):
+        a = i * 2 * math.pi / [2, 3, 4, 6][g] + 0.3
+        for r in range(int(R * 0.5), int(R) + 2):
+            x, z = int(math.cos(a) * r), int(math.sin(a) * r)
+            if (x, z) in oben:
+                w.setze(x, oben[(x, z)], z, wasser)
+                letzte = (x, oben[(x, z)], z)
+        x, y, z = letzte
+        for yy in range(1, y):
+            w.vorschau_extra[(x + round(math.cos(a)), yy, z + round(math.sin(a)))] = wasser
+    for _ in range([2, 4, 6, 10][g]):
+        a = w.rng.random() * 2 * math.pi
+        x, z = int(math.cos(a) * R * 0.75), int(math.sin(a) * R * 0.75)
+        if (x, z) in oben:
+            einfuegen(w, birke(seed + x, min(g, 1)), x, oben[(x, z)], z)
+    return _fertig(w, sch)
+
+
+def wieseninsel(seed, g=1):
+    """Blumenwiese mit Bienenstöcken, Büschen und einem Pavillon."""
+    w, sch, rs, R, T, top, oben = _basis(seed, g, flach=0.9)
+    blumen = ["poppy", "dandelion", "azure_bluet", "oxeye_daisy", "cornflower", "allium", "lily_of_the_valley",
+              "red_tulip", "orange_tulip", "pink_tulip"]
+    for (x, z), y in oben.items():
+        if w.hole(x, y, z) == sch.gras and w.frei(x, y + 1, z) and w.rng.random() < 0.45:
+            w.setze(x, y + 1, z, w.b(blumen[int(rs(x * 2, 7, z * 2) * len(blumen)) % len(blumen)]))
+    # Pavillon
+    py = boden(oben, 0, 0, top)
+    for dx in (-2, 2):
+        for dz in (-2, 2):
+            for k in range(1, 4):
+                w.setze(dx, py + k, dz, w.b("dark_oak_fence", north=False, south=False, east=False, west=False,
+                                         waterlogged=False))
+    for k, r in enumerate((3, 2, 1, 0)):
+        for x in range(-r, r + 1):
+            for z in range(-r, r + 1):
+                if r == 0 or abs(x) == r or abs(z) == r:
+                    w.setze(x, py + 4 + k, z, sch.dach(1 + k, x, py + 4 + k, z))
+    haengelaterne(w, 0, py + 3, 0, 1)
+    for _ in range([1, 2, 3, 5][g]):
+        a = w.rng.random() * 2 * math.pi
+        x, z = int(math.cos(a) * R * 0.6), int(math.sin(a) * R * 0.6)
+        if (x, z) in oben:
+            w.setze(x, oben[(x, z)] + 1, z, w.b("bee_nest", facing="south", honey_level=3))
+    return _fertig(w, sch, pflanzen=0.0, buesche=0.08)
+
+
+def nadelinsel(seed, g=1):
+    """Insel mit spitzen, bemoosten Felsnadeln obendrauf (wildes Hochland)."""
+    w, sch, rs, R, T, top, oben = _basis(seed, g, flach=0.4)
+    for _ in range([3, 5, 8, 12][g]):
+        a = w.rng.random() * 2 * math.pi
+        d = R * 0.65 * w.rng.random()
+        cx, cz = math.cos(a) * d, math.sin(a) * d
+        h = [6, 10, 18, 28][g] * (0.5 + 0.7 * w.rng.random())
+        y0 = boden(oben, int(cx), int(cz), top)
+        for k in range(int(h)):
+            r = max(0.6, (1 - k / h) ** 0.8 * [1.8, 2.6, 3.8, 5.0][g])
+            for x in range(int(cx - r) - 1, int(cx + r) + 2):
+                for z in range(int(cz - r) - 1, int(cz + r) + 2):
+                    if math.hypot(x - cx, z - cz) <= r * (0.8 + 0.4 * rs(x, k, z)):
+                        w.setze(x, y0 + k, z, sch.fels(2.2 + 2 * k / h, x, k, z))
+    return _fertig(w, sch, ranken=0.25)
+
+
+def kaskadeninsel(seed, g=1):
+    """Terrassierte Insel mit Wasserfällen, die über mehrere Stufen hinabstürzen."""
+    w, sch, rs, R, T, top, oben = _basis(seed, g, flach=0.2)
+    wasser = w.b("water", level=0)
+    stufen = [2, 3, 4, 5][g]
+    for (x, z), y in list(oben.items()):
+        d = math.hypot(x, z) / R
+        aufbau = int((1 - d) * stufen) * 3
+        for k in range(1, aufbau + 1):
+            w.setze(x, y + k, z, sch.fels(2.5 + k / 4, x, y + k, z) if k < aufbau else sch.gras)
+        oben[(x, z)] = y + aufbau
+    w.vorschau_extra = getattr(w, "vorschau_extra", {})
+    a = w.rng.random() * 2 * math.pi
+    for r in range(0, int(R) + 2):
+        x, z = int(math.cos(a) * r), int(math.sin(a) * r)
+        if (x, z) in oben:
+            w.setze(x, oben[(x, z)], z, wasser)
+            letzte = (x, oben[(x, z)], z)
+    x, y, z = letzte
+    for yy in range(1, y):
+        w.vorschau_extra[(x + round(math.cos(a)), yy, z + round(math.sin(a)))] = wasser
+    return _fertig(w, sch, ranken=0.2, pflanzen=0.4)
+
+
+def inselkette(seed, g=1):
+    """Mehrere Inseln auf verschiedenen Höhen, mit Hängebrücken und Ketten verbunden."""
+    w = _welt(seed)
+    sch = Schema(w)
+    rs = Rauschen(w, 4)
+    n = [3, 4, 6, 9][g]
+    R = [5, 7, 10, 14][g]
+    zentren = []
+    for i in range(n):
+        a = i * 2 * math.pi / n + w.rng.random() * 0.4
+        d = 0 if i == 0 else R * 2.6 * (1 + 0.3 * w.rng.random())
+        cx, cz = math.cos(a) * d, math.sin(a) * d
+        top = int(R * 1.6 * 1.9) + [10, 14, 18, 24][g] + int(w.rng.random() * R * 1.2)
+        r = R * (1.3 if i == 0 else 0.7 + 0.4 * w.rng.random())
+        oben = insel(w, sch, rs, cx, top, cz, r, r * 1.2)
+        zentren.append((cx, cz, top, oben))
+        if i == 0:
+            fantasiehaus(w, int(cx) - 4, top + 1, int(cz) - 3, B=8, T=6, H=4, stil="kupfer", fundament=4,
+                         sockel_bloecke=["stone_bricks", "andesite"])
+        elif w.rng.random() < 0.5:
+            einfuegen(w, kirschbaum(seed + i, 0), int(cx), boden(oben, int(cx), int(cz), top), int(cz))
+    # Brücken von der Hauptinsel zu den anderen
+    cx0, cz0, t0, _ = zentren[0]
+    planke = w.b("dark_oak_planks")
+    for cx, cz, t, _ in zentren[1:]:
+        L = int(math.hypot(cx - cx0, cz - cz0))
+        for i in range(L + 1):
+            u = i / max(1, L)
+            x = cx0 + (cx - cx0) * u
+            z = cz0 + (cz - cz0) * u
+            y = t0 + (t - t0) * u - 3 * 4 * u * (1 - u) + 1
+            w.setze(int(x), int(y), int(z), planke, ueberschreiben=False)
+            if i % 4 == 0:
+                w.setze(int(x), int(y) + 1, int(z), w.b("chain", axis="y", waterlogged=False), ueberschreiben=False)
+    return _fertig(w, sch)
+
+
+HIMMELSSTADT.update({
+    "kristallinsel": ("Kristallinsel", kristallinsel),
+    "ruineninsel": ("Ruinen-Insel", ruineninsel),
+    "bauminsel": ("Baum-Insel", bauminsel),
+    "seeinsel": ("See-Insel mit Wasserfällen", seeinsel),
+    "wieseninsel": ("Blumenwiesen-Insel", wieseninsel),
+    "nadelinsel": ("Felsnadel-Insel", nadelinsel),
+    "kaskadeninsel": ("Kaskaden-Insel", kaskadeninsel),
+    "inselkette": ("Inselkette mit Brücken", inselkette),
+})
+
+
 # ============================================================================ Schwebeberge (Pandora-Stil)
 
 def _berg(w: Welt, rs, cx, cz, y_unten, H, Rt, fels, moos, gras, lianen):

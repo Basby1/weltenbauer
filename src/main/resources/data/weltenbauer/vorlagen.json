@@ -5302,11 +5302,1355 @@
    "bloecke": 281
   },
   {
+   "id": "kristallinsel_klein_1",
+   "gruppe": "kristallinsel_klein",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kristallinsel_klein_1.nbt",
+   "anker": [
+    10,
+    -13,
+    16
+   ],
+   "masse": [
+    20,
+    22,
+    24
+   ],
+   "bloecke": 1400
+  },
+  {
+   "id": "kristallinsel_klein_2",
+   "gruppe": "kristallinsel_klein",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kristallinsel_klein_2.nbt",
+   "anker": [
+    10,
+    -14,
+    8
+   ],
+   "masse": [
+    25,
+    21,
+    17
+   ],
+   "bloecke": 1285
+  },
+  {
+   "id": "kristallinsel_mittel_1",
+   "gruppe": "kristallinsel_mittel",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kristallinsel_mittel_1.nbt",
+   "anker": [
+    11,
+    -17,
+    22
+   ],
+   "masse": [
+    29,
+    32,
+    36
+   ],
+   "bloecke": 3753
+  },
+  {
+   "id": "kristallinsel_mittel_2",
+   "gruppe": "kristallinsel_mittel",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kristallinsel_mittel_2.nbt",
+   "anker": [
+    19,
+    -18,
+    21
+   ],
+   "masse": [
+    42,
+    32,
+    34
+   ],
+   "bloecke": 3480
+  },
+  {
+   "id": "kristallinsel_riesig_1",
+   "gruppe": "kristallinsel_riesig",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kristallinsel_riesig_1.nbt",
+   "anker": [
+    26,
+    -19,
+    18
+   ],
+   "masse": [
+    57,
+    55,
+    50
+   ],
+   "bloecke": 12286
+  },
+  {
+   "id": "kristallinsel_riesig_2",
+   "gruppe": "kristallinsel_riesig",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kristallinsel_riesig_2.nbt",
+   "anker": [
+    18,
+    -19,
+    20
+   ],
+   "masse": [
+    52,
+    55,
+    49
+   ],
+   "bloecke": 10752
+  },
+  {
+   "id": "kristallinsel_gigantisch_1",
+   "gruppe": "kristallinsel_gigantisch",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kristallinsel_gigantisch_1.nbt",
+   "anker": [
+    50,
+    -27,
+    46
+   ],
+   "masse": [
+    88,
+    83,
+    78
+   ],
+   "bloecke": 36986
+  },
+  {
+   "id": "kristallinsel_gigantisch_2",
+   "gruppe": "kristallinsel_gigantisch",
+   "titel": "Kristallinsel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kristallinsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -46,
+    35
+   ],
+   "masse": [
+    98,
+    63,
+    65
+   ],
+   "bloecke": 36510
+  },
+  {
+   "id": "ruineninsel_klein_1",
+   "gruppe": "ruineninsel_klein",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/ruineninsel_klein_1.nbt",
+   "anker": [
+    12,
+    -13,
+    16
+   ],
+   "masse": [
+    25,
+    34,
+    26
+   ],
+   "bloecke": 3516
+  },
+  {
+   "id": "ruineninsel_klein_2",
+   "gruppe": "ruineninsel_klein",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/ruineninsel_klein_2.nbt",
+   "anker": [
+    12,
+    -14,
+    10
+   ],
+   "masse": [
+    26,
+    32,
+    20
+   ],
+   "bloecke": 3415
+  },
+  {
+   "id": "ruineninsel_mittel_1",
+   "gruppe": "ruineninsel_mittel",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/ruineninsel_mittel_1.nbt",
+   "anker": [
+    12,
+    -17,
+    22
+   ],
+   "masse": [
+    29,
+    41,
+    35
+   ],
+   "bloecke": 5787
+  },
+  {
+   "id": "ruineninsel_mittel_2",
+   "gruppe": "ruineninsel_mittel",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/ruineninsel_mittel_2.nbt",
+   "anker": [
+    20,
+    -19,
+    21
+   ],
+   "masse": [
+    43,
+    39,
+    34
+   ],
+   "bloecke": 5365
+  },
+  {
+   "id": "ruineninsel_riesig_1",
+   "gruppe": "ruineninsel_riesig",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/ruineninsel_riesig_1.nbt",
+   "anker": [
+    27,
+    -23,
+    18
+   ],
+   "masse": [
+    58,
+    55,
+    50
+   ],
+   "bloecke": 14606
+  },
+  {
+   "id": "ruineninsel_riesig_2",
+   "gruppe": "ruineninsel_riesig",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/ruineninsel_riesig_2.nbt",
+   "anker": [
+    18,
+    -19,
+    21
+   ],
+   "masse": [
+    52,
+    59,
+    50
+   ],
+   "bloecke": 13511
+  },
+  {
+   "id": "ruineninsel_gigantisch_1",
+   "gruppe": "ruineninsel_gigantisch",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/ruineninsel_gigantisch_1.nbt",
+   "anker": [
+    51,
+    -26,
+    47
+   ],
+   "masse": [
+    90,
+    75,
+    78
+   ],
+   "bloecke": 36293
+  },
+  {
+   "id": "ruineninsel_gigantisch_2",
+   "gruppe": "ruineninsel_gigantisch",
+   "titel": "Ruinen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/ruineninsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -44,
+    36
+   ],
+   "masse": [
+    98,
+    59,
+    66
+   ],
+   "bloecke": 35869
+  },
+  {
+   "id": "bauminsel_klein_1",
+   "gruppe": "bauminsel_klein",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/bauminsel_klein_1.nbt",
+   "anker": [
+    18,
+    -13,
+    18
+   ],
+   "masse": [
+    36,
+    60,
+    38
+   ],
+   "bloecke": 7229
+  },
+  {
+   "id": "bauminsel_klein_2",
+   "gruppe": "bauminsel_klein",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/bauminsel_klein_2.nbt",
+   "anker": [
+    15,
+    -11,
+    17
+   ],
+   "masse": [
+    35,
+    62,
+    34
+   ],
+   "bloecke": 7294
+  },
+  {
+   "id": "bauminsel_mittel_1",
+   "gruppe": "bauminsel_mittel",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/bauminsel_mittel_1.nbt",
+   "anker": [
+    21,
+    -17,
+    21
+   ],
+   "masse": [
+    42,
+    69,
+    38
+   ],
+   "bloecke": 9675
+  },
+  {
+   "id": "bauminsel_mittel_2",
+   "gruppe": "bauminsel_mittel",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/bauminsel_mittel_2.nbt",
+   "anker": [
+    20,
+    -19,
+    21
+   ],
+   "masse": [
+    44,
+    68,
+    40
+   ],
+   "bloecke": 10102
+  },
+  {
+   "id": "bauminsel_riesig_1",
+   "gruppe": "bauminsel_riesig",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/bauminsel_riesig_1.nbt",
+   "anker": [
+    26,
+    -23,
+    25
+   ],
+   "masse": [
+    59,
+    131,
+    58
+   ],
+   "bloecke": 45529
+  },
+  {
+   "id": "bauminsel_riesig_2",
+   "gruppe": "bauminsel_riesig",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/bauminsel_riesig_2.nbt",
+   "anker": [
+    31,
+    -19,
+    31
+   ],
+   "masse": [
+    64,
+    125,
+    68
+   ],
+   "bloecke": 42082
+  },
+  {
+   "id": "bauminsel_gigantisch_1",
+   "gruppe": "bauminsel_gigantisch",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/bauminsel_gigantisch_1.nbt",
+   "anker": [
+    51,
+    -26,
+    47
+   ],
+   "masse": [
+    89,
+    148,
+    80
+   ],
+   "bloecke": 68037
+  },
+  {
+   "id": "bauminsel_gigantisch_2",
+   "gruppe": "bauminsel_gigantisch",
+   "titel": "Baum-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/bauminsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -47,
+    35
+   ],
+   "masse": [
+    98,
+    127,
+    68
+   ],
+   "bloecke": 62672
+  },
+  {
+   "id": "seeinsel_klein_1",
+   "gruppe": "seeinsel_klein",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/seeinsel_klein_1.nbt",
+   "anker": [
+    10,
+    -11,
+    15
+   ],
+   "masse": [
+    20,
+    32,
+    23
+   ],
+   "bloecke": 1630
+  },
+  {
+   "id": "seeinsel_klein_2",
+   "gruppe": "seeinsel_klein",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/seeinsel_klein_2.nbt",
+   "anker": [
+    10,
+    -14,
+    8
+   ],
+   "masse": [
+    25,
+    29,
+    17
+   ],
+   "bloecke": 1433
+  },
+  {
+   "id": "seeinsel_mittel_1",
+   "gruppe": "seeinsel_mittel",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/seeinsel_mittel_1.nbt",
+   "anker": [
+    12,
+    -17,
+    21
+   ],
+   "masse": [
+    29,
+    44,
+    34
+   ],
+   "bloecke": 4701
+  },
+  {
+   "id": "seeinsel_mittel_2",
+   "gruppe": "seeinsel_mittel",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/seeinsel_mittel_2.nbt",
+   "anker": [
+    19,
+    -19,
+    20
+   ],
+   "masse": [
+    42,
+    42,
+    33
+   ],
+   "bloecke": 4175
+  },
+  {
+   "id": "seeinsel_riesig_1",
+   "gruppe": "seeinsel_riesig",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/seeinsel_riesig_1.nbt",
+   "anker": [
+    27,
+    -23,
+    18
+   ],
+   "masse": [
+    59,
+    54,
+    50
+   ],
+   "bloecke": 12568
+  },
+  {
+   "id": "seeinsel_riesig_2",
+   "gruppe": "seeinsel_riesig",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/seeinsel_riesig_2.nbt",
+   "anker": [
+    19,
+    -19,
+    21
+   ],
+   "masse": [
+    52,
+    58,
+    51
+   ],
+   "bloecke": 10848
+  },
+  {
+   "id": "seeinsel_gigantisch_1",
+   "gruppe": "seeinsel_gigantisch",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/seeinsel_gigantisch_1.nbt",
+   "anker": [
+    51,
+    -27,
+    46
+   ],
+   "masse": [
+    90,
+    75,
+    77
+   ],
+   "bloecke": 34807
+  },
+  {
+   "id": "seeinsel_gigantisch_2",
+   "gruppe": "seeinsel_gigantisch",
+   "titel": "See-Insel mit Wasserfällen",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/seeinsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -43,
+    35
+   ],
+   "masse": [
+    98,
+    59,
+    65
+   ],
+   "bloecke": 34648
+  },
+  {
+   "id": "wieseninsel_klein_1",
+   "gruppe": "wieseninsel_klein",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/wieseninsel_klein_1.nbt",
+   "anker": [
+    10,
+    -13,
+    15
+   ],
+   "masse": [
+    20,
+    24,
+    24
+   ],
+   "bloecke": 1531
+  },
+  {
+   "id": "wieseninsel_klein_2",
+   "gruppe": "wieseninsel_klein",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/wieseninsel_klein_2.nbt",
+   "anker": [
+    10,
+    -12,
+    9
+   ],
+   "masse": [
+    24,
+    25,
+    18
+   ],
+   "bloecke": 1393
+  },
+  {
+   "id": "wieseninsel_mittel_1",
+   "gruppe": "wieseninsel_mittel",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/wieseninsel_mittel_1.nbt",
+   "anker": [
+    11,
+    -17,
+    21
+   ],
+   "masse": [
+    28,
+    31,
+    34
+   ],
+   "bloecke": 3830
+  },
+  {
+   "id": "wieseninsel_mittel_2",
+   "gruppe": "wieseninsel_mittel",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/wieseninsel_mittel_2.nbt",
+   "anker": [
+    19,
+    -19,
+    20
+   ],
+   "masse": [
+    42,
+    29,
+    33
+   ],
+   "bloecke": 3507
+  },
+  {
+   "id": "wieseninsel_riesig_1",
+   "gruppe": "wieseninsel_riesig",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/wieseninsel_riesig_1.nbt",
+   "anker": [
+    26,
+    -22,
+    18
+   ],
+   "masse": [
+    58,
+    42,
+    50
+   ],
+   "bloecke": 11521
+  },
+  {
+   "id": "wieseninsel_riesig_2",
+   "gruppe": "wieseninsel_riesig",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/wieseninsel_riesig_2.nbt",
+   "anker": [
+    18,
+    -18,
+    20
+   ],
+   "masse": [
+    51,
+    46,
+    49
+   ],
+   "bloecke": 10221
+  },
+  {
+   "id": "wieseninsel_gigantisch_1",
+   "gruppe": "wieseninsel_gigantisch",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/wieseninsel_gigantisch_1.nbt",
+   "anker": [
+    50,
+    -27,
+    46
+   ],
+   "masse": [
+    88,
+    62,
+    77
+   ],
+   "bloecke": 33429
+  },
+  {
+   "id": "wieseninsel_gigantisch_2",
+   "gruppe": "wieseninsel_gigantisch",
+   "titel": "Blumenwiesen-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/wieseninsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -47,
+    35
+   ],
+   "masse": [
+    99,
+    42,
+    65
+   ],
+   "bloecke": 33099
+  },
+  {
+   "id": "nadelinsel_klein_1",
+   "gruppe": "nadelinsel_klein",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/nadelinsel_klein_1.nbt",
+   "anker": [
+    10,
+    -12,
+    16
+   ],
+   "masse": [
+    19,
+    23,
+    25
+   ],
+   "bloecke": 1473
+  },
+  {
+   "id": "nadelinsel_klein_2",
+   "gruppe": "nadelinsel_klein",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/nadelinsel_klein_2.nbt",
+   "anker": [
+    11,
+    -14,
+    9
+   ],
+   "masse": [
+    25,
+    21,
+    19
+   ],
+   "bloecke": 1394
+  },
+  {
+   "id": "nadelinsel_mittel_1",
+   "gruppe": "nadelinsel_mittel",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/nadelinsel_mittel_1.nbt",
+   "anker": [
+    11,
+    -17,
+    22
+   ],
+   "masse": [
+    29,
+    34,
+    36
+   ],
+   "bloecke": 3992
+  },
+  {
+   "id": "nadelinsel_mittel_2",
+   "gruppe": "nadelinsel_mittel",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/nadelinsel_mittel_2.nbt",
+   "anker": [
+    20,
+    -19,
+    20
+   ],
+   "masse": [
+    44,
+    29,
+    33
+   ],
+   "bloecke": 3523
+  },
+  {
+   "id": "nadelinsel_riesig_1",
+   "gruppe": "nadelinsel_riesig",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/nadelinsel_riesig_1.nbt",
+   "anker": [
+    27,
+    -23,
+    19
+   ],
+   "masse": [
+    59,
+    53,
+    52
+   ],
+   "bloecke": 13556
+  },
+  {
+   "id": "nadelinsel_riesig_2",
+   "gruppe": "nadelinsel_riesig",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/nadelinsel_riesig_2.nbt",
+   "anker": [
+    19,
+    -19,
+    20
+   ],
+   "masse": [
+    53,
+    57,
+    50
+   ],
+   "bloecke": 12211
+  },
+  {
+   "id": "nadelinsel_gigantisch_1",
+   "gruppe": "nadelinsel_gigantisch",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/nadelinsel_gigantisch_1.nbt",
+   "anker": [
+    50,
+    -26,
+    47
+   ],
+   "masse": [
+    88,
+    87,
+    78
+   ],
+   "bloecke": 37421
+  },
+  {
+   "id": "nadelinsel_gigantisch_2",
+   "gruppe": "nadelinsel_gigantisch",
+   "titel": "Felsnadel-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/nadelinsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -47,
+    36
+   ],
+   "masse": [
+    98,
+    67,
+    67
+   ],
+   "bloecke": 39922
+  },
+  {
+   "id": "kaskadeninsel_klein_1",
+   "gruppe": "kaskadeninsel_klein",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kaskadeninsel_klein_1.nbt",
+   "anker": [
+    10,
+    -13,
+    15
+   ],
+   "masse": [
+    19,
+    23,
+    24
+   ],
+   "bloecke": 1573
+  },
+  {
+   "id": "kaskadeninsel_klein_2",
+   "gruppe": "kaskadeninsel_klein",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kaskadeninsel_klein_2.nbt",
+   "anker": [
+    11,
+    -14,
+    9
+   ],
+   "masse": [
+    26,
+    22,
+    18
+   ],
+   "bloecke": 1469
+  },
+  {
+   "id": "kaskadeninsel_mittel_1",
+   "gruppe": "kaskadeninsel_mittel",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kaskadeninsel_mittel_1.nbt",
+   "anker": [
+    11,
+    -17,
+    21
+   ],
+   "masse": [
+    28,
+    33,
+    34
+   ],
+   "bloecke": 4447
+  },
+  {
+   "id": "kaskadeninsel_mittel_2",
+   "gruppe": "kaskadeninsel_mittel",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kaskadeninsel_mittel_2.nbt",
+   "anker": [
+    19,
+    -19,
+    21
+   ],
+   "masse": [
+    42,
+    31,
+    34
+   ],
+   "bloecke": 4059
+  },
+  {
+   "id": "kaskadeninsel_riesig_1",
+   "gruppe": "kaskadeninsel_riesig",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kaskadeninsel_riesig_1.nbt",
+   "anker": [
+    27,
+    -23,
+    19
+   ],
+   "masse": [
+    59,
+    46,
+    52
+   ],
+   "bloecke": 13922
+  },
+  {
+   "id": "kaskadeninsel_riesig_2",
+   "gruppe": "kaskadeninsel_riesig",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kaskadeninsel_riesig_2.nbt",
+   "anker": [
+    19,
+    -18,
+    20
+   ],
+   "masse": [
+    53,
+    51,
+    50
+   ],
+   "bloecke": 12582
+  },
+  {
+   "id": "kaskadeninsel_gigantisch_1",
+   "gruppe": "kaskadeninsel_gigantisch",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/kaskadeninsel_gigantisch_1.nbt",
+   "anker": [
+    51,
+    -27,
+    47
+   ],
+   "masse": [
+    89,
+    70,
+    79
+   ],
+   "bloecke": 41686
+  },
+  {
+   "id": "kaskadeninsel_gigantisch_2",
+   "gruppe": "kaskadeninsel_gigantisch",
+   "titel": "Kaskaden-Insel",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/kaskadeninsel_gigantisch_2.nbt",
+   "anker": [
+    43,
+    -47,
+    36
+   ],
+   "masse": [
+    99,
+    50,
+    66
+   ],
+   "bloecke": 41357
+  },
+  {
+   "id": "inselkette_klein_1",
+   "gruppe": "inselkette_klein",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/inselkette_klein_1.nbt",
+   "anker": [
+    22,
+    -12,
+    17
+   ],
+   "masse": [
+    30,
+    39,
+    32
+   ],
+   "bloecke": 2897
+  },
+  {
+   "id": "inselkette_klein_2",
+   "gruppe": "inselkette_klein",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/inselkette_klein_2.nbt",
+   "anker": [
+    14,
+    -15,
+    22
+   ],
+   "masse": [
+    22,
+    35,
+    42
+   ],
+   "bloecke": 2466
+  },
+  {
+   "id": "inselkette_mittel_1",
+   "gruppe": "inselkette_mittel",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/inselkette_mittel_1.nbt",
+   "anker": [
+    28,
+    -22,
+    30
+   ],
+   "masse": [
+    45,
+    43,
+    63
+   ],
+   "bloecke": 5479
+  },
+  {
+   "id": "inselkette_mittel_2",
+   "gruppe": "inselkette_mittel",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/inselkette_mittel_2.nbt",
+   "anker": [
+    30,
+    -18,
+    32
+   ],
+   "masse": [
+    49,
+    46,
+    62
+   ],
+   "bloecke": 5744
+  },
+  {
+   "id": "inselkette_riesig_1",
+   "gruppe": "inselkette_riesig",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/inselkette_riesig_1.nbt",
+   "anker": [
+    42,
+    -27,
+    41
+   ],
+   "masse": [
+    81,
+    57,
+    81
+   ],
+   "bloecke": 16527
+  },
+  {
+   "id": "inselkette_riesig_2",
+   "gruppe": "inselkette_riesig",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/inselkette_riesig_2.nbt",
+   "anker": [
+    44,
+    -34,
+    43
+   ],
+   "masse": [
+    77,
+    50,
+    94
+   ],
+   "bloecke": 13735
+  },
+  {
+   "id": "inselkette_gigantisch_1",
+   "gruppe": "inselkette_gigantisch",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/himmelsstadt/inselkette_gigantisch_1.nbt",
+   "anker": [
+    59,
+    -38,
+    57
+   ],
+   "masse": [
+    111,
+    66,
+    120
+   ],
+   "bloecke": 42733
+  },
+  {
+   "id": "inselkette_gigantisch_2",
+   "gruppe": "inselkette_gigantisch",
+   "titel": "Inselkette mit Brücken",
+   "kategorie": "himmelsstadt",
+   "kategorie_name": "Himmelsstadt",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/himmelsstadt/inselkette_gigantisch_2.nbt",
+   "anker": [
+    64,
+    -42,
+    60
+   ],
+   "masse": [
+    119,
+    62,
+    125
+   ],
+   "bloecke": 49193
+  },
+  {
    "id": "schwebeberg_klein_1",
    "gruppe": "schwebeberg_klein",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_klein_1.nbt",
@@ -5327,7 +6671,7 @@
    "gruppe": "schwebeberg_klein",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_klein_2.nbt",
@@ -5348,7 +6692,7 @@
    "gruppe": "schwebeberg_mittel",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_mittel_1.nbt",
@@ -5369,7 +6713,7 @@
    "gruppe": "schwebeberg_mittel",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_mittel_2.nbt",
@@ -5390,7 +6734,7 @@
    "gruppe": "schwebeberg_riesig",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_riesig_1.nbt",
@@ -5411,7 +6755,7 @@
    "gruppe": "schwebeberg_riesig",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_riesig_2.nbt",
@@ -5432,7 +6776,7 @@
    "gruppe": "schwebeberg_gigantisch",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_gigantisch_1.nbt",
@@ -5453,7 +6797,7 @@
    "gruppe": "schwebeberg_gigantisch",
    "titel": "Schwebeberg",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_gigantisch_2.nbt",
@@ -5474,7 +6818,7 @@
    "gruppe": "schwebeberg_paar_klein",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_paar_klein_1.nbt",
@@ -5495,7 +6839,7 @@
    "gruppe": "schwebeberg_paar_klein",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_paar_klein_2.nbt",
@@ -5516,7 +6860,7 @@
    "gruppe": "schwebeberg_paar_mittel",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_paar_mittel_1.nbt",
@@ -5537,7 +6881,7 @@
    "gruppe": "schwebeberg_paar_mittel",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_paar_mittel_2.nbt",
@@ -5558,7 +6902,7 @@
    "gruppe": "schwebeberg_paar_riesig",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_paar_riesig_1.nbt",
@@ -5579,7 +6923,7 @@
    "gruppe": "schwebeberg_paar_riesig",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_paar_riesig_2.nbt",
@@ -5600,7 +6944,7 @@
    "gruppe": "schwebeberg_paar_gigantisch",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_paar_gigantisch_1.nbt",
@@ -5621,7 +6965,7 @@
    "gruppe": "schwebeberg_paar_gigantisch",
    "titel": "Schwebeberge mit Felsbogen",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_paar_gigantisch_2.nbt",
@@ -5642,7 +6986,7 @@
    "gruppe": "schwebeberg_gruppe_klein",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_klein_1.nbt",
@@ -5663,7 +7007,7 @@
    "gruppe": "schwebeberg_gruppe_klein",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "klein",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_klein_2.nbt",
@@ -5684,7 +7028,7 @@
    "gruppe": "schwebeberg_gruppe_mittel",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_mittel_1.nbt",
@@ -5705,7 +7049,7 @@
    "gruppe": "schwebeberg_gruppe_mittel",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "mittel",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_mittel_2.nbt",
@@ -5726,7 +7070,7 @@
    "gruppe": "schwebeberg_gruppe_riesig",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_riesig_1.nbt",
@@ -5747,7 +7091,7 @@
    "gruppe": "schwebeberg_gruppe_riesig",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "riesig",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_riesig_2.nbt",
@@ -5768,7 +7112,7 @@
    "gruppe": "schwebeberg_gruppe_gigantisch",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 1,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_gigantisch_1.nbt",
@@ -5789,7 +7133,7 @@
    "gruppe": "schwebeberg_gruppe_gigantisch",
    "titel": "Schwebeberg-Gruppe",
    "kategorie": "schwebeberge",
-   "kategorie_name": "Schwebeberge (Pandora)",
+   "kategorie_name": "Schwebeberge",
    "groesse": "gigantisch",
    "variante": 2,
    "datei": "structures/schwebeberge/schwebeberg_gruppe_gigantisch_2.nbt",
@@ -5804,6 +7148,1014 @@
     131
    ],
    "bloecke": 198225
+  },
+  {
+   "id": "leuchtweide_klein_1",
+   "gruppe": "leuchtweide_klein",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtweide_klein_1.nbt",
+   "anker": [
+    11,
+    4,
+    11
+   ],
+   "masse": [
+    24,
+    24,
+    26
+   ],
+   "bloecke": 1346
+  },
+  {
+   "id": "leuchtweide_klein_2",
+   "gruppe": "leuchtweide_klein",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtweide_klein_2.nbt",
+   "anker": [
+    9,
+    2,
+    13
+   ],
+   "masse": [
+    22,
+    23,
+    25
+   ],
+   "bloecke": 1357
+  },
+  {
+   "id": "leuchtweide_mittel_1",
+   "gruppe": "leuchtweide_mittel",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtweide_mittel_1.nbt",
+   "anker": [
+    18,
+    3,
+    18
+   ],
+   "masse": [
+    37,
+    34,
+    39
+   ],
+   "bloecke": 3489
+  },
+  {
+   "id": "leuchtweide_mittel_2",
+   "gruppe": "leuchtweide_mittel",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtweide_mittel_2.nbt",
+   "anker": [
+    18,
+    2,
+    18
+   ],
+   "masse": [
+    37,
+    33,
+    36
+   ],
+   "bloecke": 3424
+  },
+  {
+   "id": "leuchtweide_riesig_1",
+   "gruppe": "leuchtweide_riesig",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtweide_riesig_1.nbt",
+   "anker": [
+    30,
+    2,
+    27
+   ],
+   "masse": [
+    64,
+    51,
+    61
+   ],
+   "bloecke": 11475
+  },
+  {
+   "id": "leuchtweide_riesig_2",
+   "gruppe": "leuchtweide_riesig",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtweide_riesig_2.nbt",
+   "anker": [
+    27,
+    2,
+    33
+   ],
+   "masse": [
+    57,
+    48,
+    62
+   ],
+   "bloecke": 11654
+  },
+  {
+   "id": "leuchtweide_gigantisch_1",
+   "gruppe": "leuchtweide_gigantisch",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtweide_gigantisch_1.nbt",
+   "anker": [
+    43,
+    4,
+    51
+   ],
+   "masse": [
+    97,
+    82,
+    97
+   ],
+   "bloecke": 30488
+  },
+  {
+   "id": "leuchtweide_gigantisch_2",
+   "gruppe": "leuchtweide_gigantisch",
+   "titel": "Leuchtweide",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtweide_gigantisch_2.nbt",
+   "anker": [
+    45,
+    6,
+    43
+   ],
+   "masse": [
+    98,
+    79,
+    83
+   ],
+   "bloecke": 30554
+  },
+  {
+   "id": "hohlbaum_klein_1",
+   "gruppe": "hohlbaum_klein",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/hohlbaum_klein_1.nbt",
+   "anker": [
+    15,
+    2,
+    20
+   ],
+   "masse": [
+    33,
+    35,
+    39
+   ],
+   "bloecke": 5441
+  },
+  {
+   "id": "hohlbaum_klein_2",
+   "gruppe": "hohlbaum_klein",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/hohlbaum_klein_2.nbt",
+   "anker": [
+    17,
+    2,
+    22
+   ],
+   "masse": [
+    36,
+    34,
+    38
+   ],
+   "bloecke": 5625
+  },
+  {
+   "id": "hohlbaum_mittel_1",
+   "gruppe": "hohlbaum_mittel",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/hohlbaum_mittel_1.nbt",
+   "anker": [
+    29,
+    3,
+    32
+   ],
+   "masse": [
+    57,
+    57,
+    63
+   ],
+   "bloecke": 17798
+  },
+  {
+   "id": "hohlbaum_mittel_2",
+   "gruppe": "hohlbaum_mittel",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/hohlbaum_mittel_2.nbt",
+   "anker": [
+    30,
+    4,
+    26
+   ],
+   "masse": [
+    61,
+    60,
+    56
+   ],
+   "bloecke": 17886
+  },
+  {
+   "id": "hohlbaum_riesig_1",
+   "gruppe": "hohlbaum_riesig",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/hohlbaum_riesig_1.nbt",
+   "anker": [
+    41,
+    6,
+    49
+   ],
+   "masse": [
+    90,
+    101,
+    94
+   ],
+   "bloecke": 55931
+  },
+  {
+   "id": "hohlbaum_riesig_2",
+   "gruppe": "hohlbaum_riesig",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/hohlbaum_riesig_2.nbt",
+   "anker": [
+    40,
+    6,
+    38
+   ],
+   "masse": [
+    85,
+    104,
+    81
+   ],
+   "bloecke": 57141
+  },
+  {
+   "id": "hohlbaum_gigantisch_1",
+   "gruppe": "hohlbaum_gigantisch",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/hohlbaum_gigantisch_1.nbt",
+   "anker": [
+    64,
+    12,
+    61
+   ],
+   "masse": [
+    133,
+    172,
+    132
+   ],
+   "bloecke": 176761
+  },
+  {
+   "id": "hohlbaum_gigantisch_2",
+   "gruppe": "hohlbaum_gigantisch",
+   "titel": "Riesiger Hohlbaum",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/hohlbaum_gigantisch_2.nbt",
+   "anker": [
+    65,
+    11,
+    75
+   ],
+   "masse": [
+    132,
+    179,
+    149
+   ],
+   "bloecke": 175684
+  },
+  {
+   "id": "spiralpflanzen_klein_1",
+   "gruppe": "spiralpflanzen_klein",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/spiralpflanzen_klein_1.nbt",
+   "anker": [
+    5,
+    0,
+    4
+   ],
+   "masse": [
+    10,
+    7,
+    9
+   ],
+   "bloecke": 123
+  },
+  {
+   "id": "spiralpflanzen_klein_2",
+   "gruppe": "spiralpflanzen_klein",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/spiralpflanzen_klein_2.nbt",
+   "anker": [
+    4,
+    0,
+    4
+   ],
+   "masse": [
+    10,
+    6,
+    9
+   ],
+   "bloecke": 120
+  },
+  {
+   "id": "spiralpflanzen_mittel_1",
+   "gruppe": "spiralpflanzen_mittel",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/spiralpflanzen_mittel_1.nbt",
+   "anker": [
+    9,
+    0,
+    7
+   ],
+   "masse": [
+    17,
+    13,
+    17
+   ],
+   "bloecke": 342
+  },
+  {
+   "id": "spiralpflanzen_mittel_2",
+   "gruppe": "spiralpflanzen_mittel",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/spiralpflanzen_mittel_2.nbt",
+   "anker": [
+    8,
+    0,
+    9
+   ],
+   "masse": [
+    15,
+    11,
+    17
+   ],
+   "bloecke": 335
+  },
+  {
+   "id": "spiralpflanzen_riesig_1",
+   "gruppe": "spiralpflanzen_riesig",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/spiralpflanzen_riesig_1.nbt",
+   "anker": [
+    15,
+    0,
+    15
+   ],
+   "masse": [
+    27,
+    18,
+    27
+   ],
+   "bloecke": 780
+  },
+  {
+   "id": "spiralpflanzen_riesig_2",
+   "gruppe": "spiralpflanzen_riesig",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/spiralpflanzen_riesig_2.nbt",
+   "anker": [
+    13,
+    0,
+    12
+   ],
+   "masse": [
+    26,
+    17,
+    24
+   ],
+   "bloecke": 760
+  },
+  {
+   "id": "spiralpflanzen_gigantisch_1",
+   "gruppe": "spiralpflanzen_gigantisch",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/spiralpflanzen_gigantisch_1.nbt",
+   "anker": [
+    17,
+    0,
+    21
+   ],
+   "masse": [
+    37,
+    30,
+    40
+   ],
+   "bloecke": 1794
+  },
+  {
+   "id": "spiralpflanzen_gigantisch_2",
+   "gruppe": "spiralpflanzen_gigantisch",
+   "titel": "Spiralpflanzen",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/spiralpflanzen_gigantisch_2.nbt",
+   "anker": [
+    22,
+    0,
+    24
+   ],
+   "masse": [
+    43,
+    30,
+    44
+   ],
+   "bloecke": 1773
+  },
+  {
+   "id": "leuchtpilze_klein_1",
+   "gruppe": "leuchtpilze_klein",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtpilze_klein_1.nbt",
+   "anker": [
+    4,
+    0,
+    5
+   ],
+   "masse": [
+    11,
+    11,
+    11
+   ],
+   "bloecke": 239
+  },
+  {
+   "id": "leuchtpilze_klein_2",
+   "gruppe": "leuchtpilze_klein",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtpilze_klein_2.nbt",
+   "anker": [
+    5,
+    0,
+    5
+   ],
+   "masse": [
+    11,
+    9,
+    11
+   ],
+   "bloecke": 194
+  },
+  {
+   "id": "leuchtpilze_mittel_1",
+   "gruppe": "leuchtpilze_mittel",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtpilze_mittel_1.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    14,
+    19
+   ],
+   "bloecke": 557
+  },
+  {
+   "id": "leuchtpilze_mittel_2",
+   "gruppe": "leuchtpilze_mittel",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtpilze_mittel_2.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    18,
+    13,
+    19
+   ],
+   "bloecke": 598
+  },
+  {
+   "id": "leuchtpilze_riesig_1",
+   "gruppe": "leuchtpilze_riesig",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtpilze_riesig_1.nbt",
+   "anker": [
+    15,
+    0,
+    15
+   ],
+   "masse": [
+    30,
+    22,
+    30
+   ],
+   "bloecke": 1998
+  },
+  {
+   "id": "leuchtpilze_riesig_2",
+   "gruppe": "leuchtpilze_riesig",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtpilze_riesig_2.nbt",
+   "anker": [
+    14,
+    0,
+    16
+   ],
+   "masse": [
+    29,
+    20,
+    31
+   ],
+   "bloecke": 1790
+  },
+  {
+   "id": "leuchtpilze_gigantisch_1",
+   "gruppe": "leuchtpilze_gigantisch",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtpilze_gigantisch_1.nbt",
+   "anker": [
+    22,
+    1,
+    22
+   ],
+   "masse": [
+    44,
+    41,
+    44
+   ],
+   "bloecke": 7875
+  },
+  {
+   "id": "leuchtpilze_gigantisch_2",
+   "gruppe": "leuchtpilze_gigantisch",
+   "titel": "Leuchtpilze",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtpilze_gigantisch_2.nbt",
+   "anker": [
+    22,
+    1,
+    28
+   ],
+   "masse": [
+    46,
+    48,
+    50
+   ],
+   "bloecke": 9033
+  },
+  {
+   "id": "wurzeltor_klein_1",
+   "gruppe": "wurzeltor_klein",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/wurzeltor_klein_1.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    9,
+    13
+   ],
+   "bloecke": 139
+  },
+  {
+   "id": "wurzeltor_klein_2",
+   "gruppe": "wurzeltor_klein",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/wurzeltor_klein_2.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    9,
+    13
+   ],
+   "bloecke": 155
+  },
+  {
+   "id": "wurzeltor_mittel_1",
+   "gruppe": "wurzeltor_mittel",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/wurzeltor_mittel_1.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    14,
+    19
+   ],
+   "bloecke": 315
+  },
+  {
+   "id": "wurzeltor_mittel_2",
+   "gruppe": "wurzeltor_mittel",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/wurzeltor_mittel_2.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    14,
+    19
+   ],
+   "bloecke": 331
+  },
+  {
+   "id": "wurzeltor_riesig_1",
+   "gruppe": "wurzeltor_riesig",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/wurzeltor_riesig_1.nbt",
+   "anker": [
+    13,
+    0,
+    13
+   ],
+   "masse": [
+    27,
+    21,
+    28
+   ],
+   "bloecke": 671
+  },
+  {
+   "id": "wurzeltor_riesig_2",
+   "gruppe": "wurzeltor_riesig",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/wurzeltor_riesig_2.nbt",
+   "anker": [
+    13,
+    0,
+    13
+   ],
+   "masse": [
+    27,
+    21,
+    27
+   ],
+   "bloecke": 704
+  },
+  {
+   "id": "wurzeltor_gigantisch_1",
+   "gruppe": "wurzeltor_gigantisch",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/wurzeltor_gigantisch_1.nbt",
+   "anker": [
+    19,
+    1,
+    20
+   ],
+   "masse": [
+    39,
+    33,
+    40
+   ],
+   "bloecke": 1817
+  },
+  {
+   "id": "wurzeltor_gigantisch_2",
+   "gruppe": "wurzeltor_gigantisch",
+   "titel": "Wurzeltor",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/wurzeltor_gigantisch_2.nbt",
+   "anker": [
+    19,
+    1,
+    19
+   ],
+   "masse": [
+    39,
+    33,
+    39
+   ],
+   "bloecke": 1777
+  },
+  {
+   "id": "leuchtwiese_klein_1",
+   "gruppe": "leuchtwiese_klein",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtwiese_klein_1.nbt",
+   "anker": [
+    5,
+    0,
+    5
+   ],
+   "masse": [
+    11,
+    4,
+    11
+   ],
+   "bloecke": 81
+  },
+  {
+   "id": "leuchtwiese_klein_2",
+   "gruppe": "leuchtwiese_klein",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtwiese_klein_2.nbt",
+   "anker": [
+    5,
+    0,
+    6
+   ],
+   "masse": [
+    11,
+    5,
+    13
+   ],
+   "bloecke": 78
+  },
+  {
+   "id": "leuchtwiese_mittel_1",
+   "gruppe": "leuchtwiese_mittel",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtwiese_mittel_1.nbt",
+   "anker": [
+    10,
+    0,
+    9
+   ],
+   "masse": [
+    20,
+    5,
+    20
+   ],
+   "bloecke": 199
+  },
+  {
+   "id": "leuchtwiese_mittel_2",
+   "gruppe": "leuchtwiese_mittel",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtwiese_mittel_2.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    5,
+    19
+   ],
+   "bloecke": 201
+  },
+  {
+   "id": "leuchtwiese_riesig_1",
+   "gruppe": "leuchtwiese_riesig",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtwiese_riesig_1.nbt",
+   "anker": [
+    16,
+    0,
+    15
+   ],
+   "masse": [
+    32,
+    5,
+    31
+   ],
+   "bloecke": 440
+  },
+  {
+   "id": "leuchtwiese_riesig_2",
+   "gruppe": "leuchtwiese_riesig",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtwiese_riesig_2.nbt",
+   "anker": [
+    15,
+    0,
+    15
+   ],
+   "masse": [
+    31,
+    5,
+    31
+   ],
+   "bloecke": 473
+  },
+  {
+   "id": "leuchtwiese_gigantisch_1",
+   "gruppe": "leuchtwiese_gigantisch",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/leuchtwald/leuchtwiese_gigantisch_1.nbt",
+   "anker": [
+    23,
+    0,
+    23
+   ],
+   "masse": [
+    47,
+    5,
+    47
+   ],
+   "bloecke": 1075
+  },
+  {
+   "id": "leuchtwiese_gigantisch_2",
+   "gruppe": "leuchtwiese_gigantisch",
+   "titel": "Leuchtwiese",
+   "kategorie": "leuchtwald",
+   "kategorie_name": "Leuchtwald",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/leuchtwald/leuchtwiese_gigantisch_2.nbt",
+   "anker": [
+    23,
+    0,
+    23
+   ],
+   "masse": [
+    47,
+    5,
+    46
+   ],
+   "bloecke": 1059
   },
   {
    "id": "kupferdachhaus_mittel_1",
