@@ -568,3 +568,10 @@ def farbe_von(kurz: str):
         if k.startswith(pre) and k[len(pre):] in FARBEN:
             return FARBEN[k[len(pre):]]
     return None
+
+FARBEN.update({
+    "basalt": (73, 72, 77), "smooth_basalt": (72, 72, 78), "polished_basalt": (99, 98, 100), "magma_block": (142, 63, 31),
+    "dirt_path": (148, 122, 65), "tall_grass": (110, 160, 70), "snow_block": (249, 254, 254), "hay_block": (166, 136, 38),
+    "soul_sand": (81, 62, 50), "soul_soil": (75, 57, 46), "packed_ice": (141, 180, 250), "granite": (149, 103, 85),
+    "carved_pumpkin": (198, 118, 24), "pumpkin": (198, 118, 24), "potatoes": (100, 160, 50), "mud": (60, 57, 60),
+})

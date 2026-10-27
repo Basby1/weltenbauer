@@ -35,6 +35,7 @@ from himmelsstadt import GROESSEN as G4, HIMMELSSTADT, SCHWEBEBERGE  # noqa: E40
 from leuchtwald import LEUCHTWALD  # noqa: E402
 from bruecken import BRUECKEN, GAERTEN  # noqa: E402
 from fantasie import FANTASIE, SCHIFFE  # noqa: E402
+from sagenlande import SAGENLANDE  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -59,13 +60,14 @@ GRUPPEN = [
     ("gaerten", "Hängende Gärten", GAERTEN, G4, [7, 21]),
     ("statuen", "Statuen & Magie", FANTASIE, G4, [7, 21]),
     ("steampunk", "Schiffe & Steampunk", SCHIFFE, G4, [7, 21]),
+    ("sagenlande", "Sagenlande", SAGENLANDE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
