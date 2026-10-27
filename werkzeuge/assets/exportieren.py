@@ -36,6 +36,7 @@ from leuchtwald import LEUCHTWALD  # noqa: E402
 from bruecken import BRUECKEN, GAERTEN  # noqa: E402
 from fantasie import FANTASIE, SCHIFFE  # noqa: E402
 from sagenlande import SAGENLANDE  # noqa: E402
+from boote import BOOTE  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -61,13 +62,14 @@ GRUPPEN = [
     ("statuen", "Statuen & Magie", FANTASIE, G4, [7, 21]),
     ("steampunk", "Schiffe & Steampunk", SCHIFFE, G4, [7, 21]),
     ("sagenlande", "Sagenlande", SAGENLANDE, G4, [7, 21]),
+    ("boote", "Boote & Schiffe", BOOTE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
@@ -163,19 +165,19 @@ def main():
                         "groesse": anzeige, "variante": v, "datei": f"structures/{kat}/{vid}.nbt",
                         "anker": info["anker"], "masse": info["groesse"], "bloecke": info["bloecke"],
                     })
-                    if kat in MEER or art == "segelschiff":
+                    if kat in MEER or kat == "boote" or art == "segelschiff":
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
                     if pk:
                         paket_listen.setdefault(pk[0], (pk[1], []))[1].append(eintraege.pop())
                         if v == 1:
-                            menue_bild(welt, gruppe, meer=kat in MEER, ziel=PAKET_TMP / pk[0] / "bilder")
+                            menue_bild(welt, gruppe, meer=kat in MEER or kat == "boote", ziel=PAKET_TMP / pk[0] / "bilder")
                         print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke  [Paket {pk[0]}]",
                               flush=True)
                         continue
                     if v == 1:
                         menue_bild(welt, gruppe, meer=kat in MEER)
                         vorschau.setdefault((kat, kat_name, anzeige), []).append((titel, welt, info["groesse"]))
-                    if kat in MEER or art == "segelschiff":
+                    if kat in MEER or kat == "boote" or art == "segelschiff":
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
                     print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke", flush=True)
 

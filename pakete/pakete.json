@@ -1,6 +1,12 @@
 {
  "pakete": [
   {
+   "datei": "boote.zip",
+   "name": "Boote & Schiffe",
+   "version": "35d3000c3890",
+   "groesse": 1279110
+  },
+  {
    "datei": "sagenlande.zip",
    "name": "Sagenlande",
    "version": "799b44ac665f",
