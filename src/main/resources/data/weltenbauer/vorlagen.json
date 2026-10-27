@@ -10258,6 +10258,2198 @@
    "bloecke": 1112
   },
   {
+   "id": "ritterstatue_klein_1",
+   "gruppe": "ritterstatue_klein",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/ritterstatue_klein_1.nbt",
+   "anker": [
+    8,
+    0,
+    8
+   ],
+   "masse": [
+    17,
+    18,
+    17
+   ],
+   "bloecke": 883
+  },
+  {
+   "id": "ritterstatue_klein_2",
+   "gruppe": "ritterstatue_klein",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/ritterstatue_klein_2.nbt",
+   "anker": [
+    8,
+    0,
+    8
+   ],
+   "masse": [
+    17,
+    18,
+    17
+   ],
+   "bloecke": 883
+  },
+  {
+   "id": "ritterstatue_mittel_1",
+   "gruppe": "ritterstatue_mittel",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/ritterstatue_mittel_1.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    28,
+    19
+   ],
+   "bloecke": 1632
+  },
+  {
+   "id": "ritterstatue_mittel_2",
+   "gruppe": "ritterstatue_mittel",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/ritterstatue_mittel_2.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    28,
+    19
+   ],
+   "bloecke": 1632
+  },
+  {
+   "id": "ritterstatue_riesig_1",
+   "gruppe": "ritterstatue_riesig",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/ritterstatue_riesig_1.nbt",
+   "anker": [
+    13,
+    0,
+    13
+   ],
+   "masse": [
+    27,
+    46,
+    27
+   ],
+   "bloecke": 5934
+  },
+  {
+   "id": "ritterstatue_riesig_2",
+   "gruppe": "ritterstatue_riesig",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/ritterstatue_riesig_2.nbt",
+   "anker": [
+    13,
+    0,
+    13
+   ],
+   "masse": [
+    27,
+    46,
+    27
+   ],
+   "bloecke": 5934
+  },
+  {
+   "id": "ritterstatue_gigantisch_1",
+   "gruppe": "ritterstatue_gigantisch",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/ritterstatue_gigantisch_1.nbt",
+   "anker": [
+    19,
+    0,
+    19
+   ],
+   "masse": [
+    39,
+    75,
+    39
+   ],
+   "bloecke": 23380
+  },
+  {
+   "id": "ritterstatue_gigantisch_2",
+   "gruppe": "ritterstatue_gigantisch",
+   "titel": "Ritterstatue",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/ritterstatue_gigantisch_2.nbt",
+   "anker": [
+    19,
+    0,
+    19
+   ],
+   "masse": [
+    39,
+    75,
+    39
+   ],
+   "bloecke": 23380
+  },
+  {
+   "id": "waechterstatue_klein_1",
+   "gruppe": "waechterstatue_klein",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/waechterstatue_klein_1.nbt",
+   "anker": [
+    7,
+    0,
+    6
+   ],
+   "masse": [
+    15,
+    20,
+    13
+   ],
+   "bloecke": 568
+  },
+  {
+   "id": "waechterstatue_klein_2",
+   "gruppe": "waechterstatue_klein",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/waechterstatue_klein_2.nbt",
+   "anker": [
+    7,
+    0,
+    6
+   ],
+   "masse": [
+    15,
+    20,
+    13
+   ],
+   "bloecke": 567
+  },
+  {
+   "id": "waechterstatue_mittel_1",
+   "gruppe": "waechterstatue_mittel",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/waechterstatue_mittel_1.nbt",
+   "anker": [
+    13,
+    0,
+    10
+   ],
+   "masse": [
+    27,
+    31,
+    21
+   ],
+   "bloecke": 1616
+  },
+  {
+   "id": "waechterstatue_mittel_2",
+   "gruppe": "waechterstatue_mittel",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/waechterstatue_mittel_2.nbt",
+   "anker": [
+    13,
+    0,
+    10
+   ],
+   "masse": [
+    27,
+    31,
+    21
+   ],
+   "bloecke": 1624
+  },
+  {
+   "id": "waechterstatue_riesig_1",
+   "gruppe": "waechterstatue_riesig",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/waechterstatue_riesig_1.nbt",
+   "anker": [
+    22,
+    0,
+    16
+   ],
+   "masse": [
+    45,
+    52,
+    33
+   ],
+   "bloecke": 5287
+  },
+  {
+   "id": "waechterstatue_riesig_2",
+   "gruppe": "waechterstatue_riesig",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/waechterstatue_riesig_2.nbt",
+   "anker": [
+    22,
+    0,
+    16
+   ],
+   "masse": [
+    45,
+    52,
+    33
+   ],
+   "bloecke": 5286
+  },
+  {
+   "id": "waechterstatue_gigantisch_1",
+   "gruppe": "waechterstatue_gigantisch",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/waechterstatue_gigantisch_1.nbt",
+   "anker": [
+    36,
+    0,
+    26
+   ],
+   "masse": [
+    73,
+    84,
+    53
+   ],
+   "bloecke": 19982
+  },
+  {
+   "id": "waechterstatue_gigantisch_2",
+   "gruppe": "waechterstatue_gigantisch",
+   "titel": "Wächterin am Brunnen",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/waechterstatue_gigantisch_2.nbt",
+   "anker": [
+    36,
+    0,
+    26
+   ],
+   "masse": [
+    73,
+    84,
+    53
+   ],
+   "bloecke": 19973
+  },
+  {
+   "id": "loewenstatue_klein_1",
+   "gruppe": "loewenstatue_klein",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/loewenstatue_klein_1.nbt",
+   "anker": [
+    7,
+    0,
+    5
+   ],
+   "masse": [
+    15,
+    9,
+    11
+   ],
+   "bloecke": 562
+  },
+  {
+   "id": "loewenstatue_klein_2",
+   "gruppe": "loewenstatue_klein",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/loewenstatue_klein_2.nbt",
+   "anker": [
+    7,
+    0,
+    5
+   ],
+   "masse": [
+    15,
+    9,
+    11
+   ],
+   "bloecke": 562
+  },
+  {
+   "id": "loewenstatue_mittel_1",
+   "gruppe": "loewenstatue_mittel",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/loewenstatue_mittel_1.nbt",
+   "anker": [
+    12,
+    0,
+    7
+   ],
+   "masse": [
+    25,
+    14,
+    15
+   ],
+   "bloecke": 1703
+  },
+  {
+   "id": "loewenstatue_mittel_2",
+   "gruppe": "loewenstatue_mittel",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/loewenstatue_mittel_2.nbt",
+   "anker": [
+    12,
+    0,
+    7
+   ],
+   "masse": [
+    25,
+    14,
+    15
+   ],
+   "bloecke": 1703
+  },
+  {
+   "id": "loewenstatue_riesig_1",
+   "gruppe": "loewenstatue_riesig",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/loewenstatue_riesig_1.nbt",
+   "anker": [
+    18,
+    0,
+    10
+   ],
+   "masse": [
+    37,
+    22,
+    21
+   ],
+   "bloecke": 5863
+  },
+  {
+   "id": "loewenstatue_riesig_2",
+   "gruppe": "loewenstatue_riesig",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/loewenstatue_riesig_2.nbt",
+   "anker": [
+    18,
+    0,
+    10
+   ],
+   "masse": [
+    37,
+    22,
+    21
+   ],
+   "bloecke": 5863
+  },
+  {
+   "id": "loewenstatue_gigantisch_1",
+   "gruppe": "loewenstatue_gigantisch",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/loewenstatue_gigantisch_1.nbt",
+   "anker": [
+    28,
+    0,
+    16
+   ],
+   "masse": [
+    57,
+    36,
+    33
+   ],
+   "bloecke": 23681
+  },
+  {
+   "id": "loewenstatue_gigantisch_2",
+   "gruppe": "loewenstatue_gigantisch",
+   "titel": "Wächterlöwe",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/loewenstatue_gigantisch_2.nbt",
+   "anker": [
+    28,
+    0,
+    16
+   ],
+   "masse": [
+    57,
+    36,
+    33
+   ],
+   "bloecke": 23681
+  },
+  {
+   "id": "riesenkopf_klein_1",
+   "gruppe": "riesenkopf_klein",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/riesenkopf_klein_1.nbt",
+   "anker": [
+    7,
+    0,
+    7
+   ],
+   "masse": [
+    15,
+    12,
+    13
+   ],
+   "bloecke": 517
+  },
+  {
+   "id": "riesenkopf_klein_2",
+   "gruppe": "riesenkopf_klein",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/riesenkopf_klein_2.nbt",
+   "anker": [
+    8,
+    0,
+    6
+   ],
+   "masse": [
+    16,
+    12,
+    12
+   ],
+   "bloecke": 501
+  },
+  {
+   "id": "riesenkopf_mittel_1",
+   "gruppe": "riesenkopf_mittel",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/riesenkopf_mittel_1.nbt",
+   "anker": [
+    12,
+    0,
+    10
+   ],
+   "masse": [
+    25,
+    19,
+    23
+   ],
+   "bloecke": 2210
+  },
+  {
+   "id": "riesenkopf_mittel_2",
+   "gruppe": "riesenkopf_mittel",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/riesenkopf_mittel_2.nbt",
+   "anker": [
+    12,
+    0,
+    11
+   ],
+   "masse": [
+    26,
+    19,
+    25
+   ],
+   "bloecke": 2245
+  },
+  {
+   "id": "riesenkopf_riesig_1",
+   "gruppe": "riesenkopf_riesig",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/riesenkopf_riesig_1.nbt",
+   "anker": [
+    20,
+    0,
+    20
+   ],
+   "masse": [
+    44,
+    34,
+    35
+   ],
+   "bloecke": 10325
+  },
+  {
+   "id": "riesenkopf_riesig_2",
+   "gruppe": "riesenkopf_riesig",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/riesenkopf_riesig_2.nbt",
+   "anker": [
+    20,
+    0,
+    20
+   ],
+   "masse": [
+    43,
+    34,
+    42
+   ],
+   "bloecke": 10315
+  },
+  {
+   "id": "riesenkopf_gigantisch_1",
+   "gruppe": "riesenkopf_gigantisch",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/riesenkopf_gigantisch_1.nbt",
+   "anker": [
+    39,
+    0,
+    34
+   ],
+   "masse": [
+    76,
+    55,
+    58
+   ],
+   "bloecke": 45151
+  },
+  {
+   "id": "riesenkopf_gigantisch_2",
+   "gruppe": "riesenkopf_gigantisch",
+   "titel": "Versunkener Königskopf",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/riesenkopf_gigantisch_2.nbt",
+   "anker": [
+    34,
+    0,
+    39
+   ],
+   "masse": [
+    71,
+    55,
+    69
+   ],
+   "bloecke": 44623
+  },
+  {
+   "id": "obelisk_klein_1",
+   "gruppe": "obelisk_klein",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/obelisk_klein_1.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    20,
+    13
+   ],
+   "bloecke": 544
+  },
+  {
+   "id": "obelisk_klein_2",
+   "gruppe": "obelisk_klein",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/obelisk_klein_2.nbt",
+   "anker": [
+    6,
+    0,
+    6
+   ],
+   "masse": [
+    13,
+    20,
+    13
+   ],
+   "bloecke": 544
+  },
+  {
+   "id": "obelisk_mittel_1",
+   "gruppe": "obelisk_mittel",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/obelisk_mittel_1.nbt",
+   "anker": [
+    8,
+    0,
+    8
+   ],
+   "masse": [
+    17,
+    29,
+    17
+   ],
+   "bloecke": 1305
+  },
+  {
+   "id": "obelisk_mittel_2",
+   "gruppe": "obelisk_mittel",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/obelisk_mittel_2.nbt",
+   "anker": [
+    8,
+    0,
+    8
+   ],
+   "masse": [
+    17,
+    29,
+    17
+   ],
+   "bloecke": 1305
+  },
+  {
+   "id": "obelisk_riesig_1",
+   "gruppe": "obelisk_riesig",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/obelisk_riesig_1.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    45,
+    19
+   ],
+   "bloecke": 2541
+  },
+  {
+   "id": "obelisk_riesig_2",
+   "gruppe": "obelisk_riesig",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/obelisk_riesig_2.nbt",
+   "anker": [
+    9,
+    0,
+    9
+   ],
+   "masse": [
+    19,
+    45,
+    19
+   ],
+   "bloecke": 2541
+  },
+  {
+   "id": "obelisk_gigantisch_1",
+   "gruppe": "obelisk_gigantisch",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/obelisk_gigantisch_1.nbt",
+   "anker": [
+    11,
+    0,
+    11
+   ],
+   "masse": [
+    23,
+    71,
+    23
+   ],
+   "bloecke": 5867
+  },
+  {
+   "id": "obelisk_gigantisch_2",
+   "gruppe": "obelisk_gigantisch",
+   "titel": "Obelisk",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/obelisk_gigantisch_2.nbt",
+   "anker": [
+    11,
+    0,
+    11
+   ],
+   "masse": [
+    23,
+    71,
+    23
+   ],
+   "bloecke": 5867
+  },
+  {
+   "id": "portal_klein_1",
+   "gruppe": "portal_klein",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/portal_klein_1.nbt",
+   "anker": [
+    9,
+    0,
+    4
+   ],
+   "masse": [
+    19,
+    16,
+    9
+   ],
+   "bloecke": 463
+  },
+  {
+   "id": "portal_klein_2",
+   "gruppe": "portal_klein",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/portal_klein_2.nbt",
+   "anker": [
+    9,
+    0,
+    4
+   ],
+   "masse": [
+    19,
+    16,
+    9
+   ],
+   "bloecke": 463
+  },
+  {
+   "id": "portal_mittel_1",
+   "gruppe": "portal_mittel",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/portal_mittel_1.nbt",
+   "anker": [
+    13,
+    0,
+    5
+   ],
+   "masse": [
+    27,
+    24,
+    11
+   ],
+   "bloecke": 1104
+  },
+  {
+   "id": "portal_mittel_2",
+   "gruppe": "portal_mittel",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/portal_mittel_2.nbt",
+   "anker": [
+    13,
+    0,
+    5
+   ],
+   "masse": [
+    27,
+    24,
+    11
+   ],
+   "bloecke": 1105
+  },
+  {
+   "id": "portal_riesig_1",
+   "gruppe": "portal_riesig",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/portal_riesig_1.nbt",
+   "anker": [
+    21,
+    0,
+    5
+   ],
+   "masse": [
+    43,
+    37,
+    11
+   ],
+   "bloecke": 2279
+  },
+  {
+   "id": "portal_riesig_2",
+   "gruppe": "portal_riesig",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/portal_riesig_2.nbt",
+   "anker": [
+    21,
+    0,
+    5
+   ],
+   "masse": [
+    43,
+    37,
+    11
+   ],
+   "bloecke": 2279
+  },
+  {
+   "id": "portal_gigantisch_1",
+   "gruppe": "portal_gigantisch",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/portal_gigantisch_1.nbt",
+   "anker": [
+    35,
+    0,
+    7
+   ],
+   "masse": [
+    71,
+    60,
+    15
+   ],
+   "bloecke": 8118
+  },
+  {
+   "id": "portal_gigantisch_2",
+   "gruppe": "portal_gigantisch",
+   "titel": "Runenportal",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/portal_gigantisch_2.nbt",
+   "anker": [
+    35,
+    0,
+    7
+   ],
+   "masse": [
+    71,
+    60,
+    15
+   ],
+   "bloecke": 8171
+  },
+  {
+   "id": "magierturm_klein_1",
+   "gruppe": "magierturm_klein",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/magierturm_klein_1.nbt",
+   "anker": [
+    5,
+    0,
+    5
+   ],
+   "masse": [
+    12,
+    26,
+    11
+   ],
+   "bloecke": 584
+  },
+  {
+   "id": "magierturm_klein_2",
+   "gruppe": "magierturm_klein",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/magierturm_klein_2.nbt",
+   "anker": [
+    5,
+    0,
+    5
+   ],
+   "masse": [
+    12,
+    26,
+    11
+   ],
+   "bloecke": 584
+  },
+  {
+   "id": "magierturm_mittel_1",
+   "gruppe": "magierturm_mittel",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/magierturm_mittel_1.nbt",
+   "anker": [
+    7,
+    0,
+    7
+   ],
+   "masse": [
+    17,
+    41,
+    15
+   ],
+   "bloecke": 1120
+  },
+  {
+   "id": "magierturm_mittel_2",
+   "gruppe": "magierturm_mittel",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/magierturm_mittel_2.nbt",
+   "anker": [
+    7,
+    0,
+    7
+   ],
+   "masse": [
+    17,
+    41,
+    15
+   ],
+   "bloecke": 1120
+  },
+  {
+   "id": "magierturm_riesig_1",
+   "gruppe": "magierturm_riesig",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/magierturm_riesig_1.nbt",
+   "anker": [
+    12,
+    0,
+    14
+   ],
+   "masse": [
+    29,
+    67,
+    29
+   ],
+   "bloecke": 3168
+  },
+  {
+   "id": "magierturm_riesig_2",
+   "gruppe": "magierturm_riesig",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/magierturm_riesig_2.nbt",
+   "anker": [
+    12,
+    0,
+    14
+   ],
+   "masse": [
+    29,
+    67,
+    29
+   ],
+   "bloecke": 3168
+  },
+  {
+   "id": "magierturm_gigantisch_1",
+   "gruppe": "magierturm_gigantisch",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/magierturm_gigantisch_1.nbt",
+   "anker": [
+    20,
+    0,
+    23
+   ],
+   "masse": [
+    48,
+    109,
+    47
+   ],
+   "bloecke": 9478
+  },
+  {
+   "id": "magierturm_gigantisch_2",
+   "gruppe": "magierturm_gigantisch",
+   "titel": "Magierturm",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/magierturm_gigantisch_2.nbt",
+   "anker": [
+    20,
+    0,
+    23
+   ],
+   "masse": [
+    48,
+    109,
+    47
+   ],
+   "bloecke": 9478
+  },
+  {
+   "id": "drachenskelett_klein_1",
+   "gruppe": "drachenskelett_klein",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/statuen/drachenskelett_klein_1.nbt",
+   "anker": [
+    17,
+    0,
+    12
+   ],
+   "masse": [
+    36,
+    15,
+    29
+   ],
+   "bloecke": 684
+  },
+  {
+   "id": "drachenskelett_klein_2",
+   "gruppe": "drachenskelett_klein",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/statuen/drachenskelett_klein_2.nbt",
+   "anker": [
+    18,
+    0,
+    12
+   ],
+   "masse": [
+    36,
+    15,
+    29
+   ],
+   "bloecke": 694
+  },
+  {
+   "id": "drachenskelett_mittel_1",
+   "gruppe": "drachenskelett_mittel",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/statuen/drachenskelett_mittel_1.nbt",
+   "anker": [
+    30,
+    0,
+    19
+   ],
+   "masse": [
+    61,
+    24,
+    47
+   ],
+   "bloecke": 2077
+  },
+  {
+   "id": "drachenskelett_mittel_2",
+   "gruppe": "drachenskelett_mittel",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/statuen/drachenskelett_mittel_2.nbt",
+   "anker": [
+    29,
+    0,
+    19
+   ],
+   "masse": [
+    59,
+    24,
+    46
+   ],
+   "bloecke": 2112
+  },
+  {
+   "id": "drachenskelett_riesig_1",
+   "gruppe": "drachenskelett_riesig",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/statuen/drachenskelett_riesig_1.nbt",
+   "anker": [
+    48,
+    0,
+    31
+   ],
+   "masse": [
+    100,
+    41,
+    75
+   ],
+   "bloecke": 8537
+  },
+  {
+   "id": "drachenskelett_riesig_2",
+   "gruppe": "drachenskelett_riesig",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/statuen/drachenskelett_riesig_2.nbt",
+   "anker": [
+    48,
+    0,
+    32
+   ],
+   "masse": [
+    99,
+    41,
+    76
+   ],
+   "bloecke": 8562
+  },
+  {
+   "id": "drachenskelett_gigantisch_1",
+   "gruppe": "drachenskelett_gigantisch",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/statuen/drachenskelett_gigantisch_1.nbt",
+   "anker": [
+    80,
+    0,
+    52
+   ],
+   "masse": [
+    165,
+    67,
+    123
+   ],
+   "bloecke": 36761
+  },
+  {
+   "id": "drachenskelett_gigantisch_2",
+   "gruppe": "drachenskelett_gigantisch",
+   "titel": "Drachenskelett mit Hort",
+   "kategorie": "statuen",
+   "kategorie_name": "Statuen & Magie",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/statuen/drachenskelett_gigantisch_2.nbt",
+   "anker": [
+    80,
+    0,
+    52
+   ],
+   "masse": [
+    164,
+    67,
+    122
+   ],
+   "bloecke": 36787
+  },
+  {
+   "id": "segelschiff_klein_1",
+   "gruppe": "segelschiff_klein",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/steampunk/segelschiff_klein_1.nbt",
+   "anker": [
+    13,
+    2,
+    5
+   ],
+   "masse": [
+    31,
+    29,
+    11
+   ],
+   "bloecke": 986,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_klein_2",
+   "gruppe": "segelschiff_klein",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/steampunk/segelschiff_klein_2.nbt",
+   "anker": [
+    13,
+    2,
+    5
+   ],
+   "masse": [
+    31,
+    29,
+    11
+   ],
+   "bloecke": 986,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_mittel_1",
+   "gruppe": "segelschiff_mittel",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/steampunk/segelschiff_mittel_1.nbt",
+   "anker": [
+    19,
+    3,
+    8
+   ],
+   "masse": [
+    46,
+    44,
+    17
+   ],
+   "bloecke": 2190,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_mittel_2",
+   "gruppe": "segelschiff_mittel",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/steampunk/segelschiff_mittel_2.nbt",
+   "anker": [
+    19,
+    3,
+    8
+   ],
+   "masse": [
+    46,
+    44,
+    17
+   ],
+   "bloecke": 2192,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_riesig_1",
+   "gruppe": "segelschiff_riesig",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/steampunk/segelschiff_riesig_1.nbt",
+   "anker": [
+    29,
+    5,
+    12
+   ],
+   "masse": [
+    71,
+    68,
+    25
+   ],
+   "bloecke": 5920,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_riesig_2",
+   "gruppe": "segelschiff_riesig",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/steampunk/segelschiff_riesig_2.nbt",
+   "anker": [
+    29,
+    5,
+    12
+   ],
+   "masse": [
+    71,
+    68,
+    25
+   ],
+   "bloecke": 5914,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_gigantisch_1",
+   "gruppe": "segelschiff_gigantisch",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/steampunk/segelschiff_gigantisch_1.nbt",
+   "anker": [
+    46,
+    8,
+    19
+   ],
+   "masse": [
+    114,
+    107,
+    39
+   ],
+   "bloecke": 13965,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "segelschiff_gigantisch_2",
+   "gruppe": "segelschiff_gigantisch",
+   "titel": "Galeone",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/steampunk/segelschiff_gigantisch_2.nbt",
+   "anker": [
+    46,
+    8,
+    19
+   ],
+   "masse": [
+    114,
+    107,
+    39
+   ],
+   "bloecke": 13969,
+   "hinweis": "auf die Wasseroberfläche setzen"
+  },
+  {
+   "id": "luftschiff_klein_1",
+   "gruppe": "luftschiff_klein",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/steampunk/luftschiff_klein_1.nbt",
+   "anker": [
+    12,
+    -4,
+    7
+   ],
+   "masse": [
+    24,
+    17,
+    15
+   ],
+   "bloecke": 786
+  },
+  {
+   "id": "luftschiff_klein_2",
+   "gruppe": "luftschiff_klein",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/steampunk/luftschiff_klein_2.nbt",
+   "anker": [
+    12,
+    -4,
+    7
+   ],
+   "masse": [
+    24,
+    17,
+    15
+   ],
+   "bloecke": 786
+  },
+  {
+   "id": "luftschiff_mittel_1",
+   "gruppe": "luftschiff_mittel",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/steampunk/luftschiff_mittel_1.nbt",
+   "anker": [
+    19,
+    -5,
+    9
+   ],
+   "masse": [
+    36,
+    26,
+    19
+   ],
+   "bloecke": 2133
+  },
+  {
+   "id": "luftschiff_mittel_2",
+   "gruppe": "luftschiff_mittel",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/steampunk/luftschiff_mittel_2.nbt",
+   "anker": [
+    19,
+    -5,
+    9
+   ],
+   "masse": [
+    36,
+    26,
+    19
+   ],
+   "bloecke": 2133
+  },
+  {
+   "id": "luftschiff_riesig_1",
+   "gruppe": "luftschiff_riesig",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/steampunk/luftschiff_riesig_1.nbt",
+   "anker": [
+    30,
+    -7,
+    15
+   ],
+   "masse": [
+    57,
+    39,
+    31
+   ],
+   "bloecke": 6554
+  },
+  {
+   "id": "luftschiff_riesig_2",
+   "gruppe": "luftschiff_riesig",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/steampunk/luftschiff_riesig_2.nbt",
+   "anker": [
+    30,
+    -7,
+    15
+   ],
+   "masse": [
+    57,
+    39,
+    31
+   ],
+   "bloecke": 6554
+  },
+  {
+   "id": "luftschiff_gigantisch_1",
+   "gruppe": "luftschiff_gigantisch",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/steampunk/luftschiff_gigantisch_1.nbt",
+   "anker": [
+    47,
+    -11,
+    23
+   ],
+   "masse": [
+    89,
+    63,
+    47
+   ],
+   "bloecke": 21905
+  },
+  {
+   "id": "luftschiff_gigantisch_2",
+   "gruppe": "luftschiff_gigantisch",
+   "titel": "Luftschiff",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/steampunk/luftschiff_gigantisch_2.nbt",
+   "anker": [
+    47,
+    -11,
+    23
+   ],
+   "masse": [
+    89,
+    63,
+    47
+   ],
+   "bloecke": 21905
+  },
+  {
+   "id": "zeppelin_klein_1",
+   "gruppe": "zeppelin_klein",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/steampunk/zeppelin_klein_1.nbt",
+   "anker": [
+    10,
+    -5,
+    6
+   ],
+   "masse": [
+    19,
+    12,
+    12
+   ],
+   "bloecke": 500
+  },
+  {
+   "id": "zeppelin_klein_2",
+   "gruppe": "zeppelin_klein",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/steampunk/zeppelin_klein_2.nbt",
+   "anker": [
+    10,
+    -5,
+    6
+   ],
+   "masse": [
+    19,
+    12,
+    12
+   ],
+   "bloecke": 500
+  },
+  {
+   "id": "zeppelin_mittel_1",
+   "gruppe": "zeppelin_mittel",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/steampunk/zeppelin_mittel_1.nbt",
+   "anker": [
+    14,
+    -7,
+    9
+   ],
+   "masse": [
+    27,
+    18,
+    18
+   ],
+   "bloecke": 1152
+  },
+  {
+   "id": "zeppelin_mittel_2",
+   "gruppe": "zeppelin_mittel",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/steampunk/zeppelin_mittel_2.nbt",
+   "anker": [
+    14,
+    -7,
+    9
+   ],
+   "masse": [
+    27,
+    18,
+    18
+   ],
+   "bloecke": 1152
+  },
+  {
+   "id": "zeppelin_riesig_1",
+   "gruppe": "zeppelin_riesig",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/steampunk/zeppelin_riesig_1.nbt",
+   "anker": [
+    21,
+    -10,
+    15
+   ],
+   "masse": [
+    41,
+    27,
+    30
+   ],
+   "bloecke": 3100
+  },
+  {
+   "id": "zeppelin_riesig_2",
+   "gruppe": "zeppelin_riesig",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/steampunk/zeppelin_riesig_2.nbt",
+   "anker": [
+    21,
+    -10,
+    15
+   ],
+   "masse": [
+    41,
+    27,
+    30
+   ],
+   "bloecke": 3100
+  },
+  {
+   "id": "zeppelin_gigantisch_1",
+   "gruppe": "zeppelin_gigantisch",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/steampunk/zeppelin_gigantisch_1.nbt",
+   "anker": [
+    32,
+    -16,
+    23
+   ],
+   "masse": [
+    63,
+    41,
+    46
+   ],
+   "bloecke": 8466
+  },
+  {
+   "id": "zeppelin_gigantisch_2",
+   "gruppe": "zeppelin_gigantisch",
+   "titel": "Zeppelin",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/steampunk/zeppelin_gigantisch_2.nbt",
+   "anker": [
+    32,
+    -16,
+    23
+   ],
+   "masse": [
+    63,
+    41,
+    46
+   ],
+   "bloecke": 8466
+  },
+  {
+   "id": "dampfturm_klein_1",
+   "gruppe": "dampfturm_klein",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/steampunk/dampfturm_klein_1.nbt",
+   "anker": [
+    11,
+    0,
+    5
+   ],
+   "masse": [
+    17,
+    28,
+    11
+   ],
+   "bloecke": 1085
+  },
+  {
+   "id": "dampfturm_klein_2",
+   "gruppe": "dampfturm_klein",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/steampunk/dampfturm_klein_2.nbt",
+   "anker": [
+    11,
+    0,
+    5
+   ],
+   "masse": [
+    17,
+    28,
+    11
+   ],
+   "bloecke": 1085
+  },
+  {
+   "id": "dampfturm_mittel_1",
+   "gruppe": "dampfturm_mittel",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/steampunk/dampfturm_mittel_1.nbt",
+   "anker": [
+    14,
+    0,
+    6
+   ],
+   "masse": [
+    21,
+    38,
+    13
+   ],
+   "bloecke": 1832
+  },
+  {
+   "id": "dampfturm_mittel_2",
+   "gruppe": "dampfturm_mittel",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/steampunk/dampfturm_mittel_2.nbt",
+   "anker": [
+    14,
+    0,
+    6
+   ],
+   "masse": [
+    21,
+    38,
+    13
+   ],
+   "bloecke": 1832
+  },
+  {
+   "id": "dampfturm_riesig_1",
+   "gruppe": "dampfturm_riesig",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/steampunk/dampfturm_riesig_1.nbt",
+   "anker": [
+    21,
+    0,
+    8
+   ],
+   "masse": [
+    30,
+    57,
+    17
+   ],
+   "bloecke": 4244
+  },
+  {
+   "id": "dampfturm_riesig_2",
+   "gruppe": "dampfturm_riesig",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/steampunk/dampfturm_riesig_2.nbt",
+   "anker": [
+    21,
+    0,
+    8
+   ],
+   "masse": [
+    30,
+    57,
+    17
+   ],
+   "bloecke": 4244
+  },
+  {
+   "id": "dampfturm_gigantisch_1",
+   "gruppe": "dampfturm_gigantisch",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/steampunk/dampfturm_gigantisch_1.nbt",
+   "anker": [
+    32,
+    0,
+    12
+   ],
+   "masse": [
+    45,
+    91,
+    25
+   ],
+   "bloecke": 12428
+  },
+  {
+   "id": "dampfturm_gigantisch_2",
+   "gruppe": "dampfturm_gigantisch",
+   "titel": "Dampf-Uhrturm",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/steampunk/dampfturm_gigantisch_2.nbt",
+   "anker": [
+    32,
+    0,
+    12
+   ],
+   "masse": [
+    45,
+    91,
+    25
+   ],
+   "bloecke": 12428
+  },
+  {
+   "id": "fabrik_klein_1",
+   "gruppe": "fabrik_klein",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 1,
+   "datei": "structures/steampunk/fabrik_klein_1.nbt",
+   "anker": [
+    6,
+    1,
+    8
+   ],
+   "masse": [
+    16,
+    14,
+    14
+   ],
+   "bloecke": 667
+  },
+  {
+   "id": "fabrik_klein_2",
+   "gruppe": "fabrik_klein",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "klein",
+   "variante": 2,
+   "datei": "structures/steampunk/fabrik_klein_2.nbt",
+   "anker": [
+    6,
+    1,
+    8
+   ],
+   "masse": [
+    16,
+    14,
+    14
+   ],
+   "bloecke": 667
+  },
+  {
+   "id": "fabrik_mittel_1",
+   "gruppe": "fabrik_mittel",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 1,
+   "datei": "structures/steampunk/fabrik_mittel_1.nbt",
+   "anker": [
+    10,
+    0,
+    11
+   ],
+   "masse": [
+    26,
+    21,
+    20
+   ],
+   "bloecke": 1599
+  },
+  {
+   "id": "fabrik_mittel_2",
+   "gruppe": "fabrik_mittel",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "mittel",
+   "variante": 2,
+   "datei": "structures/steampunk/fabrik_mittel_2.nbt",
+   "anker": [
+    10,
+    0,
+    11
+   ],
+   "masse": [
+    26,
+    21,
+    20
+   ],
+   "bloecke": 1599
+  },
+  {
+   "id": "fabrik_riesig_1",
+   "gruppe": "fabrik_riesig",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 1,
+   "datei": "structures/steampunk/fabrik_riesig_1.nbt",
+   "anker": [
+    16,
+    0,
+    16
+   ],
+   "masse": [
+    42,
+    34,
+    28
+   ],
+   "bloecke": 4429
+  },
+  {
+   "id": "fabrik_riesig_2",
+   "gruppe": "fabrik_riesig",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "riesig",
+   "variante": 2,
+   "datei": "structures/steampunk/fabrik_riesig_2.nbt",
+   "anker": [
+    16,
+    0,
+    16
+   ],
+   "masse": [
+    42,
+    34,
+    28
+   ],
+   "bloecke": 4429
+  },
+  {
+   "id": "fabrik_gigantisch_1",
+   "gruppe": "fabrik_gigantisch",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 1,
+   "datei": "structures/steampunk/fabrik_gigantisch_1.nbt",
+   "anker": [
+    26,
+    0,
+    24
+   ],
+   "masse": [
+    69,
+    57,
+    45
+   ],
+   "bloecke": 13406
+  },
+  {
+   "id": "fabrik_gigantisch_2",
+   "gruppe": "fabrik_gigantisch",
+   "titel": "Dampffabrik",
+   "kategorie": "steampunk",
+   "kategorie_name": "Schiffe & Steampunk",
+   "groesse": "gigantisch",
+   "variante": 2,
+   "datei": "structures/steampunk/fabrik_gigantisch_2.nbt",
+   "anker": [
+    26,
+    0,
+    24
+   ],
+   "masse": [
+    69,
+    57,
+    45
+   ],
+   "bloecke": 13406
+  },
+  {
    "id": "kupferdachhaus_mittel_1",
    "gruppe": "kupferdachhaus_mittel",
    "titel": "Kupferdach-Haus",

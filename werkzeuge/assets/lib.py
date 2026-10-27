@@ -330,7 +330,7 @@ def als_raster(welt: Welt, deko_ausblenden=True):
     liste = []
     for name, _ in welt.P.eintraege[1:]:
         kurz = name.split(":")[1]
-        liste.append(B(FARBEN.get(kurz, (220, 0, 220))))
+        liste.append(B(farbe_von(kurz) or (220, 0, 220)))
     return idx, liste
 
 
@@ -516,3 +516,55 @@ class Verlauf:
         if unten + 1 < len(self.ids) and rest > BAYER[(x + y) & 3][(z + 2 * y) & 3]:
             unten += 1
         return self.ids[unten]
+
+FARBEN.update({
+    "gold_block": (246, 208, 61), "polished_blackstone": (53, 48, 56), "gilded_blackstone": (78, 62, 48),
+    "crying_obsidian": (45, 18, 90), "purpur_block": (169, 125, 169), "end_stone_bricks": (218, 224, 162),
+    "obsidian": (20, 18, 30), "magenta_terracotta": (149, 88, 108), "bone_block": (229, 225, 207),
+    "waxed_cut_copper": (191, 106, 80), "waxed_copper_block": (192, 107, 79),
+    "waxed_exposed_cut_copper": (154, 121, 101), "iron_block": (220, 220, 220),
+})
+
+
+FARBEN.update({
+    "chiseled_deepslate": (54, 54, 55), "quartz_block": (235, 229, 222), "quartz_bricks": (234, 229, 221),
+    "quartz_pillar": (235, 230, 224), "chiseled_quartz_block": (231, 226, 218), "polished_blackstone_bricks": (48, 43, 50),
+    "chiseled_polished_blackstone": (53, 48, 56), "blackstone": (42, 36, 41), "nether_wart_block": (114, 3, 2),
+    "yellow_terracotta": (186, 133, 35), "blue_terracotta": (74, 59, 91), "light_blue_terracotta": (113, 108, 137),
+    "raw_gold_block": (221, 169, 46), "purpur_pillar": (171, 129, 171), "shroomlight": (240, 146, 70),
+    "ochre_froglight": (250, 230, 170), "pearlescent_froglight": (240, 215, 225), "verdant_froglight": (210, 235, 200),
+    "lily_pad": (32, 128, 48), "iron_bars": (110, 110, 110), "exposed_copper": (161, 125, 103),
+    "waxed_exposed_copper": (161, 125, 103), "waxed_oxidized_cut_copper": (79, 153, 126),
+    "yellow_stained_glass": (230, 210, 60), "orange_stained_glass": (216, 127, 51), "pink_stained_glass": (240, 150, 190),
+    "blue_stained_glass": (60, 70, 190), "lime_stained_glass": (130, 200, 30), "green_stained_glass": (90, 120, 40),
+    "light_gray_stained_glass": (160, 160, 160), "gray_stained_glass": (75, 75, 75), "red_stained_glass": (160, 50, 50),
+    "lapis_block": (31, 67, 140), "diorite": (188, 188, 188), "smooth_stone": (158, 158, 158), "red_nether_bricks": (69, 7, 9),
+    "stripped_birch_log": (196, 176, 118), "birch_log": (216, 215, 210), "soul_campfire": (80, 200, 210),
+    "dark_oak_wood": (60, 46, 26), "spruce_wood": (58, 37, 16), "anvil": (68, 68, 68), "cauldron": (60, 60, 60),
+    "coal_block": (16, 15, 15), "netherite_block": (66, 61, 63), "honeycomb_block": (229, 148, 29),
+    "smooth_red_sandstone": (181, 97, 31), "cut_red_sandstone": (189, 101, 31), "red_sandstone": (186, 99, 29),
+    "mossy_stone_bricks": (104, 121, 86), "cracked_stone_bricks": (112, 111, 112), "brown_wool": (114, 71, 40),
+    "light_gray_terracotta": (135, 107, 98), "gray_terracotta": (57, 42, 35), "gilded_blackstone": (78, 62, 48),
+})
+
+
+def farbe_von(kurz: str):
+    """Farbe eines Blocks fürs Vorschaubild; Treppen, Stufen, Mauern usw. erben die Farbe des Grundblocks."""
+    if kurz in FARBEN:
+        return FARBEN[kurz]
+    k = kurz.replace("waxed_", "")
+    if k in FARBEN:
+        return FARBEN[k]
+    for suf in ("_stairs", "_slab", "_wall", "_fence_gate", "_fence", "_button", "_pressure_plate", "_pane"):
+        if k.endswith(suf):
+            basis = k[: -len(suf)]
+            for c in (basis, basis + "s", basis + "_block", basis + "_planks", basis + "_bricks",
+                      basis.replace("brick", "bricks"), basis.replace("tile", "tiles")):
+                if c in FARBEN:
+                    return FARBEN[c]
+                if "waxed_" + c in FARBEN:
+                    return FARBEN["waxed_" + c]
+    for pre in ("chiseled_", "cracked_", "cut_", "polished_", "smooth_", "stripped_"):
+        if k.startswith(pre) and k[len(pre):] in FARBEN:
+            return FARBEN[k[len(pre):]]
+    return None

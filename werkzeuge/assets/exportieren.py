@@ -31,6 +31,7 @@ from riesenbogen import FANTASIEHAEUSER, RIESENBOGEN  # noqa: E402
 from himmelsstadt import GROESSEN as G4, HIMMELSSTADT, SCHWEBEBERGE  # noqa: E402
 from leuchtwald import LEUCHTWALD  # noqa: E402
 from bruecken import BRUECKEN, GAERTEN  # noqa: E402
+from fantasie import FANTASIE, SCHIFFE  # noqa: E402
 
 PROJEKT = HIER.parent.parent
 VORSCHAU = PROJEKT / "src/main/resources/assets/weltenbauer/textures/gui/vorschau"
@@ -53,6 +54,8 @@ GRUPPEN = [
     ("leuchtwald", "Leuchtwald", LEUCHTWALD, G4, [7, 21]),
     ("bruecken", "Brücken", BRUECKEN, G4, [7]),
     ("gaerten", "Hängende Gärten", GAERTEN, G4, [7, 21]),
+    ("statuen", "Statuen & Magie", FANTASIE, G4, [7, 21]),
+    ("steampunk", "Schiffe & Steampunk", SCHIFFE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
 ]
 MEER = {"inseln"}
@@ -109,7 +112,7 @@ def main():
                     if v == 1:
                         menue_bild(welt, gruppe, meer=kat in MEER)
                         vorschau.setdefault((kat, kat_name, anzeige), []).append((titel, welt, info["groesse"]))
-                    if kat in MEER:
+                    if kat in MEER or art == "segelschiff":
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
                     print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke", flush=True)
 

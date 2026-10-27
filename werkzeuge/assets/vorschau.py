@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, "/home/claude/Blaupause")
 from blaupause.vorschau import iso_bild  # noqa: E402
 
-from lib import als_raster  # noqa: E402
+from lib import farbe_von, als_raster  # noqa: E402
 
 GROESSEN = ["klein", "mittel", "groß"]
 
@@ -101,7 +101,7 @@ def paletten_bild(gruppen, titel="Blockpalette", feld=96):
         d.text((rand, y + feld // 2 - 12), name, fill=(50, 50, 50), font=f_name)
         x = rand + 230
         for i, blk in enumerate(bloecke):
-            r, g, b = FARBEN.get(blk, (200, 0, 200))
+            r, g, b = farbe_von(blk) or (200, 0, 200)
             # 16x16 "Textur": Helligkeitsrauschen wie bei Minecraft-Blöcken
             px = feld // 16
             tex = rng.normal(0, 9, (16, 16))
