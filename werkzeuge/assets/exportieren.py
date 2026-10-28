@@ -222,10 +222,12 @@ def main():
                     })
                     if kat in MEER or kat in ("boote", "piraten") or art == "segelschiff":
                         eintraege[-1]["hinweis"] = "auf die Wasseroberfläche setzen"
+                    if kat == "unterwasser":
+                        eintraege[-1]["hinweis"] = "unter Wasser auf den Meeresgrund setzen"
                     if pk:
                         paket_listen.setdefault(pk[0], (pk[1], []))[1].append(eintraege.pop())
                         if v == 1:
-                            menue_bild(welt, gruppe, meer=kat in MEER or kat in ("boote", "piraten"), ziel=PAKET_TMP / pk[0] / "bilder")
+                            menue_bild(welt, gruppe, meer=kat in MEER or kat in ("boote", "piraten", "unterwasser"), ziel=PAKET_TMP / pk[0] / "bilder")
                         print(f"{vid:34s} {str(info['groesse']):16s} {info['bloecke']:7d} Blöcke  [Paket {pk[0]}]",
                               flush=True)
                         continue

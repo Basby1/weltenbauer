@@ -65,6 +65,12 @@ AKZENTE = {"graustein": ["chiseled_stone_bricks"], "tiefenschiefer": ["chiseled_
            "netherziegel": ["chiseled_nether_bricks"], "kalkstein": ["chiseled_stone_bricks"],
            "backstein": ["chiseled_stone_bricks"]}
 
+CHIPPED_BASIS = {"graustein": "stone_bricks", "tiefenschiefer": "deepslate_bricks", "sandstein": "sandstone",
+                 "rotsandstein": "red_sandstone", "backstein": "bricks", "schwarzstein": "polished_blackstone_bricks",
+                 "marmor": "quartz_bricks", "kalkstein": "stone_bricks", "moosstein": "mossy_stone_bricks",
+                 "netherziegel": "nether_bricks", "endstein": "end_stone_bricks", "prismarin": "prismarine_bricks",
+                 "lehm": "mud_bricks"}
+
 # Treppen-Material → vollständiger Block
 VOLL = {"brick": "bricks", "mud_brick": "mud_bricks", "deepslate_tile": "deepslate_tiles",
         "deepslate_brick": "deepslate_bricks", "stone_brick": "stone_bricks",
@@ -100,6 +106,24 @@ DAECHER = {
     "purpur": ["purpur", "purpur", "end_stone_brick"],
     "moos": ["mossy_cobblestone", "mossy_stone_brick", "cobblestone"],
     "grau": ["stone_brick", "cobblestone", "andesite", "polished_andesite", "stone"],
+    # Macaw's Roofs (Mod) – fallen ohne Mod automatisch auf Vanilla-Treppen zurück
+    "mcw_ziegel": ["mcw:red_terracotta", "mcw:red_terracotta", "mcw:brown_terracotta", "mcw:orange_terracotta"],
+    "mcw_stroh": ["mcw:thatch"],
+    "mcw_schiefer": ["mcw:deepslate", "mcw:gray_terracotta", "mcw:deepslate"],
+    "mcw_gruen": ["mcw:green_terracotta", "mcw:green_terracotta", "mcw:lime_terracotta"],
+    "mcw_blau": ["mcw:blue_terracotta", "mcw:light_blue_terracotta", "mcw:blue_terracotta"],
+    "mcw_schwarz": ["mcw:black_terracotta", "mcw:blackstone", "mcw:black_terracotta"],
+    "mcw_braun": ["mcw:brown_terracotta", "mcw:spruce", "mcw:brown_terracotta"],
+    "mcw_holz": ["mcw:spruce", "mcw:dark_oak", "mcw:spruce"],
+    "mcw_stein": ["mcw:stone_bricks", "mcw:cobblestone", "mcw:stone"],
+    "mcw_weiss": ["mcw:white_terracotta", "mcw:white_concrete"],
+    "mcw_gelb": ["mcw:yellow_terracotta", "mcw:orange_terracotta"],
+    "mcw_rot": ["mcw:red_nether_bricks", "mcw:red_terracotta"],
+    # Twigs-Schindeln (Mod)
+    "schindel_rot": ["silt:red", "silt:brown", "silt:red", "silt:orange"],
+    "schindel_blau": ["silt:blue", "silt:cyan", "silt:blue", "silt:light_blue"],
+    "schindel_gruen": ["silt:green", "silt:lime", "silt:green"],
+    "schindel_grau": ["silt:gray", "silt:light_gray", "silt:black"],
 }
 
 
@@ -119,6 +143,15 @@ class Mat:
         self.moos_p = moos
         self.akz = [w.b(b) for b in AKZENTE.get(name, [])]
         self.akz_p = akzent
+        # Zierblöcke aus Chipped (falls vorhanden) – mit dem Grundblock als Ersatz
+        basis = CHIPPED_BASIS.get(name)
+        if basis:
+            import modbloecke as MB
+            var = MB.chipped_varianten(basis)
+            if var:
+                wahl = [var[int(w.rng.integers(len(var)))] for _ in range(3)]
+                self.akz += [MB.mod(w, n, basis) for n in wahl]
+                self.akz_p = max(self.akz_p, 0.03)
         self.hell = hell
 
     def __call__(self, x, y, z, t=0.5):
@@ -148,13 +181,24 @@ class Dach:
 
     def treppe(self, x, y, z, facing, half="bottom"):
         m = self.mat(x, y, z)
+        if ":" in m:
+            import modbloecke as MB
+            return MB.dach_treppe(self.w, m, facing, half)
         return self.w.b(f"{m}_stairs", facing=facing, half=half, shape="straight", waterlogged=False)
 
     def voll(self, x, y, z):
-        return self.w.b(voll(self.mat(x, y, z)))
+        m = self.mat(x, y, z)
+        if ":" in m:
+            import modbloecke as MB
+            return MB.dach_voll(self.w, m)
+        return self.w.b(voll(m))
 
     def platte(self, x, y, z, typ="bottom"):
-        return self.w.b(f"{self.mat(x, y, z)}_slab", type=typ, waterlogged=False)
+        m = self.mat(x, y, z)
+        if ":" in m:
+            import modbloecke as MB
+            return MB.dach_platte(self.w, m, typ)
+        return self.w.b(f"{m}_slab", type=typ, waterlogged=False)
 
 
 def treppe(w, mat, facing, half="bottom"):

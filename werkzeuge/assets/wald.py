@@ -61,9 +61,8 @@ class Stueck:
         w = self.w
         idx = len(w.folge_anker)
         w.folge_anker.append((x0, z0))
-        karte = {}
-        for i, (name, props) in enumerate(quelle.P.eintraege):
-            karte[i] = w.b(name, **dict(props))
+        from lib import uebersetzung
+        karte = uebersetzung(w, quelle)
         for (x, y, z), s in quelle.bloecke.items():
             if s == LUFT:
                 continue

@@ -36,7 +36,17 @@ class Palette:
         return self.index[schluessel]
 
     def name(self, idx: int) -> str:
-        return self.eintraege[idx][0]
+        e = getattr(self, "ersatz", {}).get(idx)
+        return e[0] if e else self.eintraege[idx][0]
+
+    def mod(self, name: str, ersatz: str, ersatz_props: dict | None = None, **props) -> int:
+        """Block aus einer anderen Mod mit Vanilla-Ersatz (wird gesetzt, wenn die Mod fehlt)."""
+        idx = self.b(name, **props)
+        if not hasattr(self, "ersatz"):
+            self.ersatz = {}
+        en = ersatz if ":" in ersatz else "minecraft:" + ersatz
+        self.ersatz[idx] = (en, tuple(sorted((k, str(v).lower()) for k, v in (ersatz_props or {}).items())))
+        return idx
 
 
 LUFT = 0
@@ -54,6 +64,9 @@ class Welt:
     # Grundfunktionen
     def b(self, name, **props):
         return self.P.b(name, **props)
+
+    def mod(self, name, ersatz, ersatz_props=None, **props):
+        return self.P.mod(name, ersatz, ersatz_props, **props)
 
     def setze(self, x, y, z, blk, ueberschreiben=True):
         p = (int(x), int(y), int(z))
@@ -234,12 +247,22 @@ def exportieren(welt: Welt, pfad: Path) -> dict:
     teile += [b"\x03", _tstr("DataVersion"), struct.pack(">i", DATA_VERSION)]
     teile += [b"\x09", _tstr("size"), b"\x03", struct.pack(">i", 3), struct.pack(">iii", *groesse)]
     teile += [b"\x09", _tstr("palette"), b"\x0a", struct.pack(">i", len(pal))]
-    for name, props in pal:
+    ersatz = getattr(welt.P, "ersatz", {})
+    for i, (name, props) in enumerate(pal):
         teile += [b"\x08", _tstr("Name"), _tstr(name)]
         if props:
             teile += [b"\x0a", _tstr("Properties")]
             for k, v in props:
                 teile += [b"\x08", _tstr(k), _tstr(v)]
+            teile.append(b"\x00")
+        if i in ersatz:
+            en, ep = ersatz[i]
+            teile += [b"\x0a", _tstr("wb_ersatz"), b"\x08", _tstr("Name"), _tstr(en)]
+            if ep:
+                teile += [b"\x0a", _tstr("Properties")]
+                for k, v in ep:
+                    teile += [b"\x08", _tstr(k), _tstr(v)]
+                teile.append(b"\x00")
             teile.append(b"\x00")
         teile.append(b"\x00")
     eintraege = sorted(welt.bloecke.items())
@@ -335,9 +358,13 @@ def als_raster(welt: Welt, deko_ausblenden=True):
         rgb: tuple
 
     liste = []
-    for name, _ in welt.P.eintraege[1:]:
+    for i in range(1, len(welt.P.eintraege)):
+        name = welt.P.eintraege[i][0]
         kurz = name.split(":")[1]
-        liste.append(B(farbe_von(kurz) or (220, 0, 220)))
+        f = farbe_von(kurz) if name.startswith("minecraft:") else None
+        if f is None:
+            f = farbe_von(welt.P.name(i).split(":")[1])
+        liste.append(B(f or (220, 0, 220)))
     return idx, liste
 
 
@@ -370,13 +397,24 @@ class Rauschen:
 
 def einfuegen(ziel: Welt, quelle: Welt, dx=0, dy=0, dz=0, ueberschreiben=False):
     """Kopiert eine andere Welt (z. B. einen Baum) hinein und übersetzt dabei die Palette."""
-    karte = {}
-    for i, (name, props) in enumerate(quelle.P.eintraege):
-        karte[i] = ziel.b(name, **dict(props))
+    karte = uebersetzung(ziel, quelle)
     for (x, y, z), s in quelle.bloecke.items():
         if s == LUFT:
             continue
         ziel.setze(x + dx, y + dy, z + dz, karte[s], ueberschreiben)
+
+
+def uebersetzung(ziel: Welt, quelle: Welt):
+    """Paletten-Index der Quelle -> Index im Ziel (Mod-Blöcke behalten ihren Ersatz)."""
+    ersatz = getattr(quelle.P, "ersatz", {})
+    karte = {}
+    for i, (name, props) in enumerate(quelle.P.eintraege):
+        if i in ersatz:
+            en, ep = ersatz[i]
+            karte[i] = ziel.mod(name, en, dict(ep), **dict(props))
+        else:
+            karte[i] = ziel.b(name, **dict(props))
+    return karte
 
 
 def zerfall(welt: Welt, betroffen, rauschen: Rauschen, hoehe_max: float, staerke: float = 0.5, boden: int = 1):
@@ -659,3 +697,13 @@ FARBEN.update({"dark_oak_wall_hanging_sign": (66, 43, 20), "furnace": (110, 110,
 FARBEN.update({"tripwire": (200, 200, 200)})
 FARBEN.update({"dried_kelp_block": (50, 60, 40)})
 FARBEN.update({"white_concrete_powder": (226, 227, 228), "diamond_block": (100, 220, 215), "redstone_lamp": (180, 110, 60), "light_blue_concrete": (35, 137, 198), "cyan_concrete": (21, 119, 136)})
+
+FARBEN.update({
+    "tall_seagrass": (40, 120, 60), "tube_coral_wall_fan": (50, 90, 210), "brain_coral_wall_fan": (210, 90, 160),
+    "horn_coral_wall_fan": (220, 200, 60), "fire_coral_wall_fan": (200, 40, 40), "bubble_coral_wall_fan": (160, 30, 170),
+    "crimson_door": (110, 50, 70), "warped_door": (40, 110, 100), "warped_trapdoor": (40, 110, 100), "rail": (120, 100, 80),
+    "iron_ore": (140, 130, 125), "gold_ore": (150, 140, 100), "copper_ore": (130, 120, 110), "raw_iron_block": (166, 136, 107),
+    "raw_copper_block": (154, 105, 79), "fire": (230, 140, 40), "soul_fire": (70, 200, 210), "bedrock": (60, 60, 60),
+    "dragon_egg": (20, 10, 25), "purple_shulker_box": (100, 30, 150), "magenta_shulker_box": (170, 50, 160),
+    "white_shulker_box": (220, 220, 220), "budding_amethyst": (130, 90, 190),
+})
