@@ -732,3 +732,15 @@ FARBEN.update({
     "yellow_concrete_powder": (233, 199, 55), "dark_prismarine_stairs": (51, 91, 75), "prismarine_stairs": (99, 156, 151),
     "polished_blackstone_stairs": (53, 49, 57), "red_nether_brick_stairs": (69, 7, 9),
 })
+
+FARBEN.update({
+    "soul_wall_torch": (90, 200, 210), "soul_torch": (90, 200, 210), "wither_rose": (40, 35, 30),
+    "skeleton_skull": (215, 215, 205), "wither_skeleton_skull": (40, 40, 40), "black_candle": (30, 30, 35),
+    "candle": (230, 220, 190), "white_candle": (235, 235, 235), "purple_candle": (120, 50, 170),
+    "jack_o_lantern": (230, 150, 40), "soul_campfire": (80, 190, 200), "brewing_stand": (120, 110, 90),
+})
+FARBEN.update({"light_gray_candle": (180, 180, 175), "red_candle": (160, 40, 40), "green_candle": (80, 110, 40),
+               "spore_blossom": (210, 110, 170), "hanging_roots": (160, 115, 90), "crimson_nylium": (130, 30, 30),
+               "warped_nylium": (40, 110, 100), "lectern": (160, 125, 80), "budding_amethyst": (133, 97, 191),
+               "pearlescent_froglight": (240, 225, 230), "ochre_froglight": (245, 220, 150),
+               "verdant_froglight": (210, 240, 200), "slime_block": (110, 190, 90)})

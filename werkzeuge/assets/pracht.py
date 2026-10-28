@@ -119,11 +119,13 @@ DAECHER = {
     "mcw_weiss": ["mcw:white_terracotta", "mcw:white_concrete"],
     "mcw_gelb": ["mcw:yellow_terracotta", "mcw:orange_terracotta"],
     "mcw_rot": ["mcw:red_nether_bricks", "mcw:red_terracotta"],
+    "mcw_lila": ["mcw:purple_terracotta", "mcw:magenta_terracotta", "mcw:purple_concrete", "mcw:purple_terracotta"],
     # Twigs-Schindeln (Mod)
     "schindel_rot": ["silt:red", "silt:brown", "silt:red", "silt:orange"],
     "schindel_blau": ["silt:blue", "silt:cyan", "silt:blue", "silt:light_blue"],
     "schindel_gruen": ["silt:green", "silt:lime", "silt:green"],
     "schindel_grau": ["silt:gray", "silt:light_gray", "silt:black"],
+    "schindel_lila": ["silt:purple", "silt:magenta", "silt:purple", "silt:black"],
 }
 
 
