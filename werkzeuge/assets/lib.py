@@ -721,3 +721,14 @@ for _f, _c in {"white": (234, 236, 237), "orange": (240, 118, 19), "magenta": (1
     FARBEN.setdefault(f"{_f}_carpet", _c)
     FARBEN.setdefault(f"{_f}_wool", _c)
 FARBEN.update({"loom": (140, 110, 80), "note_block": (110, 70, 50), "mangrove_door": (117, 54, 48)})
+
+FARBEN.update({
+    "dead_brain_coral": (220, 205, 190), "dead_brain_coral_block": (124, 117, 114), "crafting_table": (130, 100, 60),
+    "smoker": (90, 85, 80), "stonecutter": (125, 125, 125), "piston": (150, 130, 100), "dispenser": (110, 110, 110),
+    "birch_fence": (192, 175, 121), "birch_slab": (192, 175, 121), "oak_slab": (162, 130, 78),
+    "brick_slab": (150, 97, 83), "brick_stairs": (150, 97, 83), "mud_brick_slab": (137, 103, 79),
+    "mud_brick_stairs": (137, 103, 79), "smooth_stone_slab": (158, 158, 158), "stone_button": (125, 125, 125),
+    "blue_concrete_powder": (70, 73, 167), "purple_concrete_powder": (132, 56, 178), "red_concrete_powder": (168, 54, 51),
+    "yellow_concrete_powder": (233, 199, 55), "dark_prismarine_stairs": (51, 91, 75), "prismarine_stairs": (99, 156, 151),
+    "polished_blackstone_stairs": (53, 49, 57), "red_nether_brick_stairs": (69, 7, 9),
+})
