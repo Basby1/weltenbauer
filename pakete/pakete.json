@@ -31,6 +31,12 @@
    "groesse": 1179950
   },
   {
+   "datei": "endreich.zip",
+   "name": "End-Reich",
+   "version": "6053572e352e",
+   "groesse": 822113
+  },
+  {
    "datei": "feenstadt.zip",
    "name": "Feenstadt",
    "version": "c18c719bf765",
@@ -67,6 +73,12 @@
    "groesse": 1739304
   },
   {
+   "datei": "nether.zip",
+   "name": "Nether-Reich",
+   "version": "b8d2324f2d04",
+   "groesse": 801483
+  },
+  {
    "datei": "orklager.zip",
    "name": "Orklager",
    "version": "9e19ed5678cf",
@@ -83,6 +95,18 @@
    "name": "Sagenlande",
    "version": "799b44ac665f",
    "groesse": 3966241
+  },
+  {
+   "datei": "unterwasser.zip",
+   "name": "Unterwasserwelt",
+   "version": "f9a9a914bcf4",
+   "groesse": 1154037
+  },
+  {
+   "datei": "vulkan.zip",
+   "name": "Vulkanreich",
+   "version": "fb991d23071f",
+   "groesse": 1322988
   },
   {
    "datei": "wueste.zip",

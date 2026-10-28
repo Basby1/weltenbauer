@@ -608,3 +608,19 @@ FARBEN.update({"sugar_cane": (140, 190, 90), "red_sand": (190, 102, 33), "decora
                "orange_carpet": (240, 118, 19), "purple_carpet": (121, 42, 172), "cyan_carpet": (21, 137, 145),
                "blue_carpet": (53, 57, 157), "yellow_carpet": (248, 197, 39), "red_carpet": (160, 39, 34),
                "chiseled_red_sandstone": (183, 96, 27), "coal_block": (16, 15, 15), "snow": (249, 254, 254)})
+
+FARBEN.update({
+    "seagrass": (40, 120, 60), "kelp": (60, 130, 50), "kelp_plant": (60, 130, 50), "sea_pickle": (110, 130, 50),
+    "tube_coral_block": (49, 87, 207), "tube_coral": (49, 87, 207), "tube_coral_fan": (49, 87, 207),
+    "brain_coral_block": (207, 91, 159), "brain_coral": (207, 91, 159), "brain_coral_fan": (207, 91, 159),
+    "bubble_coral_block": (165, 26, 162), "bubble_coral": (165, 26, 162), "bubble_coral_fan": (165, 26, 162),
+    "fire_coral_block": (163, 35, 46), "fire_coral": (163, 35, 46), "fire_coral_fan": (163, 35, 46),
+    "horn_coral_block": (216, 199, 66), "horn_coral": (216, 199, 66), "horn_coral_fan": (216, 199, 66),
+    "lava": (230, 100, 20), "nether_bricks": (44, 21, 26), "chiseled_nether_bricks": (47, 23, 28),
+    "nether_brick_fence": (44, 21, 26), "nether_wart": (150, 20, 20), "chorus_flower": (150, 110, 150),
+    "chorus_plant": (93, 57, 93), "end_portal_frame": (90, 120, 100), "netherrack": (97, 38, 38),
+    "crimson_nylium": (130, 31, 31), "warped_wart_block": (22, 119, 121), "warped_stem": (58, 58, 77),
+    "crimson_stem": (92, 25, 29), "twisting_vines_plant": (20, 140, 120), "weeping_vines_plant": (140, 20, 20),
+    "cracked_polished_blackstone_bricks": (44, 37, 43), "purpur_slab": (169, 125, 169), "end_rod": (240, 235, 220),
+    "pink_concrete": (213, 101, 142), "pink_terracotta": (161, 78, 78), "soul_campfire": (80, 200, 210),
+})
