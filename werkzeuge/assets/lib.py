@@ -707,3 +707,17 @@ FARBEN.update({
     "dragon_egg": (20, 10, 25), "purple_shulker_box": (100, 30, 150), "magenta_shulker_box": (170, 50, 160),
     "white_shulker_box": (220, 220, 220), "budding_amethyst": (130, 90, 190),
 })
+for _f, _c in {"white": (234, 236, 237), "orange": (240, 118, 19), "magenta": (189, 68, 179), "light_blue": (58, 175, 217),
+               "yellow": (248, 197, 39), "lime": (112, 185, 25), "pink": (237, 141, 172), "gray": (62, 68, 71),
+               "light_gray": (142, 142, 134), "cyan": (21, 137, 145), "purple": (121, 42, 172), "blue": (53, 57, 157),
+               "brown": (114, 71, 40), "green": (84, 109, 27), "red": (160, 39, 34), "black": (20, 21, 25)}.items():
+    FARBEN.setdefault(f"{_f}_carpet", _c)
+    FARBEN.setdefault(f"{_f}_wool", _c)
+FARBEN.update({"loom": (140, 110, 80), "note_block": (110, 70, 50), "mangrove_door": (117, 54, 48)})
+for _f, _c in {"white": (234, 236, 237), "orange": (240, 118, 19), "magenta": (189, 68, 179), "light_blue": (58, 175, 217),
+               "yellow": (248, 197, 39), "lime": (112, 185, 25), "pink": (237, 141, 172), "gray": (62, 68, 71),
+               "light_gray": (142, 142, 134), "cyan": (21, 137, 145), "purple": (121, 42, 172), "blue": (53, 57, 157),
+               "brown": (114, 71, 40), "green": (84, 109, 27), "red": (160, 39, 34), "black": (20, 21, 25)}.items():
+    FARBEN.setdefault(f"{_f}_carpet", _c)
+    FARBEN.setdefault(f"{_f}_wool", _c)
+FARBEN.update({"loom": (140, 110, 80), "note_block": (110, 70, 50), "mangrove_door": (117, 54, 48)})

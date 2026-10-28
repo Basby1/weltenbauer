@@ -242,3 +242,72 @@ def herbstlaub(w, art):
     """BOP-Herbstlaub: maple (rot), orange_autumn, yellow_autumn."""
     ers = {"maple": "nether_wart_block", "orange_autumn": "honeycomb_block", "yellow_autumn": "hay_block"}[art]
     return mod(w, f"biomesoplenty:{art}_leaves", ers, None, persistent=True, distance=7)
+
+
+# ============================================================================ Wege, Waren, Seile, Fahnen
+
+PFLASTER_MUSTER = ("flagstone", "running_bond", "windmill_weave", "basket_weave_paving", "clover_paving",
+                   "diamond_paving", "honeycomb_paving", "square_paving", "crystal_floor")
+
+
+def pflaster(w, stein, muster, ersatz=None):
+    """Macaw's Paths: z. B. pflaster(w, 'cobblestone', 'flagstone') – Ersatz ist der Grundstein."""
+    ers = ersatz or {"brick": "bricks", "stone": "stone_bricks", "cobblestone": "cobblestone",
+                     "mossy_cobblestone": "mossy_cobblestone", "andesite": "polished_andesite",
+                     "sandstone": "smooth_sandstone", "red_sandstone": "smooth_red_sandstone",
+                     "blackstone": "polished_blackstone", "cobbled_deepslate": "cobbled_deepslate",
+                     "granite": "polished_granite", "diorite": "polished_diorite"}.get(stein, "cobblestone")
+    return mod(w, f"mcwpaths:{stein}_{muster}", ers)
+
+
+WAREN = [("farmersdelight:cabbage_crate", "melon"), ("farmersdelight:carrot_crate", "pumpkin"),
+         ("farmersdelight:tomato_crate", "red_mushroom_block"), ("farmersdelight:potato_crate", "barrel"),
+         ("farmersdelight:beetroot_crate", "red_wool"), ("farmersdelight:onion_crate", "hay_block"),
+         ("farmersdelight:rice_bag", "white_wool"), ("farmersdelight:straw_bale", "hay_block"),
+         ("supplementaries:sack", "brown_wool")]
+
+
+def ware(w, rng):
+    n, e = WAREN[int(rng.integers(len(WAREN)))]
+    return mod(w, n, e, axis="y", facing="up", open=False)
+
+
+def seil(w, achse="y"):
+    if achse == "y":
+        return mod(w, "supplementaries:rope", "chain", dict(axis="y", waterlogged=False), up=True, down=True,
+                   north=False, south=False, east=False, west=False, knot=False, distance=0)
+    return mod(w, "supplementaries:rope", "chain", dict(axis=achse, waterlogged=False), up=False, down=False,
+               north=achse == "z", south=achse == "z", east=achse == "x", west=achse == "x", knot=False, distance=0)
+
+
+def fahne(w, farbe, facing):
+    return mod(w, f"supplementaries:flag_{farbe}", f"{farbe}_wool", facing=facing)
+
+
+def palisade(w, holz="spruce", **verb):
+    return mod(w, f"decorative_blocks:{holz}_palisade", f"{holz}_log", dict(axis="y"),
+               **{k: bool(v) for k, v in verb.items()})
+
+
+def stroh(w):
+    return mod(w, "farmersdelight:straw_bale", "hay_block", dict(axis="y"), axis="y")
+
+
+def korb(w):
+    return mod(w, "farmersdelight:basket", "barrel", dict(facing="up", open=False), facing="up", enabled=False)
+
+
+def teppich(w, farbe="red"):
+    return mod(w, "farmersdelight:canvas_rug", f"{farbe}_carpet")
+
+
+def wasserrad(w, facing="east", gross=False):
+    if gross:
+        return mod(w, "create:large_water_wheel", "spruce_planks", axis="x" if facing in ("east", "west") else "z",
+                   extension=False)
+    return mod(w, "create:water_wheel", "spruce_planks", facing=facing)
+
+
+def haengeblumen(w):
+    return mod(w, "supplementaries:hanging_flower_pot", "flowering_azalea_leaves",
+               dict(persistent=True, distance=7, waterlogged=False))
