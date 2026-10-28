@@ -61,6 +61,12 @@
    "groesse": 847158
   },
   {
+   "datei": "handwerk.zip",
+   "name": "Mühlen & Handwerk",
+   "version": "356f7e10aec5",
+   "groesse": 486689
+  },
+  {
    "datei": "kathedralen.zip",
    "name": "Kathedralen & Tempel",
    "version": "f8c82e96db4b",
@@ -71,6 +77,12 @@
    "name": "Kreaturen",
    "version": "3d2c6b120d74",
    "groesse": 1778936
+  },
+  {
+   "datei": "kueste.zip",
+   "name": "Küste & Leuchttürme",
+   "version": "5a46fe914bd3",
+   "groesse": 757262
   },
   {
    "datei": "markt.zip",
@@ -95,6 +107,12 @@
    "name": "Orklager",
    "version": "9e19ed5678cf",
    "groesse": 943493
+  },
+  {
+   "datei": "parks.zip",
+   "name": "Gärten & Parks",
+   "version": "0f469d8a64d7",
+   "groesse": 565976
   },
   {
    "datei": "piraten.zip",

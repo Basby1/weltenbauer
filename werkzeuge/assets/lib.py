@@ -626,3 +626,6 @@ FARBEN.update({
 })
 
 FARBEN.update({"emerald_block": (42, 203, 87), "redstone_block": (175, 24, 5), "melon": (114, 146, 30), "cake": (230, 220, 210)})
+
+FARBEN.update({"rose_bush": (180, 40, 50), "blast_furnace": (90, 90, 90), "grindstone": (140, 140, 140),
+               "smithing_table": (60, 40, 40), "glass": (200, 230, 240)})
