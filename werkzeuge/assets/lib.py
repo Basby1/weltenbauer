@@ -652,3 +652,6 @@ FARBEN.update({
     "glow_lichen": (110, 140, 120), "small_amethyst_bud": (160, 120, 220), "torchflower": (220, 120, 40),
     "mushroom_stem": (203, 196, 185), "melon": (110, 145, 30), "red_sand": (190, 102, 33),
 })
+
+FARBEN.update({"composter": (110, 80, 45), "birch_trapdoor": (200, 180, 130), "jungle_trapdoor": (150, 110, 75)})
+FARBEN.update({"acacia_trapdoor": (168, 90, 50), "acacia_door": (168, 90, 50), "jungle_door": (160, 115, 80)})

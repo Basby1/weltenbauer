@@ -31,8 +31,8 @@ WAENDE = {
                        "polished_deepslate", "deepslate_bricks", "tuff"],
     "sandstein": ["sandstone", "cut_sandstone", "sandstone", "smooth_sandstone", "cut_sandstone", "smooth_sandstone",
                   "end_stone"],
-    "rotsandstein": ["red_sandstone", "cut_red_sandstone", "red_sandstone", "smooth_red_sandstone",
-                     "orange_terracotta", "smooth_red_sandstone"],
+    "rotsandstein": ["red_sandstone", "cut_red_sandstone", "terracotta", "smooth_red_sandstone", "granite",
+                     "red_sandstone", "polished_granite"],
     "kalkstein": ["tuff", "andesite", "diorite", "polished_diorite", "calcite", "smooth_quartz"],
     "marmor": ["polished_andesite", "diorite", "polished_diorite", "calcite", "smooth_quartz", "quartz_bricks",
                "white_concrete"],
@@ -50,8 +50,8 @@ WAENDE = {
                      "chiseled_nether_bricks"],
     "endstein": ["end_stone", "end_stone_bricks", "end_stone", "purpur_block", "end_stone_bricks"],
     "eis": ["blue_ice", "packed_ice", "packed_ice", "ice", "snow_block"],
-    "moosstein": ["moss_block", "mossy_cobblestone", "mossy_stone_bricks", "mossy_cobblestone", "andesite",
-                  "stone_bricks"],
+    "moosstein": ["mossy_cobblestone", "cobblestone", "mossy_stone_bricks", "cracked_stone_bricks", "stone_bricks",
+                  "andesite", "stone_bricks"],
     "lehm": ["packed_mud", "mud_bricks", "terracotta", "brown_terracotta", "mud_bricks"],
 }
 
@@ -625,8 +625,8 @@ def gelaende(w, R, cx=0, cz=0, art="wiese", wege=None, dichte=1.0):
     r2 = Rauschen(w, 2)
     rng = w.rng
     if art == "wiese":
-        flaechen = [("grass_block", 0.55), ("podzol", 0.12), ("coarse_dirt", 0.08), ("moss_block", 0.1),
-                    ("rooted_dirt", 0.05), ("grass_block", 0.1)]
+        flaechen = [("grass_block", 0.62), ("podzol", 0.05), ("coarse_dirt", 0.03), ("moss_block", 0.05),
+                    ("grass_block", 0.25)]
         blumen = ["poppy", "dandelion", "oxeye_daisy", "azure_bluet", "cornflower", "allium", "red_tulip"]
         streu = ["grass", "grass", "fern", "grass"]
     elif art == "wald":
