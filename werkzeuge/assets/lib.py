@@ -744,3 +744,5 @@ FARBEN.update({"light_gray_candle": (180, 180, 175), "red_candle": (160, 40, 40)
                "warped_nylium": (40, 110, 100), "lectern": (160, 125, 80), "budding_amethyst": (133, 97, 191),
                "pearlescent_froglight": (240, 225, 230), "ochre_froglight": (245, 220, 150),
                "verdant_froglight": (210, 240, 200), "slime_block": (110, 190, 90)})
+FARBEN.update({"cave_vines": (70, 110, 40), "cave_vines_plant": (70, 110, 40), "white_concrete_powder": (226, 227, 228),
+               "quartz_bricks": (234, 229, 221), "chiseled_quartz_block": (231, 226, 218)})
