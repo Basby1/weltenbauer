@@ -55,7 +55,8 @@ from wueste_eis import EISREICH, WUESTE  # noqa: E402
 from elemente import END, NETHER, UNTERWASSER, VULKAN  # noqa: E402
 from dorf1 import DSCHUNGEL, MARKT, WIKINGER  # noqa: E402
 from dorf2 import HANDWERK, KUESTE, PARKS  # noqa: E402
-from reiche import DRACHEN, HIMMEL  # noqa: E402
+from drachen import DRACHEN  # noqa: E402
+from reiche import HIMMEL  # noqa: E402
 from spuk import FRIEDHOF, HEXEN  # noqa: E402
 
 
