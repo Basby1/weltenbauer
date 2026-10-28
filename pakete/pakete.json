@@ -25,6 +25,12 @@
    "groesse": 2656048
   },
   {
+   "datei": "dschungel.zip",
+   "name": "Dschungeltempel",
+   "version": "492d2acba939",
+   "groesse": 946411
+  },
+  {
    "datei": "eisreich.zip",
    "name": "Eisreich",
    "version": "2c5bbedcb698",
@@ -67,6 +73,12 @@
    "groesse": 1778936
   },
   {
+   "datei": "markt.zip",
+   "name": "Mittelaltermarkt",
+   "version": "0239b3b95796",
+   "groesse": 373215
+  },
+  {
    "datei": "mystik.zip",
    "name": "Mystik",
    "version": "b542175f407f",
@@ -107,6 +119,12 @@
    "name": "Vulkanreich",
    "version": "fb991d23071f",
    "groesse": 1322988
+  },
+  {
+   "datei": "wikinger.zip",
+   "name": "Wikingerdorf",
+   "version": "00a7f47452a9",
+   "groesse": 500329
   },
   {
    "datei": "wueste.zip",

@@ -624,3 +624,5 @@ FARBEN.update({
     "cracked_polished_blackstone_bricks": (44, 37, 43), "purpur_slab": (169, 125, 169), "end_rod": (240, 235, 220),
     "pink_concrete": (213, 101, 142), "pink_terracotta": (161, 78, 78), "soul_campfire": (80, 200, 210),
 })
+
+FARBEN.update({"emerald_block": (42, 203, 87), "redstone_block": (175, 24, 5), "melon": (114, 146, 30), "cake": (230, 220, 210)})
