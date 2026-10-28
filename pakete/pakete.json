@@ -25,6 +25,12 @@
    "groesse": 2656048
   },
   {
+   "datei": "drachen.zip",
+   "name": "Drachenhort",
+   "version": "259417680c49",
+   "groesse": 763323
+  },
+  {
    "datei": "dschungel.zip",
    "name": "Dschungeltempel",
    "version": "492d2acba939",
@@ -55,6 +61,12 @@
    "groesse": 849096
   },
   {
+   "datei": "friedhof.zip",
+   "name": "Friedhof & Spuk",
+   "version": "60b06d37c5f2",
+   "groesse": 545276
+  },
+  {
    "datei": "haeuser.zip",
    "name": "Häuser",
    "version": "2403c966876a",
@@ -65,6 +77,18 @@
    "name": "Mühlen & Handwerk",
    "version": "356f7e10aec5",
    "groesse": 486689
+  },
+  {
+   "datei": "hexen.zip",
+   "name": "Hexenwerk",
+   "version": "88c3a37ff990",
+   "groesse": 546319
+  },
+  {
+   "datei": "himmel.zip",
+   "name": "Himmelsreich",
+   "version": "b2367c8755f7",
+   "groesse": 1539780
   },
   {
    "datei": "kathedralen.zip",

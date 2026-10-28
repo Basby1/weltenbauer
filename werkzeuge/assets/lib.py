@@ -629,3 +629,8 @@ FARBEN.update({"emerald_block": (42, 203, 87), "redstone_block": (175, 24, 5), "
 
 FARBEN.update({"rose_bush": (180, 40, 50), "blast_furnace": (90, 90, 90), "grindstone": (140, 140, 140),
                "smithing_table": (60, 40, 40), "glass": (200, 230, 240)})
+
+FARBEN.update({"iron_door": (200, 200, 200), "skeleton_skull": (220, 220, 210), "jack_o_lantern": (230, 140, 30),
+               "water_cauldron": (60, 60, 60), "brewing_stand": (120, 100, 80), "sweet_berry_bush": (60, 100, 40),
+               "lectern": (170, 130, 80), "chest": (160, 110, 40), "lime_candle": (120, 190, 40),
+               "white_stained_glass": (240, 240, 240)})
