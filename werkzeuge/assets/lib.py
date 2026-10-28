@@ -746,3 +746,6 @@ FARBEN.update({"light_gray_candle": (180, 180, 175), "red_candle": (160, 40, 40)
                "verdant_froglight": (210, 240, 200), "slime_block": (110, 190, 90)})
 FARBEN.update({"cave_vines": (70, 110, 40), "cave_vines_plant": (70, 110, 40), "white_concrete_powder": (226, 227, 228),
                "quartz_bricks": (234, 229, 221), "chiseled_quartz_block": (231, 226, 218)})
+FARBEN.update({"yellow_candle": (240, 200, 60), "orange_candle": (230, 130, 40), "honey_block": (250, 190, 40),
+               "honeycomb_block": (229, 148, 29), "pink_petals": (240, 170, 200)})
+FARBEN.update({"tinted_glass": (45, 35, 50), "mushroom_stem": (203, 196, 185)})

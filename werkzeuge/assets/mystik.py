@@ -493,3 +493,7 @@ MYSTIK = {
     "runenmonolith": ("Runenmonolith", runenmonolith),
 }
 HELIX = {"helixturm": ("Helixturm-Insel", helixturm)}
+
+from mystik2 import NEU as _NEU  # noqa: E402
+
+MYSTIK.update(_NEU)

@@ -400,3 +400,7 @@ BIENENSTADT = {
     "bienenblume": ("Biene auf Riesenblume", _einzel(lambda w, f, u: bienenblume(w, f, 0, 0, u), 7)),
     "riesenblume": ("Riesenblume", _einzel(lambda w, f, u: riesenblume(w, f, 0, 0, u), 6)),
 }
+
+from bienen2 import NEU as _NEU  # noqa: E402
+
+BIENENSTADT.update(_NEU)
