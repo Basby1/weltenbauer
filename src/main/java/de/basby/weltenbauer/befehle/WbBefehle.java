@@ -12,6 +12,7 @@ import de.basby.weltenbauer.arbeit.Aktionen;
 import de.basby.weltenbauer.arbeit.Auftrag;
 import de.basby.weltenbauer.arbeit.Auftragsverwaltung;
 import de.basby.weltenbauer.arbeit.BlockAuftrag;
+import de.basby.weltenbauer.arbeit.GlaettAuftrag;
 import de.basby.weltenbauer.arbeit.Bereich;
 import de.basby.weltenbauer.arbeit.Protokoll;
 import de.basby.weltenbauer.arbeit.Verlauf;
@@ -100,6 +101,17 @@ public final class WbBefehle {
                                             Aktionen.ersetzen(von, zu.getState(), zu.getDefinedProperties()));
                                 }))))
 
+                // /wb glaetten <radius>|auswahl [staerke]
+                .then(Commands.literal("glaetten")
+                        .then(Commands.argument("radius", IntegerArgumentType.integer(3, 256))
+                                .executes(c -> glaetten(c, kreis(c), 3))
+                                .then(Commands.argument("staerke", IntegerArgumentType.integer(1, 10))
+                                        .executes(c -> glaetten(c, kreis(c), IntegerArgumentType.getInteger(c, "staerke")))))
+                        .then(Commands.literal("auswahl")
+                                .executes(c -> glaetten(c, auswahl(c), 3))
+                                .then(Commands.argument("staerke", IntegerArgumentType.integer(1, 10))
+                                        .executes(c -> glaetten(c, auswahl(c), IntegerArgumentType.getInteger(c, "staerke"))))))
+
                 // Vorlagen (Bäume, Ruinen, Felsen, Schildkröten-Insel …)
                 .then(VorlagenBefehle.knoten())
 
@@ -186,6 +198,30 @@ public final class WbBefehle {
         } else {
             Auftragsverwaltung.starte(auftrag.get());
         }
+        return 1;
+    }
+
+    private static int glaetten(CommandContext<CommandSourceStack> c, Bereich bereich, int staerke)
+            throws CommandSyntaxException {
+        CommandSourceStack quelle = c.getSource();
+        if (Auftragsverwaltung.laeuft()) {
+            quelle.sendFailure(Component.literal("Es läuft schon: " + Auftragsverwaltung.aktuell().titel()
+                    + ". Warte, bis es fertig ist, oder brich es mit /wb abbrechen ab."));
+            return 0;
+        }
+        ServerPlayer spieler = quelle.getPlayerOrException();
+        ServerLevel level = quelle.getLevel();
+        GlaettAuftrag auftrag = GlaettAuftrag.planen(level, spieler.getUUID(), bereich, staerke);
+        if (auftrag == null) {
+            quelle.sendFailure(Component.literal("Hier gibt es nichts zu glätten (oder die Chunks sind nicht geladen – "
+                    + "stell dich näher an die Stelle)."));
+            return 0;
+        }
+        quelle.sendSuccess(() -> Component.literal("Weltenbauer: ").withStyle(ChatFormatting.GOLD)
+                .append(Component.literal(Auftragsverwaltung.zahl(auftrag.saeulen()) + " Geländesäulen werden geglättet "
+                        + bereich.beschreibung() + " (Stärke " + staerke + "). Mit /wb rueckgaengig nimmst du es zurück.")
+                        .withStyle(ChatFormatting.WHITE)), false);
+        Auftragsverwaltung.starte(auftrag);
         return 1;
     }
 
@@ -308,6 +344,7 @@ public final class WbBefehle {
         zeile(t, "/wb laub aufraeumen <Radius>", "schwebende Blätter ohne Stamm entfernen");
         zeile(t, "/wb entfernen <Block> <Radius>", "eine Blocksorte entfernen");
         zeile(t, "/wb ersetzen <Block> <Block> <Radius>", "eine Blocksorte austauschen");
+        zeile(t, "/wb glaetten <Radius> [Stärke 1-10]", "kantiges Gelände weich ausblenden und an die Umgebung anpassen");
         zeile(t, "/wb vorlage", "Vorlagen-Katalog: Bäume, Ruinen, Felsen, Inseln …");
         zeile(t, "/wb vorlage setzen <Name> [Drehung] [spiegeln]", "Vorlage dorthin setzen, wohin du schaust");
         zeile(t, "/wb vorlage zeigen <Name>", "Umriss anzeigen, bevor du setzt");

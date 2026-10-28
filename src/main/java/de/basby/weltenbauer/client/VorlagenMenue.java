@@ -58,6 +58,8 @@ public class VorlagenMenue extends Screen {
             new Befehl("/wb laub aufraeumen <Radius>", "schwebende Blätter ohne Stamm entfernen", "/wb laub aufraeumen 50"),
             new Befehl("/wb entfernen <Block> <Radius>", "eine Blocksorte entfernen", "/wb entfernen "),
             new Befehl("/wb ersetzen <Block> <Block> <Radius>", "eine Blocksorte austauschen", "/wb ersetzen "),
+            new Befehl("/wb glaetten <Radius> [Stärke]", "kantiges Gelände glätten und weich an die Umgebung anpassen (Stärke 1–10, Standard 3)",
+                    "/wb glaetten "),
             new Befehl(null, "Bereich statt Radius", null),
             new Befehl("/wb stab", "Terraforming-Stab holen (Rechtsklick Ecke 1, Schleichen Ecke 2)", "/wb stab"),
             new Befehl("… auswahl", "statt <Radius> überall „auswahl“ schreiben, z. B. /wb schnee entfernen auswahl",
