@@ -600,3 +600,5 @@ FARBEN.update({"beetroots": (160, 40, 50), "bamboo_planks": (193, 173, 80), "bam
 
 FARBEN.update({"white_candle": (230, 230, 220), "purple_candle": (120, 50, 170), "candle": (220, 200, 150),
                "red_candle": (160, 40, 40), "black_candle": (40, 40, 50), "orange_candle": (220, 120, 40)})
+
+FARBEN.update({"bell": (250, 200, 60), "chiseled_sandstone": (216, 203, 155)})
