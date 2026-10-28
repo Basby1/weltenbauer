@@ -597,3 +597,6 @@ FARBEN.update({"honey_block": (251, 185, 52), "flower_pot": (124, 68, 52), "bee_
 
 FARBEN.update({"beetroots": (160, 40, 50), "bamboo_planks": (193, 173, 80), "bamboo_block": (127, 143, 52),
                "stripped_bamboo_block": (193, 173, 80), "quartz_pillar": (235, 230, 224)})
+
+FARBEN.update({"white_candle": (230, 230, 220), "purple_candle": (120, 50, 170), "candle": (220, 200, 150),
+               "red_candle": (160, 40, 40), "black_candle": (40, 40, 50), "orange_candle": (220, 120, 40)})
