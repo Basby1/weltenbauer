@@ -25,6 +25,12 @@
    "groesse": 2656048
   },
   {
+   "datei": "eisreich.zip",
+   "name": "Eisreich",
+   "version": "2c5bbedcb698",
+   "groesse": 1179950
+  },
+  {
    "datei": "feenstadt.zip",
    "name": "Feenstadt",
    "version": "c18c719bf765",
@@ -77,6 +83,12 @@
    "name": "Sagenlande",
    "version": "799b44ac665f",
    "groesse": 3966241
+  },
+  {
+   "datei": "wueste.zip",
+   "name": "Wüstenreich",
+   "version": "a41fba6c8177",
+   "groesse": 1091240
   }
  ]
 }

@@ -602,3 +602,9 @@ FARBEN.update({"white_candle": (230, 230, 220), "purple_candle": (120, 50, 170),
                "red_candle": (160, 40, 40), "black_candle": (40, 40, 50), "orange_candle": (220, 120, 40)})
 
 FARBEN.update({"bell": (250, 200, 60), "chiseled_sandstone": (216, 203, 155)})
+
+FARBEN.update({"sugar_cane": (140, 190, 90), "red_sand": (190, 102, 33), "decorated_pot": (150, 80, 60),
+               "brown_stained_glass": (102, 76, 51), "ice": (145, 183, 253), "white_carpet": (234, 236, 237),
+               "orange_carpet": (240, 118, 19), "purple_carpet": (121, 42, 172), "cyan_carpet": (21, 137, 145),
+               "blue_carpet": (53, 57, 157), "yellow_carpet": (248, 197, 39), "red_carpet": (160, 39, 34),
+               "chiseled_red_sandstone": (183, 96, 27), "coal_block": (16, 15, 15), "snow": (249, 254, 254)})
