@@ -64,6 +64,7 @@ public final class WbBefehle {
                 .requires(WbBefehle::darf)
                 .executes(WbBefehle::hilfe)
                 .then(Commands.literal("hilfe").executes(WbBefehle::hilfe))
+                .then(Commands.literal("blockliste").executes(WbBefehle::blockliste))
 
                 // /wb schnee entfernen <radius>|auswahl [alles]
                 .then(Commands.literal("schnee").then(Commands.literal("entfernen")
@@ -337,6 +338,46 @@ public final class WbBefehle {
 
     // ------------------------------------------------------------------ Hilfe
 
+    @SuppressWarnings({"rawtypes", "unchecked"})
+    /** Schreibt alle Blöcke aus anderen Mods (mit ihren Zuständen) in eine gepackte Textdatei im Spielordner. */
+    private static int blockliste(CommandContext<CommandSourceStack> c) {
+        java.nio.file.Path ziel = net.minecraftforge.fml.loading.FMLPaths.GAMEDIR.get().resolve("weltenbauer_blockliste.txt.gz");
+        int n = 0;
+        java.util.Set<String> mods = new java.util.TreeSet<>();
+        try (java.io.Writer out = new java.io.OutputStreamWriter(new java.util.zip.GZIPOutputStream(
+                java.nio.file.Files.newOutputStream(ziel)), java.nio.charset.StandardCharsets.UTF_8)) {
+            for (var eintrag : net.minecraft.core.registries.BuiltInRegistries.BLOCK.entrySet()) {
+                net.minecraft.resources.ResourceLocation id = eintrag.getKey().location();
+                if (id.getNamespace().equals("minecraft")) {
+                    continue;
+                }
+                mods.add(id.getNamespace());
+                StringBuilder z = new StringBuilder(id.toString());
+                for (var prop : eintrag.getValue().getStateDefinition().getProperties()) {
+                    z.append(' ').append(prop.getName()).append('=');
+                    boolean erst = true;
+                    for (Object v : prop.getPossibleValues()) {
+                        if (!erst) {
+                            z.append(',');
+                        }
+                        erst = false;
+                        z.append(((net.minecraft.world.level.block.state.properties.Property) prop).getName((Comparable) v));
+                    }
+                }
+                out.write(z.append('\n').toString());
+                n++;
+            }
+        } catch (java.io.IOException e) {
+            c.getSource().sendFailure(Component.literal("Konnte die Blockliste nicht schreiben: " + e.getMessage()));
+            return 0;
+        }
+        final int anzahl = n;
+        final int modAnzahl = mods.size();
+        c.getSource().sendSuccess(() -> Component.literal(anzahl + " Blöcke aus " + modAnzahl
+                + " Mods gespeichert in: " + ziel).withStyle(ChatFormatting.GOLD), false);
+        return n;
+    }
+
     private static int hilfe(CommandContext<CommandSourceStack> c) {
         MutableComponent t = Component.literal("— Weltenbauer —").withStyle(ChatFormatting.GOLD);
         zeile(t, "/wb schnee entfernen <Radius>", "Schneeschichten weg (+ „alles“: auch Schneeblöcke)");
@@ -344,6 +385,7 @@ public final class WbBefehle {
         zeile(t, "/wb laub aufraeumen <Radius>", "schwebende Blätter ohne Stamm entfernen");
         zeile(t, "/wb entfernen <Block> <Radius>", "eine Blocksorte entfernen");
         zeile(t, "/wb ersetzen <Block> <Block> <Radius>", "eine Blocksorte austauschen");
+        zeile(t, "/wb blockliste", "alle Blöcke deiner Mods in eine Datei schreiben (für neue Vorlagen mit Mod-Blöcken)");
         zeile(t, "/wb glaetten <Radius> [Stärke 1-10]", "kantiges Gelände weich ausblenden und an die Umgebung anpassen");
         zeile(t, "/wb vorlage", "Vorlagen-Katalog: Bäume, Ruinen, Felsen, Inseln …");
         zeile(t, "/wb vorlage setzen <Name> [Drehung] [spiegeln]", "Vorlage dorthin setzen, wohin du schaust");

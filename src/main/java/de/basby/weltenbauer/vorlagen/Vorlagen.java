@@ -347,8 +347,13 @@ public final class Vorlagen {
             CompoundTag p = paletteTag.getCompound(i);
             BlockState s = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), p);
             if (s.isAir() && !p.getString("Name").equals("minecraft:air")) {
-                unbekannt++;   // Block aus einer Mod, die fehlt
-                s = null;
+                // Block aus einer Mod, die fehlt: Ersatzblock aus der Vorlage nehmen, falls vorhanden
+                if (p.contains("wb_ersatz", Tag.TAG_COMPOUND)) {
+                    s = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), p.getCompound("wb_ersatz"));
+                } else {
+                    unbekannt++;
+                    s = null;
+                }
             }
             palette.add(s);
         }
