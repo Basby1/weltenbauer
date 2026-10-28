@@ -27,8 +27,8 @@
   {
    "datei": "drachen.zip",
    "name": "Drachenhort",
-   "version": "c5217fbf6ba1",
-   "groesse": 4460906
+   "version": "e10568930c03",
+   "groesse": 4460844
   },
   {
    "datei": "dschungel.zip",
@@ -191,6 +191,12 @@
    "name": "Wüstenreich",
    "version": "fddcbe0dcf5e",
    "groesse": 4615641
+  },
+  {
+   "datei": "zwerge.zip",
+   "name": "Zwergenreich",
+   "version": "2d8f3987f23a",
+   "groesse": 4302762
   }
  ]
 }

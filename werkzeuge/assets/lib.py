@@ -238,11 +238,27 @@ def _tstr(s: str) -> bytes:
     return struct.pack(">H", len(b)) + b
 
 
+_VANILLA = None
+
+
+def _pruefe_bloecke(welt, pfad):
+    """Bricht ab, wenn ein Vanilla-Block nicht in der 1.20-Blockliste steht (Tippfehler, kaputte Namen)."""
+    global _VANILLA
+    if _VANILLA is None:
+        import json
+        _VANILLA = set(json.loads((Path(__file__).parent / "vanilla_bloecke.json").read_text()))
+    namen = [n for n, _ in welt.P.eintraege] + [e[0] for e in getattr(welt.P, "ersatz", {}).values()]
+    falsch = sorted({n for n in namen if n.startswith("minecraft:") and n[10:] not in _VANILLA})
+    if falsch:
+        raise ValueError(f"Ungültige Blöcke in {pfad}: {falsch}")
+
+
 def exportieren(welt: Welt, pfad: Path) -> dict:
     """Speichert als Minecraft-Strukturdatei. Gibt Größe und Anker (verschoben) zurück."""
     lo, hi = welt.grenzen()
     groesse = (hi - lo + 1).tolist()
     pal = welt.P.eintraege
+    _pruefe_bloecke(welt, pfad)
     teile = [b"\x0a", _tstr("")]
     teile += [b"\x03", _tstr("DataVersion"), struct.pack(">i", DATA_VERSION)]
     teile += [b"\x09", _tstr("size"), b"\x03", struct.pack(">i", 3), struct.pack(">iii", *groesse)]

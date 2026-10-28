@@ -653,6 +653,8 @@ def turm(w, st, cx, cz, y0, H, R, form="rund", dach="kegel", krone=True, fenster
         elif spitze:
             w.setze(cx, spitze_y, cz, w.b(spitze))
         if fahne:
+            if isinstance(fahne, str):
+                fahne = [f"{fahne}_wool", f"{fahne}_wool", "white_wool"]
             for k in range(2):
                 w.setze(cx, spitze_y + 1 + k, cz, w.b(f"{st.holz}_fence", north=False, south=False, east=False,
                                                       west=False, waterlogged=False))
