@@ -246,9 +246,16 @@ def exportieren(welt: Welt, pfad: Path) -> dict:
     teile += [b"\x09", _tstr("blocks"), b"\x0a", struct.pack(">i", len(eintraege))]
     kp = b"\x09" + _tstr("pos") + b"\x03" + struct.pack(">i", 3)
     ks = b"\x03" + _tstr("state")
+    folgen = getattr(welt, "folgen", None)
+    kf = b"\x03" + _tstr("wb_f")
     for (x, y, z), s in eintraege:
-        teile.append(kp + struct.pack(">iii", x - lo[0], y - lo[1], z - lo[2]) + ks + struct.pack(">i", s) + b"\x00")
+        extra = kf + struct.pack(">i", folgen.get((x, y, z), -2)) if folgen is not None else b""
+        teile.append(kp + struct.pack(">iii", x - lo[0], y - lo[1], z - lo[2]) + ks + struct.pack(">i", s) + extra
+                     + b"\x00")
     teile += [b"\x09", _tstr("entities"), b"\x00", struct.pack(">i", 0)]
+    if folgen is not None:
+        anker = [v for (ax, az) in welt.folge_anker for v in (int(ax - lo[0]), int(az - lo[2]))]
+        teile += [b"\x0b", _tstr("wb_anker"), struct.pack(">i", len(anker)), struct.pack(f">{len(anker)}i", *anker)]
     teile.append(b"\x00")
     pfad.parent.mkdir(parents=True, exist_ok=True)
     with gzip.open(pfad, "wb", compresslevel=9) as f:
@@ -634,3 +641,14 @@ FARBEN.update({"iron_door": (200, 200, 200), "skeleton_skull": (220, 220, 210), 
                "water_cauldron": (60, 60, 60), "brewing_stand": (120, 100, 80), "sweet_berry_bush": (60, 100, 40),
                "lectern": (170, 130, 80), "chest": (160, 110, 40), "lime_candle": (120, 190, 40),
                "white_stained_glass": (240, 240, 240)})
+
+
+FARBEN.update({
+    "lilac": (190, 150, 200), "white_tulip": (230, 235, 230), "bamboo": (95, 145, 40), "peony": (230, 170, 210),
+    "rose_bush": (160, 40, 40), "sugar_cane": (140, 190, 90), "blue_orchid": (40, 160, 220), "snow": (245, 250, 250),
+    "mud": (60, 57, 60), "muddy_mangrove_roots": (70, 58, 45), "soul_soil": (75, 57, 46), "wither_rose": (30, 30, 20),
+    "mycelium": (113, 90, 98), "nether_wart_block": (114, 3, 2), "orange_carpet": (239, 112, 15),
+    "red_carpet": (157, 47, 47), "yellow_carpet": (255, 190, 36), "brown_carpet": (114, 71, 40),
+    "glow_lichen": (110, 140, 120), "small_amethyst_bud": (160, 120, 220), "torchflower": (220, 120, 40),
+    "mushroom_stem": (203, 196, 185), "melon": (110, 145, 30), "red_sand": (190, 102, 33),
+})

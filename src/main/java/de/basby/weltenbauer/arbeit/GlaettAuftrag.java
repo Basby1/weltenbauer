@@ -48,16 +48,28 @@ public class GlaettAuftrag extends Auftrag {
 
     // ------------------------------------------------------------------ Planung
 
+    /** Nur natürlicher Boden: Erde, Gras, Sand, Kies, Ton, Naturstein, Schnee … – nie Baublöcke. */
     public static boolean istGelaende(BlockState s) {
         if (s.isAir() || !s.getFluidState().isEmpty() || s.hasBlockEntity()) {
             return false;
         }
-        if (s.is(BlockTags.LEAVES) || s.is(BlockTags.LOGS) || s.is(BlockTags.PLANKS) || s.is(BlockTags.WOOL)
-                || s.is(BlockTags.FENCES) || s.is(BlockTags.WALLS) || s.is(BlockTags.DOORS)
-                || s.is(Blocks.GLASS) || s.is(BlockTags.IMPERMEABLE)) {
-            return false;
-        }
-        return s.blocksMotion();
+        return s.is(BlockTags.DIRT) || s.is(BlockTags.SAND) || s.is(BlockTags.BASE_STONE_OVERWORLD)
+                || s.is(BlockTags.BASE_STONE_NETHER) || s.is(BlockTags.TERRACOTTA) || s.is(BlockTags.NYLIUM)
+                || s.is(Blocks.GRAVEL) || s.is(Blocks.CLAY) || s.is(Blocks.SNOW_BLOCK) || s.is(Blocks.POWDER_SNOW)
+                || s.is(Blocks.SANDSTONE) || s.is(Blocks.RED_SANDSTONE) || s.is(Blocks.CALCITE)
+                || s.is(Blocks.DRIPSTONE_BLOCK) || s.is(Blocks.SMOOTH_BASALT) || s.is(Blocks.END_STONE)
+                || s.is(Blocks.SOUL_SAND) || s.is(Blocks.SOUL_SOIL) || s.is(Blocks.GRASS_BLOCK)
+                || s.is(Blocks.DIRT_PATH) || s.is(Blocks.FARMLAND) || s.is(Blocks.PACKED_MUD);
+    }
+
+    /** Natürlicher Bewuchs über dem Boden (wird beim Suchen der Oberfläche übersprungen). */
+    private static boolean istBewuchs(BlockState s) {
+        return s.isAir() || s.is(BlockTags.LEAVES) || s.is(BlockTags.LOGS) || s.canBeReplaced()
+                || s.is(Blocks.MUSHROOM_STEM) || s.is(Blocks.RED_MUSHROOM_BLOCK) || s.is(Blocks.BROWN_MUSHROOM_BLOCK)
+                || s.is(Blocks.BAMBOO) || s.is(Blocks.CACTUS) || s.is(Blocks.SUGAR_CANE) || s.is(BlockTags.FLOWERS)
+                || s.is(BlockTags.SAPLINGS) || s.is(Blocks.SWEET_BERRY_BUSH) || s.is(Blocks.MOSS_CARPET)
+                || s.is(Blocks.BEE_NEST) || s.is(Blocks.COCOA) || s.is(Blocks.VINE) || s.is(Blocks.MANGROVE_ROOTS)
+                || s.is(Blocks.POINTED_DRIPSTONE);
     }
 
     private static boolean istGras(BlockState s) {
@@ -106,7 +118,13 @@ public class GlaettAuftrag extends Auftrag {
                     if (!s.getFluidState().isEmpty()) {
                         break;                                   // Wasser: diese Säule nicht anfassen
                     }
-                    if (istGelaende(s)) {
+                    if (!istGelaende(s)) {
+                        if (istBewuchs(s)) {
+                            continue;                            // Bäume, Pflanzen: weiter nach unten
+                        }
+                        break;                                   // Bauwerk: diese Säule nicht anfassen
+                    }
+                    {
                         h[k] = y;
                         decke[k] = s;
                         BlockState u = level.getBlockState(pos.set(x, y - 1, z));

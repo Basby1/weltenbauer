@@ -65,8 +65,14 @@ public final class Vorlagen {
     }
 
     /** Eine geladene Vorlage: Blöcke relativ zur Vorlagen-Ecke. */
+    /**
+     * @param folgen      null = starr; sonst je Block: Index in folgeAnker (Gruppe folgt dem Gelände an diesem Punkt),
+     *                    -1 = folgt dem Gelände der eigenen Spalte (Boden, Pflanzen), -2 = starr
+     * @param folgeAnker  x/z-Paare (relativ zur Vorlage), z. B. Stammfüße der Bäume eines Waldstücks
+     */
     public record Vorlage(Eintrag eintrag, BlockPos groesse, BlockPos anker, List<BlockPos> positionen,
-                          List<BlockState> zustaende, List<CompoundTag> daten, int unbekannt) {
+                          List<BlockState> zustaende, List<CompoundTag> daten, int unbekannt, int[] folgen,
+                          int[] folgeAnker) {
     }
 
     // ------------------------------------------------------------------ Liste
@@ -350,6 +356,9 @@ public final class Vorlagen {
         List<BlockPos> pos = new ArrayList<>(bloecke.size());
         List<BlockState> zust = new ArrayList<>(bloecke.size());
         List<CompoundTag> daten = new ArrayList<>(bloecke.size());
+        boolean folgt = t.contains("wb_anker", Tag.TAG_INT_ARRAY);
+        int[] folgeAnker = folgt ? t.getIntArray("wb_anker") : null;
+        List<Integer> folgen = new ArrayList<>();
         boolean luftErlaubt = mitLuft || e.eingebaut();
         for (int i = 0; i < bloecke.size(); i++) {
             CompoundTag b = bloecke.getCompound(i);
@@ -362,12 +371,16 @@ public final class Vorlagen {
             pos.add(new BlockPos(p.getInt(0), p.getInt(1), p.getInt(2)));
             zust.add(s);
             daten.add(b.contains("nbt", Tag.TAG_COMPOUND) ? b.getCompound("nbt") : null);
+            if (folgt) {
+                folgen.add(b.contains("wb_f", Tag.TAG_INT) ? b.getInt("wb_f") : -2);
+            }
         }
         BlockPos anker = e.anker() != null
                 ? new BlockPos(e.anker()[0], e.anker()[1], e.anker()[2])
                 // eigene Schematics: unten in der Mitte, die unterste Schicht landet ÜBER dem angeklickten Block
                 : new BlockPos(groesse.getX() / 2, -1, groesse.getZ() / 2);
-        return new Vorlage(e, groesse, anker, pos, zust, daten, unbekannt);
+        int[] f = folgt ? folgen.stream().mapToInt(Integer::intValue).toArray() : null;
+        return new Vorlage(e, groesse, anker, pos, zust, daten, unbekannt, f, folgeAnker);
     }
 
     private static int[] ints(JsonArray a) {
