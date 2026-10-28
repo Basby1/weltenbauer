@@ -656,3 +656,4 @@ FARBEN.update({
 FARBEN.update({"composter": (110, 80, 45), "birch_trapdoor": (200, 180, 130), "jungle_trapdoor": (150, 110, 75)})
 FARBEN.update({"acacia_trapdoor": (168, 90, 50), "acacia_door": (168, 90, 50), "jungle_door": (160, 115, 80)})
 FARBEN.update({"dark_oak_wall_hanging_sign": (66, 43, 20), "furnace": (110, 110, 110), "oak_wall_hanging_sign": (162, 130, 78), "spruce_wall_hanging_sign": (114, 84, 48), "birch_wall_hanging_sign": (192, 175, 121), "jungle_wall_hanging_sign": (160, 115, 80), "acacia_wall_hanging_sign": (168, 90, 50)})
+FARBEN.update({"tripwire": (200, 200, 200)})
