@@ -749,3 +749,5 @@ FARBEN.update({"cave_vines": (70, 110, 40), "cave_vines_plant": (70, 110, 40), "
 FARBEN.update({"yellow_candle": (240, 200, 60), "orange_candle": (230, 130, 40), "honey_block": (250, 190, 40),
                "honeycomb_block": (229, 148, 29), "pink_petals": (240, 170, 200)})
 FARBEN.update({"tinted_glass": (45, 35, 50), "mushroom_stem": (203, 196, 185)})
+FARBEN.update({"iron_ore": (136, 129, 122), "coal_ore": (105, 105, 105), "raw_iron_block": (166, 136, 107),
+               "raw_copper_block": (154, 105, 79), "raw_gold_block": (221, 169, 46)})
