@@ -594,3 +594,6 @@ FARBEN.update({
 
 FARBEN.update({"honey_block": (251, 185, 52), "flower_pot": (124, 68, 52), "bee_nest": (202, 160, 74),
                "beehive": (180, 146, 90), "blue_orchid": (40, 160, 220), "podzol": (92, 63, 24)})
+
+FARBEN.update({"beetroots": (160, 40, 50), "bamboo_planks": (193, 173, 80), "bamboo_block": (127, 143, 52),
+               "stripped_bamboo_block": (193, 173, 80), "quartz_pillar": (235, 230, 224)})
