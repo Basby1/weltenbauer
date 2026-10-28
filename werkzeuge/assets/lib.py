@@ -585,3 +585,12 @@ FARBEN.update({"snow": (249, 254, 254), "redstone_block": (175, 24, 5), "strippe
 
 FARBEN.update({"small_amethyst_bud": (160, 120, 220), "birch_door": (200, 185, 130), "pink_petals": (240, 160, 200),
                "warped_nylium": (43, 114, 101), "mushroom_stem": (203, 196, 185), "red_mushroom_block": (200, 46, 45)})
+
+FARBEN.update({
+    "warped_planks": (43, 104, 99), "warped_fence": (43, 104, 99), "stripped_warped_stem": (57, 150, 147),
+    "crimson_planks": (101, 48, 70), "crimson_fence": (101, 48, 70), "stripped_crimson_stem": (137, 57, 90),
+    "jungle_log": (85, 67, 25), "acacia_planks": (168, 90, 50), "mangrove_log": (84, 66, 41),
+})
+
+FARBEN.update({"honey_block": (251, 185, 52), "flower_pot": (124, 68, 52), "bee_nest": (202, 160, 74),
+               "beehive": (180, 146, 90), "blue_orchid": (40, 160, 220), "podzol": (92, 63, 24)})
