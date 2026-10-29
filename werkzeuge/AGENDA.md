@@ -23,4 +23,7 @@ https://github.com/Basby1/weltenbauer/releases/tag/vorlagen-pakete sofort schick
 
 ## Erledigt
 - 1 Block-Check (+ Exportprüfung), 2 Zwergenreich, 3 Wald neu (wald2.py), 4 Häuser +86 (haeuser2.py), 5 Weltwunder +30 (weltwunder5-7.py)
+- 6 Verfeinerung (Paket-Kategorien; Sagenlande/Boote/Piraten/Kreaturen erweitert)
+- 7 alle neuen Kategorien + Zusammenlegungen online (Felsen → Paket felsen, Ruinen → vergessenes,
+  Brücken & Tore → tore, jeweils als Erweiterung der Jar-Kategorien natur/ruinen/bruecken)
 - Export: GRUPPEN-Eintrag mit 6. Element = Paket-ID (Erweiterungspaket für bestehende Kategorie, z.B. Jar-Kategorie ruinen/natur/bruecken)

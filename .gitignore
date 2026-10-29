@@ -5,3 +5,4 @@ out/
 *.iml
 .idea/
 werkzeuge/assets/_paket_tmp/
+__pycache__/

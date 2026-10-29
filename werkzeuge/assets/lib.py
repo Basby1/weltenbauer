@@ -762,7 +762,7 @@ FARBEN.update({
 })
 FARBEN.update({"light_gray_candle": (180, 180, 175), "red_candle": (160, 40, 40), "green_candle": (80, 110, 40),
                "spore_blossom": (210, 110, 170), "hanging_roots": (160, 115, 90), "crimson_nylium": (130, 30, 30),
-               "warped_nylium": (40, 110, 100), "lectern": (160, 125, 80), "bookshelf": (117, 94, 60), "oxidized_cut_copper": (79, 153, 126), "budding_amethyst": (133, 97, 191),
+               "warped_nylium": (40, 110, 100), "lectern": (160, 125, 80), "stripped_jungle_log": (171, 132, 84), "wall_torch": (250, 200, 90), "bookshelf": (117, 94, 60), "oxidized_cut_copper": (79, 153, 126), "budding_amethyst": (133, 97, 191),
                "pearlescent_froglight": (240, 225, 230), "ochre_froglight": (245, 220, 150),
                "verdant_froglight": (210, 240, 200), "slime_block": (110, 190, 90)})
 FARBEN.update({"cave_vines": (70, 110, 40), "cave_vines_plant": (70, 110, 40), "white_concrete_powder": (226, 227, 228),
