@@ -44,6 +44,7 @@ from orklager import ORKLAGER  # noqa: E402
 from feenstadt import FEENSTADT  # noqa: E402
 from bienenstadt import BIENENSTADT  # noqa: E402
 from haeuser import HAEUSER  # noqa: E402
+from haeuser2 import HAEUSER2  # noqa: E402
 from mystik import HELIX, MYSTIK  # noqa: E402
 from wald2 import WALD  # noqa: E402
 from weltwunder4 import WELTWUNDER_ALLE  # noqa: E402
@@ -94,7 +95,7 @@ GRUPPEN = [
     ("orklager", "Orklager", ORKLAGER, G4, [7, 21]),
     ("feenstadt", "Feenstadt", FEENSTADT, G4, [7, 21]),
     ("bienenstadt", "Bienenstadt", BIENENSTADT, G4, [7, 21]),
-    ("haeuser", "Häuser", HAEUSER, G4, [7, 21]),
+    ("haeuser", "Häuser", {**HAEUSER, **HAEUSER2}, G4, [7, 21]),
     ("mystik", "Mystik", MYSTIK, G4, [7, 21]),
     ("mystik", "Mystik", HELIX, [(2, "riesig", "riesig"), (3, "gigantisch", "gigantisch")], [7, 21]),
     ("burgen", "Burgen & Festungen", BURGEN, G4, [7, 21]),
