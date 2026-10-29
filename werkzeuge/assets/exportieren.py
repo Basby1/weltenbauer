@@ -69,6 +69,7 @@ from kerker import KERKER  # noqa: E402
 from berge import BERGE  # noqa: E402
 from ruinen2 import RUINEN2  # noqa: E402
 from tore import BRUECKEN2  # noqa: E402
+from baeume2 import BAEUME2  # noqa: E402
 from arena import ARENA  # noqa: E402
 from deko import DEKO  # noqa: E402
 from sterne import STERNE  # noqa: E402
@@ -152,6 +153,8 @@ GRUPPEN = [
     ("natur", "Felsen & Natur", BERGE, G4, [7, 21], "felsen"),
     ("ruinen", "Ruinen & Vergessenes", RUINEN2, G4, [7, 21], "vergessenes"),
     ("bruecken", "Brücken & Tore", BRUECKEN2, G4, [7, 21], "tore"),
+    ("baeume", "Bäume", BAEUME2, [(0, "klein", "klein"), (1, "mittel", "mittel"), (2, "gross", "groß")], [7, 21],
+     "baeume2"),
     ("arena", "Arena & Turnierplatz", ARENA, G4, [7, 21]),
     ("deko", "Deko & Wege", DEKO, G4, [7, 21]),
     ("sterne", "Sternwarte & Astronomie", STERNE, G4, [7, 21]),
@@ -170,7 +173,7 @@ MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich"), "kristall": ("kristall", "Kristallhöhlen"), "bauernhof": ("bauernhof", "Bauernhof & Landleben"), "zukunft": ("zukunft", "Zukunftsstadt"), "sterne": ("sterne", "Sternwarte & Astronomie"), "deko": ("deko", "Deko & Wege"), "arena": ("arena", "Arena & Turnierplatz"), "kerker": ("kerker", "Kerker & Gefängnis"), "felsen": ("felsen", "Felsen & Berge"), "vergessenes": ("vergessenes", "Ruinen & Vergessenes"), "tore": ("tore", "Brücken & Tore")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich"), "kristall": ("kristall", "Kristallhöhlen"), "bauernhof": ("bauernhof", "Bauernhof & Landleben"), "zukunft": ("zukunft", "Zukunftsstadt"), "sterne": ("sterne", "Sternwarte & Astronomie"), "deko": ("deko", "Deko & Wege"), "arena": ("arena", "Arena & Turnierplatz"), "kerker": ("kerker", "Kerker & Gefängnis"), "felsen": ("felsen", "Felsen & Berge"), "vergessenes": ("vergessenes", "Ruinen & Vergessenes"), "tore": ("tore", "Brücken & Tore"), "baeume2": ("baeume2", "Bäume II")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
@@ -234,6 +237,10 @@ def pakete_bauen(paket_listen):
     (PAKETE / "pakete.json").write_text(json.dumps({"pakete": index}, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+LUECKEN_WORTE = ("ruin", "wrack", "verfall", "verlassen", "eingestuerzt", "gestuerzt", "zerfall", "versunken",
+                 "kran", "gitter", "geruest", "spinnen", "netz")
+
+
 def main():
     bilder = "--ohne-bilder" not in sys.argv
     nur_pakete = "--nur-pakete" in sys.argv or "--paket" in sys.argv
@@ -252,12 +259,15 @@ def main():
         pk = PAKET_KAT.get(eintrag[5]) if len(eintrag) > 5 else PAKET_KAT.get(kat)
         if nur_pakete and not pk:
             continue
+        if "--ohne-pakete" in sys.argv and pk:
+            continue
         if nur_ids is not None and pk[0] not in nur_ids:
             continue
         for art, (titel, funktion) in tabelle.items():
             for g, kuerzel, anzeige in groessen:
                 for v, seed in enumerate(seeds, start=1):
                     welt = funktion(seed + 100 * g, g)
+                    welt.luecken_lassen = kat == "ruinen" or any(k in art for k in LUECKEN_WORTE)
                     gruppe = f"{art}_{kuerzel}"
                     vid = f"{gruppe}_{v}" if len(seeds) > 1 else gruppe
                     pfad = (PAKET_TMP / pk[0] / "structures" if pk else struktur) / kat / f"{vid}.nbt"

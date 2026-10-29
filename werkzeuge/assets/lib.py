@@ -257,6 +257,8 @@ def _pruefe_bloecke(welt, pfad):
 
 def exportieren(welt: Welt, pfad: Path) -> dict:
     """Speichert als Minecraft-Strukturdatei. Gibt Größe und Anker (verschoben) zurück."""
+    import zustaende
+    zustaende.berechnen(welt)
     lo, hi = welt.grenzen()
     groesse = (hi - lo + 1).tolist()
     pal = welt.P.eintraege
@@ -382,7 +384,7 @@ def als_raster(welt: Welt, deko_ausblenden=True):
     for i in range(1, len(welt.P.eintraege)):
         name = welt.P.eintraege[i][0]
         kurz = name.split(":")[1]
-        f = farbe_von(kurz) if name.startswith("minecraft:") else None
+        f = farbe_von(kurz) if name.startswith("minecraft:") else FARBEN.get(name)
         if f is None:
             f = farbe_von(welt.P.name(i).split(":")[1])
         liste.append(B(f or (220, 0, 220)))
@@ -821,3 +823,16 @@ _farben_ableiten()
 FARBEN.update({"spruce_wall_sign": (114, 84, 48), "oak_wall_sign": (162, 130, 78), "oak_sign": (162, 130, 78)})
 FARBEN.update({"target": (225, 200, 180), "enchanting_table": (80, 30, 50), "copper_block": (192, 107, 79)})
 FARBEN.update({"tripwire_hook": (120, 110, 100), "lever": (120, 110, 100)})
+
+
+# Farben ausgewählter Mod-Blöcke (Vorschau zeigt sie statt des Ersatzblocks)
+FARBEN.update({
+    "biomesoplenty:jacaranda_leaves": (160, 120, 215), "biomesoplenty:maple_leaves": (185, 45, 30),
+    "biomesoplenty:orange_autumn_leaves": (220, 115, 30), "biomesoplenty:yellow_autumn_leaves": (225, 185, 45),
+    "biomesoplenty:flowering_oak_leaves": (110, 150, 70), "biomesoplenty:snowblossom_leaves": (240, 225, 235),
+    "chipped:frosted_oak_leaves": (140, 165, 140), "chipped:frosted_birch_leaves": (165, 185, 155),
+    "chipped:white_flower_oak_leaves": (230, 230, 220), "chipped:magenta_flower_oak_leaves": (195, 85, 175),
+    "chipped:golden_oak_leaves": (220, 175, 40), "chipped:golden_spruce_leaves": (205, 160, 40),
+    "chipped:red_oak_leaves": (175, 40, 30), "chipped:orange_oak_leaves": (215, 115, 30),
+    "chipped:apple_oak_leaves": (95, 135, 50),
+})
