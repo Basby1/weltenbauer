@@ -37,6 +37,12 @@
    "groesse": 11586695
   },
   {
+   "datei": "deko.zip",
+   "name": "Deko & Wege",
+   "version": "2282c5532722",
+   "groesse": 1521841
+  },
+  {
    "datei": "drachen.zip",
    "name": "Drachenhort",
    "version": "e10568930c03",
@@ -191,6 +197,12 @@
    "name": "Sagenlande",
    "version": "999af465a82b",
    "groesse": 9465781
+  },
+  {
+   "datei": "sterne.zip",
+   "name": "Sternwarte & Astronomie",
+   "version": "1fcb0d582f98",
+   "groesse": 3400347
   },
   {
    "datei": "sumpf.zip",
