@@ -79,6 +79,12 @@ from sumpf import SUMPF  # noqa: E402
 from blumen import BLUMEN  # noqa: E402
 from flora import FLORA  # noqa: E402
 from spuk import FRIEDHOF, HEXEN  # noqa: E402
+from zusammen import BASAR, HAFEN, TOTENREICH, WINTERDORF  # noqa: E402
+
+KUESTE = {**KUESTE, **HAFEN}
+WUESTE = {**WUESTE, **BASAR}
+EISREICH = {**EISREICH, **WINTERDORF}
+FRIEDHOF = {**FRIEDHOF, **TOTENREICH}
 
 
 PROJEKT = HIER.parent.parent

@@ -237,7 +237,8 @@ def oubliette(seed, g=1):
     T = _r(8 * u + 4)
     for x in range(-R, R + 1):
         for z in range(-R, R + 1):
-            w.setze(x, T, z, M(x, T, z, 0.8))
+            if not (x > 1 and z > 1):
+                w.setze(x, T, z, M(x, T, z, 0.8))
     for y in range(0, T):
         t = y / T
         r = (3 * u + 1.5) if t < 0.6 else 1.2
@@ -426,6 +427,10 @@ def ausbruchstunnel(seed, g=1):
     w.setze(3, -3, 0, w.b("bucket") if False else w.b("cauldron"))
     for y in (-1, 0):
         w.bloecke.pop((L - 1, y, 0), None)
+    from arena import anheben
+    anheben(w, 5)
+    for p in [p for p in w.bloecke if p[2] > 1 and p[1] <= 5 and p[0] > 7]:
+        del w.bloecke[p]
     return w
 
 
