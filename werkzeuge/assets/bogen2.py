@@ -804,7 +804,7 @@ def regenbogen(seed, g=1):
 
 
 BOGEN2 = {
-    "sandsteinbogen": ("Sandsteinbogen", sandsteinbogen),
+    "sandsteinbogen": ("Gebänderter Wüstenbogen", sandsteinbogen),
     "eisbogen": ("Eisbogen", eisbogen),
     "moosbogen": ("Moosbogen mit Wasserfall", moosbogen),
     "doppelbogen": ("Doppelbogen", doppelbogen),

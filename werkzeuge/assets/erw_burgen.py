@@ -13,6 +13,7 @@ from feinbau import (Dachmat, Mix, balkon, fenster, fensterreihe, kamin, kegelda
                      satteldach, stamm, treppe, tuer, zaun)
 from flora import _neu
 from himmelsstadt2 import eckturm, haus, rundturm
+import erw_haeuser  # noqa: F401,E402  (Stile ziegel, schiefer, lehm)
 from lib import einfuegen
 
 S = [0.6, 1.0, 1.6, 2.5]
@@ -587,7 +588,7 @@ def barockschloss(seed, g=3):
     w = _neu(seed)
     s = S[g]
     B = int(18 * s + 8)
-    zl = garten(w, B + 4, seed=seed, baeume=0)
+    zl = garten(w, B * 0.75 + 4, seed=seed, baeume=0)
     for sx in (-1, 1):
         haus(w, sx * (B // 2), 0, B // 2 + 1, 7, 1, "kupfer", geschosse=2 + (g > 2), tuer_s="south", schorn=False)
     haus(w, 0, -2, 9, 9, 1, "kupfer", geschosse=3 + (g > 2), tuer_s="south", first_x=False, schorn=False)

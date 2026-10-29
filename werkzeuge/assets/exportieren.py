@@ -109,6 +109,10 @@ from erw_feen import FEEN3  # noqa: E402
 from erw_bienen import BIENEN3  # noqa: E402
 from erw_haeuser import HAEUSER3  # noqa: E402
 from erw_mystik import MYSTIK3  # noqa: E402
+from erw_burgen import BURGEN3  # noqa: E402
+from erw_kathedralen import KATHEDRALEN3  # noqa: E402
+from erw_fernost import FERNOST3  # noqa: E402
+from erw_wueste import WUESTE3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -218,6 +222,10 @@ GRUPPEN = [
     ("bienenstadt", "Bienenstadt", BIENEN3, G4, [7, 21]),
     ("haeuser", "Häuser", HAEUSER3, G4, [7, 21]),
     ("mystik", "Mystik", MYSTIK3, G4, [7, 21]),
+    ("burgen", "Burgen & Festungen", BURGEN3, G4, [7, 21]),
+    ("kathedralen", "Kathedralen & Tempel", KATHEDRALEN3, G4, [7, 21]),
+    ("fernost", "Fernost", FERNOST3, G4, [7, 21]),
+    ("wueste", "Wüstenreich", WUESTE3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
