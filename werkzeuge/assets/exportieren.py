@@ -122,6 +122,7 @@ from erw_dschungel import DSCHUNGEL3  # noqa: E402
 from erw_wikinger import WIKINGER3  # noqa: E402
 from erw_markt import MARKT3  # noqa: E402
 from erw_handwerk import HANDWERK3  # noqa: E402
+from erw_kueste import KUESTE3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -244,6 +245,7 @@ GRUPPEN = [
     ("wikinger", "Wikingerdorf", WIKINGER3, G4, [7, 21]),
     ("markt", "Mittelaltermarkt", MARKT3, G4, [7, 21]),
     ("handwerk", "Mühlen & Handwerk", HANDWERK3, G4, [7, 21]),
+    ("kueste", "Küste & Leuchttürme", KUESTE3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
