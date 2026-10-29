@@ -29,7 +29,7 @@ def wiese(w, R, huegel=0.5, cx=0, cz=0, dichte=1.0, blumen=0.04, art="wiese"):
             "wald": [("podzol", 0.35), ("grass_block", 0.7), ("moss_block", 0.85), ("coarse_dirt", 1.01)],
             "kies": [("gravel", 0.4), ("grass_block", 0.8), ("cobblestone", 0.9), ("coarse_dirt", 1.01)],
             "strand": [("sand", 0.6), ("gravel", 0.75), ("sand", 1.01)],
-            "moor": [("mud", 0.35), ("grass_block", 0.65), ("moss_block", 0.85), ("podzol", 1.01)]}[art]
+            "moor": [("mud", 0.16), ("grass_block", 0.62), ("moss_block", 0.85), ("podzol", 1.01)]}[art]
     for x in range(cx - int(R) - 2, cx + int(R) + 3):
         for z in range(cz - int(R) - 2, cz + int(R) + 3):
             if math.hypot(x - cx, z - cz) <= R + 2 * rn(x, 0, z):

@@ -125,6 +125,8 @@ from erw_handwerk import HANDWERK3  # noqa: E402
 from erw_kueste import KUESTE3  # noqa: E402
 from erw_parks import PARKS3  # noqa: E402
 from erw_friedhof import FRIEDHOF3  # noqa: E402
+from erw_hexen import HEXEN3  # noqa: E402
+from erw_drachen import DRACHEN3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -250,6 +252,8 @@ GRUPPEN = [
     ("kueste", "Küste & Leuchttürme", KUESTE3, G4, [7, 21]),
     ("parks", "Gärten & Parks", PARKS3, G4, [7, 21]),
     ("friedhof", "Friedhof & Spuk", FRIEDHOF3, G4, [7, 21]),
+    ("hexen", "Hexenwerk", HEXEN3, G4, [7, 21]),
+    ("drachen", "Drachenhort", DRACHEN3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
