@@ -59,6 +59,9 @@ from dorf2 import HANDWERK, KUESTE, PARKS  # noqa: E402
 from drachen import DRACHEN  # noqa: E402
 from himmel import HIMMEL  # noqa: E402
 from uhrwerk import UHRWERK  # noqa: E402
+from weltwunder5 import TEIL5 as WW5  # noqa: E402
+from weltwunder6 import TEIL6 as WW6  # noqa: E402
+from weltwunder7 import TEIL7 as WW7  # noqa: E402
 from zwerge import ZWERGE  # noqa: E402
 from spuk import FRIEDHOF, HEXEN  # noqa: E402
 
@@ -118,7 +121,7 @@ GRUPPEN = [
     ("drachen", "Drachenhort", DRACHEN, G4, [7, 21]),
     ("himmel", "Himmelsreich", HIMMEL, G4, [7, 21]),
     ("wald", "Wald", WALD, G4, [7, 8, 21, 22]),
-    ("weltwunder", "Weltwunder", WELTWUNDER_ALLE, G_WW, [7, 21]),
+    ("weltwunder", "Weltwunder", {**WELTWUNDER_ALLE, **WW5, **WW6, **WW7}, G_WW, [7, 21]),
     ("uhrwerk", "Uhrwerk & Maschinen", UHRWERK, G4, [7, 21]),
     ("zwerge", "Zwergenreich", ZWERGE, G4, [7, 21]),
     ("fantasie", "Fantasiehäuser", FANTASIEHAEUSER, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21]),
@@ -204,8 +207,9 @@ def main():
     vorschau = {}  # Kategorie -> [(Beschriftung, Welt)]
     t0 = time.time()
 
-    for kat, kat_name, tabelle, groessen, seeds in GRUPPEN:
-        pk = PAKET_KAT.get(kat)
+    for eintrag in GRUPPEN:
+        kat, kat_name, tabelle, groessen, seeds = eintrag[:5]
+        pk = PAKET_KAT.get(eintrag[5]) if len(eintrag) > 5 else PAKET_KAT.get(kat)
         if nur_pakete and not pk:
             continue
         if nur_ids is not None and pk[0] not in nur_ids:
