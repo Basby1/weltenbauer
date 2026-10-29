@@ -792,3 +792,30 @@ FARBEN.update({"pumpkin_stem": (110, 150, 50), "melon_stem": (110, 150, 50), "po
                "beetroots": (90, 130, 40), "jack_o_lantern": (220, 140, 30), "carved_pumpkin": (200, 120, 30)})
 FARBEN.update({"daylight_detector": (60, 70, 110), "tinted_glass": (44, 38, 48), "redstone_lamp": (230, 170, 90),
                "polished_blackstone_slab": (53, 48, 56)})
+
+
+def _farben_ableiten():
+    """Fehlende Vorschaufarben für Treppen/Stufen/Mauern/Zäune aus dem Grundblock ableiten."""
+    import json
+    import os
+    try:
+        namen = json.load(open(os.path.join(os.path.dirname(__file__), "vanilla_bloecke.json")))
+    except Exception:
+        return
+    for n in namen:
+        if n in FARBEN:
+            continue
+        for suf in ("_stairs", "_slab", "_wall", "_fence_gate", "_fence", "_pressure_plate", "_button"):
+            if n.endswith(suf):
+                b = n[: -len(suf)]
+                for kand in (b, b + "s", b + "_planks", b + "_block", b.replace("_brick", "_bricks"),
+                             b.replace("waxed_", ""), b.replace("waxed_", "") + "s"):
+                    if kand in FARBEN:
+                        FARBEN[n] = FARBEN[kand]
+                        break
+                break
+
+
+FARBEN.update({"cartography_table": (110, 85, 60), "cracked_deepslate_bricks": (64, 64, 65)})
+_farben_ableiten()
+FARBEN.update({"spruce_wall_sign": (114, 84, 48), "oak_wall_sign": (162, 130, 78), "oak_sign": (162, 130, 78)})
