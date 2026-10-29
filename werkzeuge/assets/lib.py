@@ -837,3 +837,4 @@ FARBEN.update({
     "chipped:apple_oak_leaves": (95, 135, 50),
 })
 FARBEN.update({"medium_amethyst_bud": (160, 120, 220), "powder_snow": (245, 248, 250), "sunflower": (240, 200, 40), "oak_sapling": (80, 130, 40)})
+FARBEN.update({"cut_copper": (191, 107, 80)})
