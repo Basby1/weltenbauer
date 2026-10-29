@@ -653,7 +653,7 @@ def herz_des_waldes(seed, g=1):
 
 
 LEUCHTWALD2 = {
-    "laternenbaum": ("Laternenbaum", laternenbaum),
+    "laternenbaum": ("Froschlicht-Laternenbaum", laternenbaum),
     "quallenbaum": ("Quallenbaum", quallenbaum),
     "leuchtfarn": ("Leuchtfarn-Riese", leuchtfarn),
     "sternblumen": ("Sternblumen-Hain", sternblumen),
