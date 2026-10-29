@@ -45,7 +45,12 @@ def bild(welt, max_pixel=420, deko=True, boden=0, meer=False):
         # alles unter der Erde für die Vorschau abschneiden
         for p in [p for p in welt.bloecke if p[1] < -1]:
             del welt.bloecke[p]
-    idx, liste = als_raster(welt, deko_ausblenden=not deko)
+    import os
+    if os.environ.get("VORSCHAU_GROB"):
+        idx, liste = als_raster(welt, deko_ausblenden=not deko)
+    else:
+        from vorschau_fein import als_raster_fein
+        idx, liste = als_raster_fein(welt)
     img = iso_bild(idx, liste, max_pixel=max_pixel, hintergrund=HG)
     # leeren Rand abschneiden
     from PIL import ImageChops

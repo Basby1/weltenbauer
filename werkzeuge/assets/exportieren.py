@@ -85,8 +85,11 @@ from flora import FLORA  # noqa: E402
 from spuk import FRIEDHOF, HEXEN  # noqa: E402
 from zusammen import BASAR, HAFEN, TOTENREICH, WINTERDORF  # noqa: E402
 from spektakulaer2 import SPEKTAKULAER2  # noqa: E402
-from instagram import INSTAGRAM  # noqa: E402
+from instagram2 import INSTAGRAM  # noqa: E402
 from ruinen3 import RUINEN3  # noqa: E402
+from berge2 import BERGE2  # noqa: E402
+from schwebend2 import SCHWEBEND2  # noqa: E402
+from gebaeude2 import GEBAEUDE2  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -174,12 +177,15 @@ GRUPPEN = [
     ("spektakulaer", "Spektakuläre Bäume", SPEKTAKULAER2, [(0, "mittel", "mittel"), (1, "riesig", "riesig")], [7, 21], "spektakulaer2"),
     ("instagram", "Instagram", INSTAGRAM, G4, [7, 21], "instagram"),
     ("ruinen", "Ruinen & Vergessenes", RUINEN3, G4, [7, 21], "vergessenes"),
+    ("natur", "Felsen & Natur", BERGE2, G4, [7, 21], "felsen"),
+    ("schwebend", "Schwebende Strukturen", SCHWEBEND2, G4, [7, 21], "schwebend2"),
+    ("gebaeude", "Gebäude", GEBAEUDE2, G4, [7, 21], "gebaeude2"),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich"), "kristall": ("kristall", "Kristallhöhlen"), "bauernhof": ("bauernhof", "Bauernhof & Landleben"), "zukunft": ("zukunft", "Zukunftsstadt"), "sterne": ("sterne", "Sternwarte & Astronomie"), "deko": ("deko", "Deko & Wege"), "arena": ("arena", "Arena & Turnierplatz"), "kerker": ("kerker", "Kerker & Gefängnis"), "felsen": ("felsen", "Felsen & Berge"), "vergessenes": ("vergessenes", "Ruinen & Vergessenes"), "tore": ("tore", "Brücken & Tore"), "baeume2": ("baeume2", "Bäume II"), "spektakulaer2": ("spektakulaer2", "Spektakuläre Bäume II"), "instagram": ("instagram", "Instagram")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich"), "kristall": ("kristall", "Kristallhöhlen"), "bauernhof": ("bauernhof", "Bauernhof & Landleben"), "zukunft": ("zukunft", "Zukunftsstadt"), "sterne": ("sterne", "Sternwarte & Astronomie"), "deko": ("deko", "Deko & Wege"), "arena": ("arena", "Arena & Turnierplatz"), "kerker": ("kerker", "Kerker & Gefängnis"), "felsen": ("felsen", "Felsen & Berge"), "vergessenes": ("vergessenes", "Ruinen & Vergessenes"), "tore": ("tore", "Brücken & Tore"), "baeume2": ("baeume2", "Bäume II"), "spektakulaer2": ("spektakulaer2", "Spektakuläre Bäume II"), "instagram": ("instagram", "Instagram"), "schwebend2": ("schwebend2", "Schwebende Strukturen II"), "gebaeude2": ("gebaeude2", "Gebäude II")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 
