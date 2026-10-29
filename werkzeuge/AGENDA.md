@@ -20,3 +20,7 @@ https://github.com/Basby1/weltenbauer/releases/tag/vorlagen-pakete sofort schick
    Tiere/Kreaturen-Skulpturen → Kreaturen, Winterdorf → Eisreich, Piratenbucht 2 → Piraten,
    Totenreich → Friedhof & Spuk.
 8. Zum Schluss: eine Datei mit allen Vorschaubildern zum Herunterladen (offline ansehen).
+
+## Erledigt
+- 1 Block-Check (+ Exportprüfung), 2 Zwergenreich, 3 Wald neu (wald2.py), 4 Häuser +86 (haeuser2.py), 5 Weltwunder +30 (weltwunder5-7.py)
+- Export: GRUPPEN-Eintrag mit 6. Element = Paket-ID (Erweiterungspaket für bestehende Kategorie, z.B. Jar-Kategorie ruinen/natur/bruecken)

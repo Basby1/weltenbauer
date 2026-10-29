@@ -39,9 +39,11 @@ from sagenlande import SAGENLANDE  # noqa: E402
 from boote import BOOTE  # noqa: E402
 from piraten import MAHLSTROM, PIRATEN  # noqa: E402
 from kreaturen import KREATUREN  # noqa: E402
-from antike import ANTIKE  # noqa: E402
-from orklager import ORKLAGER  # noqa: E402
-from feenstadt import FEENSTADT  # noqa: E402
+from antike2 import ANTIKE2 as ANTIKE  # noqa: E402
+from orks2 import ORKLAGER2 as ORKLAGER  # noqa: E402
+from feenstadt import FEENSTADT as _FEEN_ALT  # noqa: E402
+from feen2 import NEU as _FEEN_NEU  # noqa: E402
+FEENSTADT = {**_FEEN_ALT, **_FEEN_NEU}
 from bienenstadt import BIENENSTADT  # noqa: E402
 from haeuser import HAEUSER  # noqa: E402
 from haeuser2 import HAEUSER2  # noqa: E402

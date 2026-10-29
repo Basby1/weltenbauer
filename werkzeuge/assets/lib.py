@@ -772,3 +772,13 @@ FARBEN.update({"yellow_candle": (240, 200, 60), "orange_candle": (230, 130, 40),
 FARBEN.update({"tinted_glass": (45, 35, 50), "mushroom_stem": (203, 196, 185)})
 FARBEN.update({"iron_ore": (136, 129, 122), "coal_ore": (105, 105, 105), "raw_iron_block": (166, 136, 107),
                "raw_copper_block": (154, 105, 79), "raw_gold_block": (221, 169, 46)})
+
+_FARB16 = {"white": (233, 236, 236), "orange": (240, 118, 19), "magenta": (189, 68, 179), "light_blue": (58, 175, 217),
+           "yellow": (248, 198, 39), "lime": (112, 185, 25), "pink": (237, 141, 172), "gray": (62, 68, 71),
+           "light_gray": (142, 142, 134), "cyan": (21, 137, 145), "purple": (121, 42, 172), "blue": (53, 57, 157),
+           "brown": (114, 71, 40), "green": (84, 109, 27), "red": (160, 39, 34), "black": (20, 21, 25)}
+for _f, _c in _FARB16.items():
+    for _suf, _k in (("_concrete", 0.9), ("_wool", 1.0), ("_carpet", 1.0), ("_concrete_powder", 1.05),
+                     ("_stained_glass", 1.1), ("_stained_glass_pane", 1.1), ("_candle", 1.0), ("_banner", 1.0),
+                     ("_wall_banner", 1.0), ("_glazed_terracotta", 0.95), ("_bed", 1.0), ("_shulker_box", 1.0)):
+        FARBEN.setdefault(_f + _suf, tuple(min(255, int(v * _k)) for v in _c))
