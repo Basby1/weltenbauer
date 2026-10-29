@@ -229,6 +229,12 @@
    "groesse": 9612086
   },
   {
+   "datei": "spektakulaer2.zip",
+   "name": "Spektakuläre Bäume II",
+   "version": "bd0ecfdd7a67",
+   "groesse": 1809722
+  },
+  {
    "datei": "sterne.zip",
    "name": "Sternwarte & Astronomie",
    "version": "45d2cdfae1c1",
@@ -303,8 +309,8 @@
   {
    "datei": "zwerge.zip",
    "name": "Zwergenreich",
-   "version": "2d8f3987f23a",
-   "groesse": 4302762
+   "version": "1a2608fa77d2",
+   "groesse": 4436839
   }
  ]
 }
