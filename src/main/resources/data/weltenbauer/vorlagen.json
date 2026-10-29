@@ -104,7 +104,7 @@
     47,
     30
    ],
-   "bloecke": 7143
+   "bloecke": 7144
   },
   {
    "id": "eiche_gross_2",
@@ -503,7 +503,7 @@
     35,
     27
    ],
-   "bloecke": 2813
+   "bloecke": 2815
   },
   {
    "id": "trauerweide_klein_1",
@@ -755,7 +755,7 @@
     23,
     20
    ],
-   "bloecke": 575
+   "bloecke": 576
   },
   {
    "id": "mammutbaum_klein_1",
@@ -1133,7 +1133,7 @@
     34,
     17
    ],
-   "bloecke": 1048
+   "bloecke": 1049
   },
   {
    "id": "schwarzeiche_klein_1",
@@ -1385,7 +1385,7 @@
     26,
     22
    ],
-   "bloecke": 314
+   "bloecke": 317
   },
   {
    "id": "azaleenbaum_klein_1",
@@ -1532,7 +1532,7 @@
     46,
     37
    ],
-   "bloecke": 5727
+   "bloecke": 5730
   },
   {
    "id": "weltenbaum_mittel_2",
@@ -1574,7 +1574,7 @@
     91,
     57
    ],
-   "bloecke": 29009
+   "bloecke": 29013
   },
   {
    "id": "weltenbaum_riesig_2",
@@ -1595,7 +1595,7 @@
     87,
     62
    ],
-   "bloecke": 31526
+   "bloecke": 31529
   },
   {
    "id": "sakura_riese_mittel_1",
@@ -1637,7 +1637,7 @@
     34,
     47
    ],
-   "bloecke": 4672
+   "bloecke": 4675
   },
   {
    "id": "sakura_riese_riesig_1",
@@ -1658,7 +1658,7 @@
     56,
     53
    ],
-   "bloecke": 15508
+   "bloecke": 15510
   },
   {
    "id": "sakura_riese_riesig_2",
@@ -1679,7 +1679,7 @@
     59,
     47
    ],
-   "bloecke": 13412
+   "bloecke": 13414
   },
   {
    "id": "drachenbaum_mittel_1",
@@ -1700,7 +1700,7 @@
     19,
     16
    ],
-   "bloecke": 584
+   "bloecke": 585
   },
   {
    "id": "drachenbaum_mittel_2",
@@ -1742,7 +1742,7 @@
     32,
     25
    ],
-   "bloecke": 2184
+   "bloecke": 2185
   },
   {
    "id": "drachenbaum_riesig_2",
@@ -1763,7 +1763,7 @@
     32,
     25
    ],
-   "bloecke": 2037
+   "bloecke": 2040
   },
   {
    "id": "baobab_mittel_1",
@@ -1826,7 +1826,7 @@
     25,
     23
    ],
-   "bloecke": 2115
+   "bloecke": 2116
   },
   {
    "id": "baobab_riesig_2",
@@ -1910,7 +1910,7 @@
     44,
     46
    ],
-   "bloecke": 2139
+   "bloecke": 2141
   },
   {
    "id": "gespensterbaum_riesig_2",
@@ -1931,7 +1931,7 @@
     41,
     50
    ],
-   "bloecke": 2130
+   "bloecke": 2131
   },
   {
    "id": "riesenpilz_rot_mittel_1",
@@ -2183,7 +2183,7 @@
     37,
     30
    ],
-   "bloecke": 2988
+   "bloecke": 2989
   },
   {
    "id": "wirr_riese_mittel_1",
@@ -2225,7 +2225,7 @@
     27,
     20
    ],
-   "bloecke": 746
+   "bloecke": 747
   },
   {
    "id": "wirr_riese_riesig_1",
@@ -2246,7 +2246,7 @@
     43,
     34
    ],
-   "bloecke": 2214
+   "bloecke": 2215
   },
   {
    "id": "wirr_riese_riesig_2",
@@ -2750,7 +2750,7 @@
     20,
     13
    ],
-   "bloecke": 2600
+   "bloecke": 2601
   },
   {
    "id": "felsbogen_wueste_gross",
@@ -2960,7 +2960,7 @@
     22,
     20
    ],
-   "bloecke": 490
+   "bloecke": 491
   },
   {
    "id": "felsbrocken_riesig",
@@ -3724,7 +3724,7 @@
     68,
     20
    ],
-   "bloecke": 10457
+   "bloecke": 10458
   },
   {
    "id": "riesenbogen_dorf_mittel_2",
@@ -3745,7 +3745,7 @@
     68,
     20
    ],
-   "bloecke": 10718
+   "bloecke": 10719
   },
   {
    "id": "riesenbogen_dorf_riesig_1",
@@ -3766,7 +3766,7 @@
     91,
     33
    ],
-   "bloecke": 27270
+   "bloecke": 27272
   },
   {
    "id": "riesenbogen_dorf_riesig_2",
@@ -3787,7 +3787,7 @@
     91,
     31
    ],
-   "bloecke": 27198
+   "bloecke": 27200
   },
   {
    "id": "wohninsel_klein_1",
@@ -3850,7 +3850,7 @@
     51,
     37
    ],
-   "bloecke": 6185
+   "bloecke": 6186
   },
   {
    "id": "wohninsel_mittel_2",
@@ -3871,7 +3871,7 @@
     53,
     32
    ],
-   "bloecke": 6089
+   "bloecke": 6091
   },
   {
    "id": "wohninsel_riesig_1",
@@ -3892,7 +3892,7 @@
     65,
     67
    ],
-   "bloecke": 20255
+   "bloecke": 20257
   },
   {
    "id": "wohninsel_riesig_2",
@@ -3913,7 +3913,7 @@
     70,
     68
    ],
-   "bloecke": 17878
+   "bloecke": 17881
   },
   {
    "id": "wohninsel_gigantisch_1",
@@ -3934,7 +3934,7 @@
     87,
     97
    ],
-   "bloecke": 48098
+   "bloecke": 48102
   },
   {
    "id": "wohninsel_gigantisch_2",
@@ -3955,7 +3955,7 @@
     67,
     98
    ],
-   "bloecke": 47421
+   "bloecke": 47427
   },
   {
    "id": "turminsel_klein_1",
@@ -3976,7 +3976,7 @@
     36,
     14
    ],
-   "bloecke": 1156
+   "bloecke": 1157
   },
   {
    "id": "turminsel_klein_2",
@@ -3997,7 +3997,7 @@
     37,
     23
    ],
-   "bloecke": 1077
+   "bloecke": 1078
   },
   {
    "id": "turminsel_mittel_1",
@@ -4018,7 +4018,7 @@
     53,
     29
    ],
-   "bloecke": 2908
+   "bloecke": 2909
   },
   {
    "id": "turminsel_mittel_2",
@@ -4039,7 +4039,7 @@
     49,
     24
    ],
-   "bloecke": 2783
+   "bloecke": 2784
   },
   {
    "id": "turminsel_riesig_1",
@@ -4060,7 +4060,7 @@
     83,
     40
    ],
-   "bloecke": 11365
+   "bloecke": 11370
   },
   {
    "id": "turminsel_riesig_2",
@@ -4081,7 +4081,7 @@
     82,
     40
    ],
-   "bloecke": 10626
+   "bloecke": 10630
   },
   {
    "id": "turminsel_gigantisch_1",
@@ -4102,7 +4102,7 @@
     124,
     56
    ],
-   "bloecke": 30507
+   "bloecke": 30512
   },
   {
    "id": "turminsel_gigantisch_2",
@@ -4123,7 +4123,7 @@
     108,
     67
    ],
-   "bloecke": 30427
+   "bloecke": 30431
   },
   {
    "id": "garteninsel_klein_1",
@@ -4228,7 +4228,7 @@
     64,
     57
    ],
-   "bloecke": 23864
+   "bloecke": 23865
   },
   {
    "id": "garteninsel_riesig_2",
@@ -4438,7 +4438,7 @@
     61,
     68
    ],
-   "bloecke": 37826
+   "bloecke": 37827
   },
   {
    "id": "marktinsel_gigantisch_2",
@@ -4522,7 +4522,7 @@
     41,
     34
    ],
-   "bloecke": 4499
+   "bloecke": 4500
   },
   {
    "id": "hafeninsel_mittel_2",
@@ -4816,7 +4816,7 @@
     53,
     35
    ],
-   "bloecke": 6813
+   "bloecke": 6819
   },
   {
    "id": "zitadelle_klein_2",
@@ -4837,7 +4837,7 @@
     53,
     29
    ],
-   "bloecke": 6765
+   "bloecke": 6771
   },
   {
    "id": "zitadelle_mittel_1",
@@ -4858,7 +4858,7 @@
     74,
     40
    ],
-   "bloecke": 17750
+   "bloecke": 17755
   },
   {
    "id": "zitadelle_mittel_2",
@@ -4879,7 +4879,7 @@
     74,
     47
    ],
-   "bloecke": 16825
+   "bloecke": 16831
   },
   {
    "id": "zitadelle_riesig_1",
@@ -4900,7 +4900,7 @@
     107,
     99
    ],
-   "bloecke": 51315
+   "bloecke": 51324
   },
   {
    "id": "zitadelle_riesig_2",
@@ -4921,7 +4921,7 @@
     105,
     91
    ],
-   "bloecke": 46884
+   "bloecke": 46890
   },
   {
    "id": "zitadelle_gigantisch_1",
@@ -4942,7 +4942,7 @@
     144,
     143
    ],
-   "bloecke": 131980
+   "bloecke": 131991
   },
   {
    "id": "zitadelle_gigantisch_2",
@@ -4963,7 +4963,7 @@
     128,
     152
    ],
-   "bloecke": 132397
+   "bloecke": 132407
   },
   {
    "id": "felsbrocken_schwebend_klein_1",
@@ -5656,7 +5656,7 @@
     60,
     38
    ],
-   "bloecke": 7229
+   "bloecke": 7231
   },
   {
    "id": "bauminsel_klein_2",
@@ -5719,7 +5719,7 @@
     68,
     40
    ],
-   "bloecke": 10102
+   "bloecke": 10103
   },
   {
    "id": "bauminsel_riesig_1",
@@ -5740,7 +5740,7 @@
     131,
     58
    ],
-   "bloecke": 45529
+   "bloecke": 45530
   },
   {
    "id": "bauminsel_riesig_2",
@@ -5782,7 +5782,7 @@
     148,
     80
    ],
-   "bloecke": 68037
+   "bloecke": 68042
   },
   {
    "id": "bauminsel_gigantisch_2",
@@ -5803,7 +5803,7 @@
     127,
     68
    ],
-   "bloecke": 62672
+   "bloecke": 62674
   },
   {
    "id": "seeinsel_klein_1",
@@ -5950,7 +5950,7 @@
     75,
     77
    ],
-   "bloecke": 34807
+   "bloecke": 34808
   },
   {
    "id": "seeinsel_gigantisch_2",
@@ -5971,7 +5971,7 @@
     59,
     65
    ],
-   "bloecke": 34648
+   "bloecke": 34649
   },
   {
    "id": "wieseninsel_klein_1",
@@ -6496,7 +6496,7 @@
     39,
     32
    ],
-   "bloecke": 2897
+   "bloecke": 2898
   },
   {
    "id": "inselkette_klein_2",
@@ -6538,7 +6538,7 @@
     43,
     63
    ],
-   "bloecke": 5479
+   "bloecke": 5480
   },
   {
    "id": "inselkette_mittel_2",
@@ -6559,7 +6559,7 @@
     46,
     62
    ],
-   "bloecke": 5744
+   "bloecke": 5745
   },
   {
    "id": "inselkette_riesig_1",
@@ -6580,7 +6580,7 @@
     57,
     81
    ],
-   "bloecke": 16527
+   "bloecke": 16528
   },
   {
    "id": "inselkette_riesig_2",
@@ -6601,7 +6601,7 @@
     50,
     94
    ],
-   "bloecke": 13735
+   "bloecke": 13736
   },
   {
    "id": "inselkette_gigantisch_1",
@@ -6622,7 +6622,7 @@
     66,
     120
    ],
-   "bloecke": 42733
+   "bloecke": 42735
   },
   {
    "id": "inselkette_gigantisch_2",
@@ -6643,7 +6643,7 @@
     62,
     125
    ],
-   "bloecke": 49193
+   "bloecke": 49195
   },
   {
    "id": "schwebeberg_klein_1",
@@ -6685,7 +6685,7 @@
     51,
     21
    ],
-   "bloecke": 2706
+   "bloecke": 2708
   },
   {
    "id": "schwebeberg_mittel_1",
@@ -6727,7 +6727,7 @@
     72,
     31
    ],
-   "bloecke": 8886
+   "bloecke": 8887
   },
   {
    "id": "schwebeberg_riesig_1",
@@ -6769,7 +6769,7 @@
     115,
     82
    ],
-   "bloecke": 32307
+   "bloecke": 32309
   },
   {
    "id": "schwebeberg_gigantisch_1",
@@ -6790,7 +6790,7 @@
     159,
     126
    ],
-   "bloecke": 95337
+   "bloecke": 95338
   },
   {
    "id": "schwebeberg_gigantisch_2",
@@ -6811,7 +6811,7 @@
     160,
     105
    ],
-   "bloecke": 95805
+   "bloecke": 95807
   },
   {
    "id": "schwebeberg_paar_klein_1",
@@ -6832,7 +6832,7 @@
     51,
     36
    ],
-   "bloecke": 4366
+   "bloecke": 4367
   },
   {
    "id": "schwebeberg_paar_klein_2",
@@ -6853,7 +6853,7 @@
     53,
     23
    ],
-   "bloecke": 4081
+   "bloecke": 4084
   },
   {
    "id": "schwebeberg_paar_mittel_1",
@@ -6895,7 +6895,7 @@
     72,
     48
    ],
-   "bloecke": 13587
+   "bloecke": 13588
   },
   {
    "id": "schwebeberg_paar_riesig_1",
@@ -6916,7 +6916,7 @@
     115,
     75
    ],
-   "bloecke": 43301
+   "bloecke": 43302
   },
   {
    "id": "schwebeberg_paar_riesig_2",
@@ -6937,7 +6937,7 @@
     115,
     59
    ],
-   "bloecke": 46443
+   "bloecke": 46449
   },
   {
    "id": "schwebeberg_paar_gigantisch_1",
@@ -6958,7 +6958,7 @@
     159,
     103
    ],
-   "bloecke": 124204
+   "bloecke": 124208
   },
   {
    "id": "schwebeberg_paar_gigantisch_2",
@@ -6979,7 +6979,7 @@
     160,
     110
    ],
-   "bloecke": 114723
+   "bloecke": 114729
   },
   {
    "id": "schwebeberg_gruppe_klein_1",
@@ -7000,7 +7000,7 @@
     52,
     38
    ],
-   "bloecke": 6440
+   "bloecke": 6441
   },
   {
    "id": "schwebeberg_gruppe_klein_2",
@@ -7021,7 +7021,7 @@
     53,
     44
    ],
-   "bloecke": 5815
+   "bloecke": 5817
   },
   {
    "id": "schwebeberg_gruppe_mittel_1",
@@ -7063,7 +7063,7 @@
     72,
     62
    ],
-   "bloecke": 19556
+   "bloecke": 19557
   },
   {
    "id": "schwebeberg_gruppe_riesig_1",
@@ -7105,7 +7105,7 @@
     115,
     92
    ],
-   "bloecke": 71673
+   "bloecke": 71680
   },
   {
    "id": "schwebeberg_gruppe_gigantisch_1",
@@ -7126,7 +7126,7 @@
     159,
     143
    ],
-   "bloecke": 177144
+   "bloecke": 177147
   },
   {
    "id": "schwebeberg_gruppe_gigantisch_2",
@@ -7147,7 +7147,7 @@
     160,
     131
    ],
-   "bloecke": 198225
+   "bloecke": 198230
   },
   {
    "id": "leuchtweide_klein_1",
@@ -7189,7 +7189,7 @@
     23,
     25
    ],
-   "bloecke": 1357
+   "bloecke": 1358
   },
   {
    "id": "leuchtweide_mittel_1",
@@ -7252,7 +7252,7 @@
     51,
     61
    ],
-   "bloecke": 11475
+   "bloecke": 11476
   },
   {
    "id": "leuchtweide_riesig_2",
@@ -7273,7 +7273,7 @@
     48,
     62
    ],
-   "bloecke": 11654
+   "bloecke": 11655
   },
   {
    "id": "leuchtweide_gigantisch_1",
@@ -7294,7 +7294,7 @@
     82,
     97
    ],
-   "bloecke": 30488
+   "bloecke": 30490
   },
   {
    "id": "leuchtweide_gigantisch_2",
@@ -7315,7 +7315,7 @@
     79,
     83
    ],
-   "bloecke": 30554
+   "bloecke": 30557
   },
   {
    "id": "hohlbaum_klein_1",
@@ -7378,7 +7378,7 @@
     57,
     63
    ],
-   "bloecke": 17798
+   "bloecke": 17799
   },
   {
    "id": "hohlbaum_mittel_2",
@@ -7420,7 +7420,7 @@
     101,
     94
    ],
-   "bloecke": 55931
+   "bloecke": 55935
   },
   {
    "id": "hohlbaum_riesig_2",
@@ -7441,7 +7441,7 @@
     104,
     81
    ],
-   "bloecke": 57141
+   "bloecke": 57146
   },
   {
    "id": "hohlbaum_gigantisch_1",
@@ -7462,7 +7462,7 @@
     172,
     132
    ],
-   "bloecke": 176761
+   "bloecke": 176766
   },
   {
    "id": "hohlbaum_gigantisch_2",
@@ -7483,7 +7483,7 @@
     179,
     149
    ],
-   "bloecke": 175684
+   "bloecke": 175693
   },
   {
    "id": "spiralpflanzen_klein_1",
@@ -7504,7 +7504,7 @@
     7,
     9
    ],
-   "bloecke": 123
+   "bloecke": 124
   },
   {
    "id": "spiralpflanzen_klein_2",
@@ -7525,7 +7525,7 @@
     6,
     9
    ],
-   "bloecke": 120
+   "bloecke": 121
   },
   {
    "id": "spiralpflanzen_mittel_1",
@@ -7546,7 +7546,7 @@
     13,
     17
    ],
-   "bloecke": 342
+   "bloecke": 346
   },
   {
    "id": "spiralpflanzen_mittel_2",
@@ -7567,7 +7567,7 @@
     11,
     17
    ],
-   "bloecke": 335
+   "bloecke": 337
   },
   {
    "id": "spiralpflanzen_riesig_1",
@@ -7609,7 +7609,7 @@
     17,
     24
    ],
-   "bloecke": 760
+   "bloecke": 764
   },
   {
    "id": "spiralpflanzen_gigantisch_1",
@@ -7630,7 +7630,7 @@
     30,
     40
    ],
-   "bloecke": 1794
+   "bloecke": 1797
   },
   {
    "id": "spiralpflanzen_gigantisch_2",
@@ -7651,7 +7651,7 @@
     30,
     44
    ],
-   "bloecke": 1773
+   "bloecke": 1775
   },
   {
    "id": "leuchtpilze_klein_1",
@@ -7756,7 +7756,7 @@
     22,
     30
    ],
-   "bloecke": 1998
+   "bloecke": 1999
   },
   {
    "id": "leuchtpilze_riesig_2",
@@ -7798,7 +7798,7 @@
     41,
     44
    ],
-   "bloecke": 7875
+   "bloecke": 7878
   },
   {
    "id": "leuchtpilze_gigantisch_2",
@@ -7819,7 +7819,7 @@
     48,
     50
    ],
-   "bloecke": 9033
+   "bloecke": 9034
   },
   {
    "id": "wurzeltor_klein_1",
@@ -7882,7 +7882,7 @@
     14,
     19
    ],
-   "bloecke": 315
+   "bloecke": 316
   },
   {
    "id": "wurzeltor_mittel_2",
@@ -7903,7 +7903,7 @@
     14,
     19
    ],
-   "bloecke": 331
+   "bloecke": 332
   },
   {
    "id": "wurzeltor_riesig_1",
@@ -7966,7 +7966,7 @@
     33,
     40
    ],
-   "bloecke": 1817
+   "bloecke": 1820
   },
   {
    "id": "wurzeltor_gigantisch_2",
@@ -7987,7 +7987,7 @@
     33,
     39
    ],
-   "bloecke": 1777
+   "bloecke": 1781
   },
   {
    "id": "leuchtwiese_klein_1",
@@ -9373,7 +9373,7 @@
     9,
     5
    ],
-   "bloecke": 210
+   "bloecke": 212
   },
   {
    "id": "wurzelbruecke_riesig",
@@ -9394,7 +9394,7 @@
     9,
     7
    ],
-   "bloecke": 436
+   "bloecke": 440
   },
   {
    "id": "wurzelbruecke_gigantisch",
@@ -9415,7 +9415,7 @@
     10,
     7
    ],
-   "bloecke": 790
+   "bloecke": 803
   },
   {
    "id": "haengender_garten_stein_klein_1",
@@ -9541,7 +9541,7 @@
     65,
     31
    ],
-   "bloecke": 15512
+   "bloecke": 15513
   },
   {
    "id": "haengender_garten_stein_gigantisch_1",
@@ -9709,7 +9709,7 @@
     65,
     31
    ],
-   "bloecke": 15512
+   "bloecke": 15513
   },
   {
    "id": "haengender_garten_tiefenschiefer_gigantisch_1",
@@ -9877,7 +9877,7 @@
     65,
     31
    ],
-   "bloecke": 15512
+   "bloecke": 15513
   },
   {
    "id": "haengender_garten_sandstein_gigantisch_1",
@@ -10045,7 +10045,7 @@
     65,
     31
    ],
-   "bloecke": 15512
+   "bloecke": 15513
   },
   {
    "id": "haengender_garten_ziegel_gigantisch_1",
@@ -10360,7 +10360,7 @@
     46,
     27
    ],
-   "bloecke": 5934
+   "bloecke": 5935
   },
   {
    "id": "ritterstatue_riesig_2",
@@ -10381,7 +10381,7 @@
     46,
     27
    ],
-   "bloecke": 5934
+   "bloecke": 5935
   },
   {
    "id": "ritterstatue_gigantisch_1",
@@ -10486,7 +10486,7 @@
     31,
     21
    ],
-   "bloecke": 1616
+   "bloecke": 1618
   },
   {
    "id": "waechterstatue_mittel_2",
@@ -10507,7 +10507,7 @@
     31,
     21
    ],
-   "bloecke": 1624
+   "bloecke": 1626
   },
   {
    "id": "waechterstatue_riesig_1",
@@ -10528,7 +10528,7 @@
     52,
     33
    ],
-   "bloecke": 5287
+   "bloecke": 5289
   },
   {
    "id": "waechterstatue_riesig_2",
@@ -10549,7 +10549,7 @@
     52,
     33
    ],
-   "bloecke": 5286
+   "bloecke": 5288
   },
   {
    "id": "waechterstatue_gigantisch_1",
@@ -10570,7 +10570,7 @@
     84,
     53
    ],
-   "bloecke": 19982
+   "bloecke": 19986
   },
   {
    "id": "waechterstatue_gigantisch_2",
@@ -10591,7 +10591,7 @@
     84,
     53
    ],
-   "bloecke": 19973
+   "bloecke": 19977
   },
   {
    "id": "loewenstatue_klein_1",
@@ -11284,7 +11284,7 @@
     26,
     11
    ],
-   "bloecke": 584
+   "bloecke": 585
   },
   {
    "id": "magierturm_klein_2",
@@ -11305,7 +11305,7 @@
     26,
     11
    ],
-   "bloecke": 584
+   "bloecke": 585
   },
   {
    "id": "magierturm_mittel_1",
@@ -11452,7 +11452,7 @@
     15,
     29
    ],
-   "bloecke": 684
+   "bloecke": 685
   },
   {
    "id": "drachenskelett_klein_2",
@@ -11473,7 +11473,7 @@
     15,
     29
    ],
-   "bloecke": 694
+   "bloecke": 696
   },
   {
    "id": "drachenskelett_mittel_1",
@@ -11494,7 +11494,7 @@
     24,
     47
    ],
-   "bloecke": 2077
+   "bloecke": 2079
   },
   {
    "id": "drachenskelett_mittel_2",
@@ -11515,7 +11515,7 @@
     24,
     46
    ],
-   "bloecke": 2112
+   "bloecke": 2118
   },
   {
    "id": "drachenskelett_riesig_1",
@@ -11536,7 +11536,7 @@
     41,
     75
    ],
-   "bloecke": 8537
+   "bloecke": 8544
   },
   {
    "id": "drachenskelett_riesig_2",
@@ -11557,7 +11557,7 @@
     41,
     76
    ],
-   "bloecke": 8562
+   "bloecke": 8565
   },
   {
    "id": "drachenskelett_gigantisch_1",
@@ -11578,7 +11578,7 @@
     67,
     123
    ],
-   "bloecke": 36761
+   "bloecke": 36763
   },
   {
    "id": "drachenskelett_gigantisch_2",
@@ -11599,7 +11599,7 @@
     67,
     122
    ],
-   "bloecke": 36787
+   "bloecke": 36792
   },
   {
    "id": "segelschiff_klein_1",
@@ -11664,7 +11664,7 @@
     44,
     17
    ],
-   "bloecke": 2190,
+   "bloecke": 2191,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11686,7 +11686,7 @@
     44,
     17
    ],
-   "bloecke": 2192,
+   "bloecke": 2193,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11708,7 +11708,7 @@
     68,
     25
    ],
-   "bloecke": 5920,
+   "bloecke": 5922,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11730,7 +11730,7 @@
     68,
     25
    ],
-   "bloecke": 5914,
+   "bloecke": 5916,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11752,7 +11752,7 @@
     107,
     39
    ],
-   "bloecke": 13965,
+   "bloecke": 13966,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11774,7 +11774,7 @@
     107,
     39
    ],
-   "bloecke": 13969,
+   "bloecke": 13970,
    "hinweis": "auf die Wasseroberfläche setzen"
   },
   {
@@ -11796,7 +11796,7 @@
     17,
     15
    ],
-   "bloecke": 786
+   "bloecke": 787
   },
   {
    "id": "luftschiff_klein_2",
@@ -11817,7 +11817,7 @@
     17,
     15
    ],
-   "bloecke": 786
+   "bloecke": 787
   },
   {
    "id": "luftschiff_mittel_1",
@@ -11964,7 +11964,7 @@
     12,
     12
    ],
-   "bloecke": 500
+   "bloecke": 502
   },
   {
    "id": "zeppelin_klein_2",
@@ -11985,7 +11985,7 @@
     12,
     12
    ],
-   "bloecke": 500
+   "bloecke": 502
   },
   {
    "id": "zeppelin_mittel_1",
@@ -12006,7 +12006,7 @@
     18,
     18
    ],
-   "bloecke": 1152
+   "bloecke": 1154
   },
   {
    "id": "zeppelin_mittel_2",
@@ -12027,7 +12027,7 @@
     18,
     18
    ],
-   "bloecke": 1152
+   "bloecke": 1154
   },
   {
    "id": "zeppelin_riesig_1",
@@ -12300,7 +12300,7 @@
     14,
     14
    ],
-   "bloecke": 667
+   "bloecke": 676
   },
   {
    "id": "fabrik_klein_2",
@@ -12321,7 +12321,7 @@
     14,
     14
    ],
-   "bloecke": 667
+   "bloecke": 676
   },
   {
    "id": "fabrik_mittel_1",
@@ -12468,7 +12468,7 @@
     29,
     11
    ],
-   "bloecke": 1279
+   "bloecke": 1280
   },
   {
    "id": "kupferdachhaus_mittel_2",
@@ -12489,7 +12489,7 @@
     29,
     11
    ],
-   "bloecke": 1279
+   "bloecke": 1280
   },
   {
    "id": "kupferdachhaus_gross_1",
@@ -12510,7 +12510,7 @@
     30,
     12
    ],
-   "bloecke": 1800
+   "bloecke": 1801
   },
   {
    "id": "kupferdachhaus_gross_2",
@@ -12531,7 +12531,7 @@
     30,
     12
    ],
-   "bloecke": 1800
+   "bloecke": 1801
   },
   {
    "id": "steinhaus_mittel_1",
@@ -12720,7 +12720,7 @@
     34,
     10
    ],
-   "bloecke": 888
+   "bloecke": 889
   },
   {
    "id": "haengehuette_mittel_2",
@@ -12741,7 +12741,7 @@
     34,
     10
    ],
-   "bloecke": 891
+   "bloecke": 892
   },
   {
    "id": "haengehuette_gross_1",
@@ -12762,7 +12762,7 @@
     34,
     11
    ],
-   "bloecke": 1254
+   "bloecke": 1255
   },
   {
    "id": "haengehuette_gross_2",
@@ -12783,7 +12783,7 @@
     34,
     11
    ],
-   "bloecke": 1254
+   "bloecke": 1255
   },
   {
    "id": "kugelgondel_mittel_1",

@@ -3,122 +3,128 @@
   {
    "datei": "antike.zip",
    "name": "Antike Monumente",
-   "version": "eaaa0c825af2",
-   "groesse": 5103368
+   "version": "60c4e0b74281",
+   "groesse": 5116799
   },
   {
    "datei": "arena.zip",
    "name": "Arena & Turnierplatz",
-   "version": "7693487562d7",
-   "groesse": 3843554
+   "version": "3f5f693bede6",
+   "groesse": 3858313
+  },
+  {
+   "datei": "baeume2.zip",
+   "name": "Bäume II",
+   "version": "1d4f8c2d737f",
+   "groesse": 1619623
   },
   {
    "datei": "bauernhof.zip",
    "name": "Bauernhof & Landleben",
-   "version": "81d4f3f87072",
-   "groesse": 3561196
+   "version": "3c3d11058fe7",
+   "groesse": 3585874
   },
   {
    "datei": "bienenstadt.zip",
    "name": "Bienenstadt",
-   "version": "6d5d20a8deaa",
-   "groesse": 2859992
+   "version": "ccde7d45a673",
+   "groesse": 2843780
   },
   {
    "datei": "blumen.zip",
    "name": "Riesenblumen & Zauberwiesen",
-   "version": "85e0e25c604f",
-   "groesse": 3503194
+   "version": "09735f48de1f",
+   "groesse": 3509435
   },
   {
    "datei": "boote.zip",
    "name": "Boote & Schiffe",
-   "version": "18bf851a5ae9",
-   "groesse": 2359850
+   "version": "cc4f32a3af09",
+   "groesse": 2369553
   },
   {
    "datei": "burgen.zip",
    "name": "Burgen & Festungen",
-   "version": "f84819c0329d",
-   "groesse": 11586695
+   "version": "30423c2b4f08",
+   "groesse": 11748882
   },
   {
    "datei": "deko.zip",
    "name": "Deko & Wege",
-   "version": "2282c5532722",
-   "groesse": 1521841
+   "version": "1c4d3591c1f8",
+   "groesse": 1522666
   },
   {
    "datei": "drachen.zip",
    "name": "Drachenhort",
-   "version": "e10568930c03",
-   "groesse": 4460844
+   "version": "952870002078",
+   "groesse": 4459140
   },
   {
    "datei": "dschungel.zip",
    "name": "Dschungeltempel",
-   "version": "4ad8c8fbdf7f",
-   "groesse": 4368873
+   "version": "842abda64574",
+   "groesse": 4365714
   },
   {
    "datei": "eisreich.zip",
    "name": "Eisreich",
-   "version": "65c3d3ed6b9c",
-   "groesse": 6129937
+   "version": "c9817d43ad2c",
+   "groesse": 6151039
   },
   {
    "datei": "elfen.zip",
    "name": "Elfenreich",
-   "version": "61e88aa7742e",
-   "groesse": 5751513
+   "version": "151e80aa9868",
+   "groesse": 5772903
   },
   {
    "datei": "endreich.zip",
    "name": "End-Reich",
-   "version": "2a87b335277b",
-   "groesse": 3353419
+   "version": "94c1d0fe3c9e",
+   "groesse": 3359264
   },
   {
    "datei": "feenstadt.zip",
    "name": "Feenstadt",
-   "version": "c1c95e9716de",
-   "groesse": 2518021
+   "version": "ba523b1c3711",
+   "groesse": 2518152
   },
   {
    "datei": "felsen.zip",
    "name": "Felsen & Berge",
-   "version": "18096c1166db",
-   "groesse": 26332653
+   "version": "8a97e1550c99",
+   "groesse": 26332660
   },
   {
    "datei": "fernost.zip",
    "name": "Fernost",
-   "version": "cb9be60936a3",
-   "groesse": 3472504
+   "version": "2403fad6f9d5",
+   "groesse": 3469665
   },
   {
    "datei": "flora.zip",
    "name": "Riesenpflanzen & Dschungelflora",
-   "version": "d84fc91b78f3",
-   "groesse": 4327814
+   "version": "b2a01b0063d9",
+   "groesse": 4337315
   },
   {
    "datei": "friedhof.zip",
    "name": "Friedhof & Spuk",
-   "version": "b5d1f315d935",
-   "groesse": 3572981
+   "version": "4232b378b057",
+   "groesse": 3589590
   },
   {
    "datei": "gewaesser.zip",
    "name": "Flüsse, Seen & Wasserfälle",
-   "version": "cde93ce9bfc8",
-   "groesse": 22962877
+   "version": "ade44899d99a",
+   "groesse": 22963706
   },
   {
    "datei": "haeuser.zip",
    "name": "Häuser",
-   "version": "5b5dce927c9f",
-   "groesse": 11932220
+   "version": "3edd76f935fc",
+   "groesse": 11975415
   },
   {
    "datei": "handwerk.zip",
