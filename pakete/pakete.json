@@ -115,6 +115,12 @@
    "groesse": 3589590
   },
   {
+   "datei": "gebaeude2.zip",
+   "name": "Gebäude II",
+   "version": "da710456b8cc",
+   "groesse": 4365022
+  },
+  {
    "datei": "gewaesser.zip",
    "name": "Flüsse, Seen & Wasserfälle",
    "version": "ade44899d99a",
@@ -227,6 +233,12 @@
    "name": "Sagenlande",
    "version": "21ffdb55fcd7",
    "groesse": 9612086
+  },
+  {
+   "datei": "schwebend2.zip",
+   "name": "Schwebende Strukturen II",
+   "version": "65436d277e80",
+   "groesse": 4937697
   },
   {
    "datei": "spektakulaer2.zip",

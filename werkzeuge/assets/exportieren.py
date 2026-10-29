@@ -104,6 +104,7 @@ from boote3 import BOOTE3  # noqa: E402
 from erw_piraten import PIRATEN3  # noqa: E402
 from erw_kreaturen import KREATUREN3  # noqa: E402
 from erw_antike import ANTIKE3  # noqa: E402
+from erw_orks import ORKS3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -208,6 +209,7 @@ GRUPPEN = [
     ("piraten", "Piraten", PIRATEN3, G4, [7, 21]),
     ("kreaturen", "Kreaturen", KREATUREN3, G4, [7, 21]),
     ("antike", "Antike Monumente", ANTIKE3, G4, [7, 21]),
+    ("orklager", "Orklager", ORKS3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
