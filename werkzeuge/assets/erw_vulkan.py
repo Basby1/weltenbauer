@@ -420,7 +420,7 @@ def bimssteinbruch(seed, g=1):
     for k in range(3 + g):
         x, z = int(R * 0.2) + (k % 3) * 2, int(R * 0.45) + (k // 3) * 2
         for y in range(1, 2 + k % 2):
-            w.setze(x, y, z, w.b("tuff_bricks"))
+            w.setze(x, y, z, w.b("polished_andesite"))
     return w
 
 

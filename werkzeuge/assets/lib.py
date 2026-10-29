@@ -844,3 +844,5 @@ FARBEN.update({"scaffolding": (190, 160, 90), "kelp": (90, 140, 50), "kelp_plant
 FARBEN.update({"weathered_cut_copper": (109, 145, 107)})
 FARBEN.update({"tuff_bricks": (98, 103, 95), "respawn_anchor": (40, 20, 60), "black_concrete_powder": (25, 27, 32), "gray_concrete_powder": (76, 81, 84), "polished_blackstone_brick_wall": (48, 42, 50), "white_concrete_powder": (225, 227, 228)})
 FARBEN.update({"ancient_debris": (96, 64, 56), "beacon": (120, 220, 215), "nether_portal": (120, 40, 200), "nether_gold_ore": (140, 70, 50), "cracked_nether_bricks": (40, 20, 24), "polished_blackstone_brick_slab": (48, 42, 50)})
+FARBEN.update({"end_stone_brick_wall": (218, 224, 162), "purpur_stairs": (169, 125, 169)})
+FARBEN.update({"jungle_fence": (160, 115, 80), "stripped_jungle_wood": (171, 132, 84), "potted_blue_orchid": (120, 70, 50), "red_glazed_terracotta": (180, 60, 50), "orange_glazed_terracotta": (200, 140, 60), "yellow_glazed_terracotta": (230, 200, 90), "lime_glazed_terracotta": (150, 200, 60), "mossy_stone_brick_wall": (115, 121, 105), "mossy_cobblestone_slab": (110, 118, 95), "light_gray_carpet": (140, 140, 130), "green_carpet": (88, 106, 51)})

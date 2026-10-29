@@ -117,6 +117,9 @@ from erw_eisreich import EISREICH3  # noqa: E402
 from erw_unterwasser import UNTERWASSER3  # noqa: E402
 from erw_vulkan import VULKAN3  # noqa: E402
 from erw_nether import NETHER3  # noqa: E402
+from erw_endreich import ENDREICH3  # noqa: E402
+from erw_dschungel import DSCHUNGEL3  # noqa: E402
+from erw_wikinger import WIKINGER3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -234,6 +237,9 @@ GRUPPEN = [
     ("unterwasser", "Unterwasserwelt", UNTERWASSER3, G4, [7, 21]),
     ("vulkan", "Vulkanreich", VULKAN3, G4, [7, 21]),
     ("nether", "Nether-Reich", NETHER3, G4, [7, 21]),
+    ("endreich", "End-Reich", ENDREICH3, G4, [7, 21]),
+    ("dschungel", "Dschungeltempel", DSCHUNGEL3, G4, [7, 21]),
+    ("wikinger", "Wikingerdorf", WIKINGER3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
