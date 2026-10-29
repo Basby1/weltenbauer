@@ -575,3 +575,8 @@ PIRATEN = {
     "krakenangriff": ("Kraken-Angriff", krakenangriff),
 }
 MAHLSTROM = {"mahlstrom": ("Mahlstrom", mahlstrom)}
+
+
+from piraten2 import NEU as _NEU  # noqa: E402
+
+PIRATEN.update(_NEU)

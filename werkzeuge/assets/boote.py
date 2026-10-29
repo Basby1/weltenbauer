@@ -777,3 +777,8 @@ BOOTE = {
     "tauchboot": ("Tauchboot", tauchboot),
     "gondel": ("Gondel", gondel),
 }
+
+
+from boote2 import NEU as _NEU  # noqa: E402
+
+BOOTE.update(_NEU)

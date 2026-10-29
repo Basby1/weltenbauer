@@ -440,3 +440,8 @@ KREATUREN = {
     "zyklop": ("Zyklop", zyklop),
     "seeschlange": ("Seeschlange", seeschlange),
 }
+
+
+from kreaturen2 import NEU as _NEU  # noqa: E402
+
+KREATUREN.update(_NEU)

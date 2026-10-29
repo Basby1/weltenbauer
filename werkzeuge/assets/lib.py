@@ -782,3 +782,6 @@ for _f, _c in _FARB16.items():
                      ("_stained_glass", 1.1), ("_stained_glass_pane", 1.1), ("_candle", 1.0), ("_banner", 1.0),
                      ("_wall_banner", 1.0), ("_glazed_terracotta", 0.95), ("_bed", 1.0), ("_shulker_box", 1.0)):
         FARBEN.setdefault(_f + _suf, tuple(min(255, int(v * _k)) for v in _c))
+FARBEN.update({"bamboo_mosaic": (190, 168, 74), "bamboo_fence": (180, 160, 70), "bamboo_slab": (193, 173, 80),
+               "bamboo_stairs": (193, 173, 80), "bamboo_trapdoor": (190, 170, 80), "bamboo_mosaic_slab": (190, 168, 74)})
+FARBEN.update({"lodestone": (147, 149, 152)})

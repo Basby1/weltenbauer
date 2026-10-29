@@ -725,3 +725,8 @@ SAGENLANDE = {
     "berghalle": ("Berghallen-Tor", berghalle),
     "wachturm": ("Wachturm mit Signalfeuer", wachturm),
 }
+
+
+from sagen2 import NEU as _NEU  # noqa: E402
+
+SAGENLANDE.update(_NEU)

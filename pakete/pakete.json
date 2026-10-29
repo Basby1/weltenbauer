@@ -15,8 +15,8 @@
   {
    "datei": "boote.zip",
    "name": "Boote & Schiffe",
-   "version": "35d3000c3890",
-   "groesse": 1279110
+   "version": "18bf851a5ae9",
+   "groesse": 2359850
   },
   {
    "datei": "burgen.zip",
@@ -99,8 +99,8 @@
   {
    "datei": "kreaturen.zip",
    "name": "Kreaturen",
-   "version": "3d2c6b120d74",
-   "groesse": 1778936
+   "version": "e5194713f34a",
+   "groesse": 5376652
   },
   {
    "datei": "kueste.zip",
@@ -141,14 +141,14 @@
   {
    "datei": "piraten.zip",
    "name": "Piraten",
-   "version": "13eace19c5fd",
-   "groesse": 2747406
+   "version": "34dc276ee775",
+   "groesse": 8249080
   },
   {
    "datei": "sagenlande.zip",
    "name": "Sagenlande",
-   "version": "799b44ac665f",
-   "groesse": 3966241
+   "version": "999af465a82b",
+   "groesse": 9465781
   },
   {
    "datei": "uhrwerk.zip",
