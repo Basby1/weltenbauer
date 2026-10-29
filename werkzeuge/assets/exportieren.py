@@ -129,6 +129,8 @@ from erw_hexen import HEXEN3  # noqa: E402
 from erw_drachen import DRACHEN3  # noqa: E402
 from erw_himmel import HIMMEL3  # noqa: E402
 from erw_wald import WALD3  # noqa: E402
+from erw_weltwunder import WELTWUNDER3  # noqa: E402
+from erw_uhrwerk import UHRWERK3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -258,6 +260,8 @@ GRUPPEN = [
     ("drachen", "Drachenhort", DRACHEN3, G4, [7, 21]),
     ("himmel", "Himmelsreich", HIMMEL3, G4, [7, 21]),
     ("wald", "Wald", WALD3, G4, [7, 21]),
+    ("weltwunder", "Weltwunder", WELTWUNDER3, G4, [7, 21]),
+    ("uhrwerk", "Uhrwerk & Maschinen", UHRWERK3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
