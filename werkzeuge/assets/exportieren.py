@@ -65,6 +65,9 @@ from weltwunder5 import TEIL5 as WW5  # noqa: E402
 from weltwunder6 import TEIL6 as WW6  # noqa: E402
 from weltwunder7 import TEIL7 as WW7  # noqa: E402
 from zwerge import ZWERGE  # noqa: E402
+from zukunft import ZUKUNFT  # noqa: E402
+from bauernhof import BAUERNHOF  # noqa: E402
+from kristall import KRISTALL  # noqa: E402
 from elfen import ELFEN  # noqa: E402
 from pilze import PILZE  # noqa: E402
 from gewaesser import GEWAESSER  # noqa: E402
@@ -132,6 +135,9 @@ GRUPPEN = [
     ("weltwunder", "Weltwunder", {**WELTWUNDER_ALLE, **WW5, **WW6, **WW7}, G_WW, [7, 21]),
     ("uhrwerk", "Uhrwerk & Maschinen", UHRWERK, G4, [7, 21]),
     ("zwerge", "Zwergenreich", ZWERGE, G4, [7, 21]),
+    ("zukunft", "Zukunftsstadt", ZUKUNFT, G4, [7, 21]),
+    ("bauernhof", "Bauernhof & Landleben", BAUERNHOF, G4, [7, 21]),
+    ("kristall", "Kristallhöhlen", KRISTALL, G4, [7, 21]),
     ("elfen", "Elfenreich", ELFEN, G4, [7, 21]),
     ("pilze", "Pilzwelten", PILZE, G4, [7, 21]),
     ("gewaesser", "Flüsse, Seen & Wasserfälle", GEWAESSER, G4, [7, 21]),
@@ -144,7 +150,7 @@ MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 
 # Kategorie -> (Paket-ID, Paket-Name). Neue Kategorien kommen ab jetzt als Paket.
-PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich")}
+PAKET_KAT = {"sagenlande": ("sagenlande", "Sagenlande"), "boote": ("boote", "Boote & Schiffe"), "piraten": ("piraten", "Piraten"), "kreaturen": ("kreaturen", "Kreaturen"), "antike": ("antike", "Antike Monumente"), "orklager": ("orklager", "Orklager"), "feenstadt": ("feenstadt", "Feenstadt"), "bienenstadt": ("bienenstadt", "Bienenstadt"), "haeuser": ("haeuser", "Häuser"), "mystik": ("mystik", "Mystik"), "burgen": ("burgen", "Burgen & Festungen"), "kathedralen": ("kathedralen", "Kathedralen & Tempel"), "fernost": ("fernost", "Fernost"), "wueste": ("wueste", "Wüstenreich"), "eisreich": ("eisreich", "Eisreich"), "unterwasser": ("unterwasser", "Unterwasserwelt"), "vulkan": ("vulkan", "Vulkanreich"), "nether": ("nether", "Nether-Reich"), "endreich": ("endreich", "End-Reich"), "dschungel": ("dschungel", "Dschungeltempel"), "wikinger": ("wikinger", "Wikingerdorf"), "markt": ("markt", "Mittelaltermarkt"), "parks": ("parks", "Gärten & Parks"), "handwerk": ("handwerk", "Mühlen & Handwerk"), "kueste": ("kueste", "Küste & Leuchttürme"), "friedhof": ("friedhof", "Friedhof & Spuk"), "hexen": ("hexen", "Hexenwerk"), "drachen": ("drachen", "Drachenhort"), "himmel": ("himmel", "Himmelsreich"), "wald": ("wald", "Wald"), "weltwunder": ("weltwunder", "Weltwunder"), "uhrwerk": ("uhrwerk", "Uhrwerk & Maschinen"), "zwerge": ("zwerge", "Zwergenreich"), "flora": ("flora", "Riesenpflanzen & Dschungelflora"), "blumen": ("blumen", "Riesenblumen & Zauberwiesen"), "sumpf": ("sumpf", "Sumpf & Moor"), "gewaesser": ("gewaesser", "Flüsse, Seen & Wasserfälle"), "pilze": ("pilze", "Pilzwelten"), "elfen": ("elfen", "Elfenreich"), "kristall": ("kristall", "Kristallhöhlen"), "bauernhof": ("bauernhof", "Bauernhof & Landleben"), "zukunft": ("zukunft", "Zukunftsstadt")}
 PAKETE = PROJEKT / "pakete"
 PAKET_TMP = HIER / "_paket_tmp"
 

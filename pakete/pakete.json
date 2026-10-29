@@ -7,6 +7,12 @@
    "groesse": 5103368
   },
   {
+   "datei": "bauernhof.zip",
+   "name": "Bauernhof & Landleben",
+   "version": "81d4f3f87072",
+   "groesse": 3561196
+  },
+  {
    "datei": "bienenstadt.zip",
    "name": "Bienenstadt",
    "version": "6d5d20a8deaa",
@@ -125,6 +131,12 @@
    "name": "Kreaturen",
    "version": "e5194713f34a",
    "groesse": 5376652
+  },
+  {
+   "datei": "kristall.zip",
+   "name": "Kristallhöhlen",
+   "version": "a14c6d4d385b",
+   "groesse": 11241847
   },
   {
    "datei": "kueste.zip",

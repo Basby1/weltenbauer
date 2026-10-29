@@ -788,3 +788,7 @@ FARBEN.update({"lodestone": (147, 149, 152)})
 FARBEN.update({"frogspawn": (110, 90, 80), "big_dripleaf": (110, 150, 50), "big_dripleaf_stem": (90, 130, 40),
                "mossy_cobblestone_stairs": (110, 118, 94), "dark_oak_wall_sign": (66, 43, 20),
                "small_dripleaf": (100, 140, 45)})
+FARBEN.update({"pumpkin_stem": (110, 150, 50), "melon_stem": (110, 150, 50), "potatoes": (80, 140, 40),
+               "beetroots": (90, 130, 40), "jack_o_lantern": (220, 140, 30), "carved_pumpkin": (200, 120, 30)})
+FARBEN.update({"daylight_detector": (60, 70, 110), "tinted_glass": (44, 38, 48), "redstone_lamp": (230, 170, 90),
+               "polished_blackstone_slab": (53, 48, 56)})
