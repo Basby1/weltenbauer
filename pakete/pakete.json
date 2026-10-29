@@ -145,6 +145,12 @@
    "groesse": 3708343
   },
   {
+   "datei": "instagram.zip",
+   "name": "Instagram",
+   "version": "f87ea9206cd3",
+   "groesse": 9389905
+  },
+  {
    "datei": "kathedralen.zip",
    "name": "Kathedralen & Tempel",
    "version": "05d3695b009a",
@@ -159,8 +165,8 @@
   {
    "datei": "kreaturen.zip",
    "name": "Kreaturen",
-   "version": "e5194713f34a",
-   "groesse": 5376652
+   "version": "8267c86c06a2",
+   "groesse": 5376659
   },
   {
    "datei": "kristall.zip",
