@@ -133,6 +133,21 @@ def ovaltribuene(w, cx, cz, rx, rz, stufen, M, oeffnungen=()):
                 w.setze(x, y, z, M(x, y, z, y / (stufen + 2)))
 
 
+def anheben(w, T):
+    """Hebt eine Grubenanlage um T an und füllt darunter Erde auf – die Grube liegt dann in einem Erdwall
+    (sichtbar auch ohne Graben im Gelände)."""
+    alt = w.bloecke
+    w.bloecke = {(x, y + T, z): b for (x, y, z), b in alt.items()}
+    spalten = {}
+    for (x, y, z) in w.bloecke:
+        spalten[(x, z)] = min(spalten.get((x, z), 10 ** 6), y)
+    erde, gras = w.b("dirt"), w.b("coarse_dirt")
+    for (x, z), y0 in spalten.items():
+        for y in range(0, y0):
+            w.bloecke[(x, y, z)] = erde if y < y0 - 1 else gras
+    return w
+
+
 # ============================================================================ Turnier
 
 def tjostbahn(seed, g=2):
@@ -367,6 +382,7 @@ def drachenarena(seed, g=3):
     for x in range(-3, 4):
         for y in range(-T + 1, -T + 6):
             w.setze(x, y, R, w.b("iron_bars", north=False, south=False, east=True, west=True, waterlogged=False))
+    anheben(w, T + 1)
     return w
 
 
@@ -424,6 +440,7 @@ def faustkampfgrube(seed, g=1):
         for (x, z) in ((k, -R - 3), (k, R + 3), (-R - 3, k), (R + 3, k)):
             w.setze(x, 1, z, w.b("spruce_fence", north=False, south=False, east=False, west=False, waterlogged=False))
             w.setze(x, 2, z, w.b("lantern", hanging=False, waterlogged=False)) if k % 6 == 0 else None
+    anheben(w, T + 1)
     return w
 
 
@@ -647,6 +664,7 @@ def bestiengrube(seed, g=2):
         w.setze(x, 1, 0, w.b("spruce_slab", type="bottom", waterlogged=False))
         for z in (-1, 1):
             w.setze(x, 2, z, zf(w, "spruce", east=True, west=True))
+    anheben(w, T + 1)
     return w
 
 

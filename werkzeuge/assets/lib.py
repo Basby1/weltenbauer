@@ -820,3 +820,4 @@ FARBEN.update({"cartography_table": (110, 85, 60), "cracked_deepslate_bricks": (
 _farben_ableiten()
 FARBEN.update({"spruce_wall_sign": (114, 84, 48), "oak_wall_sign": (162, 130, 78), "oak_sign": (162, 130, 78)})
 FARBEN.update({"target": (225, 200, 180), "enchanting_table": (80, 30, 50), "copper_block": (192, 107, 79)})
+FARBEN.update({"tripwire_hook": (120, 110, 100), "lever": (120, 110, 100)})
