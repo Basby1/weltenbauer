@@ -113,6 +113,8 @@ from erw_burgen import BURGEN3  # noqa: E402
 from erw_kathedralen import KATHEDRALEN3  # noqa: E402
 from erw_fernost import FERNOST3  # noqa: E402
 from erw_wueste import WUESTE3  # noqa: E402
+from erw_eisreich import EISREICH3  # noqa: E402
+from erw_unterwasser import UNTERWASSER3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -226,6 +228,8 @@ GRUPPEN = [
     ("kathedralen", "Kathedralen & Tempel", KATHEDRALEN3, G4, [7, 21]),
     ("fernost", "Fernost", FERNOST3, G4, [7, 21]),
     ("wueste", "Wüstenreich", WUESTE3, G4, [7, 21]),
+    ("eisreich", "Eisreich", EISREICH3, G4, [7, 21]),
+    ("unterwasser", "Unterwasserwelt", UNTERWASSER3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}

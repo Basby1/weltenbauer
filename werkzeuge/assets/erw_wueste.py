@@ -622,11 +622,11 @@ def toepfermarkt(seed, g=1):
 
 
 WUESTE3 = {
-    "minarett": ("Minarett mit Kuppelhalle", minarett),
+    "kuppelminarett": ("Minarett mit Kuppelhalle", minarett),
     "palmenhain": ("Palmenhain mit Kanälen", palmenhain),
     "sandsturmruine": ("Sandsturm-Ruine", sandsturmruine),
     "kamelkarawane": ("Kamelkarawane", kamelkarawane),
-    "zisterne": ("Zisterne", zisterne),
+    "saeulenzisterne": ("Säulen-Zisterne", zisterne),
     "sonnenuhrplatz": ("Sonnenuhr-Platz", sonnenuhrplatz),
     "felsenstadt": ("Felsenstadt", felsenstadt),
     "glasblaeserei": ("Glasbläserei", glasblaeserei),

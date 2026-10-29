@@ -623,7 +623,7 @@ KATHEDRALEN3 = {
     "zwiebelturmkirche": ("Zwiebelturm-Kirche", zwiebelturmkirche),
     "stabkirche": ("Stabkirche", stabkirche),
     "backsteinkathedrale": ("Backsteinkathedrale", backsteinkathedrale),
-    "rundkirche": ("Rundkirche", rundkirche),
+    "rundkirche_kuppel": ("Rundkirche", rundkirche),
     "felsenkapelle": ("Felsenkapelle", felsenkapelle),
     "doppelturmfassade": ("Doppelturm-Fassade", doppelturmfassade),
     "inselkloster": ("Inselkloster", inselkloster),
