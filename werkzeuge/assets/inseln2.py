@@ -289,19 +289,23 @@ def schrein_schildkroete(seed, g=2):
 def urwald_schildkroete(seed, g=2):
     """Urwald-Schildkröte: der Panzer trägt einen hohen, dichten Urwaldhügel mit Riesenbäumen, Lianen und einem
     Wasserfall, der über den Panzerrand ins Meer stürzt."""
-    w, L, oben, a, b, insel = _basis(seed, g, pal="gruen", art="moos", hoch=_r(L * 0.2))
+    w, L, oben, a, b, insel = _basis(seed, g, pal="gruen", art="moos", hoch=_r(LG[g] * 0.2))
+    (x0, z0), y0 = max(insel.items(), key=lambda kv: kv[1])
+    letzt = y0
+    for z in range(z0, int(b) + 4):
+        y = insel.get((x0, z))
+        if y is None:
+            y = oben.get((x0, z))
+            if y is None:
+                for yy in range(1, letzt + 1):
+                    w.setze(x0, yy, z, w.b("water", level=0))
+                break
+        for dx in (-1, 0, 1):
+            w.setze(x0 + dx, y, z, w.b("water", level=0))
+            w.setze(x0 + dx, y - 1, z, w.b("mossy_cobblestone"))
+        letzt = y
     begruenen(w, insel, dichte=0.6, baeume=4 + L // 12, arten=("jungle", "oak", "jungle"))
     efeu(w, 0.12, laub=0.6)
-    top = max(insel.items(), key=lambda kv: kv[1])
-    (x0, z0), y0 = top
-    w.vorschau_extra = {}
-    for z in range(z0, int(b) + 3):
-        y = insel.get((x0, z), oben.get((x0, z)))
-        if y is None:
-            for yy in range(0, y0 + 1):
-                w.vorschau_extra[(x0, yy, z)] = w.b("water", level=0)
-            break
-        w.setze(x0, y, z, w.b("water", level=0))
     return w
 
 
@@ -461,12 +465,12 @@ def kristall_schildkroete(seed, g=2):
     oben, a, b = schildkroete(w, L, "stein")
     wasserflaeche(w, int(L * 0.85))
     rng = w.rng
-    for k in range(5 + g * 2):
+    for k in range(9 + g * 3):
         (x, z), y = list(oben.items())[int(rng.random() * len(oben))]
         if (x / a) ** 2 + (z / b) ** 2 > 0.5:
             continue
         kristall(w, (x, y, z), ((rng.random() - 0.5) * 0.7, 1, (rng.random() - 0.5) * 0.7),
-                 (3 + rng.random() * 5) * L / 36, (0.7 + rng.random() * 0.7) * L / 36, art="amethyst")
+                 (6 + rng.random() * 8) * L / 36, (1.2 + rng.random() * 1.0) * L / 36, art="amethyst")
     return w
 
 
@@ -697,7 +701,7 @@ def seeschlangenboegen(seed, g=3):
     for i in range(240):
         t = i / 239
         x = -LG[g] * 0.75 + t * LG[g] * 1.4
-        y = abs(math.sin(t * math.pi * 3)) * 10 * s - 2
+        y = abs(math.sin(t * math.pi * 3)) * (14 * s + 4) - 4
         pts.append((x, y))
     for (x, y) in pts:
         for dx in range(-int(rt) - 1, int(rt) + 2):
@@ -779,48 +783,58 @@ def riesenmuschel(seed, g=2):
     w = _neu(seed)
     s = LG[g] / 36
     wasserflaeche(w, int(LG[g] * 0.9))
-    R = 13 * s + 3
-    sch = Mix(w, [("pink_terracotta", 2), ("white_terracotta", 2), ("calcite", 1), ("magenta_terracotta", 1)],
-              zelle=1.2)
-    for x in range(-int(R) - 1, int(R) + 2):
-        for z in range(-int(R) - 1, int(R) + 1):
-            d = math.hypot(x, z)
-            if d > R or z > 0:
-                continue
-            ang = math.atan2(-z, x)
-            rippe = int(ang / math.pi * 14) % 2 == 0
-            h = (1 - (d / R) ** 2) * R * 0.25
-            for k, (yb, top) in enumerate(((0, h), None)):
-                pass
-            y = round(h)
-            w.setze(x, y, z, sch(x, y, z) if not rippe else w.b("pink_terracotta"))
-            w.setze(x, y - 1, z, sch(x, y - 1, z))
-            # obere Schale, gekippt
-            yo = round(R * 0.35 + z * -0.75 + h * 0.6)
-            w.setze(x, yo + R // 2, -z // 2 - round(R * 0.5), sch(x, yo, z) if not rippe else w.b("pink_terracotta"))
-    pr = 3 * s + 1.5
+    R = 17 * s + 4
+    sch = Mix(w, [("pink_terracotta", 2), ("white_terracotta", 2), ("calcite", 1)], zelle=1.2)
+    rippe_b = w.b("magenta_terracotta")
+    for winkel in (0.0, 1.05):
+        ca, sa = math.cos(winkel), math.sin(winkel)
+        for i in range(int(R * 9)):
+            phi = i / (R * 9) * math.pi
+            Rp = R * (0.92 + 0.08 * abs(math.cos(phi * 8)))
+            rippe = abs(math.sin(phi * 8)) < 0.22
+            for j in range(int(Rp * 3) + 1):
+                r = j / 3
+                u, v = r * math.cos(phi), r * math.sin(phi)
+                bowl = (r / R) ** 2 * R * 0.3 - (0.6 if rippe else 0)
+                for dh in (0, 1):
+                    if winkel == 0:
+                        z, y = -R + v, bowl - dh + 1
+                    else:
+                        hh = -(bowl - dh)
+                        z = -R + v * ca - hh * sa
+                        y = v * sa + hh * ca + 2
+                    p = (round(u), round(y), round(z))
+                    w.setze(*p, rippe_b if rippe and dh == 0 else sch(*p))
+    for x in range(-int(R), int(R) + 1):
+        for z in range(-int(R), 1):
+            d = math.hypot(x, z + R)
+            if d < R * 0.8 and z < 0:
+                for y in range(-1, 1):
+                    w.setze(x, y, z, w.b("sand") if y == 0 else w.b("sandstone"), False)
+    pr = 3.5 * s + 2
+    zp = round(-R + R * 0.45)
+    yc = round(R * 0.08 + pr) + 1
     for x in range(-int(pr) - 1, int(pr) + 2):
         for y in range(-int(pr) - 1, int(pr) + 2):
             for z in range(-int(pr) - 1, int(pr) + 2):
                 if x * x + y * y + z * z <= pr * pr:
-                    w.setze(x, round(R * 0.25 + pr) + y, z - round(R * 0.4), w.b("white_concrete" if (x + y) % 3 else
-                                                                                   "pearlescent_froglight",
-                                                                                   **({} if (x + y) % 3 else
-                                                                                      {"axis": "y"})))
-    yp = round(R * 0.25 + 2 * pr) + 1
-    zp = -round(R * 0.4)
+                    w.setze(x, yc + y, zp + z, w.b("white_concrete") if (x + y + z) % 4 else
+                            w.b("pearlescent_froglight", axis="y"))
+    yp = round(yc + pr) + 1
     for x in range(-2, 3):
         for z in range(-2, 3):
+            w.setze(x, yp - 1, zp + z, w.b("smooth_quartz"))
             for yy in range(yp, yp + 3):
                 if abs(x) == 2 or abs(z) == 2:
                     w.setze(x, yy, zp + z, w.b("quartz_pillar", axis="y") if (abs(x) == 2 and abs(z) == 2) else
-                            w.b("glass"))
+                            w.b("light_blue_stained_glass"))
     for x in range(-3, 4):
-        for yy in range(0, 3):
+        for yy in range(0, 4):
             for z in range(-3, 4):
                 d = math.sqrt(x * x + (yy * 1.3) ** 2 + z * z)
-                if 2.0 < d <= 3.0:
+                if 2.0 < d <= 3.1:
                     w.setze(x, yp + 3 + yy, zp + z, w.b("prismarine_bricks"))
+    w.setze(0, yp + 7, zp, w.b("sea_lantern"))
     return w
 
 

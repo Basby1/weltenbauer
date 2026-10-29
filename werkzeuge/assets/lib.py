@@ -838,3 +838,5 @@ FARBEN.update({
 })
 FARBEN.update({"medium_amethyst_bud": (160, 120, 220), "powder_snow": (245, 248, 250), "sunflower": (240, 200, 40), "oak_sapling": (80, 130, 40)})
 FARBEN.update({"cut_copper": (191, 107, 80)})
+FARBEN.update({"cactus": (85, 130, 45), "nether_quartz_ore": (120, 50, 45), "lava_cauldron": (200, 90, 30)})
+FARBEN.update({"sponge": (195, 192, 74), "wet_sponge": (171, 181, 70), "soul_fire": (80, 200, 220), "verdant_froglight": (220, 240, 200), "ochre_froglight": (250, 235, 170), "pearlescent_froglight": (245, 225, 235)})
