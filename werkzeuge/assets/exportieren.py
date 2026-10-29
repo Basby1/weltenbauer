@@ -108,6 +108,7 @@ from erw_orks import ORKS3  # noqa: E402
 from erw_feen import FEEN3  # noqa: E402
 from erw_bienen import BIENEN3  # noqa: E402
 from erw_haeuser import HAEUSER3  # noqa: E402
+from erw_mystik import MYSTIK3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -216,6 +217,7 @@ GRUPPEN = [
     ("feenstadt", "Feenstadt", FEEN3, G4, [7, 21]),
     ("bienenstadt", "Bienenstadt", BIENEN3, G4, [7, 21]),
     ("haeuser", "Häuser", HAEUSER3, G4, [7, 21]),
+    ("mystik", "Mystik", MYSTIK3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}

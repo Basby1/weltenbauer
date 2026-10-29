@@ -692,7 +692,7 @@ PIRATEN3 = {
     "haengebrueckeninseln": ("Hängebrücken-Inseln", haengebrueckeninseln),
     "schatzberg": ("Schatzberg", schatzberg),
     "kielholdock": ("Kielholdock", kielholdock),
-    "meerjungfrauenfelsen": ("Meerjungfrauenfelsen", meerjungfrauenfelsen),
+    "meerjungfrauenfelsen": ("Sirenenfelsen", meerjungfrauenfelsen),
     "vulkanversteck": ("Vulkanversteck", vulkanversteck),
     "schmugglerturm": ("Schmugglerturm", schmugglerturm),
     "kanonenboot": ("Kanonenboot", kanonenboot),
