@@ -61,6 +61,12 @@
    "groesse": 3472504
   },
   {
+   "datei": "flora.zip",
+   "name": "Riesenpflanzen & Dschungelflora",
+   "version": "d84fc91b78f3",
+   "groesse": 4327814
+  },
+  {
    "datei": "friedhof.zip",
    "name": "Friedhof & Spuk",
    "version": "032d268cdc0c",
@@ -141,8 +147,8 @@
   {
    "datei": "piraten.zip",
    "name": "Piraten",
-   "version": "34dc276ee775",
-   "groesse": 8249080
+   "version": "1367959409e2",
+   "groesse": 8254512
   },
   {
    "datei": "sagenlande.zip",

@@ -485,7 +485,7 @@ def versunkene_galeone(seed, g=2):
     w = _welt(seed)
     u = U[g]
     R = _r(18 * u + 6)
-    tief = _r(10 * u + 4)
+    tief = _r(4 * u + 3)
     boden = {}
     for x, z in scheibe(R):
         y = -tief - int(1.5 * math.sin(x * 0.3) * math.cos(z * 0.25))
