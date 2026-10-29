@@ -785,3 +785,6 @@ for _f, _c in _FARB16.items():
 FARBEN.update({"bamboo_mosaic": (190, 168, 74), "bamboo_fence": (180, 160, 70), "bamboo_slab": (193, 173, 80),
                "bamboo_stairs": (193, 173, 80), "bamboo_trapdoor": (190, 170, 80), "bamboo_mosaic_slab": (190, 168, 74)})
 FARBEN.update({"lodestone": (147, 149, 152)})
+FARBEN.update({"frogspawn": (110, 90, 80), "big_dripleaf": (110, 150, 50), "big_dripleaf_stem": (90, 130, 40),
+               "mossy_cobblestone_stairs": (110, 118, 94), "dark_oak_wall_sign": (66, 43, 20),
+               "small_dripleaf": (100, 140, 45)})

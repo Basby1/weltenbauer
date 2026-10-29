@@ -13,6 +13,12 @@
    "groesse": 2859992
   },
   {
+   "datei": "blumen.zip",
+   "name": "Riesenblumen & Zauberwiesen",
+   "version": "85e0e25c604f",
+   "groesse": 3503194
+  },
+  {
    "datei": "boote.zip",
    "name": "Boote & Schiffe",
    "version": "18bf851a5ae9",
@@ -155,6 +161,12 @@
    "name": "Sagenlande",
    "version": "999af465a82b",
    "groesse": 9465781
+  },
+  {
+   "datei": "sumpf.zip",
+   "name": "Sumpf & Moor",
+   "version": "9a402cdd3a6c",
+   "groesse": 4955044
   },
   {
    "datei": "uhrwerk.zip",
