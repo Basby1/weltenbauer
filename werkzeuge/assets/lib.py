@@ -842,3 +842,5 @@ FARBEN.update({"cactus": (85, 130, 45), "nether_quartz_ore": (120, 50, 45), "lav
 FARBEN.update({"sponge": (195, 192, 74), "wet_sponge": (171, 181, 70), "soul_fire": (80, 200, 220), "verdant_froglight": (220, 240, 200), "ochre_froglight": (250, 235, 170), "pearlescent_froglight": (245, 225, 235)})
 FARBEN.update({"scaffolding": (190, 160, 90), "kelp": (90, 140, 50), "kelp_plant": (90, 140, 50)})
 FARBEN.update({"weathered_cut_copper": (109, 145, 107)})
+FARBEN.update({"tuff_bricks": (98, 103, 95), "respawn_anchor": (40, 20, 60), "black_concrete_powder": (25, 27, 32), "gray_concrete_powder": (76, 81, 84), "polished_blackstone_brick_wall": (48, 42, 50), "white_concrete_powder": (225, 227, 228)})
+FARBEN.update({"ancient_debris": (96, 64, 56), "beacon": (120, 220, 215), "nether_portal": (120, 40, 200), "nether_gold_ore": (140, 70, 50), "cracked_nether_bricks": (40, 20, 24), "polished_blackstone_brick_slab": (48, 42, 50)})
