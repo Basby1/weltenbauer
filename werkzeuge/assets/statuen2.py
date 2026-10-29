@@ -653,6 +653,6 @@ STATUEN2 = {
     "schlafender_riese": ("Schlafender Riese", schlafender_riese),
     "tempelkatze": ("Tempelkatze", tempelkatze),
     "fuchs": ("Fuchsstatue", fuchs),
-    "runenkreis": ("Runenkreis", runenkreis),
-    "arkane_monolithen": ("Arkane Monolithen", arkane_monolithen),
+    "runenkreis": ("Kristallaltar im Steinring", runenkreis),
+    "arkane_monolithen": ("Obsidian-Obelisken mit Lichtringen", arkane_monolithen),
 }

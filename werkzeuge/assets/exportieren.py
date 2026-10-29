@@ -100,6 +100,10 @@ from statuen2 import STATUEN2  # noqa: E402
 from steampunk2 import STEAMPUNK2  # noqa: E402
 from fantasie2 import FANTASIE2  # noqa: E402
 from sagenlande2 import SAGENLANDE2  # noqa: E402
+from boote3 import BOOTE3  # noqa: E402
+from erw_piraten import PIRATEN3  # noqa: E402
+from erw_kreaturen import KREATUREN3  # noqa: E402
+from erw_antike import ANTIKE3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -200,6 +204,10 @@ GRUPPEN = [
     ("steampunk", "Schiffe & Steampunk", STEAMPUNK2, G4, [7, 21], "steampunk2"),
     ("fantasie", "Fantasiehäuser", FANTASIE2, [(0, "mittel", "mittel"), (1, "gross", "groß")], [7, 21], "fantasie2"),
     ("sagenlande", "Sagenlande", SAGENLANDE2, G4, [7, 21]),
+    ("boote", "Boote & Schiffe", BOOTE3, G4, [7, 21]),
+    ("piraten", "Piraten", PIRATEN3, G4, [7, 21]),
+    ("kreaturen", "Kreaturen", KREATUREN3, G4, [7, 21]),
+    ("antike", "Antike Monumente", ANTIKE3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}

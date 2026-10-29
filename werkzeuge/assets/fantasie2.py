@@ -830,7 +830,7 @@ FANTASIE2 = {
     "teekannenhaus": ("Porzellankannen-Villa", teekannenhaus),
     "stiefelhaus": ("Wanderstiefel-Herberge", stiefelhaus),
     "kuerbishaus": ("Riesenkürbis-Haus", kuerbishaus),
-    "baumstumpfhaus": ("Baumstumpfhaus", baumstumpfhaus),
+    "baumstumpfhaus": ("Moosstumpf-Haus", baumstumpfhaus),
     "muschelhaus": ("Muschelhaus", muschelhaus),
     "buecherturm": ("Bücherturm", buecherturm),
     "laternenhaus": ("Laternenhaus", laternenhaus),
