@@ -120,6 +120,8 @@ from erw_nether import NETHER3  # noqa: E402
 from erw_endreich import ENDREICH3  # noqa: E402
 from erw_dschungel import DSCHUNGEL3  # noqa: E402
 from erw_wikinger import WIKINGER3  # noqa: E402
+from erw_markt import MARKT3  # noqa: E402
+from erw_handwerk import HANDWERK3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -240,6 +242,8 @@ GRUPPEN = [
     ("endreich", "End-Reich", ENDREICH3, G4, [7, 21]),
     ("dschungel", "Dschungeltempel", DSCHUNGEL3, G4, [7, 21]),
     ("wikinger", "Wikingerdorf", WIKINGER3, G4, [7, 21]),
+    ("markt", "Mittelaltermarkt", MARKT3, G4, [7, 21]),
+    ("handwerk", "Mühlen & Handwerk", HANDWERK3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
