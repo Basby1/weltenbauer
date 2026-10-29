@@ -247,7 +247,9 @@ def _pruefe_bloecke(welt, pfad):
     if _VANILLA is None:
         import json
         _VANILLA = set(json.loads((Path(__file__).parent / "vanilla_bloecke.json").read_text()))
-    namen = [n for n, _ in welt.P.eintraege] + [e[0] for e in getattr(welt.P, "ersatz", {}).values()]
+    benutzt = set(welt.bloecke.values())
+    ers = getattr(welt.P, "ersatz", {})
+    namen = [welt.P.eintraege[i][0] for i in benutzt] + [ers[i][0] for i in benutzt if i in ers]
     falsch = sorted({n for n in namen if n.startswith("minecraft:") and n[10:] not in _VANILLA})
     if falsch:
         raise ValueError(f"Ungültige Blöcke in {pfad}: {falsch}")
@@ -262,9 +264,12 @@ def exportieren(welt: Welt, pfad: Path) -> dict:
     teile = [b"\x0a", _tstr("")]
     teile += [b"\x03", _tstr("DataVersion"), struct.pack(">i", DATA_VERSION)]
     teile += [b"\x09", _tstr("size"), b"\x03", struct.pack(">i", 3), struct.pack(">iii", *groesse)]
-    teile += [b"\x09", _tstr("palette"), b"\x0a", struct.pack(">i", len(pal))]
+    benutzt = sorted(set(welt.bloecke.values()))
+    neu = {alt: i for i, alt in enumerate(benutzt)}
+    teile += [b"\x09", _tstr("palette"), b"\x0a", struct.pack(">i", len(benutzt))]
     ersatz = getattr(welt.P, "ersatz", {})
-    for i, (name, props) in enumerate(pal):
+    for i in benutzt:
+        name, props = pal[i]
         teile += [b"\x08", _tstr("Name"), _tstr(name)]
         if props:
             teile += [b"\x0a", _tstr("Properties")]
@@ -289,7 +294,7 @@ def exportieren(welt: Welt, pfad: Path) -> dict:
     kf = b"\x03" + _tstr("wb_f")
     for (x, y, z), s in eintraege:
         extra = kf + struct.pack(">i", folgen.get((x, y, z), -2)) if folgen is not None else b""
-        teile.append(kp + struct.pack(">iii", x - lo[0], y - lo[1], z - lo[2]) + ks + struct.pack(">i", s) + extra
+        teile.append(kp + struct.pack(">iii", x - lo[0], y - lo[1], z - lo[2]) + ks + struct.pack(">i", neu[s]) + extra
                      + b"\x00")
     teile += [b"\x09", _tstr("entities"), b"\x00", struct.pack(">i", 0)]
     if folgen is not None:

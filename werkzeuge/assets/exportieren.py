@@ -45,7 +45,7 @@ from feenstadt import FEENSTADT  # noqa: E402
 from bienenstadt import BIENENSTADT  # noqa: E402
 from haeuser import HAEUSER  # noqa: E402
 from mystik import HELIX, MYSTIK  # noqa: E402
-from wald import WALD  # noqa: E402
+from wald2 import WALD  # noqa: E402
 from weltwunder4 import WELTWUNDER_ALLE  # noqa: E402
 from weltwunder import GROESSEN as G_WW  # noqa: E402
 from burgen import BURGEN  # noqa: E402
