@@ -3,8 +3,8 @@
   {
    "datei": "antike.zip",
    "name": "Antike Monumente",
-   "version": "60c4e0b74281",
-   "groesse": 5116799
+   "version": "66774cc9bd4a",
+   "groesse": 9707061
   },
   {
    "datei": "arena.zip",
@@ -27,8 +27,8 @@
   {
    "datei": "bienenstadt.zip",
    "name": "Bienenstadt",
-   "version": "ccde7d45a673",
-   "groesse": 2843780
+   "version": "03bb7ba62e8e",
+   "groesse": 5296049
   },
   {
    "datei": "blumen.zip",
@@ -45,8 +45,8 @@
   {
    "datei": "boote.zip",
    "name": "Boote & Schiffe",
-   "version": "cc4f32a3af09",
-   "groesse": 2369553
+   "version": "e6fe9c2edac6",
+   "groesse": 4251287
   },
   {
    "datei": "burgen.zip",
@@ -91,10 +91,16 @@
    "groesse": 3359264
   },
   {
+   "datei": "fantasie2.zip",
+   "name": "Fantasiehäuser II",
+   "version": "5038f6e70b83",
+   "groesse": 1157706
+  },
+  {
    "datei": "feenstadt.zip",
    "name": "Feenstadt",
-   "version": "ba523b1c3711",
-   "groesse": 2518152
+   "version": "ebbc03f8e572",
+   "groesse": 5039377
   },
   {
    "datei": "felsen.zip",
@@ -119,6 +125,12 @@
    "name": "Friedhof & Spuk",
    "version": "4232b378b057",
    "groesse": 3589590
+  },
+  {
+   "datei": "gaerten2.zip",
+   "name": "Hängende Gärten II",
+   "version": "7171647cf123",
+   "groesse": 3652683
   },
   {
    "datei": "gebaeude2.zip",
@@ -157,6 +169,12 @@
    "groesse": 3708343
   },
   {
+   "datei": "himmelsstadt2.zip",
+   "name": "Himmelsstadt II",
+   "version": "5bef90e428ee",
+   "groesse": 6726002
+  },
+  {
    "datei": "inseln2.zip",
    "name": "Schildkröten-Inseln II",
    "version": "0771b28fdeeb",
@@ -183,8 +201,8 @@
   {
    "datei": "kreaturen.zip",
    "name": "Kreaturen",
-   "version": "8267c86c06a2",
-   "groesse": 5376659
+   "version": "a0e87c2c3f70",
+   "groesse": 8340861
   },
   {
    "datei": "kristall.zip",
@@ -197,6 +215,12 @@
    "name": "Küste & Leuchttürme",
    "version": "6fb4830a678a",
    "groesse": 4451361
+  },
+  {
+   "datei": "leuchtwald2.zip",
+   "name": "Leuchtwald II",
+   "version": "ce7d50342d37",
+   "groesse": 2704308
   },
   {
    "datei": "markt.zip",
@@ -219,8 +243,8 @@
   {
    "datei": "orklager.zip",
    "name": "Orklager",
-   "version": "fee46866de71",
-   "groesse": 2003490
+   "version": "f51bb81cc7a0",
+   "groesse": 5375107
   },
   {
    "datei": "parks.zip",
@@ -237,14 +261,20 @@
   {
    "datei": "piraten.zip",
    "name": "Piraten",
-   "version": "af7b4a96f685",
-   "groesse": 8307480
+   "version": "0e323f969cd6",
+   "groesse": 16232530
   },
   {
    "datei": "sagenlande.zip",
    "name": "Sagenlande",
-   "version": "21ffdb55fcd7",
-   "groesse": 9612086
+   "version": "d4c19b44bd33",
+   "groesse": 27855343
+  },
+  {
+   "datei": "schwebeberge2.zip",
+   "name": "Schwebeberge II",
+   "version": "cb0aa936fbe8",
+   "groesse": 10575264
   },
   {
    "datei": "schwebend2.zip",
@@ -257,6 +287,18 @@
    "name": "Spektakuläre Bäume II",
    "version": "bd0ecfdd7a67",
    "groesse": 1809722
+  },
+  {
+   "datei": "statuen2.zip",
+   "name": "Statuen & Magie II",
+   "version": "b2dbbe479967",
+   "groesse": 2480542
+  },
+  {
+   "datei": "steampunk2.zip",
+   "name": "Schiffe & Steampunk II",
+   "version": "8d89e6b2c2e0",
+   "groesse": 2776006
   },
   {
    "datei": "sterne.zip",
