@@ -139,6 +139,8 @@ from erw_sterne import STERNE3  # noqa: E402
 from erw_zukunft import ZUKUNFT3  # noqa: E402
 from erw_bauernhof import BAUERNHOF3  # noqa: E402
 from erw_kristall import KRISTALL3  # noqa: E402
+from erw_elfen import ELFEN3  # noqa: E402
+from erw_pilze import PILZE3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -278,6 +280,8 @@ GRUPPEN = [
     ("zukunft", "Zukunftsstadt", ZUKUNFT3, G4, [7, 21]),
     ("bauernhof", "Bauernhof & Landleben", BAUERNHOF3, G4, [7, 21]),
     ("kristall", "Kristallhöhlen", KRISTALL3, G4, [7, 21]),
+    ("elfen", "Elfenreich", ELFEN3, G4, [7, 21]),
+    ("pilze", "Pilzwelten", PILZE3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
