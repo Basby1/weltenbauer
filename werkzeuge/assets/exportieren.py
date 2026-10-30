@@ -296,6 +296,31 @@ GRUPPEN = [
     ("baeume", "Bäume", BAEUME3, [(0, "klein", "klein"), (1, "mittel", "mittel"), (2, "gross", "groß")], [7, 21],
      "baeume2"),
 ]
+
+
+# ---------------------------------------------------------------- Duplikate entfernen
+# Gleich benannte Bauten (Groß/Klein, Bindestriche egal) bleiben nur einmal erhalten – in der zuerst
+# registrierten Kategorie. Dazu thematische Doppel mit anderem Namen.
+_DOPPEL_EXTRA = {("Weltwunder", "doppelhelix")}
+
+
+def _entdoppeln(gruppen):
+    import re as _re
+    gesehen, neu, entfernt = set(), [], []
+    for g in gruppen:
+        tab = {}
+        for k, v in g[2].items():
+            n = _re.sub(r"[^a-zäöüß]", "", v[0].lower())
+            if n in gesehen or (g[1], k) in _DOPPEL_EXTRA:
+                entfernt.append((g[1], k, v[0]))
+                continue
+            gesehen.add(n)
+            tab[k] = v
+        neu.append((g[0], g[1], tab) + tuple(g[3:]))
+    return neu, entfernt
+
+
+GRUPPEN, DUPLIKATE_ENTFERNT = _entdoppeln(GRUPPEN)
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
 

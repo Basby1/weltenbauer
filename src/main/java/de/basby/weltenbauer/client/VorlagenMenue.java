@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  * Das Vorlagen-Menü: Reiter je Kategorie, darunter Karten mit Vorschaubild.
- * Klick = auf den Bauwerk-Stab legen, Shift-Klick = sofort setzen, Strg-Klick = Umriss zeigen.
+ * Klick = auf den Bauwerk-Stab legen, Shift-Klick = sofort setzen, Rechtsklick = Favorit an/aus.
  */
 public class VorlagenMenue extends Screen {
 
@@ -49,6 +49,7 @@ public class VorlagenMenue extends Screen {
     }
 
     private static final String BEFEHLE = "befehle";
+    private static final String FAVORITEN = "favoriten";
     private static final int ZEILE = 13;
     private static final List<Befehl> BEFEHLSLISTE = List.of(
             new Befehl(null, "Aufräumen", null),
@@ -99,11 +100,13 @@ public class VorlagenMenue extends Screen {
     @Override
     protected void init() {
         kategorien.clear();
+        kategorien.put(FAVORITEN, "★ Favoriten");
         kategorien.putAll(Vorlagen.kategorien());
         kategorien.put(BEFEHLE, "Befehle");
         if (aktiv == null) {
             aktiv = letzteKategorie != null && kategorien.containsKey(letzteKategorie) ? letzteKategorie
-                    : kategorien.keySet().stream().findFirst().orElse("");
+                    : !Favoriten.leer() ? FAVORITEN
+                    : kategorien.keySet().stream().skip(1).findFirst().orElse("");
         }
         px0 = 10;
         py0 = 8;
@@ -145,7 +148,8 @@ public class VorlagenMenue extends Screen {
         String filter = suche == null ? "" : suche.getValue().trim().toLowerCase(Locale.ROOT);
         Map<String, Karte> nachGruppe = new LinkedHashMap<>();
         for (Vorlagen.Eintrag e : Vorlagen.alle()) {
-            boolean passt = filter.isEmpty() ? e.kategorie().equals(aktiv)
+            boolean passt = filter.isEmpty()
+                    ? (FAVORITEN.equals(aktiv) ? Favoriten.ist(e.gruppe()) : e.kategorie().equals(aktiv))
                     : (e.titel() + " " + e.gruppe() + " " + e.kategorieName()).toLowerCase(Locale.ROOT).contains(filter);
             if (!passt) {
                 continue;
@@ -274,6 +278,9 @@ public class VorlagenMenue extends Screen {
             }
             String titel = font.plainSubstrByWidth(k.eintrag().titel(), KARTE_B - 6);
             g.drawCenteredString(font, titel, x + KARTE_B / 2, y + BILD + 6, TEXT);
+            if (Favoriten.ist(k.eintrag().gruppe())) {
+                g.drawString(font, "★", x + KARTE_B - 10, y + 3, GOLD, true);
+            }
             String unter = font.plainSubstrByWidth(k.eintrag().groesse()
                     + (k.varianten() > 1 ? " · " + k.varianten() + "×" : ""), KARTE_B - 4);
             g.drawCenteredString(font, unter, x + KARTE_B / 2, y + BILD + 16, GRAU);
@@ -291,12 +298,14 @@ public class VorlagenMenue extends Screen {
         }
 
         if (karten.isEmpty() && !befehlsReiter()) {
-            g.drawCenteredString(font, suchModus ? "Nichts gefunden." : "Keine Vorlagen in dieser Kategorie.",
+            g.drawCenteredString(font, suchModus ? "Nichts gefunden."
+                            : FAVORITEN.equals(aktiv) ? "Noch keine Favoriten – Rechtsklick auf eine Vorlage merkt sie hier."
+                            : "Keine Vorlagen in dieser Kategorie.",
                     (gx0 + gx1) / 2, gy0 + 30, GRAU);
         }
         String status = PaketLader.status();
         g.drawString(font, status != null ? status : befehlsReiter() ? "Klick: Befehl in den Chat übernehmen"
-                        : "Klick: auf den Bauwerk-Stab legen   ·   Shift-Klick: sofort dorthin bauen, wohin du schaust",
+                        : "Klick: auf den Stab legen  ·  Shift-Klick: sofort bauen  ·  Rechtsklick: Favorit ★",
                 px0 + 8, py1 - 13, status != null ? GOLD : GRAU, false);
         boolean ladenHover = ueberLaden(mx, my);
         boolean laeuft = PaketLader.laeuft();
@@ -321,6 +330,8 @@ public class VorlagenMenue extends Screen {
                 zeilen.add(Component.literal("Größe: " + e.groesse() + " – " + e.masse()[0] + " × " + e.masse()[1]
                         + " × " + e.masse()[2] + " Blöcke"));
             }
+            zeilen.add(Component.literal(Favoriten.ist(e.gruppe()) ? "★ Favorit – Rechtsklick entfernt"
+                    : "Rechtsklick: zu den Favoriten").withStyle(s -> s.withColor(GRAU & 0xFFFFFF)));
             if (unterMaus.varianten() > 1) {
                 zeilen.add(Component.literal(unterMaus.varianten() + " Varianten (jedes Setzen zufällig)"));
             }
@@ -382,6 +393,13 @@ public class VorlagenMenue extends Screen {
             int y = gy0 + (i / spalten) * (KARTE_H + LUECKE) - (int) scroll;
             if (mx >= x && mx < x + KARTE_B && my >= y && my < y + KARTE_H) {
                 String gruppe = karten.get(i).eintrag().gruppe();
+                if (taste == 1) {
+                    Favoriten.umschalten(gruppe);
+                    if (FAVORITEN.equals(aktiv) && suche.getValue().isBlank()) {
+                        neuAufbauen();
+                    }
+                    return true;
+                }
                 String befehl;
                 if (hasShiftDown()) {
                     befehl = "wb vorlage setzen " + gruppe;
