@@ -32,7 +32,7 @@ def sumpfland(w, R, wasser=0.45, rauh=4.0, torf=False):
         if h <= 0:
             w.setze(x, h, z, w.b("mud") if rm(x, 2, z) < 0.28 else w.b("water", level=0))
             w.setze(x, h - 1, z, w.b("mud"))
-            if w.P.name(w.bloecke[(x, h, z)]) == "water" and rng.random() < 0.06:
+            if w.P.name(w.bloecke[(x, h, z)]) == "minecraft:water" and rng.random() < 0.06:
                 w.setze(x, 1, z, w.b("lily_pad"))
         else:
             v = rm(x, 4, z)
@@ -240,7 +240,7 @@ def wollgrasmoor(seed, g=2):
                 w.setze(x, h + 1, z, w.b("white_carpet") if False else w.b("lily_of_the_valley") if rng.random() < 0.5
                         else w.b("oxeye_daisy"))
             else:
-                w.bloecke.pop((x, h + 1, z), None) if w.P.name(w.bloecke.get((x, h + 1, z), 0)) == "sugar_cane" else None
+                w.bloecke.pop((x, h + 1, z), None) if w.P.name(w.bloecke.get((x, h + 1, z), 0)) == "minecraft:sugar_cane" else None
     steg(w, [(-R, 0), (R, 0)], y=1, pfosten=4)
     return w
 

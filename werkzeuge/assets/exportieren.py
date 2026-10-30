@@ -145,6 +145,8 @@ from erw_gewaesser import GEWAESSER3  # noqa: E402
 from erw_sumpf import SUMPF3  # noqa: E402
 from erw_blumen import BLUMEN3  # noqa: E402
 from erw_flora import FLORA3  # noqa: E402
+from erw_tore import TORE3  # noqa: E402
+from erw_baeume import BAEUME3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -290,6 +292,9 @@ GRUPPEN = [
     ("sumpf", "Sumpf & Moor", SUMPF3, G4, [7, 21]),
     ("blumen", "Riesenblumen & Zauberwiesen", BLUMEN3, G4, [7, 21]),
     ("flora", "Riesenpflanzen & Dschungelflora", FLORA3, G4, [7, 21]),
+    ("tore", "Brücken & Tore", TORE3, G4, [7, 21]),
+    ("baeume", "Bäume", BAEUME3, [(0, "klein", "klein"), (1, "mittel", "mittel"), (2, "gross", "groß")], [7, 21],
+     "baeume2"),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}

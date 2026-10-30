@@ -298,7 +298,7 @@ def vergissmeinnicht(seed, g=1):
             w.bloecke.pop((x, h + 1, z), None)
     rn = Rauschen(w, 2.5)
     for (x, z), h in zellen.items():
-        if rn(x, 0, z) < 0.6 and w.P.name(w.bloecke.get((x, h, z), 0)) != "water":
+        if rn(x, 0, z) < 0.6 and w.P.name(w.bloecke.get((x, h, z), 0)) != "minecraft:water":
             hh = 1 + int(rn(x, 3, z) * (1.5 * s))
             for y in range(h + 1, h + hh):
                 w.setze(x, y, z, w.b("green_terracotta"))

@@ -582,17 +582,19 @@ def weidentor(seed, g=1):
             if (x, z) in zellen:
                 w.setze(x, 0, z, w.b("dirt_path"))
                 w.bloecke.pop((x, 1, z), None)
-    B = int(2 + s)
-    H = int(5 + 2 * s)
+    B = int(2.5 + s)
+    H = int(7 + 3 * s)
     for k in range(3):
         for sx in (-1, 1):
-            pts = bez((sx * (B + k * 0.3), 0, (k - 1) * 0.7), (sx * (B + 0.5), H * 0.7, (k - 1) * 0.5),
-                      (-sx * 0.5, H + 0.5, (k - 1) * 0.3))
-            rohr(w, pts, 0.4, 0.3, w.b("stripped_oak_log", axis="y"), rauh=0.0)
-    for y in range(int(H * 0.5), H + 2):
-        for x in range(-B - 1, B + 2):
-            if abs(x) >= B - 1 or y >= H:
-                w.setze(x, y, 0, w.b("oak_leaves", persistent=True, distance=1, waterlogged=False), False)
+            pts = bez((sx * (B + k * 0.3), 0, (k - 1) * 0.8), (sx * (B + 0.8), H * 0.75, (k - 1) * 0.6),
+                      (-sx * 0.5, H + 0.5, (k - 1) * 0.4))
+            rohr(w, pts, 0.6 + 0.2 * s, 0.45, w.b("stripped_oak_log", axis="y"), rauh=0.0)
+            for (x, y, z, t) in pts[::3]:
+                if t > 0.3:
+                    for d in (-1, 1):
+                        w.setze(round(x), round(y), round(z) + d, w.b("flowering_azalea_leaves" if (k + round(y)) % 3
+                                                                    == 0 else "azalea_leaves", persistent=True,
+                                                                    distance=1, waterlogged=False), False)
     for sx in (-1, 1):
         for x in range(sx * (B + 2), sx * R, sx):
             for y in (1, 2):
@@ -702,15 +704,15 @@ def walknochenbogen(seed, g=1):
     w = _neu(seed)
     s = S[g]
     R = int(9 * s + 6)
-    zellen = wiese(w, R, huegel=0.1, art="strand", blumen=0.0)
+    zellen = wiese(w, R, huegel=0.1, blumen=0.0)
     for z in range(-R, R + 1):
         for x in (-1, 0, 1):
             if (x, z) in zellen:
                 w.setze(x, zellen[(x, z)], z, w.b("gravel"))
-    H = 6 + 3 * s
+    H = 8 + 5 * s
     for sx in (-1, 1):
-        pts = bez((sx * (3 + s), 0, 0), (sx * (3 + s), H * 0.8, 0), (sx * 0.4, H, 0))
-        rohr(w, pts, 0.8 + 0.3 * s, 0.4, w.b("bone_block", axis="y"), rauh=0.05)
+        pts = bez((sx * (3 + 1.5 * s), 0, 0), (sx * (3.5 + 1.5 * s), H * 0.8, 0), (sx * 0.4, H, 0))
+        rohr(w, pts, 1.0 + 0.4 * s, 0.5, w.b("bone_block", axis="y"), rauh=0.05)
     for k in range(4):
         y = round(H * (0.3 + 0.15 * k))
         for sx in (-1, 1):
@@ -744,8 +746,14 @@ def baumwipfelpfad(seed, g=2):
         laubball(w, x, H + 1, z, 3 + s, arten=("oak_leaves", "birch_leaves"))
         for dx in range(-2, 3):
             for dz in range(-2, 3):
-                if math.hypot(dx, dz) <= 2.5 and (abs(dx) > 1 or abs(dz) > 1):
-                    w.setze(x + dx, yp, z + dz, w.b("spruce_planks"))
+                pass
+        for dx in range(-4, 5):
+            for dz in range(-4, 5):
+                d = math.hypot(dx, dz)
+                if 1.5 < d <= 3.5 + 0.3 * s:
+                    w.setze(x + dx, yp, z + dz, w.b("birch_planks"))
+                    if d > 2.7 + 0.3 * s:
+                        w.setze(x + dx, yp + 1, z + dz, w.b("birch_fence"))
         pos.append((x, z))
     for (a, b) in zip(pos, pos[1:] + pos[:1]):
         m = int(math.hypot(b[0] - a[0], b[1] - a[1]))
@@ -753,8 +761,10 @@ def baumwipfelpfad(seed, g=2):
             t = k / m
             x, z = round(a[0] + (b[0] - a[0]) * t), round(a[1] + (b[1] - a[1]) * t)
             y = round(yp - math.sin(t * math.pi) * 1.5)
-            w.setze(x, y, z, w.b("spruce_slab", type="top", waterlogged=False), False)
-            w.setze(x, y + 1, z + 1, w.b("spruce_fence"), False) if k % 2 == 0 else None
+            for d in (0, 1):
+                w.setze(x + d, y, z, w.b("birch_slab", type="top", waterlogged=False), False)
+            w.setze(x - 1, y + 1, z, w.b("chain", axis="y", waterlogged=False), False)
+            w.setze(x + 2, y + 1, z, w.b("chain", axis="y", waterlogged=False), False)
     x0, z0 = pos[0]
     for k in range(yp * 3):
         a = k * 0.5
