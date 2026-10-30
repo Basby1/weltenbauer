@@ -849,3 +849,4 @@ FARBEN.update({"jungle_fence": (160, 115, 80), "stripped_jungle_wood": (171, 132
 FARBEN.update({"fletching_table": (200, 180, 130), "light_weighted_pressure_plate": (240, 200, 60)})
 FARBEN.update({"spruce_sapling": (60, 90, 50)})
 FARBEN.update({"deepslate_iron_ore": (100, 96, 96), "diamond_ore": (120, 160, 160)})
+FARBEN.update({"chipped_anvil": (70, 70, 72)})

@@ -133,6 +133,7 @@ from erw_weltwunder import WELTWUNDER3  # noqa: E402
 from erw_uhrwerk import UHRWERK3  # noqa: E402
 from erw_zwerge import ZWERGE3  # noqa: E402
 from erw_kerker import KERKER3  # noqa: E402
+from erw_arena import ARENA3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -266,6 +267,7 @@ GRUPPEN = [
     ("uhrwerk", "Uhrwerk & Maschinen", UHRWERK3, G4, [7, 21]),
     ("zwerge", "Zwergenreich", ZWERGE3, G4, [7, 21]),
     ("kerker", "Kerker & Gefängnis", KERKER3, G4, [7, 21]),
+    ("arena", "Arena & Turnierplatz", ARENA3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
