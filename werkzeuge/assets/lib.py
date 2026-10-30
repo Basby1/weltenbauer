@@ -852,3 +852,4 @@ FARBEN.update({"deepslate_iron_ore": (100, 96, 96), "diamond_ore": (120, 160, 16
 FARBEN.update({"chipped_anvil": (70, 70, 72)})
 FARBEN.update({"potted_dandelion": (200, 190, 60), "potted_orange_tulip": (220, 120, 50), "potted_pink_tulip": (220, 150, 170)})
 FARBEN.update({"hopper": (60, 60, 62)})
+FARBEN.update({"potted_fern": (90, 120, 60)})

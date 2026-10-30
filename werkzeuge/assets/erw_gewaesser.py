@@ -301,7 +301,7 @@ def klamm(seed, g=2):
         mz = math.sin(x / 4) * 1.5
         if abs(z - mz) < sp:
             return -3
-        return (H if z < mz else H * 0.5) + rn(x, 2, z) * 2
+        return (H if z < mz else 1) + rn(x, 2, z) * 2
 
     hs = landschaft(w, R, hf, wy=-2, fels_steil=2)
     rng = w.rng
