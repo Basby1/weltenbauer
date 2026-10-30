@@ -848,3 +848,4 @@ FARBEN.update({"end_stone_brick_wall": (218, 224, 162), "purpur_stairs": (169, 1
 FARBEN.update({"jungle_fence": (160, 115, 80), "stripped_jungle_wood": (171, 132, 84), "potted_blue_orchid": (120, 70, 50), "red_glazed_terracotta": (180, 60, 50), "orange_glazed_terracotta": (200, 140, 60), "yellow_glazed_terracotta": (230, 200, 90), "lime_glazed_terracotta": (150, 200, 60), "mossy_stone_brick_wall": (115, 121, 105), "mossy_cobblestone_slab": (110, 118, 95), "light_gray_carpet": (140, 140, 130), "green_carpet": (88, 106, 51)})
 FARBEN.update({"fletching_table": (200, 180, 130), "light_weighted_pressure_plate": (240, 200, 60)})
 FARBEN.update({"spruce_sapling": (60, 90, 50)})
+FARBEN.update({"deepslate_iron_ore": (100, 96, 96), "diamond_ore": (120, 160, 160)})
