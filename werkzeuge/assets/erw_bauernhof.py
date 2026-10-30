@@ -195,7 +195,7 @@ def gaenseweide(seed, g=1):
     w = _neu(seed)
     s = S[g]
     R = int(10 * s + 6)
-    zellen = wiese(w, R, huegel=0.15, art="moor")
+    zellen = wiese(w, R, huegel=0.15, blumen=0.03)
     rn = Rauschen(w, 3)
     for (x, z), h in zellen.items():
         if math.hypot(x + R * 0.3, z - R * 0.2) + rn(x, 0, z) * 2 < R * 0.3:
@@ -472,7 +472,7 @@ def reisterrassen(seed, g=2):
             v = (-z + R) / (2 * R) + math.sin(x / 5) * 0.05
             stufe = max(0, min(n - 1, int(v * n)))
             h = stufe
-            rand = abs(v * n - round(v * n)) < 0.12
+            rand = abs(v * n - round(v * n)) < 0.2
             for y in range(-1, h + 1):
                 w.setze(x, y, z, w.b("dirt"))
             if rand:
