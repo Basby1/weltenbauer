@@ -144,6 +144,7 @@ from erw_pilze import PILZE3  # noqa: E402
 from erw_gewaesser import GEWAESSER3  # noqa: E402
 from erw_sumpf import SUMPF3  # noqa: E402
 from erw_blumen import BLUMEN3  # noqa: E402
+from erw_flora import FLORA3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -288,6 +289,7 @@ GRUPPEN = [
     ("gewaesser", "Flüsse, Seen & Wasserfälle", GEWAESSER3, G4, [7, 21]),
     ("sumpf", "Sumpf & Moor", SUMPF3, G4, [7, 21]),
     ("blumen", "Riesenblumen & Zauberwiesen", BLUMEN3, G4, [7, 21]),
+    ("flora", "Riesenpflanzen & Dschungelflora", FLORA3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
