@@ -136,6 +136,7 @@ from erw_kerker import KERKER3  # noqa: E402
 from erw_arena import ARENA3  # noqa: E402
 from erw_deko import DEKO3  # noqa: E402
 from erw_sterne import STERNE3  # noqa: E402
+from erw_zukunft import ZUKUNFT3  # noqa: E402
 
 KUESTE = {**KUESTE, **HAFEN}
 WUESTE = {**WUESTE, **BASAR}
@@ -272,6 +273,7 @@ GRUPPEN = [
     ("arena", "Arena & Turnierplatz", ARENA3, G4, [7, 21]),
     ("deko", "Deko & Wege", DEKO3, G4, [7, 21]),
     ("sterne", "Sternwarte & Astronomie", STERNE3, G4, [7, 21]),
+    ("zukunft", "Zukunftsstadt", ZUKUNFT3, G4, [7, 21]),
 ]
 MEER = {"inseln"}
 GROSSBILD = {"inseln", "bogen"}
